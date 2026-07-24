@@ -6,17 +6,40 @@ abstract: >-
   against complex rule sets: a bounded retrieval agent proposes candidate rules
   and a rule-grounded verdict keeps every decision traceable to a clause.
 license: Apache-2.0
-repository-code: "[repository URL — fill in before publishing]"
+repository-code: "https://github.com/Trilives/argus"
 authors:
-  - family-names: "[Author One — fill in]"
-  - family-names: "[Author Two — fill in]"
+  - given-names: "Fangjie"
+    family-names: "Wu"
+    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
+  - given-names: "Xingpeng"
+    family-names: "Jiang"
+    affiliation: "School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen)"
+    orcid: "https://orcid.org/0009-0008-1578-3403"
+  - given-names: "Wenlong"
+    family-names: "Zhang"
+    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
+  - given-names: "Boran"
+    family-names: "Wang"
+    affiliation: "International Institute of Artificial Intelligence, Harbin Institute of Technology (Shenzhen)"
+    orcid: "https://orcid.org/0009-0007-9224-2697"
+  - given-names: "Jie"
+    family-names: "Gong"
+    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
 preferred-citation:
   type: article
   title: >-
     Agentic Rule Retrieval for Traceable, Rule-Grounded Visual Compliance
     Screening against Complex Regulatory Rule Sets
   authors:
-    - family-names: "[Author One — fill in]"
-    - family-names: "[Author Two — fill in]"
+    - given-names: "Fangjie"
+      family-names: "Wu"
+    - given-names: "Xingpeng"
+      family-names: "Jiang"
+    - given-names: "Wenlong"
+      family-names: "Zhang"
+    - given-names: "Boran"
+      family-names: "Wang"
+    - given-names: "Jie"
+      family-names: "Gong"
   year: 2026
   notes: "Under review at Advanced Engineering Informatics."

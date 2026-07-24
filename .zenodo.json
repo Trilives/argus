@@ -1,0 +1,46 @@
+{
+  "title": "ARGus — Agentic Rule-Grounded Screening",
+  "description": "An auditable framework for image-based regulatory compliance screening against complex rule sets: a bounded retrieval agent proposes candidate rules and a rule-grounded verdict keeps every decision traceable to a clause. Code, rule library and schema, stage prompts, privacy-reviewed sample images, and aggregate result summaries accompanying the paper \"Agentic Rule Retrieval for Traceable, Rule-Grounded Visual Compliance Screening against Complex Regulatory Rule Sets\" (under review at Advanced Engineering Informatics).",
+  "upload_type": "software",
+  "license": "Apache-2.0",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Wu, Fangjie",
+      "affiliation": "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
+    },
+    {
+      "name": "Jiang, Xingpeng",
+      "affiliation": "School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen)",
+      "orcid": "0009-0008-1578-3403"
+    },
+    {
+      "name": "Zhang, Wenlong",
+      "affiliation": "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
+    },
+    {
+      "name": "Wang, Boran",
+      "affiliation": "International Institute of Artificial Intelligence, Harbin Institute of Technology (Shenzhen)",
+      "orcid": "0009-0007-9224-2697"
+    },
+    {
+      "name": "Gong, Jie",
+      "affiliation": "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
+    }
+  ],
+  "keywords": [
+    "regulatory compliance screening",
+    "agentic retrieval",
+    "rule grounding",
+    "vision-language models",
+    "construction safety",
+    "auditable AI"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Trilives/argus",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
