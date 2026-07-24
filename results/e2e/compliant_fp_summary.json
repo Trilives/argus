@@ -1,0 +1,74 @@
+{
+  "R4_facts_rules": {
+    "compliant_images": 28,
+    "false_claims": 10,
+    "false_claims_per_image": 0.357,
+    "clean_image_rate": 0.7857,
+    "candidates_per_image": 2.04,
+    "false_claims_per_candidate": 0.1754
+  },
+  "R4_image_rules": {
+    "compliant_images": 28,
+    "false_claims": 25,
+    "false_claims_per_image": 0.893,
+    "clean_image_rate": 0.3929,
+    "candidates_per_image": 2.04,
+    "false_claims_per_candidate": 0.4386
+  },
+  "R4_decoupled": {
+    "compliant_images": 28,
+    "false_claims": 27,
+    "false_claims_per_image": 0.964,
+    "clean_image_rate": 0.3929,
+    "candidates_per_image": 2.04,
+    "false_claims_per_candidate": 0.4737
+  },
+  "R4_decoupled_sym": {
+    "compliant_images": 28,
+    "false_claims": 29,
+    "false_claims_per_image": 1.036,
+    "clean_image_rate": 0.3214,
+    "candidates_per_image": 2.04,
+    "false_claims_per_candidate": 0.5088
+  },
+  "R4fam_image_rules": {
+    "compliant_images": 28,
+    "false_claims": 67,
+    "false_claims_per_image": 2.393,
+    "clean_image_rate": 0.1786,
+    "candidates_per_image": 5.32,
+    "false_claims_per_candidate": 0.4497
+  },
+  "R4fam_decoupled_sym": {
+    "compliant_images": 28,
+    "false_claims": 73,
+    "false_claims_per_image": 2.607,
+    "clean_image_rate": 0.1071,
+    "candidates_per_image": 5.32,
+    "false_claims_per_candidate": 0.4899
+  },
+  "R4famB_image_rules": {
+    "compliant_images": 28,
+    "false_claims": 91,
+    "false_claims_per_image": 3.25,
+    "clean_image_rate": 0.1429,
+    "candidates_per_image": 7.07,
+    "false_claims_per_candidate": 0.4596
+  },
+  "R4famB_decoupled_sym": {
+    "compliant_images": 28,
+    "false_claims": 94,
+    "false_claims_per_image": 3.357,
+    "clean_image_rate": 0.0714,
+    "candidates_per_image": 7.07,
+    "false_claims_per_candidate": 0.4747
+  },
+  "R4fam_decoupled_sym_strict": {
+    "compliant_images": 5,
+    "false_claims": 7,
+    "false_claims_per_image": 1.4,
+    "clean_image_rate": 0.2,
+    "candidates_per_image": 5.4,
+    "false_claims_per_candidate": 0.2593
+  }
+}

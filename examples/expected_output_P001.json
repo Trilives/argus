@@ -1,0 +1,37 @@
+{
+  "_note": "ILLUSTRATIVE, hand-authored to show the artifact schema — NOT a captured model run. A real screening produces the same shape with model-decided values.",
+  "image": "examples/sample_images/P001.jpg",
+  "stage1_facts": {
+    "objects": [
+      {"name": "horizontal floor opening", "attributes": ["covered", "red-white warning stripes"]},
+      {"name": "guardrail", "attributes": ["present", "around opening"]},
+      {"name": "toe board", "attributes": ["present"]}
+    ],
+    "people": [],
+    "spatial_relations": ["cover fixed over opening", "guardrail encloses opening"]
+  },
+  "stage2_candidates": [
+    {"rule_id": "R-OPN-001-horizontal-opening-protection", "via": "agent_grep_visual"}
+  ],
+  "stage3_4_evidence": {
+    "R-OPN-001-horizontal-opening-protection": {
+      "horizontal_opening_present": "yes",
+      "cover_present": "yes",
+      "cover_fixed": "yes",
+      "protection_intact_and_stable": "yes",
+      "warning_marking_present": "yes",
+      "guardrail_present": "yes",
+      "toe_board_present": "yes",
+      "decision_route": "visual_screening_only"
+    }
+  },
+  "stage5_verdict": [
+    {
+      "rule_id": "R-OPN-001-horizontal-opening-protection",
+      "status": "compliant",
+      "basis": "visual_screening_rule evaluates false (opening present but covered, fixed, intact, marked and guarded)",
+      "rectification_advice": null
+    }
+  ],
+  "auditable_chain": "clause R-OPN-001 -> checkpoints (cover/guardrail/toe board present & fixed) -> image evidence -> verdict: compliant -> no rectification required"
+}

@@ -1,0 +1,1882 @@
+{
+"img_0002": {
+"R-OPN-001-horizontal-opening-protection": "compliant"
+},
+"img_0003": {
+"R-CIV-015-fire-equipment-missing": "compliant",
+"R-EDG-007-guardrail-construction": "compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "compliant"
+},
+"img_0006": {
+"R-CIV-015-fire-equipment-missing": "compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "compliant"
+},
+"img_0007": {
+"R-OPN-001-horizontal-opening-protection": "compliant"
+},
+"img_0009": {
+"R-OPN-001-horizontal-opening-protection": "compliant"
+},
+"img_0014": {
+"R-OPN-001-horizontal-opening-protection": "compliant"
+},
+"img_0017": {
+"R-EDG-002-stair-edge": "compliant",
+"R-OPN-001-horizontal-opening-protection": "compliant"
+},
+"img_0018": {
+"R-EDG-002-stair-edge": "compliant",
+"R-OPN-001-horizontal-opening-protection": "compliant"
+},
+"img_0024": {
+"R-OPN-001-horizontal-opening-protection": "compliant"
+},
+"img_0028": {
+"R-CIV-001-hoarding-missing-low": "compliant",
+"R-CIV-002-road-unhardened-water-mud": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_0035": {
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_0040": {
+"R-CIV-001-hoarding-missing-low": "compliant",
+"R-EDG-002-stair-edge": "undetermined",
+"R-EDG-007-guardrail-construction": "undetermined",
+"R-EDG-011-scaffold-layer-catch-net": "compliant"
+},
+"img_0045": {
+"R-CIV-001-hoarding-missing-low": "compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_0049": {
+"R-EDG-002-stair-edge": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-EDG-005-scaffold-structure-gap": "undetermined"
+},
+"img_0052": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-BHV-004-illegal-climbing": "compliant",
+"R-EDG-005-scaffold-structure-gap": "undetermined"
+},
+"img_0055": {
+"R-EDG-011-scaffold-layer-catch-net": "compliant"
+},
+"img_0059": {
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-EDG-005-scaffold-structure-gap": "compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_0062": {
+"R-EDG-002-stair-edge": "compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_0063": {
+"R-EDG-002-stair-edge": "compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_0066": {
+"R-OPN-001-horizontal-opening-protection": "compliant"
+},
+"img_0071": {
+"R-OPN-001-horizontal-opening-protection": "compliant"
+},
+"img_0074": {
+"R-OPN-004-vertical-and-low-sill-opening": "compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "compliant"
+},
+"img_0075": {
+"R-OPN-005-elevator-shaft-door-and-net": "compliant"
+},
+"img_0089": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0092": {
+"R-BHV-008-machinery-area-not-cleared": "compliant",
+"R-BHV-013-damaged-lifting-gear": "undetermined",
+"R-EDG-012-passage-shed-protection": "non_compliant"
+},
+"img_0094": {
+"R-BHV-009-suspended-platform-lifting-violation": "compliant",
+"R-BHV-013-damaged-lifting-gear": "undetermined",
+"R-EDG-012-passage-shed-protection": "non_compliant"
+},
+"img_0097": {
+"R-BHV-008-machinery-area-not-cleared": "compliant",
+"R-CIV-001-hoarding-missing-low": "compliant",
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-012-passage-shed-protection": "compliant"
+},
+"img_0101": {
+"R-EDG-005-scaffold-structure-gap": "compliant"
+},
+"img_0106": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_0109": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-002-road-unhardened-water-mud": "compliant",
+"R-CIV-007-vehicle-wash": "undetermined",
+"R-CIV-008-road-dust-exceedance": "undetermined"
+},
+"img_0115": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_0116": {
+"R-EDG-006-pit-trench-edge": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0117": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_0119": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant"
+},
+"img_0125": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0129": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0131": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-005-scaffold-structure-gap": "non_compliant"
+},
+"img_0132": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0133": {
+"R-EDG-005-scaffold-structure-gap": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0134": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0135": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0136": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0137": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0141": {
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0142": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0143": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0147": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0150": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0151": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0155": {
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0158": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0159": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0160": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0161": {
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_0162": {
+"R-EDG-006-pit-trench-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_0163": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0164": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0167": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0168": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0176": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0177": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0179": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0185": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0187": {
+"R-BHV-002-helmet-and-attire": "undetermined",
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-CIV-016-cable-on-ground": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0188": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_0189": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0190": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_0192": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0194": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "compliant"
+},
+"img_0199": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0203": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0206": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0207": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "undetermined"
+},
+"img_0210": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-007-guardrail-construction": "compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0216": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0218": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0220": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0222": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0224": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0225": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0229": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0230": {
+"R-BHV-001-no-harness-at-height": "non_compliant",
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0232": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0234": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0235": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0236": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0241": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0244": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0252": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0256": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0258": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0260": {
+"R-CIV-001-hoarding-missing-low": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_0261": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0263": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0266": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0267": {
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0272": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0283": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0284": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0286": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0287": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0293": {
+"R-CIV-004-dusty-material-uncovered": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-006-pit-trench-edge": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0296": {
+"R-CIV-014-fire-access-blocked": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0298": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0303": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0309": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0311": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0314": {
+"R-CIV-001-hoarding-missing-low": "non_compliant"
+},
+"img_0319": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0324": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0327": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0328": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0329": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0331": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0332": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0334": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0335": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-016-cable-on-ground": "compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0336": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0341": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-016-cable-on-ground": "compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_0351": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_0363": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0366": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0368": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_0369": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0373": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0374": {
+"R-CIV-001-hoarding-missing-low": "non_compliant"
+},
+"img_0377": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0378": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0381": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0384": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-002-stair-edge": "compliant"
+},
+"img_0385": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0388": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0389": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0391": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0394": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-001-hoarding-missing-low": "compliant"
+},
+"img_0402": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_0408": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0418": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0428": {
+"R-EDG-005-scaffold-structure-gap": "non_compliant",
+"R-EDG-011-scaffold-layer-catch-net": "compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0430": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0433": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0435": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0436": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0441": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0445": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_0446": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0448": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-001-hoarding-missing-low": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "undetermined"
+},
+"img_0450": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0451": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0452": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0453": {
+"R-CIV-001-hoarding-missing-low": "non_compliant"
+},
+"img_0458": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0467": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0469": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0470": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0474": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0477": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0482": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-CIV-014-fire-access-blocked": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0491": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-BHV-012-inattentive-unsafe-behavior": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0494": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0495": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-005-scaffold-structure-gap": "non_compliant"
+},
+"img_0498": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0499": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0501": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0502": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0504": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0505": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0506": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_0508": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0513": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0515": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0516": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0518": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-CIV-015-fire-equipment-missing": "compliant"
+},
+"img_0520": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0526": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0529": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0535": {
+"R-CIV-018-poor-overall-housekeeping": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0537": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-011-manhole-trench-cover": "non_compliant"
+},
+"img_0538": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0539": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0540": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0542": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0543": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0544": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-EDG-005-scaffold-structure-gap": "non_compliant"
+},
+"img_0547": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0549": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0551": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0553": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0557": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0560": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0563": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0564": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0565": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0567": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0570": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0571": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0575": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0579": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0582": {
+"R-CIV-018-poor-overall-housekeeping": "compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0583": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0585": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0587": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0589": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0592": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0593": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0601": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0602": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0612": {
+"R-CIV-014-fire-access-blocked": "non_compliant",
+"R-EDG-002-stair-edge": "compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0616": {
+"R-CIV-001-hoarding-missing-low": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0620": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant"
+},
+"img_0621": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0623": {
+"R-EDG-012-passage-shed-protection": "compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0624": {
+"R-BHV-002-helmet-and-attire": "undetermined",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0625": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0628": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0630": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0631": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0635": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0645": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0647": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0648": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0654": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-011-scaffold-layer-catch-net": "compliant"
+},
+"img_0655": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0664": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0665": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-CIV-015-fire-equipment-missing": "compliant"
+},
+"img_0671": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "compliant",
+"R-EDG-011-scaffold-layer-catch-net": "compliant"
+},
+"img_0679": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0687": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-011-smoking-burning": "non_compliant"
+},
+"img_0688": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0690": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0695": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_0697": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0700": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0705": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0719": {
+"R-BHV-008-machinery-area-not-cleared": "non_compliant",
+"R-CIV-001-hoarding-missing-low": "non_compliant"
+},
+"img_0728": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0729": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0733": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0734": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "undetermined"
+},
+"img_0735": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0736": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0738": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0739": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0741": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0742": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0744": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0748": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0759": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0760": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_0761": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0766": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0774": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0776": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0778": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-013-temporary-facilities": "compliant"
+},
+"img_0779": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0782": {
+"R-CIV-005-spoil-waste-overheight-uncleared": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0789": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0792": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0795": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0797": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-BHV-012-inattentive-unsafe-behavior": "non_compliant"
+},
+"img_0799": {
+"R-EDG-006-pit-trench-edge": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0807": {
+"R-CIV-004-dusty-material-uncovered": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0811": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0818": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0822": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0831": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-011-scaffold-layer-catch-net": "compliant"
+},
+"img_0833": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0841": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0846": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0847": {
+"R-EDG-006-pit-trench-edge": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0849": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0853": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0860": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0865": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0866": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_0867": {
+"R-CIV-014-fire-access-blocked": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_0873": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant"
+},
+"img_0874": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0878": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-011-smoking-burning": "non_compliant"
+},
+"img_0885": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "compliant"
+},
+"img_0886": {
+"R-CIV-004-dusty-material-uncovered": "non_compliant",
+"R-CIV-005-spoil-waste-overheight-uncleared": "non_compliant"
+},
+"img_0887": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "undetermined"
+},
+"img_0888": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0891": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0892": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0899": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0910": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0920": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_0922": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_0929": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0930": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0931": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0935": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_0938": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0940": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0941": {
+"R-EDG-006-pit-trench-edge": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0942": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-011-scaffold-layer-catch-net": "compliant"
+},
+"img_0947": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_0949": {
+"R-CIV-015-fire-equipment-missing": "compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant"
+},
+"img_0950": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_0958": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0959": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0976": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_0977": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0982": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0983": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0984": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-011-scaffold-layer-catch-net": "non_compliant"
+},
+"img_0985": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0995": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_0996": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1001": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1002": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1010": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1011": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-BHV-012-inattentive-unsafe-behavior": "non_compliant"
+},
+"img_1018": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1023": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1026": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1030": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-006-pit-trench-edge": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1035": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_1040": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1043": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1044": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1045": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1050": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1054": {
+"R-EDG-005-scaffold-structure-gap": "compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_1055": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_1057": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1065": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-002-stair-edge": "compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_1066": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1072": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1073": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1082": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1084": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_1085": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_1087": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1091": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1094": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-011-smoking-burning": "non_compliant"
+},
+"img_1098": {
+"R-CIV-011-smoking-burning": "non_compliant"
+},
+"img_1099": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1100": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1104": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant"
+},
+"img_1105": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-001-hoarding-missing-low": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant"
+},
+"img_1107": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1110": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1117": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_1120": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1129": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1130": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_1131": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1132": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-016-cable-on-ground": "non_compliant"
+},
+"img_1134": {
+"R-BHV-001-no-harness-at-height": "non_compliant",
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1137": {
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1141": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-002-stair-edge": "compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1148": {
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_1150": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_1161": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_1162": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant"
+},
+"img_1165": {
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant"
+},
+"img_1169": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_1174": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1179": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_1180": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1183": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1184": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_1193": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1196": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1198": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1202": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_1207": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1210": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-002-stair-edge": "compliant"
+},
+"img_1215": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_1221": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1222": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1227": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_1228": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1231": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1233": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1235": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1236": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1237": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1240": {
+"R-CIV-001-hoarding-missing-low": "non_compliant"
+},
+"img_1243": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-BHV-012-inattentive-unsafe-behavior": "non_compliant"
+},
+"img_1248": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1249": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1250": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1254": {
+"R-EDG-006-pit-trench-edge": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1255": {
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1258": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1261": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1267": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "non_compliant",
+"R-CIV-018-poor-overall-housekeeping": "non_compliant"
+},
+"img_1268": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1277": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1279": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1281": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-BHV-007-illegal-electrical-work": "compliant"
+},
+"img_1283": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-004-dusty-material-uncovered": "non_compliant"
+},
+"img_1286": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-011-scaffold-layer-catch-net": "compliant"
+},
+"img_1287": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1288": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-CIV-005-spoil-waste-overheight-uncleared": "non_compliant"
+},
+"img_1289": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-016-cable-on-ground": "compliant"
+},
+"img_1293": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1295": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_1301": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1302": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1306": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_1309": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant",
+"R-OPN-011-manhole-trench-cover": "non_compliant"
+},
+"img_1310": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_1311": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1313": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1317": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1319": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1323": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1328": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1329": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1331": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-002-stair-edge": "compliant"
+},
+"img_1333": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1343": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1345": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1347": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1350": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1351": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1352": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1355": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-BHV-012-inattentive-unsafe-behavior": "non_compliant",
+"R-CIV-011-smoking-burning": "non_compliant"
+},
+"img_1362": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1363": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1364": {
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1371": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1372": {
+"R-BHV-002-helmet-and-attire": "compliant",
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1373": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1374": {
+"R-EDG-006-pit-trench-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1377": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1385": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1386": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1387": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_1389": {
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_1390": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1394": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1396": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1397": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1400": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-011-smoking-burning": "non_compliant"
+},
+"img_1403": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant"
+},
+"img_1405": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1409": {
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1410": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1416": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-CIV-011-smoking-burning": "non_compliant"
+},
+"img_1421": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1430": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1437": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1438": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1443": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1444": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1446": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1458": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-002-stair-edge": "compliant"
+},
+"img_1463": {
+"R-EDG-002-stair-edge": "compliant",
+"R-EDG-005-scaffold-structure-gap": "non_compliant",
+"R-EDG-007-guardrail-construction": "compliant"
+},
+"img_1465": {
+"R-CIV-003-material-stacking-labeling": "non_compliant"
+},
+"img_1467": {
+"R-CIV-001-hoarding-missing-low": "non_compliant",
+"R-EDG-006-pit-trench-edge": "non_compliant"
+},
+"img_1471": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1472": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1474": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1477": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_1479": {
+"R-OPN-005-elevator-shaft-door-and-net": "compliant"
+},
+"img_1483": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1484": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1491": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1492": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1493": {
+"R-CIV-002-road-unhardened-water-mud": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant",
+"R-EDG-007-guardrail-construction": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1494": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-005-scaffold-structure-gap": "non_compliant"
+},
+"img_1495": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-005-scaffold-structure-gap": "non_compliant"
+},
+"img_1497": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_1499": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1502": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1509": {
+"R-BHV-001-no-harness-at-height": "undetermined",
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-003-roof-balcony-platform-edge": "compliant"
+},
+"img_1510": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-BHV-005-improper-ladder-use": "non_compliant"
+},
+"img_1514": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1517": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1518": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1519": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1524": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1526": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1528": {
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1530": {
+"R-CIV-018-poor-overall-housekeeping": "non_compliant",
+"R-OPN-001-horizontal-opening-protection": "non_compliant"
+},
+"img_1533": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_1537": {
+"R-EDG-003-roof-balcony-platform-edge": "non_compliant"
+},
+"img_1538": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1541": {
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_1543": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1546": {
+"R-EDG-002-stair-edge": "non_compliant",
+"R-EDG-007-guardrail-construction": "non_compliant"
+},
+"img_1547": {
+"R-BHV-001-no-harness-at-height": "non_compliant",
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-EDG-011-scaffold-layer-catch-net": "compliant"
+},
+"img_1548": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1555": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1558": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1561": {
+"R-CIV-005-spoil-waste-overheight-uncleared": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_1562": {
+"R-CIV-005-spoil-waste-overheight-uncleared": "non_compliant",
+"R-OPN-004-vertical-and-low-sill-opening": "non_compliant"
+},
+"img_1564": {
+"R-OPN-009-service-shaft-opening": "non_compliant"
+},
+"img_1568": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+},
+"img_1569": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1570": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1571": {
+"R-EDG-002-stair-edge": "non_compliant"
+},
+"img_1574": {
+"R-OPN-005-elevator-shaft-door-and-net": "non_compliant"
+},
+"img_1575": {
+"R-BHV-002-helmet-and-attire": "non_compliant",
+"R-CIV-003-material-stacking-labeling": "compliant"
+},
+"img_1576": {
+"R-BHV-002-helmet-and-attire": "non_compliant"
+}
+}

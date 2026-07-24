@@ -1,0 +1,73 @@
+{
+  "chunk_size": 7,
+  "n_rules": 42,
+  "created_at": "2026-07-18T15:10:11+00:00",
+  "manifest": {
+    "retrieval_method": "agent_grep",
+    "fact_mode": "generic",
+    "judgement_mode": "chain",
+    "evidence_top_k": 3,
+    "rule_refine_mode": "none",
+    "broad_top_k_rules": 15,
+    "vlm_backend": "openai_api",
+    "agent_backend": "openai_api",
+    "agent_model": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "local_model": "Qwen3-VL-8B-Instruct",
+    "openai_text_model": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "openai_vlm_model": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "run_model": false,
+    "split_name": "development_subset",
+    "limit_images": 3,
+    "top_k_rules": 3,
+    "generation": {
+      "temperature": 0.0,
+      "max_new_tokens": 1536,
+      "enable_thinking": false,
+      "repetition_penalty": 1.1,
+      "guided_json": false
+    },
+    "rule_index": "/home/ares/Workspace/Civi/CS/data/rule_assets/rule_index.json"
+  },
+  "facts_sha": "dab45ebed62c438a04aa842c7998b813dd06dff4f2b6e074c8904e53f27e8fd7",
+  "usage": {
+    "Qwen/Qwen3.6-35B-A3B-FP8": {
+      "stage4_evidence": {
+        "calls": 3000,
+        "prompt_tokens": 15596716,
+        "completion_tokens": 6838210,
+        "calls_without_usage": 0,
+        "latency_s": 103550.4
+      },
+      "stage5_judgement": {
+        "calls": 3000,
+        "prompt_tokens": 7565931,
+        "completion_tokens": 1275680,
+        "calls_without_usage": 0,
+        "latency_s": 38680.323
+      }
+    }
+  },
+  "cells": {
+    "ALL_decoupled_chunked7": {
+      "cell": "ALL_decoupled_chunked7",
+      "n": 500,
+      "gv_tp": 331,
+      "gv_pred": 2053,
+      "gv_gold": 691,
+      "gv_precision_micro": 0.1612,
+      "gv_recall_micro": 0.479,
+      "gv_f1_micro": 0.2413,
+      "gv_precision_macro": 0.1619,
+      "gv_recall_macro": 0.5161,
+      "coverage_mean": 0.5161,
+      "all_found_rate": 0.4004,
+      "cited_applicable_rate": 0.6559,
+      "img_precision": 0.9497,
+      "img_recall": 1.0,
+      "img_f1": 0.9742,
+      "parse_errors": 0,
+      "chunk_verdict_parse_errors": 12,
+      "chunk_evidence_parse_errors": 0
+    }
+  }
+}

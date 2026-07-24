@@ -1,0 +1,29 @@
+{
+  "status": "frozen",
+  "created_at": "2026-07-16T13:22:06+00:00",
+  "model": "Qwen/Qwen3.6-35B-A3B-FP8",
+  "file_sha256": {
+    "data/annotations/image_rule_gold.json": "c5674b785ec716b42fe2533fc342d72c6c0554a6e75d8d1940ba8bf055f35d18",
+    "data/annotations/image_rule_gold_anno2.json": "735db26bffeb5db973b0a107383af6cd3835c19d7f82a411ded59b1a20ffaabd",
+    "data/rules/rules.json": "d947cb31654be243fff72ecdd9c4ff8b6c414ec58462964fd7f76906654cac61",
+    "data/rules/rules_en.json": "1cfd2dd2665d641913186255e1a04d3d9843985873d90ba4a3f04d21d0acaf84",
+    "data/rules/rules_schema.json": "9759862d54904a175afba4a1751f55d964b1092f2ab367c2a50c8b5252988d05",
+    "data/rules/rules_schema_en.json": "4436c2c7e10ba05b8893221fffcc5bdeaa03ba0f911ef7ae6eda527e07791c8c",
+    "data/rule_assets/rule_index.json": "1043f483e63208732fd175004ffa005ca5c7b8ecd538d40ae6cc9d13125bf300",
+    "data/rule_assets/rule_stats.json": "ba061cd8c1e995e0ffc5f76110247d90135897b535653dd7e91e39a296b690c6",
+    "data/rule_assets/rule_units.json": "9e64e1f7a49590f0d62b19a0a267894c8e2555806bc5924d4b5ab937ef3994bc",
+    "data/splits/image_split.json": "27d3af50ab38907e0809855c9ace3c27ed697d0bd14680a34b49d2543e7ecea2",
+    "Prompt/chain/evidence_chain_prompt.md": "14fbb53273f5b3999e5370213e4fe93d8a6e5c7547723d9ba11db228200681ea",
+    "Prompt/chain/facts_rules_prompt.md": "18965cced56d41c0c5795aac3b1e855e16099670edb81a1e20d6246b4df71c29",
+    "Prompt/chain/image_rules_prompt.md": "feedb60d27b00ee65123028eae7279a05a3fc187c4dc590f4e36b87609d9ad87",
+    "Prompt/decoupled/judgement_prompt.md": "6b9ddee5a77b3fd5263ff09bad8c3008b784d2bcc71b2a0498123086439758ac",
+    "Prompt/decoupled/rule_evidence_batch_prompt.md": "864af9b48e284fea846b733655d841f1e8ba58f6e4f9554bb60699075ae6ef89",
+    "Prompt/decoupled/rule_evidence_prompt.md": "8975afb03077b6c3f36306be79255764f771515d914bc6371a4e1093e350081f",
+    "Prompt/rule_refine/rule_aggregate_observation_prompt.md": "bcf806476c62e41ab9a209fae14d85f3b0f3e0f07a134aa24f3a240f8c98bd7d",
+    "Prompt/rule_refine/rule_aggregate_prompt.md": "b956803b797d853ba3d407fdb53a42cc223d70e1ec36e24596dd258fd91f469f",
+    "Prompt/rule_refine/rule_filter_prompt.md": "14fe0c947b323fcb92c86b8931962a84927efe03a53c2e2014211e3b2696fa5b",
+    "Prompt/shared/direct_vlm_prompt.md": "31bc3b1dfb4ddb442a010860e5cd4745e911d4632d3231941cfa2a7b8271c368",
+    "Prompt/shared/image_fact_prompt.md": "b393a19bfa00f540f56712d0ddb99ed47cc3192b5a2ec610e3e69654e53034d1",
+    "Prompt/shared/scene_fact_prompt.md": "4ce4ca9efb657c2af20f6843b70354275f591703024bd52b16acbd7e540e19a8"
+  }
+}

@@ -1,0 +1,237 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "rules_schema_en.json",
+  "title": "Construction Safety Visual Screening Rules (English)",
+  "description": "Schema for shared/rules/rules.json. Each rule keeps the normative compliance rule and the single-image visual screening rule separated.",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "$ref": "#/$defs/rule"
+  },
+  "$defs": {
+    "rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rule_id",
+        "major_category",
+        "subcategory",
+        "rule_name",
+        "priority",
+        "evidence_types",
+        "thresholds",
+        "visual_checkpoints",
+        "required_checkpoints",
+        "critical_checkpoints",
+        "machine_rule",
+        "positive_keywords",
+        "exclusion_keywords",
+        "source_level",
+        "source_quote",
+        "rectification_advice",
+        "normative_rule",
+        "visual_screening_rule",
+        "non_visual_fields",
+        "decision_scope",
+        "visual_retrieval_text",
+        "review_prompt",
+        "no_subject_default"
+      ],
+      "properties": {
+        "rule_id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Stable rule identifier used by matched_rule_id. Do not rename without migrating annotations."
+        },
+        "major_category": {
+          "type": "string",
+          "enum": [
+            "Opening Hazard",
+            "Edge Hazard",
+            "Unsafe Behavior",
+            "Civilized Construction Hazard"
+          ]
+        },
+        "subcategory": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rule_name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "priority": {
+          "type": "string",
+          "pattern": "^P[0-9]+$"
+        },
+        "evidence_types": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "image",
+              "video",
+              "inspection_record",
+              "sensor",
+              "certificate_system",
+              "permit",
+              "site_plan",
+              "text_log"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "thresholds": {
+          "type": "object",
+          "description": "Numeric thresholds used by the normative rule. Empty object is allowed when the rule is purely visual.",
+          "additionalProperties": {
+            "type": "number"
+          }
+        },
+        "visual_checkpoints": {
+          "type": "object",
+          "description": "Fields a VLM or human reviewer can inspect visually from a single image.",
+          "additionalProperties": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required_checkpoints": {
+          "type": "array",
+          "description": "Materialized list of every visual_checkpoints key for this rule. MUST stay in sync with the keys of visual_checkpoints (same set, validated by validate_acml_pairs.py). Observation-layer fields observed_checkpoints / missing_checkpoints in the pair file may only reference values from this list.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "critical_checkpoints": {
+          "type": "array",
+          "description": "Subset of required_checkpoints that gate the single-image screening conclusion: if any of these cannot be observed, the image alone cannot yield a screening verdict and the pair should be abstained/undecidable. AI-proposed from visual_screening_rule; may be empty for requires_external_evidence rules whose undecidability comes from non_visual_fields rather than missing visual checkpoints.",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        },
+        "machine_rule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Legacy compatibility rule expression. Prefer normative_rule and visual_screening_rule in new logic."
+        },
+        "positive_keywords": {
+          "$ref": "#/$defs/string_list"
+        },
+        "exclusion_keywords": {
+          "$ref": "#/$defs/string_list"
+        },
+        "source_level": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_quote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "rectification_advice": {
+          "type": "string",
+          "minLength": 1
+        },
+        "normative_rule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Full compliance expression. It may depend on non-visual fields and should not be forced from a single image."
+        },
+        "visual_screening_rule": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Single-image risk screening expression using visible checkpoints only."
+        },
+        "visual_retrieval_text": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Encoder-facing retrieval text for image-rule similarity search and RAG-style candidate generation; it describes visible objects, states and cues only, and is not a human label or compliance-decision field."
+        },
+        "non_visual_fields": {
+          "type": "object",
+          "description": "External evidence fields required for complete normative decisions but not reliable from one image.",
+          "additionalProperties": {
+            "$ref": "#/$defs/non_visual_field"
+          }
+        },
+        "decision_scope": {
+          "type": "string",
+          "enum": [
+            "visual_screening_only",
+            "requires_external_evidence",
+            "normative_decision_available"
+          ]
+        },
+        "review_prompt": {
+          "type": "string",
+          "minLength": 1
+        },
+        "no_subject_default": {
+          "type": "string",
+          "enum": [
+            "compliant"
+          ],
+          "description": "When the rule's subject is not present in the image, the rule defaults to compliant (no violation)."
+        }
+      }
+    },
+    "non_visual_field": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "description",
+        "source",
+        "required_for_normative_decision",
+        "use_in_current_experiment"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "manual_review",
+              "manual_measurement",
+              "inspection_record",
+              "drawing",
+              "sensor",
+              "monitoring_platform",
+              "certificate_system",
+              "real_name_system",
+              "permit",
+              "weather_data",
+              "construction_log",
+              "cleanup_record",
+              "material_ledger"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "required_for_normative_decision": {
+          "type": "boolean"
+        },
+        "use_in_current_experiment": {
+          "type": "boolean"
+        }
+      }
+    },
+    "string_list": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

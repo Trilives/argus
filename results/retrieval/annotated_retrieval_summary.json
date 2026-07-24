@@ -1,0 +1,25 @@
+{
+  "results": [
+    {
+      "method": "agent_grep",
+      "query_source": "gold_facts_generic",
+      "n_gold": 500,
+      "n_evaluated": 500,
+      "n_missing_query": 0,
+      "missing_query_ids": [],
+      "agent_model": "Qwen/Qwen3.6-35B-A3B-FP8",
+      "agent_backend": "openai_api",
+      "hit@1": 0.608,
+      "recall@1": 0.428,
+      "hit@3": 0.802,
+      "recall@3": 0.612,
+      "hit@5": 0.804,
+      "recall@5": 0.614,
+      "agent_failure_rate": 0.004,
+      "agent_failed_image_ids": [
+        "img_0311",
+        "img_0402"
+      ]
+    }
+  ]
+}

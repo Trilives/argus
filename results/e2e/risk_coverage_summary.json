@@ -1,0 +1,224 @@
+{
+  "R4_image_rules": {
+    "abstention": {
+      "need_review_instances": 48,
+      "instances_total": 1119,
+      "no_confidence": 0,
+      "gold_violations": 691
+    },
+    "curve": [
+      {
+        "threshold": 0.0,
+        "kept_claims": 982,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.4379,
+        "recall": 0.6223
+      },
+      {
+        "threshold": 0.5,
+        "kept_claims": 982,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.4379,
+        "recall": 0.6223
+      },
+      {
+        "threshold": 0.6,
+        "kept_claims": 982,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.4379,
+        "recall": 0.6223
+      },
+      {
+        "threshold": 0.7,
+        "kept_claims": 982,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.4379,
+        "recall": 0.6223
+      },
+      {
+        "threshold": 0.8,
+        "kept_claims": 981,
+        "deferred_claims": 1,
+        "review_rate": 0.001,
+        "precision": 0.4383,
+        "recall": 0.6223
+      },
+      {
+        "threshold": 0.85,
+        "kept_claims": 979,
+        "deferred_claims": 3,
+        "review_rate": 0.0031,
+        "precision": 0.4392,
+        "recall": 0.6223
+      },
+      {
+        "threshold": 0.9,
+        "kept_claims": 958,
+        "deferred_claims": 24,
+        "review_rate": 0.0244,
+        "precision": 0.4436,
+        "recall": 0.6151
+      },
+      {
+        "threshold": 0.95,
+        "kept_claims": 873,
+        "deferred_claims": 109,
+        "review_rate": 0.111,
+        "precision": 0.4502,
+        "recall": 0.5687
+      }
+    ]
+  },
+  "R4fam_image_rules": {
+    "abstention": {
+      "need_review_instances": 178,
+      "instances_total": 3043,
+      "no_confidence": 0,
+      "gold_violations": 691
+    },
+    "curve": [
+      {
+        "threshold": 0.0,
+        "kept_claims": 2584,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.2047,
+        "recall": 0.7656
+      },
+      {
+        "threshold": 0.5,
+        "kept_claims": 2584,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.2047,
+        "recall": 0.7656
+      },
+      {
+        "threshold": 0.6,
+        "kept_claims": 2584,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.2047,
+        "recall": 0.7656
+      },
+      {
+        "threshold": 0.7,
+        "kept_claims": 2583,
+        "deferred_claims": 1,
+        "review_rate": 0.0004,
+        "precision": 0.2048,
+        "recall": 0.7656
+      },
+      {
+        "threshold": 0.8,
+        "kept_claims": 2575,
+        "deferred_claims": 9,
+        "review_rate": 0.0035,
+        "precision": 0.2054,
+        "recall": 0.7656
+      },
+      {
+        "threshold": 0.85,
+        "kept_claims": 2566,
+        "deferred_claims": 18,
+        "review_rate": 0.007,
+        "precision": 0.2062,
+        "recall": 0.7656
+      },
+      {
+        "threshold": 0.9,
+        "kept_claims": 2496,
+        "deferred_claims": 88,
+        "review_rate": 0.0341,
+        "precision": 0.2095,
+        "recall": 0.7569
+      },
+      {
+        "threshold": 0.95,
+        "kept_claims": 2274,
+        "deferred_claims": 310,
+        "review_rate": 0.12,
+        "precision": 0.2124,
+        "recall": 0.699
+      }
+    ]
+  },
+  "R4famB_image_rules": {
+    "abstention": {
+      "need_review_instances": 191,
+      "instances_total": 3994,
+      "no_confidence": 0,
+      "gold_violations": 691
+    },
+    "curve": [
+      {
+        "threshold": 0.0,
+        "kept_claims": 3438,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.1635,
+        "recall": 0.8133
+      },
+      {
+        "threshold": 0.5,
+        "kept_claims": 3438,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.1635,
+        "recall": 0.8133
+      },
+      {
+        "threshold": 0.6,
+        "kept_claims": 3438,
+        "deferred_claims": 0,
+        "review_rate": 0.0,
+        "precision": 0.1635,
+        "recall": 0.8133
+      },
+      {
+        "threshold": 0.7,
+        "kept_claims": 3437,
+        "deferred_claims": 1,
+        "review_rate": 0.0003,
+        "precision": 0.1635,
+        "recall": 0.8133
+      },
+      {
+        "threshold": 0.8,
+        "kept_claims": 3426,
+        "deferred_claims": 12,
+        "review_rate": 0.0035,
+        "precision": 0.164,
+        "recall": 0.8133
+      },
+      {
+        "threshold": 0.85,
+        "kept_claims": 3417,
+        "deferred_claims": 21,
+        "review_rate": 0.0061,
+        "precision": 0.1645,
+        "recall": 0.8133
+      },
+      {
+        "threshold": 0.9,
+        "kept_claims": 3326,
+        "deferred_claims": 112,
+        "review_rate": 0.0326,
+        "precision": 0.1672,
+        "recall": 0.8046
+      },
+      {
+        "threshold": 0.95,
+        "kept_claims": 3000,
+        "deferred_claims": 438,
+        "review_rate": 0.1274,
+        "precision": 0.1703,
+        "recall": 0.7395
+      }
+    ]
+  }
+}

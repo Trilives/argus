@@ -1,0 +1,3209 @@
+[
+  {
+    "rule_id": "R-OPN-001-horizontal-opening-protection",
+    "major_category": "Opening Hazard",
+    "subcategory": "Horizontal opening",
+    "rule_name": "Horizontal opening not effectively covered or lacking guardrail/safety-net protection",
+    "priority": "P1",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {
+      "short_edge_mm_min": 25,
+      "guardrail_height_mm_min": 1200,
+      "toe_board_mm_min": 200
+    },
+    "visual_checkpoints": {
+      "horizontal_opening_present": "Non-vertical opening present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "cover_present": "Cover present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "cover_fixed": "Cover fixed against displacement. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "protection_intact_and_stable": "Is the opening's existing cover/protection intact and stable (not removed, opened or damaged)? Treat intact & stable as compliant.",
+      "warning_marking_present": "Are warning markings (warning paint, reflective strips, warning tape) provided around the opening? If the cover, guardrail, or barrier itself carries red-and-white warning stripes, treat conspicuous warning markings as present and compliant (judge by actual site conditions, do not require ideal markings).",
+      "guardrail_present": "Guardrail present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "safety_net_present": "Complete and continuous safety net / mesh present with no visible tears or gaps; a missing, torn, or discontinuous net counts as absent. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "toe_board_present": "Toe board / kickboard present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "horizontal_opening_present",
+      "cover_present",
+      "cover_fixed",
+      "protection_intact_and_stable",
+      "warning_marking_present",
+      "guardrail_present",
+      "safety_net_present",
+      "toe_board_present"
+    ],
+    "critical_checkpoints": [
+      "horizontal_opening_present",
+      "cover_present",
+      "cover_fixed",
+      "guardrail_present",
+      "safety_net_present"
+    ],
+    "machine_rule": "horizontal_opening_present == yes AND short_edge_mm >= 25 AND ((short_edge_mm < 1500 AND (cover_present == no OR cover_fixed == no OR cover_load_bearing == no)) OR (short_edge_mm >= 1500 AND (guardrail_height_compliant == no OR safety_net_present == no OR toe_board_mm < 200)) OR protection_intact_and_stable == no)",
+    "positive_keywords": [
+      "horizontal opening",
+      "reserved opening",
+      "cover missing",
+      "cover loose",
+      "not fixed",
+      "not covered",
+      "opening protection missing",
+      "guardrail and net missing",
+      "large opening protection missing"
+    ],
+    "exclusion_keywords": [
+      "cover fixed",
+      "sealed (blocked)",
+      "compliant guardrail",
+      "safety net installed",
+      "non-working state with dedicated watch"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "A horizontal reserved floor opening shall be protected by size: 25-500 mm short edge covered with a load-rated cover and secured; 500-1500 mm covered or fitted with a guardrail, firmly secured; short edge >=1500 mm fitted with a >=1.2 m guardrail sealed by a horizontal safety net with a >=200 mm toe board; the Shenzhen standard simplifies this to a rigid fixed cover for openings <1500 mm.",
+    "rectification_advice": "For Shenzhen projects, securely cover openings with a short edge below 1500 mm using a load-rated rigid cover. For openings 1500 mm or larger, install a guardrail at least 1.2 m high, close the opening with a horizontal safety net, and provide a toe board at least 200 mm high.",
+    "normative_rule": "horizontal_opening_present == yes AND short_edge_mm >= 25 AND ((short_edge_mm < 1500 AND (cover_present == no OR cover_fixed == no OR cover_load_bearing == no)) OR (short_edge_mm >= 1500 AND (guardrail_height_compliant == no OR safety_net_present == no OR toe_board_mm < 200)) OR protection_intact_and_stable == no)",
+    "visual_screening_rule": "horizontal_opening_present == yes AND (((cover_present == no OR cover_fixed == no) AND (guardrail_present == no OR safety_net_present == no)) OR protection_intact_and_stable == no)",
+    "visual_retrieval_text": "floor opening, reserved opening, small opening, large floor opening, uncovered opening, opening cover plate, opening guardrail, opening safety net",
+    "non_visual_fields": {
+      "short_edge_mm": {
+        "description": "Opening short-edge dimension, in mm.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "cover_load_bearing": {
+        "description": "Whether the cover load capacity meets requirements; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "guardrail_height_mm": {
+        "description": "Guardrail height, in mm.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "toe_board_mm": {
+        "description": "Toe board / kickboard height, in mm.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "guardrail_height_compliant": {
+        "description": "Whether the guardrail height is compliant; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: short_edge_mm, cover_load_bearing, guardrail_height_mm, toe_board_mm, guardrail_height_compliant. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-OPN-004-vertical-and-low-sill-opening",
+    "major_category": "Opening Hazard",
+    "subcategory": "Vertical opening",
+    "rule_name": "Vertical opening or low-sill opening lacking a guardrail enclosure on the exposed side",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {
+      "short_edge_mm_min": 500,
+      "guardrail_height_mm_min": 1200,
+      "sill_height_mm_max": 800
+    },
+    "visual_checkpoints": {
+      "vertical_opening_present": "Vertical opening present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "fall_risk_present": "Fall-from-height risk present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "guardrail_compliant": "Compliant railing present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "vertical_net_or_panel_present": "Vertical net or panel present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "toe_board_present": "Toe board present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "bottom_edge_flush_with_platform": "Is the opening's bottom edge flush with the platform or floor (no noticeable threshold or upstand)? A toe board is required only when the bottom edge is flush; judge only clear visible evidence, avoid precise measurement or hidden-state inference.",
+      "low_sill_opening_present": "Low-sill opening present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "vertical_opening_present",
+      "fall_risk_present",
+      "guardrail_compliant",
+      "vertical_net_or_panel_present",
+      "toe_board_present",
+      "bottom_edge_flush_with_platform",
+      "low_sill_opening_present"
+    ],
+    "critical_checkpoints": [
+      "vertical_opening_present",
+      "low_sill_opening_present",
+      "fall_risk_present",
+      "guardrail_compliant"
+    ],
+    "machine_rule": "(vertical_opening_present == yes AND short_edge_mm >= 500 AND fall_risk_present == yes AND (guardrail_compliant == no OR vertical_net_or_panel_present == no OR (bottom_edge_flush_with_platform == yes AND toe_board_present == no))) OR (low_sill_opening_present == yes AND sill_height_below_800mm == yes AND guardrail_compliant == no)",
+    "positive_keywords": [
+      "vertical opening",
+      "window protection missing",
+      "vent-opening protection missing",
+      "wall opening",
+      "low sill",
+      "sill below 800 mm",
+      "no guardrail set"
+    ],
+    "exclusion_keywords": [
+      "sealed (blocked)",
+      "permanent railing",
+      "sill height compliant",
+      "sill height >=800 mm",
+      "guardrail installed"
+    ],
+    "source_level": "Industry standard",
+    "source_quote": "For a vertical opening with short edge >=500 mm, the exposed side shall have a >=1.2 m guardrail, vertical net or panel, plus a toe board; a vertical opening with sill height <800 mm shall have a guardrail per edge-protection requirements.",
+    "rectification_advice": "For a vertical opening, install the required guardrail and vertical net or panel; add a toe board where the opening's bottom edge is flush with the platform. For a low-sill opening, install a compliant guardrail on the exposed side.",
+    "normative_rule": "(vertical_opening_present == yes AND short_edge_mm >= 500 AND fall_risk_present == yes AND (guardrail_compliant == no OR vertical_net_or_panel_present == no OR (bottom_edge_flush_with_platform == yes AND toe_board_present == no))) OR (low_sill_opening_present == yes AND sill_height_below_800mm == yes AND guardrail_compliant == no)",
+    "visual_screening_rule": "(vertical_opening_present == yes AND fall_risk_present == yes AND (guardrail_compliant == no OR vertical_net_or_panel_present == no OR (bottom_edge_flush_with_platform == yes AND toe_board_present == no))) OR (low_sill_opening_present == yes AND guardrail_compliant == no)",
+    "visual_retrieval_text": "vertical wall opening, window opening, low-sill window opening, unenclosed opening, unprotected sill, opening guardrail, panel enclosure",
+    "non_visual_fields": {
+      "short_edge_mm": {
+        "description": "Opening short-edge dimension, in mm.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "guardrail_height_mm": {
+        "description": "Guardrail height, in mm.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "sill_height_mm": {
+        "description": "Normative-decision field for sill_height_mm; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "sill_height_below_800mm": {
+        "description": "Whether the sill height is below 800 mm; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: short_edge_mm, guardrail_height_mm, sill_height_mm, sill_height_below_800mm. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-OPN-005-elevator-shaft-door-and-net",
+    "major_category": "Opening Hazard",
+    "subcategory": "Vertical opening",
+    "rule_name": "Elevator shaft protective door missing/non-compliant or interior safety nets not set at the required spacing",
+    "priority": "P1",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {
+      "door_height_mm_min": 1500,
+      "door_bottom_gap_mm_max": 50,
+      "max_floor_interval": 2,
+      "max_vertical_spacing_m": 10
+    },
+    "visual_checkpoints": {
+      "elevator_shaft_present": "A vertical opening of appropriate width and height for human passage, with the lower edge of the opening flush with the landing and no noticeable threshold.",
+      "protective_door_present": "Protective door present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "protection_intact_and_stable": "Whether the installed shaft door, enclosure, and any visible in-shaft safety net are intact, undamaged, stable, and continuous, with no obvious breakage, deformation, detachment, gaps, or removal.",
+      "toe_board_present": "Toe board present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "inner_shaft_visible": "Whether the shaft interior (walls, floors below, or net layers) is within the visible frame; judge no when the opening is closed or the viewpoint cannot see inside the shaft.",
+      "inner_safety_net_present": "Judge only when the shaft interior is visible: whether a safety net / horizontal net / other fall-arrest closure is present in the visible range; when the interior is not visible do not decide on this and defer to inspection records."
+    },
+    "required_checkpoints": [
+      "elevator_shaft_present",
+      "protective_door_present",
+      "protection_intact_and_stable",
+      "toe_board_present",
+      "inner_shaft_visible",
+      "inner_safety_net_present"
+    ],
+    "critical_checkpoints": [
+      "elevator_shaft_present",
+      "protective_door_present"
+    ],
+    "machine_rule": "elevator_shaft_present == yes AND (protective_door_present == no OR protection_intact_and_stable == no OR toe_board_present == no OR door_height_compliant == no OR door_bottom_gap_compliant == no OR inner_safety_net_present == no OR inner_safety_net_spacing_compliant == no OR upper_isolation_protection_present == no)",
+    "positive_keywords": [
+      "elevator shaft",
+      "elevator opening",
+      "hoistway",
+      "protective door missing",
+      "protection damaged",
+      "not sealed",
+      "protection inadequate",
+      "horizontal net missing",
+      "safety net missing",
+      "in-shaft protection missing"
+    ],
+    "exclusion_keywords": [
+      "protective door installed",
+      "protection intact and undamaged",
+      "door height compliant",
+      "fixed and sealed",
+      "in-shaft net installed",
+      "spacing compliant"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "An elevator-shaft opening shall have an intact and undamaged protective door at least 1.5 m high, with a bottom clearance no greater than 50 mm and a toe board. Before elevator work, install one horizontal safety net every two storeys with vertical spacing no greater than 10 m, and provide isolation protection above the active shaft work level.",
+    "rectification_advice": "Install the specified protective door and toe board; install the shaft nets and upper isolation protection at the required spacing, and inspect all components to keep them intact and effective.",
+    "normative_rule": "elevator_shaft_present == yes AND (protective_door_present == no OR protection_intact_and_stable == no OR toe_board_present == no OR door_height_compliant == no OR door_bottom_gap_compliant == no OR inner_safety_net_present == no OR inner_safety_net_spacing_compliant == no OR upper_isolation_protection_present == no)",
+    "visual_screening_rule": "elevator_shaft_present == yes AND (protective_door_present == no OR protection_intact_and_stable == no OR toe_board_present == no OR (inner_shaft_visible == yes AND inner_safety_net_present == no))",
+    "visual_retrieval_text": "elevator shaft doorway, hoistway opening, missing or damaged shaft door, elevator shaft interior, missing or damaged in-shaft net, shaft safety net",
+    "non_visual_fields": {
+      "door_height_mm": {
+        "description": "Protective door height, in mm.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "door_bottom_gap_mm": {
+        "description": "Protective door bottom-to-ground gap, in mm.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "door_height_compliant": {
+        "description": "Whether the protective door is at least 1.5 m high; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "door_bottom_gap_compliant": {
+        "description": "Whether the door bottom-to-ground gap is at most 50 mm; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "max_floor_interval": {
+        "description": "Normative-decision field for max_floor_interval; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "max_vertical_spacing_m": {
+        "description": "Normative-decision field for max_vertical_spacing_m; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "inner_safety_net_spacing_compliant": {
+        "description": "Whether the safety-net floor spacing is compliant; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "upper_isolation_protection_present": {
+        "description": "Whether isolation protection is provided above the active shaft work level.",
+        "source": [
+          "inspection_record",
+          "manual_review"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: door_height_mm, door_bottom_gap_mm, door_height_compliant, door_bottom_gap_compliant, max_floor_interval, max_vertical_spacing_m, inner_safety_net_spacing_compliant, upper_isolation_protection_present. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-OPN-009-service-shaft-opening",
+    "major_category": "Opening Hazard",
+    "subcategory": "Horizontal opening",
+    "rule_name": "Service, vent or utility shaft opening without a secure closure or alternative protection",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "shaft_opening_present": "Service/vent/utility shaft opening present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "opening_closed": "The opening is closed by a rigid permanent seal, door or cover. Judge only clear visible evidence; avoid hidden-state inference.",
+      "closure_or_cover_secure": "The visible seal, door or cover is intact, securely fixed and not loose, displaced or lifted.",
+      "alternative_protection_present": "When the opening is not closed, a compliant guardrail, vertical net or horizontal net provides continuous alternative fall protection.",
+      "fall_risk_present": "Person-fall risk present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "shaft_opening_present",
+      "opening_closed",
+      "closure_or_cover_secure",
+      "alternative_protection_present",
+      "fall_risk_present"
+    ],
+    "critical_checkpoints": [
+      "shaft_opening_present",
+      "opening_closed",
+      "closure_or_cover_secure",
+      "alternative_protection_present",
+      "fall_risk_present"
+    ],
+    "machine_rule": "shaft_opening_present == yes AND fall_risk_present == yes AND ((opening_closed == no AND alternative_protection_present == no) OR (opening_closed == yes AND closure_or_cover_secure == no))",
+    "positive_keywords": [
+      "service shaft",
+      "vent shaft",
+      "utility shaft",
+      "combined service shaft",
+      "vent opening",
+      "not tightly sealed",
+      "protection missing"
+    ],
+    "exclusion_keywords": [
+      "sealed/enclosed",
+      "cover fixed",
+      "mesh fixed"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "Opening protection shall use covers, guardrails, vertical nets or horizontal nets per opening size, kept securely fixed.",
+    "rectification_advice": "Securely close the opening with an intact rigid seal, door or cover, or provide compliant guardrail/net protection appropriate to the opening size; repair loose or displaced components.",
+    "normative_rule": "shaft_opening_present == yes AND fall_risk_present == yes AND ((opening_closed == no AND alternative_protection_present == no) OR (opening_closed == yes AND closure_or_cover_secure == no))",
+    "visual_screening_rule": "shaft_opening_present == yes AND fall_risk_present == yes AND ((opening_closed == no AND alternative_protection_present == no) OR (opening_closed == yes AND closure_or_cover_secure == no))",
+    "visual_retrieval_text": "pipe shaft opening, vent shaft opening, unsealed shaft, shaft mesh cover",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-EDG-002-stair-edge",
+    "major_category": "Edge Hazard",
+    "subcategory": "Structural edge",
+    "rule_name": "Stairwell, stair landing or flight edge without an installed guardrail",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "stair_edge_present": "Stairwell / flight edge present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "external_stair_present": "External stair present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "guardrail_present": "Guardrail installed. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "guardrail_stable": "Guardrail stable. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "outer_stair_net_present": "External stair enclosed with vertical net. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "stair_edge_present",
+      "external_stair_present",
+      "guardrail_present",
+      "guardrail_stable",
+      "outer_stair_net_present"
+    ],
+    "critical_checkpoints": [
+      "stair_edge_present",
+      "external_stair_present",
+      "guardrail_present",
+      "guardrail_stable",
+      "outer_stair_net_present"
+    ],
+    "machine_rule": "stair_edge_present == yes AND (guardrail_present == no OR guardrail_stable == no OR (external_stair_present == yes AND outer_stair_net_present == no))",
+    "positive_keywords": [
+      "stair protection missing",
+      "stair edge",
+      "flight edge",
+      "stairwell unprotected",
+      "stair-landing edge"
+    ],
+    "exclusion_keywords": [
+      "stair guardrail installed",
+      "guardrail fixed",
+      "permanent stair handrail"
+    ],
+    "source_level": "Industry standard",
+    "source_quote": "Construction stairwells, stair landings and flight edges shall have guardrails; external stairs shall also be enclosed with vertical netting.",
+    "rectification_advice": "Install secure guardrails at stairwells, landings and flight edges; add vertical netting on external stairs.",
+    "normative_rule": "stair_edge_present == yes AND (guardrail_present == no OR guardrail_stable == no OR (external_stair_present == yes AND outer_stair_net_present == no))",
+    "visual_screening_rule": "stair_edge_present == yes AND (guardrail_present == no OR guardrail_stable == no OR (external_stair_present == yes AND outer_stair_net_present == no))",
+    "visual_retrieval_text": "stairwell edge, stair flight edge, stair landing edge, missing stair guardrail, stair handrail",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-EDG-003-roof-balcony-platform-edge",
+    "major_category": "Edge Hazard",
+    "subcategory": "Structural edge",
+    "rule_name": "Roof, balcony, platform or floor slab edge without compliant edge protection",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "roof_balcony_platform_edge_present": "Roof, balcony, platform or floor/structural slab edge present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "fall_risk_present": "Fall risk present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "guardrail_compliant": "Compliant guardrail present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "edge_closed": "Edge sealed. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "warning_marking_present": "Are warning markings (warning paint, reflective strips, warning tape) provided along the edge? If the guardrail, barrier, or similar protective element itself carries red-and-white warning stripes, treat conspicuous warning markings as present and compliant (judge by actual site conditions, do not require ideal markings)."
+    },
+    "required_checkpoints": [
+      "roof_balcony_platform_edge_present",
+      "fall_risk_present",
+      "guardrail_compliant",
+      "edge_closed",
+      "warning_marking_present"
+    ],
+    "critical_checkpoints": [
+      "roof_balcony_platform_edge_present",
+      "fall_risk_present",
+      "guardrail_compliant",
+      "edge_closed"
+    ],
+    "machine_rule": "roof_balcony_platform_edge_present == yes AND fall_risk_present == yes AND (guardrail_compliant == no OR edge_closed == no)",
+    "positive_keywords": [
+      "roof edge",
+      "balcony unprotected",
+      "platform edge",
+      "floor edge",
+      "structural slab edge",
+      "turret roof",
+      "edge protection missing"
+    ],
+    "exclusion_keywords": [
+      "permanent guardrail",
+      "parapet height compliant",
+      "sealed/enclosed",
+      "non-exposed side"
+    ],
+    "source_level": "Industry standard",
+    "source_quote": "Roof, balcony, platform and floor slab edges are edge locations and shall have guardrails and enclosure.",
+    "rectification_advice": "Install a compliant guardrail and enclosure on the exposed roof, balcony, platform or floor edge.",
+    "normative_rule": "roof_balcony_platform_edge_present == yes AND fall_risk_present == yes AND (guardrail_compliant == no OR edge_closed == no)",
+    "visual_screening_rule": "roof_balcony_platform_edge_present == yes AND fall_risk_present == yes AND (guardrail_compliant == no OR edge_closed == no)",
+    "visual_retrieval_text": "roof edge, balcony edge, platform edge, floor edge, structural slab edge, unprotected edge, parapet guardrail",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-EDG-004-hoist-landing-platform",
+    "major_category": "Edge Hazard",
+    "subcategory": "Hoist landing platform",
+    "rule_name": "Construction hoist landing-platform sides or opening with noncompliant protection",
+    "priority": "P1",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {
+      "platform_door_height_mm_min": 1800
+    },
+    "visual_checkpoints": {
+      "hoist_platform_present": "Construction hoist landing platform present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "side_guardrail_present": "Side guardrails present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "toe_board_present": "Toe board present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "side_enclosure_present": "Mesh or tool-type panel enclosure is present along the platform sides. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "door_locked_or_closed": "Protective door securely closed. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "anti_outward_opening_device_present": "A latch, stop or equivalent device preventing the landing door from opening outward is visibly present. Judge only clear visible evidence; avoid hidden-state inference."
+    },
+    "required_checkpoints": [
+      "hoist_platform_present",
+      "side_guardrail_present",
+      "toe_board_present",
+      "side_enclosure_present",
+      "door_locked_or_closed",
+      "anti_outward_opening_device_present"
+    ],
+    "critical_checkpoints": [
+      "hoist_platform_present",
+      "side_guardrail_present",
+      "toe_board_present",
+      "side_enclosure_present",
+      "door_locked_or_closed",
+      "anti_outward_opening_device_present"
+    ],
+    "machine_rule": "hoist_platform_present == yes AND (side_guardrail_present == no OR toe_board_present == no OR side_enclosure_present == no OR platform_door_height_compliant == no OR door_locked_or_closed == no OR anti_outward_opening_device_present == no)",
+    "positive_keywords": [
+      "landing platform",
+      "construction hoist",
+      "platform opening",
+      "protective door under 1.8 m",
+      "unloading-platform protection missing"
+    ],
+    "exclusion_keywords": [
+      "door height compliant",
+      "both-side guardrails complete",
+      "closed"
+    ],
+    "source_level": "Industry standard",
+    "source_quote": "Construction-hoist and material-hoist landing-platform sides shall have guardrails, toe boards and mesh or tool-type panel enclosure. The landing door shall be at least 1.80 m high and have an anti-outward-opening device.",
+    "rectification_advice": "Complete the side protection and install a tool-type landing door at least 1.80 m high with an anti-outward-opening device; keep it normally closed.",
+    "normative_rule": "hoist_platform_present == yes AND (side_guardrail_present == no OR toe_board_present == no OR side_enclosure_present == no OR platform_door_height_compliant == no OR door_locked_or_closed == no OR anti_outward_opening_device_present == no)",
+    "visual_screening_rule": "hoist_platform_present == yes AND (side_guardrail_present == no OR toe_board_present == no OR side_enclosure_present == no OR door_locked_or_closed == no OR anti_outward_opening_device_present == no)",
+    "visual_retrieval_text": "construction hoist landing platform, unloading platform edge, platform opening, missing protective door, platform guardrail",
+    "non_visual_fields": {
+      "platform_door_height_mm": {
+        "description": "Platform-opening protective door height, in mm.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "platform_door_height_compliant": {
+        "description": "Whether the platform-opening door is at least 1.8 m high; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: platform_door_height_mm, platform_door_height_compliant. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-EDG-005-scaffold-structure-gap",
+    "major_category": "Edge Hazard",
+    "subcategory": "Scaffold edge",
+    "rule_name": "Through-gap between scaffold and structure facade without horizontal protection",
+    "priority": "P1",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "scaffold_structure_gap_present": "Scaffold-structure gap present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "gap_continuous": "Gap continuous. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "horizontal_protection_present": "Horizontal protection present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "fall_object_risk_present": "Person or material fall risk present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "scaffold_structure_gap_present",
+      "gap_continuous",
+      "horizontal_protection_present",
+      "fall_object_risk_present"
+    ],
+    "critical_checkpoints": [
+      "scaffold_structure_gap_present",
+      "gap_continuous",
+      "horizontal_protection_present",
+      "fall_object_risk_present"
+    ],
+    "machine_rule": "scaffold_structure_gap_present == yes AND gap_continuous == yes AND horizontal_protection_present == no",
+    "positive_keywords": [
+      "scaffold gap",
+      "structure-scaffold gap",
+      "horizontal protection missing",
+      "facade protection missing",
+      "hard enclosure missing"
+    ],
+    "exclusion_keywords": [
+      "horizontal protection installed",
+      "hard enclosure intact",
+      "gap sealed"
+    ],
+    "source_level": "Shenzhen local standard / major hazard determination standard",
+    "source_quote": "During main-structure work, horizontal protection shall be set each floor between the floor perimeter and the scaffold; a through-gap between scaffold and structure facade without horizontal protection is a major accident hazard.",
+    "rectification_advice": "Immediately provide horizontal protection or rigid sealing for the through-gap between structure and scaffold.",
+    "normative_rule": "scaffold_structure_gap_present == yes AND gap_continuous == yes AND horizontal_protection_present == no",
+    "visual_screening_rule": "scaffold_structure_gap_present == yes AND gap_continuous == yes AND horizontal_protection_present == no",
+    "visual_retrieval_text": "gap between scaffold and building facade, open scaffold-structure gap, horizontal gap protection, gap safety net",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-EDG-006-pit-trench-edge",
+    "major_category": "Edge Hazard",
+    "subcategory": "Excavation edge",
+    "rule_name": "Pit, ditch or trench edge without compliant edge protection",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {
+      "height_from_base_m_min": 2
+    },
+    "visual_checkpoints": {
+      "pit_or_trench_edge_present": "Pit / trench edge present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "guardrail_present": "Guardrail present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "guardrail_stable": "Guardrail secure. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "side_enclosure_present": "Mesh or tool-type panel enclosure is present along the exposed edge. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "pit_or_trench_edge_present",
+      "guardrail_present",
+      "guardrail_stable",
+      "side_enclosure_present"
+    ],
+    "critical_checkpoints": [
+      "pit_or_trench_edge_present",
+      "guardrail_present",
+      "guardrail_stable",
+      "side_enclosure_present"
+    ],
+    "machine_rule": "pit_or_trench_edge_present == yes AND height_over_2m == yes AND (guardrail_present == no OR guardrail_stable == no OR side_enclosure_present == no)",
+    "positive_keywords": [
+      "pit edge",
+      "trench edge",
+      "ramp edge",
+      "vehicle-entrance edge",
+      "unprotected"
+    ],
+    "exclusion_keywords": [
+      "guardrail installed",
+      "hoarding intact",
+      "warning effective"
+    ],
+    "source_level": "Industry standard",
+    "source_quote": "At pit, ditch and trench edges where the fall height is 2 m or more, install a guardrail and mesh or tool-type panel enclosure. Posts fixed in soil shall be embedded or driven and securely fixed.",
+    "rectification_advice": "Install and securely fix the required guardrail and enclosure; provide warning signs and night warning lights as site risk requires.",
+    "normative_rule": "pit_or_trench_edge_present == yes AND height_over_2m == yes AND (guardrail_present == no OR guardrail_stable == no OR side_enclosure_present == no)",
+    "visual_screening_rule": "pit_or_trench_edge_present == yes AND (guardrail_present == no OR guardrail_stable == no OR side_enclosure_present == no)",
+    "visual_retrieval_text": "foundation pit edge, trench edge, ramp edge, unprotected pit edge, pit guardrail, warning barrier",
+    "non_visual_fields": {
+      "height_over_2m": {
+        "description": "Whether the fall height is at least 2 m.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply height_over_2m from measurement, inspection records or drawings; the single-image rule is only a risk screen.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-EDG-007-guardrail-construction",
+    "major_category": "Edge Hazard",
+    "subcategory": "Guardrail construction",
+    "rule_name": "Substandard guardrail construction: low top rail, missing toe board, or non-compliant post/rail spacing",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {
+      "guardrail_height_mm_min": 1200,
+      "toe_board_mm_min": 180,
+      "post_spacing_mm_max": 2000,
+      "rail_spacing_mm_max_when_height_gt_1200": 600
+    },
+    "visual_checkpoints": {
+      "guardrail_present": "Guardrail present (any)?",
+      "fall_risk_present": "Fall-from-height risk present?",
+      "guardrail_grossly_low": "Does the guardrail top rail look grossly too low (clearly below ~waist / 1.2 m; coarse, not a measurement)?",
+      "toe_board_present": "Toe board / kickboard present at the base?",
+      "guardrail_stable": "Does the guardrail look unstable (widely spaced posts, missing rails, large gaps, loose, deformed, tilted or broken)? Coarse, not a spacing measurement."
+    },
+    "required_checkpoints": [
+      "guardrail_present",
+      "fall_risk_present",
+      "guardrail_grossly_low",
+      "toe_board_present",
+      "guardrail_stable"
+    ],
+    "critical_checkpoints": [
+      "guardrail_grossly_low",
+      "toe_board_present",
+      "guardrail_stable"
+    ],
+    "machine_rule": "guardrail_present == yes AND fall_risk_present == yes AND (guardrail_height_compliant == no OR toe_board_present == no OR toe_board_height_compliant == no OR post_spacing_compliant == no OR rail_spacing_compliant == no OR guardrail_stable == no)",
+    "positive_keywords": [
+      "guardrail height insufficient",
+      "protection height insufficient",
+      "toe board missing",
+      "kickboard missing",
+      "post spacing too large",
+      "rail missing",
+      "guardrail loose",
+      "protection not fixed",
+      "edge protection inadequate"
+    ],
+    "exclusion_keywords": [
+      "height compliant",
+      "toe board installed",
+      "kickboard intact",
+      "post spacing compliant",
+      "rails complete",
+      "guardrail stable",
+      "permanent guardrail"
+    ],
+    "source_level": "Industry standard",
+    "source_quote": "The guardrail shall have two rails with a 1.2 m top rail; the toe board shall be >=180 mm high; post spacing <=2 m, and if guardrail height >1.2 m rail spacing <=600 mm, withstanding a 1 kN external force.",
+    "rectification_advice": "Raise the guardrail top rail to >=1.2 m, add a >=180 mm toe board, control post and rail spacing and reinforce the guardrail for stable load capacity.",
+    "normative_rule": "guardrail_present == yes AND fall_risk_present == yes AND (guardrail_height_compliant == no OR toe_board_present == no OR toe_board_height_compliant == no OR post_spacing_compliant == no OR rail_spacing_compliant == no OR guardrail_stable == no)",
+    "visual_screening_rule": "guardrail_present == yes AND fall_risk_present == yes AND (guardrail_grossly_low == yes OR toe_board_present == no OR guardrail_stable == no)",
+    "visual_retrieval_text": "edge guardrail, top rail height, low guardrail, knee-high rail, guardrail toe board, missing kickboard, guardrail post spacing, missing mid rail, vertical posts",
+    "non_visual_fields": {
+      "guardrail_height_mm": {
+        "description": "Guardrail height, in mm.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "guardrail_height_compliant": {
+        "description": "Whether the top rail is at least 1.2 m high; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "toe_board_mm": {
+        "description": "Toe board / kickboard height, in mm.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "toe_board_height_compliant": {
+        "description": "Whether the toe board is at least 180 mm high; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "post_spacing_mm": {
+        "description": "Guardrail post spacing, in mm.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "post_spacing_compliant": {
+        "description": "Whether the post spacing is at most 2 m; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "rail_spacing_mm_max_when_height_gt_1200": {
+        "description": "Normative-decision field for rail_spacing_mm_max_when_height_gt_1200; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "rail_spacing_compliant": {
+        "description": "Whether the rail spacing is compliant; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: guardrail_height_mm, guardrail_height_compliant, toe_board_mm, toe_board_height_compliant, post_spacing_mm, post_spacing_compliant, rail_spacing_compliant. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-001-no-harness-at-height",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Personal protective equipment",
+    "rule_name": "Working at 2 m or higher without wearing or anchoring a safety harness",
+    "priority": "P1",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {
+      "work_at_height_m_min": 2
+    },
+    "visual_checkpoints": {
+      "person_present": "Person present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "harness_worn": "Harness worn. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "harness_anchored": "Harness anchored to a reliable point. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "near_edge_or_opening": "Near an edge or opening. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "person_present",
+      "harness_worn",
+      "harness_anchored",
+      "near_edge_or_opening"
+    ],
+    "critical_checkpoints": [
+      "person_present",
+      "harness_worn",
+      "harness_anchored"
+    ],
+    "machine_rule": "person_present == yes AND work_at_height == yes AND (harness_worn == no OR harness_anchored == no)",
+    "positive_keywords": [
+      "work at height",
+      "harness not fastened",
+      "lifeline not attached",
+      "lifeline not independently suspended",
+      "not fastened/anchored"
+    ],
+    "exclusion_keywords": [
+      "harness fastened and anchored",
+      "independent lifeline",
+      "not work at height"
+    ],
+    "source_level": "Mandatory engineering construction code / industry standard",
+    "source_quote": "Workers at 2 m or higher shall correctly wear a safety helmet and harness; work at height shall have matching protection.",
+    "rectification_advice": "Workers at height shall wear the harness correctly and connect it, in accordance with the work plan and manufacturer's instructions, to a structurally sound member or verified anchorage; provide an approved lifeline where reliable anchorages are unavailable.",
+    "normative_rule": "person_present == yes AND work_at_height == yes AND (harness_worn == no OR harness_anchored == no)",
+    "visual_screening_rule": "person_present == yes AND near_edge_or_opening == yes AND (harness_worn == no OR harness_anchored == no)",
+    "visual_retrieval_text": "worker at height, person on scaffold edge, worker without harness, safety harness lanyard, anchored lifeline",
+    "non_visual_fields": {
+      "work_at_height_m": {
+        "description": "Working height, in m.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "work_at_height": {
+        "description": "Whether this is work at height; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: work_at_height_m, work_at_height. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-002-helmet-and-attire",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Personal protective equipment",
+    "rule_name": "Site personnel without a helmet, wearing the helmet improperly, or in improper attire",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "person_present": "Person present?",
+      "construction_site_context": "On a construction site?",
+      "head_visible": "Is the person's head visible? (only judge helmet wearing when a head is visible)",
+      "helmet_present": "Helmet worn?",
+      "helmet_worn_correctly": "When a helmet is worn, is it on the crown with correct orientation/position and chin strap fastened? Skip when no helmet is worn.",
+      "chin_strap_fastened": "When a helmet is worn, is the chin strap visible and fastened/close to the chin? Skip when no helmet or occluded/far view.",
+      "body_visible": "Is the person's body / overall attire visible? (only judge attire when the body is visible)",
+      "clothing_compliant": "When the body is visible, is attire compliant (hi-vis clothing/vest or uniform workwear, without bare torso, shorts, slippers or other clearly unsuitable attire)?"
+    },
+    "required_checkpoints": [
+      "person_present",
+      "construction_site_context",
+      "head_visible",
+      "helmet_present",
+      "helmet_worn_correctly",
+      "chin_strap_fastened",
+      "body_visible",
+      "clothing_compliant"
+    ],
+    "critical_checkpoints": [
+      "helmet_present",
+      "helmet_worn_correctly",
+      "clothing_compliant"
+    ],
+    "machine_rule": "person_present == yes AND construction_site_context == yes AND ((head_visible == yes AND helmet_present == no) OR (helmet_present == yes AND (helmet_worn_correctly == no OR chin_strap_fastened == no)) OR (body_visible == yes AND clothing_compliant == no))",
+    "positive_keywords": [
+      "no helmet",
+      "not wearing helmet",
+      "helmet not worn",
+      "helmet worn incorrectly",
+      "helmet worn backwards",
+      "chin strap unfastened",
+      "hi-vis clothing not worn",
+      "vest not worn",
+      "wearing shorts",
+      "working in slippers",
+      "PPE missing"
+    ],
+    "exclusion_keywords": [
+      "helmet worn",
+      "worn correctly",
+      "chin strap fastened",
+      "hi-vis clothing worn",
+      "PPE complete",
+      "non-worker",
+      "non-construction area"
+    ],
+    "source_level": "Mandatory engineering construction code / accident-investigation basis",
+    "source_quote": "Personnel on site / working at height shall correctly wear a safety helmet; site personnel shall wear hi-vis clothing, vests and other PPE per project requirements, and shorts, slippers and similar unsuitable attire are prohibited.",
+    "rectification_advice": "All personnel entering the site must wear a helmet correctly with the chin strap fastened, and wear hi-vis clothing, vests and other PPE per project requirements; bare torso, shorts, slippers and similar unsuitable attire are prohibited.",
+    "normative_rule": "person_present == yes AND construction_site_context == yes AND ((head_visible == yes AND helmet_present == no) OR (helmet_present == yes AND (helmet_worn_correctly == no OR chin_strap_fastened == no)) OR (body_visible == yes AND clothing_compliant == no))",
+    "visual_screening_rule": "person_present == yes AND construction_site_context == yes AND ((head_visible == yes AND helmet_present == no) OR (helmet_present == yes AND (helmet_worn_correctly == no OR chin_strap_fastened == no)) OR (body_visible == yes AND clothing_compliant == no))",
+    "visual_retrieval_text": "construction worker, person's head, head without helmet, backward helmet, loosely worn helmet, person without hi-vis vest, worker in shorts, worker in slippers, worker with helmet and hi-vis workwear",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm, in sequence, helmet wearing (when a head is visible), correct helmet wearing (when a helmet is present), and attire compliance (when the body is visible).",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-004-illegal-climbing",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Climbing and ladder use",
+    "rule_name": "Illegal climbing of scaffold, rebar cage or makeshift support members",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "person_present": "Person present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "climbing_behavior_present": "Climbing behavior present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "unsafe_climbing_object": "Climbing scaffold/rebar cage/brace (non-access member). Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "safe_access_present": "Compliant access route present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "person_present",
+      "climbing_behavior_present",
+      "unsafe_climbing_object",
+      "safe_access_present"
+    ],
+    "critical_checkpoints": [
+      "person_present",
+      "climbing_behavior_present",
+      "unsafe_climbing_object",
+      "safe_access_present"
+    ],
+    "machine_rule": "person_present == yes AND climbing_behavior_present == yes AND unsafe_climbing_object == yes",
+    "positive_keywords": [
+      "climbing scaffold",
+      "climbing rebar cage",
+      "illegal climbing",
+      "access route noncompliant",
+      "poor personnel behavior"
+    ],
+    "exclusion_keywords": [
+      "compliant access route",
+      "safe ladder",
+      "fall-prevention measures"
+    ],
+    "source_level": "Industry standard",
+    "source_quote": "When tying column and wall rebar, do not climb the rebar cage or stand on it to work; erecting ladders on a scaffold working level is strictly prohibited.",
+    "rectification_advice": "Use compliant access routes or platforms; do not climb scaffolds, rebar cages or other non-access members.",
+    "normative_rule": "person_present == yes AND climbing_behavior_present == yes AND unsafe_climbing_object == yes",
+    "visual_screening_rule": "person_present == yes AND climbing_behavior_present == yes AND unsafe_climbing_object == yes",
+    "visual_retrieval_text": "worker climbing scaffold, person climbing rebar cage, worker on temporary support, person climbing structure",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-005-improper-ladder-use",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Climbing and ladder use",
+    "rule_name": "Unstable or improper ladder use, two people on one ladder, or ladder erected on scaffold",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "ladder_present": "Ladder in use. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "two_persons_on_same_ladder": "Two people on the same ladder. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "ladder_on_scaffold": "Ladder set up on scaffold working level. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "ladder_use_stable": "Ladder use stable. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "ladder_present",
+      "two_persons_on_same_ladder",
+      "ladder_on_scaffold",
+      "ladder_use_stable"
+    ],
+    "critical_checkpoints": [
+      "ladder_present",
+      "ladder_use_stable"
+    ],
+    "machine_rule": "ladder_present == yes AND (two_persons_on_same_ladder == yes OR ladder_on_scaffold == yes OR ladder_use_stable == no)",
+    "positive_keywords": [
+      "over-height step ladder",
+      "step ladder",
+      "two people on one ladder",
+      "ladder on scaffold",
+      "ladder unstable"
+    ],
+    "exclusion_keywords": [
+      "compliant ladder",
+      "dedicated platform",
+      "anti-slip and stable"
+    ],
+    "source_level": "Industry standard",
+    "source_quote": "Climbing facilities and ladders shall be secure and reliable. Two people shall not work on the same ladder; ladder work in a passage requires supervision or enclosure; ladders shall not be erected on scaffold working levels. A single ladder should be set at about 75 degrees, shall not have missing rungs or be raised on packing, and a stepladder shall have a reliable locking device.",
+    "rectification_advice": "Remove loose, damaged, raised, improperly inclined or unlocked ladders from use; stabilize the ladder on firm level footing, and use a compliant work platform when safe ladder use is not possible.",
+    "normative_rule": "ladder_present == yes AND (two_persons_on_same_ladder == yes OR ladder_on_scaffold == yes OR ladder_use_stable == no)",
+    "visual_screening_rule": "ladder_present == yes AND (two_persons_on_same_ladder == yes OR ladder_on_scaffold == yes OR ladder_use_stable == no)",
+    "visual_retrieval_text": "worker on ladder, over-height step ladder, two people on one ladder, ladder on scaffold, person standing on ladder top",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-006-uncertified-special-operation",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Special operation",
+    "rule_name": "Performing construction special operations without a valid qualification certificate",
+    "priority": "P1",
+    "evidence_types": [
+      "text_log",
+      "certificate_system",
+      "permit",
+      "image",
+      "video"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "special_operation_present": "Special operation present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "special_operation_present"
+    ],
+    "critical_checkpoints": [
+      "special_operation_present"
+    ],
+    "machine_rule": "special_operation_present == yes AND (certificate_valid == no OR worker_identity_matched == no)",
+    "positive_keywords": [
+      "uncertified operation",
+      "no electrician license",
+      "uncertified welder",
+      "suspended-platform operation",
+      "crane signaling",
+      "license mismatch"
+    ],
+    "exclusion_keywords": [
+      "license valid",
+      "person-license match",
+      "not a special operation"
+    ],
+    "source_level": "National regulation",
+    "source_quote": "Construction special-operation personnel must complete dedicated safety training and obtain a qualification certificate before work; employers shall not use uncertified personnel for such operations.",
+    "rectification_advice": "Verify special-operation qualification certificates; personnel without a valid certificate shall not perform the operation.",
+    "normative_rule": "special_operation_present == yes AND (certificate_valid == no OR worker_identity_matched == no)",
+    "visual_screening_rule": "not_available_for_single_image",
+    "visual_retrieval_text": "welder at work, crane signaller, suspended-platform operator, worker doing special operation",
+    "non_visual_fields": {
+      "certificate_valid": {
+        "description": "Whether the certificate is valid in the license system; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "certificate_system",
+          "real_name_system",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "worker_identity_matched": {
+        "description": "Whether the person's identity matches the certificate; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "requires_external_evidence",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: certificate_valid, worker_identity_matched. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-007-illegal-electrical-work",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Special operation",
+    "rule_name": "Illegal electrical work or live-line tapping of circuits",
+    "priority": "P1",
+    "evidence_types": [
+      "image",
+      "video",
+      "permit",
+      "text_log",
+      "certificate_system"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "electrical_work_present": "Wiring or electrical work present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "power_isolated": "Power isolation confirmable. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "lockout_tagout_present": "Lockout/tagout or isolation present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "electrical_ppe_present": "Electrical-work PPE worn. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "electrical_work_present",
+      "power_isolated",
+      "lockout_tagout_present",
+      "electrical_ppe_present"
+    ],
+    "critical_checkpoints": [
+      "electrical_work_present",
+      "power_isolated",
+      "lockout_tagout_present",
+      "electrical_ppe_present"
+    ],
+    "machine_rule": "electrical_work_present == yes AND (power_isolated == no OR lockout_tagout_present == no OR electrician_certificate_valid == no)",
+    "positive_keywords": [
+      "live-line connection",
+      "power not cut",
+      "temporary power tapping",
+      "no electrician license",
+      "exposed conductor",
+      "illegal electrical work"
+    ],
+    "exclusion_keywords": [
+      "power cut",
+      "power-off tag",
+      "electrician license valid",
+      "insulation protection complete"
+    ],
+    "source_level": "CSCEC Third Bureau Shenzhen public source / accident-investigation basis",
+    "source_quote": "Installation, inspection, repair and removal of temporary electrical equipment and circuits shall be performed by a qualified electrician. Before maintenance, de-energize and securely isolate the supply, prevent inadvertent re-energization, verify absence of voltage, and use the insulating PPE and tools required by the risk.",
+    "rectification_advice": "Stop uncertified or live tapping immediately. A qualified electrician shall make the circuit safe using isolation, prevention of re-energization, voltage verification and any required earthing or barriers before work resumes.",
+    "normative_rule": "electrical_work_present == yes AND (power_isolated == no OR lockout_tagout_present == no OR electrician_certificate_valid == no)",
+    "visual_screening_rule": "electrical_work_present == yes AND (lockout_tagout_present == no OR electrical_ppe_present == no)",
+    "visual_retrieval_text": "electrician working on live wire, worker tapping power, exposed live wire, temporary power box",
+    "non_visual_fields": {
+      "electrician_certificate_valid": {
+        "description": "Whether the electrician license is valid; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "certificate_system",
+          "real_name_system",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: electrician_certificate_valid. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-008-machinery-area-not-cleared",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Machinery and lifting operation",
+    "rule_name": "Machinery operating without clearing the area or with people in the slewing radius",
+    "priority": "P1",
+    "evidence_types": [
+      "image",
+      "video",
+      "permit"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "machine_operating": "Machinery operating. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "person_in_danger_zone": "Person within danger radius. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "spotter_present": "Spotter/supervisor present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "machine_operating",
+      "person_in_danger_zone",
+      "spotter_present"
+    ],
+    "critical_checkpoints": [
+      "machine_operating",
+      "person_in_danger_zone",
+      "spotter_present"
+    ],
+    "machine_rule": "machine_operating == yes AND (person_in_danger_zone == yes OR work_area_cleared == no)",
+    "positive_keywords": [
+      "machinery operation",
+      "person in slewing radius",
+      "area not cleared",
+      "operating with obstacles",
+      "forklift violation"
+    ],
+    "exclusion_keywords": [
+      "area cleared",
+      "warning zone",
+      "dedicated spotter",
+      "personnel in safe zone"
+    ],
+    "source_level": "Industry standard / accident-investigation basis",
+    "source_quote": "Before machinery or lifting operation, clear obstacles and unauthorized persons and establish an exclusion zone and warnings. No person may remain or pass beneath a suspended load or boom; personnel shall remain outside an earthmoving machine's slewing radius while it is moving.",
+    "rectification_advice": "Stop the operation, clear the danger zone and obstacles, establish isolation and warnings, and appoint a signaller or spotter where required before resuming.",
+    "normative_rule": "machine_operating == yes AND (person_in_danger_zone == yes OR work_area_cleared == no)",
+    "visual_screening_rule": "machine_operating == yes AND person_in_danger_zone == yes",
+    "visual_retrieval_text": "crane or excavator working, person inside slewing radius, worker near operating machinery, lifting work area",
+    "non_visual_fields": {
+      "work_area_cleared": {
+        "description": "Whether the work area is cleared; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: work_area_cleared. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-009-suspended-platform-lifting-violation",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Machinery and lifting operation",
+    "rule_name": "Suspended platform overloaded, lifeline not independently suspended, or non-personnel equipment lifting people",
+    "priority": "P1",
+    "evidence_types": [
+      "image",
+      "video",
+      "permit",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "basket_or_lifting_operation_present": "Suspended platform or lifting operation present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "independent_lifeline_present": "Lifeline independently suspended. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "non_personnel_equipment_carrying_person": "Non-personnel equipment lifting people. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "basket_or_lifting_operation_present",
+      "independent_lifeline_present",
+      "non_personnel_equipment_carrying_person"
+    ],
+    "critical_checkpoints": [
+      "basket_or_lifting_operation_present",
+      "independent_lifeline_present",
+      "non_personnel_equipment_carrying_person"
+    ],
+    "machine_rule": "basket_or_lifting_operation_present == yes AND (overload_visible_or_recorded == yes OR safety_lock_functional == no OR independent_lifeline_present == no OR non_personnel_equipment_carrying_person == yes)",
+    "positive_keywords": [
+      "suspended platform overloaded",
+      "lifeline not independently suspended",
+      "safety-lock failure",
+      "non-personnel equipment lifting people",
+      "lifting violation"
+    ],
+    "exclusion_keywords": [
+      "independent lifeline",
+      "load compliant",
+      "personnel-rated equipment compliant"
+    ],
+    "source_level": "Major accident hazard determination standard",
+    "source_quote": "An overloaded suspended platform, failed safety lock, or lifeline not independently suspended; using non-personnel equipment to lift people are major-hazard situations.",
+    "rectification_advice": "Stop the noncompliant suspended-platform or lifting work, verify load, safety lock and independent lifeline, and never lift people with non-personnel equipment.",
+    "normative_rule": "basket_or_lifting_operation_present == yes AND (overload_visible_or_recorded == yes OR safety_lock_functional == no OR independent_lifeline_present == no OR non_personnel_equipment_carrying_person == yes)",
+    "visual_screening_rule": "basket_or_lifting_operation_present == yes AND (independent_lifeline_present == no OR non_personnel_equipment_carrying_person == yes)",
+    "visual_retrieval_text": "suspended work platform, overloaded platform, people lifted by machinery, platform lifeline, crane lifting personnel",
+    "non_visual_fields": {
+      "overload_visible_or_recorded": {
+        "description": "Whether overloading is present; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "safety_lock_functional": {
+        "description": "Whether the suspended-platform safety lock is functional; requires inspection or test evidence.",
+        "source": [
+          "inspection_record",
+          "manual_review"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: overload_visible_or_recorded, safety_lock_functional. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-010-hot-work-violation",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Special operation",
+    "rule_name": "Hot work or welding/cutting at height or edge without spark-catch, fire-prevention or watch measures",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "permit"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "hot_work_present": "Hot work or welding/cutting at height or an exposed edge is present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "catch_pan_present": "Spark-catch pan present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "combustibles_cleared": "Surrounding combustibles cleared. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "fire_extinguisher_present": "Fire extinguisher present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "fire_watch_present": "Fire watch present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "hot_work_present",
+      "catch_pan_present",
+      "combustibles_cleared",
+      "fire_extinguisher_present",
+      "fire_watch_present"
+    ],
+    "critical_checkpoints": [
+      "hot_work_present",
+      "catch_pan_present",
+      "combustibles_cleared",
+      "fire_extinguisher_present",
+      "fire_watch_present"
+    ],
+    "machine_rule": "hot_work_present == yes AND (hot_work_permit_valid == no OR catch_pan_present == no OR combustibles_cleared == no OR fire_extinguisher_present == no OR fire_watch_present == no)",
+    "positive_keywords": [
+      "hot work",
+      "welding/cutting",
+      "no spark-catch pan",
+      "no fire extinguisher",
+      "no fire watch",
+      "combustibles not cleared"
+    ],
+    "exclusion_keywords": [
+      "spark-catch pan",
+      "fire extinguisher",
+      "hot-work permit",
+      "dedicated watch"
+    ],
+    "source_level": "Shenzhen local standard",
+    "source_quote": "Hot work shall be authorized. Before work, remove combustibles or isolate immovable combustibles with non-combustible material, provide effective extinguishing equipment and a dedicated fire watch, use spark-catching measures for elevated or edge hot work, and inspect for residual fire after completion.",
+    "rectification_advice": "Suspend hot work until authorization, combustible control, spark containment, an effective extinguisher and a fire watch are in place; inspect and eliminate residual ignition sources afterward.",
+    "normative_rule": "hot_work_present == yes AND (hot_work_permit_valid == no OR catch_pan_present == no OR combustibles_cleared == no OR fire_extinguisher_present == no OR fire_watch_present == no)",
+    "visual_screening_rule": "hot_work_present == yes AND (catch_pan_present == no OR combustibles_cleared == no OR fire_extinguisher_present == no OR fire_watch_present == no)",
+    "visual_retrieval_text": "welding or cutting at height, hot work at edge, welding sparks, spark-catch pan, fire watch",
+    "non_visual_fields": {
+      "hot_work_permit_valid": {
+        "description": "Whether the hot-work authorization is valid for the time, place and activity.",
+        "source": [
+          "permit",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, verify hot_work_permit_valid from the permit or inspection record; the single-image rule screens only visible fire controls.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-011-severe-weather-operation",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Severe-weather operation",
+    "rule_name": "Illegal lifting, installation/dismantling or work at height in severe weather",
+    "priority": "P1",
+    "evidence_types": [
+      "video",
+      "text_log",
+      "sensor",
+      "permit"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "high_risk_operation_present": "Lifting/height/installation/dismantling work present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "operation_suspended": "Work suspended. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "high_risk_operation_present",
+      "operation_suspended"
+    ],
+    "critical_checkpoints": [
+      "high_risk_operation_present",
+      "operation_suspended"
+    ],
+    "machine_rule": "severe_weather_present == yes AND high_risk_operation_present == yes AND operation_suspended == no",
+    "positive_keywords": [
+      "severe weather",
+      "lifting in high wind",
+      "work at height in thunderstorm",
+      "operation in dense fog",
+      "risk-taking operation"
+    ],
+    "exclusion_keywords": [
+      "work stopped",
+      "work suspended",
+      "normal weather"
+    ],
+    "source_level": "Major accident hazard determination standard",
+    "source_quote": "Work at height shall stop during thunderstorms, heavy snow, dense fog or winds above force 5 at the workplace. Lifting, installation and dismantling shall also comply with any stricter wind-speed and visibility limits in the equipment instructions and work plan.",
+    "rectification_advice": "Stop the affected work when these conditions or any stricter equipment/work-plan limit is reached; inspect the safety facilities and equipment before resuming.",
+    "normative_rule": "severe_weather_present == yes AND high_risk_operation_present == yes AND operation_suspended == no",
+    "visual_screening_rule": "not_available_for_single_image",
+    "visual_retrieval_text": "crane lifting in high wind, work at height in storm, operation in dense fog, severe weather site work",
+    "non_visual_fields": {
+      "severe_weather_present": {
+        "description": "Whether severe weather (thunderstorm/heavy snow/dense fog/high wind) is present; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "weather_data",
+          "construction_log",
+          "permit"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "requires_external_evidence",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: severe_weather_present. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-001-hoarding-missing-low",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Site enclosure and signage",
+    "rule_name": "Construction hoarding missing, discontinuous or too low",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "video",
+      "site_plan"
+    ],
+    "thresholds": {
+      "shenzhen_fence_height_m_min": 2.5,
+      "main_road_fence_height_m_min": 2.5,
+      "general_road_fence_height_m_min": 1.8
+    },
+    "visual_checkpoints": {
+      "site_boundary_present": "Site boundary present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "fence_present": "Hoarding present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "fence_continuous": "Hoarding continuous and closed. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "site_boundary_present",
+      "fence_present",
+      "fence_continuous"
+    ],
+    "critical_checkpoints": [
+      "site_boundary_present",
+      "fence_present",
+      "fence_continuous"
+    ],
+    "machine_rule": "site_boundary_present == yes AND (fence_present == no OR fence_continuous == no OR fence_height_compliant == no)",
+    "positive_keywords": [
+      "hoarding missing",
+      "hoarding not closed",
+      "enclosure not tight",
+      "site area not closed",
+      "hoarding height insufficient"
+    ],
+    "exclusion_keywords": [
+      "hoarding continuous",
+      "height 2.5 m",
+      "closed"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "Hoarding on main urban roads >=2.5 m, on general roads >=1.8 m; Shenzhen requires a uniform 2.5 m hoarding height.",
+    "rectification_advice": "Provide continuous, closed and stable construction hoarding. For projects governed by the Shenzhen rule, set all hoarding to 2.5 m, subject to specific traffic sight-distance requirements.",
+    "normative_rule": "site_boundary_present == yes AND (fence_present == no OR fence_continuous == no OR fence_height_compliant == no)",
+    "visual_screening_rule": "site_boundary_present == yes AND (fence_present == no OR fence_continuous == no)",
+    "visual_retrieval_text": "site boundary hoarding, perimeter fence, missing fence panel, low enclosure wall, gap in hoarding",
+    "non_visual_fields": {
+      "shenzhen_fence_height_m": {
+        "description": "Normative-decision field for shenzhen_fence_height_m; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "main_road_fence_height_m": {
+        "description": "Normative-decision field for main_road_fence_height_m; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "general_road_fence_height_m": {
+        "description": "Normative-decision field for general_road_fence_height_m; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "fence_height_compliant": {
+        "description": "Whether the hoarding height is compliant; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: shenzhen_fence_height_m, main_road_fence_height_m, general_road_fence_height_m, fence_height_compliant. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-002-road-unhardened-water-mud",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Site road and vehicle",
+    "rule_name": "Site main road or processing area unhardened, with ponding or heavy mud",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "main_road_or_processing_area_present": "A site main road or processing area is present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "ground_hardened": "Ground hardened. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "drainage_clear": "Drainage clear. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "standing_water_present": "Obvious ponding present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "mud_pollution_present": "Obvious mud present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "main_road_or_processing_area_present",
+      "ground_hardened",
+      "drainage_clear",
+      "standing_water_present",
+      "mud_pollution_present"
+    ],
+    "critical_checkpoints": [
+      "main_road_or_processing_area_present",
+      "ground_hardened",
+      "drainage_clear",
+      "standing_water_present",
+      "mud_pollution_present"
+    ],
+    "machine_rule": "main_road_or_processing_area_present == yes AND (ground_hardened == no OR standing_water_present == yes OR mud_pollution_present == yes)",
+    "positive_keywords": [
+      "road unhardened",
+      "ponding",
+      "mud",
+      "poor drainage",
+      "site dirty/disorderly"
+    ],
+    "exclusion_keywords": [
+      "road hardened",
+      "drainage clear",
+      "no ponding"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "Main roads and processing areas shall be hardened, smooth and unobstructed with clear drainage and no ponding; Shenzhen requires hardened entrances, main roads and material processing areas.",
+    "rectification_advice": "Harden main roads and processing areas, clear mud and unclog drainage to avoid ponding.",
+    "normative_rule": "main_road_or_processing_area_present == yes AND (ground_hardened == no OR standing_water_present == yes OR mud_pollution_present == yes)",
+    "visual_screening_rule": "main_road_or_processing_area_present == yes AND (ground_hardened == no OR standing_water_present == yes OR mud_pollution_present == yes)",
+    "visual_retrieval_text": "site main road, unhardened muddy road, ponding water on road, hardened concrete road",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the road or processing-area context and protection state shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-003-material-stacking-labeling",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Material and waste management",
+    "rule_name": "Materials, components or tools not neatly stacked and labeled per the site layout",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "video",
+      "site_plan"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "materials_present": "Materials/components/tools present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "stacking_orderly": "Stacked orderly. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "materials_present",
+      "stacking_orderly"
+    ],
+    "critical_checkpoints": [
+      "materials_present",
+      "stacking_orderly"
+    ],
+    "machine_rule": "materials_present == yes AND (within_planned_area == no OR stacking_orderly == no OR material_label_present == no)",
+    "positive_keywords": [
+      "disorderly material stacking",
+      "improper stacking",
+      "no labeling",
+      "materials not cleared",
+      "random stacking"
+    ],
+    "exclusion_keywords": [
+      "neatly stacked",
+      "labeling complete",
+      "stacked by zone"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "Materials, components and tools shall be stacked per the site layout, neatly and labeled with name and specification; Shenzhen likewise requires neat stacking with name/type/spec labels.",
+    "rectification_advice": "Stack materials by zone per the site layout, keep them neat and label name and specification.",
+    "normative_rule": "materials_present == yes AND (within_planned_area == no OR stacking_orderly == no OR material_label_present == no)",
+    "visual_screening_rule": "materials_present == yes AND stacking_orderly == no",
+    "visual_retrieval_text": "stacked construction materials, rebar and pipe piles, disorderly material pile, neatly stacked materials",
+    "non_visual_fields": {
+      "within_planned_area": {
+        "description": "Whether stacking follows the site layout; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "material_label_present": {
+        "description": "Non-visual evidence: whether material label boards, zone signs, or name/spec labels are fully set. Because labels are usually too small to be reliably captured or read in standard images, this requires external evidence or manual verification.",
+        "source": [
+          "inspection_record",
+          "material_ledger",
+          "manual_review"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: within_planned_area, material_label_present. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-004-dusty-material-uncovered",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Material and waste management",
+    "rule_name": "Dust-prone materials such as sand, aggregate or earth not covered or enclosed",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "dusty_material_present": "Dust-prone sand, aggregate, earth or powder stock is visibly present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "covered_or_enclosed": "Covered or enclosed storage. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "continuous_exposed_surface_present": "Obvious continuous exposed surface present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "dusty_material_present",
+      "covered_or_enclosed",
+      "continuous_exposed_surface_present"
+    ],
+    "critical_checkpoints": [
+      "dusty_material_present",
+      "covered_or_enclosed",
+      "continuous_exposed_surface_present"
+    ],
+    "machine_rule": "dusty_material_present == yes AND covered_or_enclosed == no",
+    "positive_keywords": [
+      "bare soil uncovered",
+      "aggregate uncovered",
+      "dust net missing",
+      "dust-prone material",
+      "dust control"
+    ],
+    "exclusion_keywords": [
+      "dust net covered",
+      "dedicated-store storage",
+      "tank storage",
+      "covered"
+    ],
+    "source_level": "Shenzhen local standard",
+    "source_quote": "Gypsum, cement and putty powder shall be stored in dedicated stores/tanks; bulk sand/aggregate yards shall use dust netting.",
+    "rectification_advice": "Store gypsum powder, cement, putty powder and similar dusty powders by category in dedicated stores or tanks and keep them covered; tightly cover sand, aggregate and other bulk-material stockpiles with dust-control netting.",
+    "normative_rule": "dusty_material_present == yes AND covered_or_enclosed == no",
+    "visual_screening_rule": "dusty_material_present == yes AND covered_or_enclosed == no",
+    "visual_retrieval_text": "sand or aggregate pile, bare earth pile, uncovered dusty material, dust net cover, covered material pile",
+    "non_visual_fields": {},
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: dusty_material_present. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-005-spoil-waste-overheight-uncleared",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Material and waste management",
+    "rule_name": "Spoil or waste stacked over height or left uncleared beyond 48 hours",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record",
+      "text_log"
+    ],
+    "thresholds": {
+      "pile_height_m_max": 1.5,
+      "clearance_hours_max": 48
+    },
+    "visual_checkpoints": {
+      "waste_or_spoil_present": "Spoil or waste present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "spoil_grossly_overheight": "Is the spoil/waste piled grossly over height (clearly too high; coarse, not a measurement). Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "waste_or_spoil_present",
+      "spoil_grossly_overheight"
+    ],
+    "critical_checkpoints": [
+      "spoil_grossly_overheight"
+    ],
+    "machine_rule": "waste_or_spoil_present == yes AND (pile_height_compliant == no OR clearance_within_48h == no)",
+    "positive_keywords": [
+      "spoil left long",
+      "waste not removed",
+      "garbage not cleared",
+      "stacked over height",
+      "poor clean-as-you-go"
+    ],
+    "exclusion_keywords": [
+      "removed within 48 h",
+      "stacking height compliant",
+      "cleared"
+    ],
+    "source_level": "Shenzhen local standard",
+    "source_quote": "Spoil stacking height <=1.5 m and removed within 48 h; waste brick/concrete storage pits limited to 1.5 m, removed within 48 h after completion.",
+    "rectification_advice": "Keep spoil piles no higher than 1.5 m and remove them within 48 h. Store waste brick and concrete in a storage pit no higher than 1.5 m and remove them within 48 h after the work. If removal within 48 h is impossible, use a designated temporary storage area and keep the material damp or tightly covered.",
+    "normative_rule": "waste_or_spoil_present == yes AND (pile_height_compliant == no OR clearance_within_48h == no)",
+    "visual_screening_rule": "waste_or_spoil_present == yes AND spoil_grossly_overheight == yes",
+    "visual_retrieval_text": "construction waste pile, spoil heap, over-height debris pile, uncleared rubbish, cleared housekeeping area",
+    "non_visual_fields": {
+      "pile_height_m": {
+        "description": "Spoil or waste stacking height, in m.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "clearance_hours": {
+        "description": "Removal time or stacking duration, in hours.",
+        "source": [
+          "inspection_record",
+          "construction_log",
+          "cleanup_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "pile_height_compliant": {
+        "description": "Whether the stacking height is at most 1.5 m; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "clearance_within_48h": {
+        "description": "Whether removed within 48 hours; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "inspection_record",
+          "construction_log",
+          "cleanup_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "storage_area_orderly": {
+        "description": "Whether the storage area is compliant; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: pile_height_m, clearance_hours, pile_height_compliant, clearance_within_48h, storage_area_orderly. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-006-tsp-exceedance",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Environmental monitoring",
+    "rule_name": "Construction dust TSP 15-minute average concentration exceedance",
+    "priority": "P2",
+    "evidence_types": [
+      "sensor",
+      "text_log",
+      "image",
+      "video"
+    ],
+    "thresholds": {
+      "tsp_15min_avg_mg_m3_max": 0.3,
+      "alarm_duration_min_max": 30
+    },
+    "visual_checkpoints": {},
+    "required_checkpoints": [],
+    "critical_checkpoints": [],
+    "machine_rule": "tsp_15min_avg_mg_m3 > 0.30 OR alarm_duration_min > 30",
+    "positive_keywords": [
+      "TSP exceedance",
+      "dust alarm",
+      "0.30 mg/m3",
+      "dust concentration",
+      "online monitoring"
+    ],
+    "exclusion_keywords": [
+      "monitored value compliant",
+      "alarm cleared",
+      "wet operation"
+    ],
+    "source_level": "Shenzhen local standard",
+    "source_quote": "TSP 15-min average concentration limit is 0.30 mg/m3, with alarm duration not exceeding 30 min.",
+    "rectification_advice": "Start spraying, fog cannon, covering and sweeping dust-control measures and track the monitored value back to compliance.",
+    "normative_rule": "tsp_15min_avg_mg_m3 > 0.30 OR alarm_duration_min > 30",
+    "visual_screening_rule": "not_available_for_single_image",
+    "visual_retrieval_text": "dusty construction area, airborne dust, dust monitor display, water mist sprayer",
+    "non_visual_fields": {
+      "tsp_15min_avg_mg_m3": {
+        "description": "TSP 15-minute average concentration, in mg/m3.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "alarm_duration_min": {
+        "description": "Alarm duration, in minutes.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "tsp_sensor_data_available": {
+        "description": "Whether TSP monitoring data exist; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "tsp_value_exceeded": {
+        "description": "Whether TSP exceeds 0.30 mg/m3; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "alarm_duration_exceeded": {
+        "description": "Whether the alarm duration exceeds 30 minutes; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "visible_dust_present": {
+        "description": "Whether obvious dust is visible on site; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "requires_external_evidence",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: tsp_15min_avg_mg_m3, alarm_duration_min, tsp_sensor_data_available, tsp_value_exceeded, alarm_duration_exceeded, visible_dust_present. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-007-vehicle-wash",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Site road and vehicle",
+    "rule_name": "Site exit vehicle-wash facility missing or washing inadequate",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {
+      "wash_platform_length_m_min": 8,
+      "wash_platform_width_m_min": 4,
+      "wash_time_s_min": 30,
+      "wash_water_m3_per_vehicle_min": 0.5
+    },
+    "visual_checkpoints": {
+      "site_exit_present": "Site exit present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "auto_wash_facility_present": "Automatic wash facility present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "sedimentation_facility_present": "Sedimentation/filtration facility present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "vehicle_clean_before_exit": "Vehicle washed clean before exit. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "site_exit_present",
+      "auto_wash_facility_present",
+      "sedimentation_facility_present",
+      "vehicle_clean_before_exit"
+    ],
+    "critical_checkpoints": [
+      "site_exit_present",
+      "auto_wash_facility_present",
+      "sedimentation_facility_present",
+      "vehicle_clean_before_exit"
+    ],
+    "machine_rule": "site_exit_present == yes AND (auto_wash_facility_present == no OR sedimentation_facility_present == no OR vehicle_clean_before_exit == no OR wash_platform_length_m < 8 OR wash_platform_width_m < 4 OR wash_time_s < 30 OR wash_water_m3_per_vehicle < 0.5)",
+    "positive_keywords": [
+      "inadequate vehicle washing",
+      "entrance mud",
+      "wash facility missing",
+      "leaving with mud",
+      "sedimentation tank missing"
+    ],
+    "exclusion_keywords": [
+      "wash facility normal",
+      "vehicle washed",
+      "sedimentation/filtration facility"
+    ],
+    "source_level": "Shenzhen local standard",
+    "source_quote": "Site exits shall have automatic wash equipment and sedimentation/filtration facilities; wash platform length >=8 m, width >=4 m, wash time >=30 s, wash water >=0.5 m3/vehicle.",
+    "rectification_advice": "Provide an automatic wash platform at least 8 m long and 4 m wide with sedimentation/filtration; wash each vehicle for at least 30 s using at least 0.5 m3/vehicle, and allow exit only after it is clean.",
+    "normative_rule": "site_exit_present == yes AND (auto_wash_facility_present == no OR sedimentation_facility_present == no OR vehicle_clean_before_exit == no OR wash_platform_length_m < 8 OR wash_platform_width_m < 4 OR wash_time_s < 30 OR wash_water_m3_per_vehicle < 0.5)",
+    "visual_screening_rule": "site_exit_present == yes AND (auto_wash_facility_present == no OR sedimentation_facility_present == no OR vehicle_clean_before_exit == no)",
+    "visual_retrieval_text": "site exit vehicle wash, wheel washing facility, sedimentation tank, missing wash bay, muddy site entrance",
+    "non_visual_fields": {
+      "wash_platform_length_m": {
+        "description": "Normative-decision field for wash_platform_length_m; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "wash_platform_width_m": {
+        "description": "Normative-decision field for wash_platform_width_m; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "wash_time_s": {
+        "description": "Normative-decision field for wash_time_s; usually not reliably obtainable from a single image.",
+        "source": [
+          "inspection_record",
+          "construction_log",
+          "cleanup_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "wash_water_m3_per_vehicle": {
+        "description": "Normative-decision field for wash_water_m3_per_vehicle; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: wash_platform_length_m, wash_platform_width_m, wash_time_s, wash_water_m3_per_vehicle. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-008-road-dust-exceedance",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Site road and vehicle",
+    "rule_name": "Dust load on the exit or main site roadway exceeding the limit",
+    "priority": "P3",
+    "evidence_types": [
+      "inspection_record",
+      "sensor",
+      "image",
+      "video"
+    ],
+    "thresholds": {
+      "exit_dust_g_m2_max": 50,
+      "main_vehicle_road_dust_g_m2_max": 100
+    },
+    "visual_checkpoints": {},
+    "required_checkpoints": [],
+    "critical_checkpoints": [],
+    "machine_rule": "exit_dust_g_m2 > 50 OR main_vehicle_road_dust_g_m2 > 100",
+    "positive_keywords": [
+      "road dust-load exceedance",
+      "road-surface dust",
+      "entrance dust",
+      "main-roadway dust"
+    ],
+    "exclusion_keywords": [
+      "road sweeping",
+      "wet cleaning",
+      "dust load compliant"
+    ],
+    "source_level": "Shenzhen local standard",
+    "source_quote": "Exit road-surface dust load 50 g/m2, main site roadway 100 g/m2.",
+    "rectification_advice": "Sweep and suppress dust and strengthen vehicle washing until exit road dust is no more than 50 g/m2 and main site roadway dust is no more than 100 g/m2.",
+    "normative_rule": "exit_dust_g_m2 > 50 OR main_vehicle_road_dust_g_m2 > 100",
+    "visual_screening_rule": "not_available_for_single_image",
+    "visual_retrieval_text": "dusty site road, mud on roadway, road sweeping, wheel wash at exit",
+    "non_visual_fields": {
+      "exit_dust_g_m2": {
+        "description": "Normative-decision field for exit_dust_g_m2; usually not reliably obtainable from a single image.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "main_vehicle_road_dust_g_m2": {
+        "description": "Normative-decision field for main_vehicle_road_dust_g_m2; usually not reliably obtainable from a single image.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "road_dust_measurement_available": {
+        "description": "Whether road dust-load measurement exists; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "exit_dust_compliant": {
+        "description": "Whether the exit road dust load is compliant; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "main_road_dust_compliant": {
+        "description": "Whether the main roadway dust load is compliant; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "visible_road_dust_present": {
+        "description": "Whether obvious road-surface dust is visible; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "requires_external_evidence",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: exit_dust_g_m2, main_vehicle_road_dust_g_m2, road_dust_measurement_available, exit_dust_compliant, main_road_dust_compliant, visible_road_dust_present. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-009-noise-exceedance",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Environmental monitoring",
+    "rule_name": "Construction boundary noise exceeding day/night limits",
+    "priority": "P2",
+    "evidence_types": [
+      "sensor",
+      "text_log",
+      "inspection_record"
+    ],
+    "thresholds": {
+      "day_noise_db_max": 70,
+      "night_noise_db_max": 55,
+      "night_max_level_exceed_db_max": 15
+    },
+    "visual_checkpoints": {},
+    "required_checkpoints": [],
+    "critical_checkpoints": [],
+    "machine_rule": "noise_sensitive_buildings_nearby == yes AND (day_noise_db > 70 OR night_noise_db > 55 OR night_max_level_exceed_db > 15)",
+    "positive_keywords": [
+      "noise exceedance",
+      "daytime 70",
+      "night 55",
+      "night construction",
+      "noise monitoring"
+    ],
+    "exclusion_keywords": [
+      "noise compliant",
+      "noise mitigated",
+      "permitted construction"
+    ],
+    "source_level": "National standard",
+    "source_quote": "Where noise-sensitive buildings surround the construction site, boundary equivalent A-weighted levels shall not exceed 70 dB(A) by day or 55 dB(A) at night, and the night maximum shall not exceed the night limit by more than 15 dB(A). Equivalent levels are evaluated over a continuous 20-minute measurement.",
+    "rectification_advice": "Control and remeasure the source using shutdown or load reduction, low-noise equipment, maintenance, barriers and scheduling. No noise-producing night work is allowed except emergency work or technically necessary continuous work; where continuous work is necessary, obtain the legally required proof and give advance public notice.",
+    "normative_rule": "noise_sensitive_buildings_nearby == yes AND (day_noise_db > 70 OR night_noise_db > 55 OR night_max_level_exceed_db > 15)",
+    "visual_screening_rule": "not_available_for_single_image",
+    "visual_retrieval_text": "piling machine, noisy construction equipment, sound barrier wall, night work site, noise meter",
+    "non_visual_fields": {
+      "noise_sensitive_buildings_nearby": {
+        "description": "Whether noise-sensitive buildings are located around the construction site, making the quoted boundary limits applicable.",
+        "source": [
+          "manual_review",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "day_noise_db": {
+        "description": "Daytime construction-boundary noise, in dB(A).",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "night_noise_db": {
+        "description": "Nighttime construction-boundary noise, in dB(A).",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "night_max_level_exceed_db": {
+        "description": "Nighttime maximum sound-level exceedance, in dB(A).",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "noise_monitoring_available": {
+        "description": "Whether noise monitoring data exist; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "daytime_noise_compliant": {
+        "description": "Whether daytime noise is at most 70 dB(A); cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "nighttime_noise_compliant": {
+        "description": "Whether nighttime noise is at most 55 dB(A); cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "sensor",
+          "monitoring_platform",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "requires_external_evidence",
+    "review_prompt": "For a full normative decision, first verify that noise-sensitive buildings are located around the site, then supply the 20-minute boundary measurements: day_noise_db, night_noise_db and night_max_level_exceed_db. The VLM must not infer these fields from a single image.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-010-dormitory-noncompliant",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Living facilities",
+    "rule_name": "Dormitory bunks, aisle, area per person or occupancy not meeting requirements",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "inspection_record",
+      "site_plan"
+    ],
+    "thresholds": {
+      "max_bed_layers": 2,
+      "aisle_width_m_min": 0.9,
+      "area_per_person_m2_min": 2.5,
+      "max_persons_per_room": 16
+    },
+    "visual_checkpoints": {
+      "dormitory_present": "Dormitory present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "bunk_over_2_tiers": "Are the dormitory bunks visibly more than 2 tiers (3+ tiers; coarse, not a measurement). Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "dormitory_present",
+      "bunk_over_2_tiers"
+    ],
+    "critical_checkpoints": [
+      "bunk_over_2_tiers"
+    ],
+    "machine_rule": "dormitory_present == yes AND (bed_layers > 2 OR aisle_width_m < 0.9 OR area_per_person_m2 < 2.5 OR persons_per_room > 16)",
+    "positive_keywords": [
+      "dormitory noncompliant",
+      "bunks over 2 tiers",
+      "narrow aisle",
+      "insufficient area per person",
+      "crowded dormitory"
+    ],
+    "exclusion_keywords": [
+      "bunks within 2 tiers",
+      "aisle width compliant",
+      "occupancy compliant"
+    ],
+    "source_level": "Industry standard",
+    "source_quote": "Dormitory bunks shall not exceed 2 tiers, aisle width >=0.9 m, area per person >=2.5 m2, and no more than 16 people per room.",
+    "rectification_advice": "Limit bunks to 2 tiers, keep aisles at least 0.9 m wide, provide at least 2.5 m2 per person, and limit each room to 16 occupants.",
+    "normative_rule": "dormitory_present == yes AND (bed_layers > 2 OR aisle_width_m < 0.9 OR area_per_person_m2 < 2.5 OR persons_per_room > 16)",
+    "visual_screening_rule": "dormitory_present == yes AND bunk_over_2_tiers == yes",
+    "visual_retrieval_text": "worker dormitory room, bunk beds, crowded sleeping room, narrow dorm aisle",
+    "non_visual_fields": {
+      "bed_layers": {
+        "description": "Number of dormitory bunk tiers.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "aisle_width_m": {
+        "description": "Normative-decision field for aisle_width_m; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "area_per_person_m2": {
+        "description": "Normative-decision field for area_per_person_m2; usually not reliably obtainable from a single image.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "persons_per_room": {
+        "description": "Number of occupants in the dormitory room.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "bed_layers_compliant": {
+        "description": "Whether bunks are at most 2 tiers; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "aisle_width_compliant": {
+        "description": "Whether the aisle width is at least 0.9 m; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "area_per_person_compliant": {
+        "description": "Whether the area per person is at least 2.5 m2; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "persons_per_room_compliant": {
+        "description": "Whether occupancy per room is at most 16 people; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: bed_layers, aisle_width_m, area_per_person_m2, persons_per_room, bed_layers_compliant, aisle_width_compliant, area_per_person_compliant, persons_per_room_compliant. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-011-smoking-burning",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Fire prevention",
+    "rule_name": "Roaming or unrestricted smoking on site, or burning of waste",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "smoking_present": "A person is visibly smoking on site. Judge only clear visible evidence; avoid hidden-state inference.",
+      "burning_present": "Waste or other material is visibly being burned on site. Judge only clear visible evidence; avoid hidden-state inference."
+    },
+    "required_checkpoints": [
+      "smoking_present",
+      "burning_present"
+    ],
+    "critical_checkpoints": [
+      "smoking_present",
+      "burning_present"
+    ],
+    "machine_rule": "burning_present == yes OR (smoking_present == yes AND designated_smoking_area == no)",
+    "positive_keywords": [
+      "roaming smoking",
+      "on-site smoking",
+      "worker smoking",
+      "on-site burning",
+      "unrestricted smoking"
+    ],
+    "exclusion_keywords": [
+      "designated smoking area",
+      "outside fire-prohibited zone",
+      "no combustibles"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "Roaming smoking is prohibited on Shenzhen construction sites and smoking is permitted only in a designated fixed smoking area; waste burning is prohibited everywhere on the site.",
+    "rectification_advice": "Stop roaming smoking and confine smoking to a designated fixed area; stop all on-site waste burning immediately.",
+    "normative_rule": "burning_present == yes OR (smoking_present == yes AND designated_smoking_area == no)",
+    "visual_screening_rule": "burning_present == yes OR smoking_present == yes",
+    "visual_retrieval_text": "worker smoking on site, lit cigarette on site, burning waste, open fire on site, designated smoking area",
+    "non_visual_fields": {
+      "designated_smoking_area": {
+        "description": "Whether this is a designated smoking area; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: designated_smoking_area. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-012-public-signboards-missing",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Site enclosure and signage",
+    "rule_name": "Public signboards or permit documents missing at the site gate",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "site_gate_present": "Site gate present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "project_overview_board_present": "Project overview board present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "fire_security_board_present": "Fire-security board present. Judge only clear visible evidence; avoid hidden-state inference.",
+      "safety_board_present": "Safety-production board present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "civilized_construction_board_present": "Civilized-construction board present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "manager_roster_board_present": "Manager roster board present. Judge only clear visible evidence; avoid hidden-state inference.",
+      "supervision_phone_board_present": "Supervision contact board present. Judge only clear visible evidence; avoid hidden-state inference.",
+      "site_plan_board_present": "Site layout plan present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "site_gate_present",
+      "project_overview_board_present",
+      "fire_security_board_present",
+      "safety_board_present",
+      "civilized_construction_board_present",
+      "manager_roster_board_present",
+      "supervision_phone_board_present",
+      "site_plan_board_present"
+    ],
+    "critical_checkpoints": [
+      "site_gate_present",
+      "project_overview_board_present",
+      "fire_security_board_present",
+      "safety_board_present",
+      "civilized_construction_board_present",
+      "manager_roster_board_present",
+      "supervision_phone_board_present",
+      "site_plan_board_present"
+    ],
+    "machine_rule": "site_gate_present == yes AND (project_overview_board_present == no OR fire_security_board_present == no OR safety_board_present == no OR civilized_construction_board_present == no OR manager_roster_board_present == no OR supervision_phone_board_present == no OR site_plan_board_present == no OR permit_publicized == no)",
+    "positive_keywords": [
+      "public signboards missing",
+      "'five boards and one plan' missing",
+      "construction nameplate missing",
+      "permits not publicized",
+      "insufficient signage"
+    ],
+    "exclusion_keywords": [
+      "signboards complete",
+      "permits publicized",
+      "'five boards and one plan' complete"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "The gate shall display the project overview board, fire-security board, safety board, civilized-construction board, manager roster and supervision-phone board, and site layout plan; Shenzhen requires construction nameplate and permit publication.",
+    "rectification_advice": "Complete the public signboards, site layout plan and permit publication at the site gate.",
+    "normative_rule": "site_gate_present == yes AND (project_overview_board_present == no OR fire_security_board_present == no OR safety_board_present == no OR civilized_construction_board_present == no OR manager_roster_board_present == no OR supervision_phone_board_present == no OR site_plan_board_present == no OR permit_publicized == no)",
+    "visual_screening_rule": "site_gate_present == yes AND (project_overview_board_present == no OR fire_security_board_present == no OR safety_board_present == no OR civilized_construction_board_present == no OR manager_roster_board_present == no OR supervision_phone_board_present == no OR site_plan_board_present == no)",
+    "visual_retrieval_text": "site gate signboard, project information board, permit display board, public notice board, bare gate without signs",
+    "non_visual_fields": {
+      "permit_publicized": {
+        "description": "Whether permit documents are publicized; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: permit_publicized. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-013-temporary-facilities",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Living facilities",
+    "rule_name": "Required site-entry facilities missing, or office/living area not separated from work area (separation needs external evidence)",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "site_plan",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "temporary_facilities_present": "Whether office areas, living quarters, prefab huts, a gate post or a real-name access lane are visible. Whether they are separated from the work area at a safe distance is out of single-image scope; see non_visual_fields.",
+      "site_gate_present": "Whether a main or secondary site gate is visible.",
+      "gate_guard_or_realname_system_present": "Whether a gate booth, turnstile, real-name device or personnel-control facility is visible at the entrance."
+    },
+    "required_checkpoints": [
+      "temporary_facilities_present",
+      "site_gate_present",
+      "gate_guard_or_realname_system_present"
+    ],
+    "critical_checkpoints": [
+      "site_gate_present",
+      "gate_guard_or_realname_system_present"
+    ],
+    "machine_rule": "(temporary_facilities_present == yes AND (office_living_separated_from_work_area == no OR safe_distance_present == no)) OR (site_gate_present == yes AND (gate_guard_or_realname_system_present == no OR electronic_notice_present == no))",
+    "positive_keywords": [
+      "temporary facilities noncompliant",
+      "living and work areas not separated",
+      "insufficient safe distance",
+      "gate booth missing",
+      "real-name turnstile missing"
+    ],
+    "exclusion_keywords": [
+      "three-zone separation",
+      "safe distance met",
+      "real-name turnstile",
+      "gate booth"
+    ],
+    "source_level": "Shenzhen local standard",
+    "source_quote": "Work area and office/living area shall be separated with a safe distance; main/secondary site gates use steel structures with a gate booth, real-name turnstile and electronic notice board.",
+    "rectification_advice": "Separate work and office/living areas with a safe distance and complete the gate, real-name and notice facilities.",
+    "normative_rule": "(temporary_facilities_present == yes AND (office_living_separated_from_work_area == no OR safe_distance_present == no)) OR (site_gate_present == yes AND (gate_guard_or_realname_system_present == no OR electronic_notice_present == no))",
+    "visual_screening_rule": "site_gate_present == yes AND gate_guard_or_realname_system_present == no",
+    "visual_retrieval_text": "prefab site office, workers living area, gate guard booth, office not separated from work area",
+    "non_visual_fields": {
+      "electronic_notice_present": {
+        "description": "Whether the gate is fitted with an electronic notice board. A single gate image often frames the board out even where one is installed, so its absence cannot be reliably inferred and needs external evidence or human review.",
+        "source": [
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "office_living_separated_from_work_area": {
+        "description": "Whether the office/living area is separated from the work area; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      },
+      "safe_distance_present": {
+        "description": "Whether a safe distance is maintained; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_measurement",
+          "inspection_record",
+          "drawing"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: office_living_separated_from_work_area, safe_distance_present, electronic_notice_present. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-014-fire-access-blocked",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Fire prevention",
+    "rule_name": "Fire access or emergency exit not kept clear",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "fire_access_or_exit_present": "Fire access or emergency exit present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "blocked_by_materials": "Blocked by materials/waste/equipment. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "passage_clear": "Passage clear. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "fire_access_or_exit_present",
+      "blocked_by_materials",
+      "passage_clear"
+    ],
+    "critical_checkpoints": [
+      "fire_access_or_exit_present",
+      "blocked_by_materials",
+      "passage_clear"
+    ],
+    "machine_rule": "fire_access_or_exit_present == yes AND (blocked_by_materials == yes OR passage_clear == no)",
+    "positive_keywords": [
+      "fire access blocked",
+      "exit not clear",
+      "fire-evacuation passage",
+      "passage stacked",
+      "bed frames randomly stacked"
+    ],
+    "exclusion_keywords": [
+      "passage clear",
+      "no stacking",
+      "evacuation signs clear"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "Temporary fire-engine access shall remain clear and shall not be occupied, blocked or used for material storage. Temporary evacuation routes and exits shall remain continuous and unobstructed.",
+    "rectification_advice": "Immediately remove materials, waste, vehicles and equipment obstructing fire-engine access, evacuation routes or exits, and restore continuous unobstructed access.",
+    "normative_rule": "fire_access_or_exit_present == yes AND (blocked_by_materials == yes OR passage_clear == no)",
+    "visual_screening_rule": "fire_access_or_exit_present == yes AND (blocked_by_materials == yes OR passage_clear == no)",
+    "visual_retrieval_text": "fire access lane, emergency exit, blocked passage, obstructed fire lane, clear fire route, fire box",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-015-fire-equipment-missing",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Fire prevention",
+    "rule_name": "Fire box without an extinguisher, or fire-fighting equipment not fully provisioned",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "fire_box_or_fire_point_present": "Fire box or fire point present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "extinguisher_present": "Fire extinguisher present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "fire_equipment_sufficient": "Fire equipment sufficient. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "fire_box_or_fire_point_present",
+      "extinguisher_present",
+      "fire_equipment_sufficient"
+    ],
+    "critical_checkpoints": [
+      "fire_box_or_fire_point_present",
+      "extinguisher_present",
+      "fire_equipment_sufficient"
+    ],
+    "machine_rule": "fire_box_or_fire_point_present == yes AND (extinguisher_present == no OR fire_equipment_sufficient == no OR inspection_status_valid == no)",
+    "positive_keywords": [
+      "fire box without extinguisher",
+      "fire equipment insufficient",
+      "fire equipment not fully provisioned",
+      "not regularly inspected",
+      "fire extinguisher missing"
+    ],
+    "exclusion_keywords": [
+      "fire extinguishers complete",
+      "inspection valid",
+      "fire equipment sufficient"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "Construction areas and temporary buildings shall be equipped, according to fire hazard, area and use, with suitable and sufficient extinguishers in visible, accessible locations, maintained serviceable and within their valid inspection period.",
+    "rectification_advice": "Provide the suitable quantity and type required by the approved fire plan, remove obstructions, replace expired or damaged equipment and keep periodic inspection records.",
+    "normative_rule": "fire_box_or_fire_point_present == yes AND (extinguisher_present == no OR fire_equipment_sufficient == no OR inspection_status_valid == no)",
+    "visual_screening_rule": "fire_box_or_fire_point_present == yes AND (extinguisher_present == no OR fire_equipment_sufficient == no)",
+    "visual_retrieval_text": "fire fighting box, fire extinguisher, empty fire box, missing extinguisher, fire point equipment",
+    "non_visual_fields": {
+      "inspection_status_valid": {
+        "description": "Whether fire equipment is regularly inspected and valid; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "source": [
+          "manual_review",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "For a full normative decision, supply the following non-visual evidence: inspection_status_valid. The current paper experiment uses only the visual_screening_rule for single-image risk screening; the VLM must not guess these fields.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-EDG-011-scaffold-layer-catch-net",
+    "major_category": "Edge Hazard",
+    "subcategory": "Scaffold edge",
+    "rule_name": "Full-hall or ground-supported scaffold lacks a working-level catch net or required 10 m interval closure",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {
+      "max_vertical_interval_m": 10
+    },
+    "visual_checkpoints": {
+      "dense_scaffold_present": "A dense multi-level or large-area scaffold (full/birdcage, ground-supported, or fine-mesh type) built from closely spaced standards and ledgers is visible.",
+      "fall_layer_present": "The scaffold has a working/planked level where a person could stand, or a tier presenting a fall risk.",
+      "layer_safety_net_present": "A horizontal safety net (catch net) or equivalent fall-arrest net is laid across the scaffold working level/tier.",
+      "net_fixed_and_intact": "The installed safety net appears secured and continuous, without obvious damage, tearing, large detachment, or whole-sheet rolling; minor sag or wrinkling is treated as normal."
+    },
+    "required_checkpoints": [
+      "dense_scaffold_present",
+      "fall_layer_present",
+      "layer_safety_net_present",
+      "net_fixed_and_intact"
+    ],
+    "critical_checkpoints": [
+      "dense_scaffold_present",
+      "fall_layer_present",
+      "layer_safety_net_present",
+      "net_fixed_and_intact"
+    ],
+    "machine_rule": "dense_scaffold_present == yes AND fall_layer_present == yes AND (layer_safety_net_present == no OR net_fixed_and_intact == no OR ten_meter_interval_closure_compliant == no)",
+    "positive_keywords": [
+      "full scaffold without net",
+      "ground-supported scaffold without catch net",
+      "scaffold inter-level safety net missing",
+      "catch net missing",
+      "no net per level",
+      "safety net unsecured",
+      "safety net damaged",
+      "safety net poorly installed"
+    ],
+    "exclusion_keywords": [
+      "catch net hung at each level",
+      "safety net at every level",
+      "full scaffold catch nets complete",
+      "safety net intact and fixed",
+      "net provided per level"
+    ],
+    "source_level": "Industry standard (JGJ 80/JGJ 130) / engineered rule",
+    "source_quote": "Install a safety net beneath scaffold decking at the working level, with horizontal safety-net closure at intervals of 10 m below. Close the gap between the inner row of the working-level scaffold and the building with scaffold boards or a safety net.",
+    "rectification_advice": "Install and secure the working-level under-net and 10 m interval closure, close the inner gap, and replace damaged or detached netting.",
+    "normative_rule": "dense_scaffold_present == yes AND fall_layer_present == yes AND (layer_safety_net_present == no OR net_fixed_and_intact == no OR ten_meter_interval_closure_compliant == no)",
+    "visual_screening_rule": "dense_scaffold_present == yes AND fall_layer_present == yes AND (layer_safety_net_present == no OR net_fixed_and_intact == no)",
+    "visual_retrieval_text": "full-scaffold catch net, ground-supported scaffold inter-level safety net, ringlock scaffold horizontal catch net, fine-mesh scaffold fall-arrest net, scaffold without catch net, damaged safety net, scaffold safety net",
+    "non_visual_fields": {
+      "ten_meter_interval_closure_compliant": {
+        "description": "Whether horizontal safety-net closure is provided at vertical intervals not exceeding 10 m below the working level.",
+        "source": [
+          "manual_measurement",
+          "inspection_record"
+        ],
+        "required_for_normative_decision": true,
+        "use_in_current_experiment": false
+      }
+    },
+    "decision_scope": "visual_screening_only",
+    "review_prompt": "A single image can screen the working-level catch net and its visible condition. For a full normative decision, verify from measurements or inspection records that horizontal closure is also provided at vertical intervals not exceeding 10 m.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-EDG-012-passage-shed-protection",
+    "major_category": "Edge Hazard",
+    "subcategory": "Protective shed",
+    "rule_name": "Safe passage or work area under falling-object risk has no protective shed, or the shed covering is damaged or removed",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "passage_or_work_area_present": "A pedestrian passage, site entrance way, processing/rebar shed bay or similar area where people walk or work beneath something. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "falling_object_risk_present": "Falling-object exposure over or beside that area: work at height, hoisting, material stacked at an upper edge, or an open structural edge above. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "protective_shed_present": "An anti-smash or cantilever protective shed is built over the passage or work area; answer no when the area stands open overhead with no shed at all. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "shed_covering_intact": "The shed roof and its lateral protection are continuous, with no missing panels, holes, collapsed spans, or removed sections left unrestored. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "passage_or_work_area_present",
+      "falling_object_risk_present",
+      "protective_shed_present",
+      "shed_covering_intact"
+    ],
+    "critical_checkpoints": [
+      "passage_or_work_area_present",
+      "falling_object_risk_present",
+      "protective_shed_present",
+      "shed_covering_intact"
+    ],
+    "machine_rule": "passage_or_work_area_present == yes AND falling_object_risk_present == yes AND (protective_shed_present == no OR shed_covering_intact == no)",
+    "positive_keywords": [
+      "no protective shed",
+      "protective shed missing",
+      "passage protection damaged",
+      "safe-passage protection",
+      "protective shed",
+      "cantilever protective shed",
+      "steel plate not restored promptly",
+      "anti-smash shed"
+    ],
+    "exclusion_keywords": [
+      "protective shed intact",
+      "passage protection restored",
+      "no falling-object risk"
+    ],
+    "source_level": "Shenzhen local standard / engineering-derived rule",
+    "source_quote": "Where work must occur within the possible falling-object radius, provide a protective shed or exclusion zone that prevents injury below. A personnel passage entrance within that radius shall have a protective shed.",
+    "rectification_advice": "Provide a designed, inspected protective shed with continuous intact covering over the affected passage or work area; for building heights above 24 m use double-layer protection as required by JGJ 80, and close the danger zone until rectified.",
+    "normative_rule": "passage_or_work_area_present == yes AND falling_object_risk_present == yes AND (protective_shed_present == no OR shed_covering_intact == no)",
+    "visual_screening_rule": "passage_or_work_area_present == yes AND falling_object_risk_present == yes AND (protective_shed_present == no OR shed_covering_intact == no)",
+    "visual_retrieval_text": "safe passage shed, anti-smash shed, cantilever protective shed, passage with no overhead shed, damaged protective shed, missing shed panel",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule relies on single-image visible facts (whether people pass or work below the area, whether falling-object exposure is present above it, whether a protective shed is built over it, and whether its covering is continuous); for review, a person can confirm the shed's presence and covering condition.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-OPN-011-manhole-trench-cover",
+    "major_category": "Opening Hazard",
+    "subcategory": "Horizontal opening",
+    "rule_name": "Manhole cover, trench cover or rain grate damaged, opened or missing and not restored",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "manhole_or_trench_cover_required": "Manhole/trench/rain-grate location present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "cover_present": "Cover or manhole lid present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "cover_intact": "Cover/lid intact. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "cover_restored": "Promptly restored after opening. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "fall_or_trip_risk_present": "Fall or trip risk present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "manhole_or_trench_cover_required",
+      "cover_present",
+      "cover_intact",
+      "cover_restored",
+      "fall_or_trip_risk_present"
+    ],
+    "critical_checkpoints": [
+      "manhole_or_trench_cover_required",
+      "cover_present",
+      "cover_intact",
+      "cover_restored",
+      "fall_or_trip_risk_present"
+    ],
+    "machine_rule": "manhole_or_trench_cover_required == yes AND fall_or_trip_risk_present == yes AND (cover_present == no OR cover_intact == no OR cover_restored == no)",
+    "positive_keywords": [
+      "manhole cover damaged",
+      "trench cover missing",
+      "trench cover open",
+      "not restored promptly",
+      "rain-grate horizontal protection missing",
+      "cable-trench cover missing",
+      "sump cover missing",
+      "water-pit cover missing"
+    ],
+    "exclusion_keywords": [
+      "manhole cover intact",
+      "cover restored",
+      "temporary enclosure"
+    ],
+    "source_level": "Industry standard / engineering-derived rule",
+    "source_quote": "Provide stable covers at manholes, floor doors and similar openings. If a cover must be temporarily removed or opened, provide reliable isolation and restore the cover immediately after the work.",
+    "rectification_advice": "Replace, refit and secure the damaged or missing cover immediately. If it cannot be restored during the work, provide a rigid temporary enclosure and conspicuous warning, then restore and inspect it on completion.",
+    "normative_rule": "manhole_or_trench_cover_required == yes AND fall_or_trip_risk_present == yes AND (cover_present == no OR cover_intact == no OR cover_restored == no)",
+    "visual_screening_rule": "manhole_or_trench_cover_required == yes AND fall_or_trip_risk_present == yes AND (cover_present == no OR cover_intact == no OR cover_restored == no)",
+    "visual_retrieval_text": "manhole cover, trench cover, rain grate, missing manhole cover, open trench, broken cover plate",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-016-cable-on-ground",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Temporary electricity",
+    "rule_name": "Cables on the ground, crossing passages, or noncompliant temporary-power cabling management",
+    "priority": "P2",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "temporary_cable_present": "Temporary cable present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "cable_on_ground": "Cable lying on the ground. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "cable_crossing_passage": "Cable crossing person/vehicle passage. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "cable_protected_or_elevated": "Cable elevated or protected. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "trip_or_electric_risk_present": "Trip or electric-shock risk present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "temporary_cable_present",
+      "cable_on_ground",
+      "cable_crossing_passage",
+      "cable_protected_or_elevated",
+      "trip_or_electric_risk_present"
+    ],
+    "critical_checkpoints": [
+      "temporary_cable_present",
+      "cable_on_ground",
+      "cable_crossing_passage",
+      "cable_protected_or_elevated",
+      "trip_or_electric_risk_present"
+    ],
+    "machine_rule": "temporary_cable_present == yes AND (cable_on_ground == yes OR cable_crossing_passage == yes) AND cable_protected_or_elevated == no",
+    "positive_keywords": [
+      "cable on ground",
+      "temporary electricity",
+      "cabling on ground",
+      "cable trench",
+      "cabling management noncompliant"
+    ],
+    "exclusion_keywords": [
+      "cable elevated",
+      "conduit protection",
+      "trunking protection",
+      "cable-tray routing"
+    ],
+    "source_level": "CSCEC Third Bureau Shenzhen public source / engineering-derived rule",
+    "source_quote": "Temporary distribution cables shall be routed underground or overhead and shall not be laid exposed along the ground; protect them against mechanical damage and corrosive media. Provide load- and insulation-appropriate protection where they cross a passage or road.",
+    "rectification_advice": "Reroute exposed ground-laid distribution cables overhead or underground. At temporary crossings, use an approved cable ramp, protective conduit or bridge, secure and mark it, and inspect it regularly.",
+    "normative_rule": "temporary_cable_present == yes AND (cable_on_ground == yes OR cable_crossing_passage == yes) AND cable_protected_or_elevated == no",
+    "visual_screening_rule": "temporary_cable_present == yes AND trip_or_electric_risk_present == yes AND (cable_on_ground == yes OR cable_crossing_passage == yes) AND cable_protected_or_elevated == no",
+    "visual_retrieval_text": "temporary cable on ground, cable crossing passage, trailing power cable, elevated cable on tray, conduit-protected cable",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-013-damaged-lifting-gear",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Machinery and lifting operation",
+    "rule_name": "Lifting gear or rigging damaged or meeting scrap criteria but still in use",
+    "priority": "P1",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record",
+      "permit"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "lifting_gear_present": "Lifting gear or rigging present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "lifting_gear_damaged": "Lifting gear/rigging damaged. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "scrap_condition_met": "Scrap condition met. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+      "still_in_use": "Still in use. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "lifting_gear_present",
+      "lifting_gear_damaged",
+      "scrap_condition_met",
+      "still_in_use"
+    ],
+    "critical_checkpoints": [
+      "lifting_gear_present",
+      "lifting_gear_damaged",
+      "scrap_condition_met",
+      "still_in_use"
+    ],
+    "machine_rule": "lifting_gear_present == yes AND still_in_use == yes AND (lifting_gear_damaged == yes OR scrap_condition_met == yes)",
+    "positive_keywords": [
+      "lifting gear damaged",
+      "damaged lifting gear not scrapped",
+      "rigging damaged",
+      "lifting gear noncompliant",
+      "lifting violation"
+    ],
+    "exclusion_keywords": [
+      "lifting gear intact",
+      "scrapped",
+      "replaced",
+      "inspection passed"
+    ],
+    "source_level": "Industry standard / engineering-derived rule",
+    "source_quote": "Lifting accessories and slings shall suit the load and environment and shall be inspected before each operation. Equipment meeting the applicable product or manufacturer's discard criteria shall not remain in service.",
+    "rectification_advice": "Immediately stop using, isolate and mark damaged or discard-condition gear; dispose of it under the applicable discard standard, replace it with compliant gear, and inspect before resuming.",
+    "normative_rule": "lifting_gear_present == yes AND still_in_use == yes AND (lifting_gear_damaged == yes OR scrap_condition_met == yes)",
+    "visual_screening_rule": "lifting_gear_present == yes AND still_in_use == yes AND (lifting_gear_damaged == yes OR scrap_condition_met == yes)",
+    "visual_retrieval_text": "lifting rigging, sling or wire rope, damaged lifting gear, frayed sling, worn shackle, crane hook",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the objects and protection status shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-BHV-012-inattentive-unsafe-behavior",
+    "major_category": "Unsafe Behavior",
+    "subcategory": "Inattentive or distracted behavior",
+    "rule_name": "Worker showing a clear lack of safety awareness, such as phone use or inattention in a work or hazard area",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "video"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "person_present": "Person present?",
+      "construction_site_context": "On a construction site?",
+      "unsafe_awareness_lapse_present": "Does the person show a clear lapse in safety awareness -- e.g., using or looking at a phone, wearing earphones, or otherwise visibly inattentive -- while in a work or hazard area (at height, near edges/openings, near operating machinery or site traffic)? Judge only clearly visible behaviour; a person plainly at rest in a designated safe/rest area is not a violation."
+    },
+    "required_checkpoints": [
+      "person_present",
+      "construction_site_context",
+      "unsafe_awareness_lapse_present"
+    ],
+    "critical_checkpoints": [
+      "unsafe_awareness_lapse_present"
+    ],
+    "machine_rule": "person_present == yes AND construction_site_context == yes AND unsafe_awareness_lapse_present == yes",
+    "positive_keywords": [
+      "using phone on site",
+      "worker looking at phone",
+      "distracted worker",
+      "wearing earphones on site",
+      "inattentive behaviour",
+      "not paying attention"
+    ],
+    "exclusion_keywords": [
+      "phone use in rest area",
+      "designated break area",
+      "non-work area",
+      "non-worker"
+    ],
+    "source_level": "Site safety management requirement / accident-investigation basis",
+    "source_quote": "Personnel in work or hazard areas shall stay attentive to their surroundings; distracting behaviour such as using a mobile phone, wearing earphones or horseplay that reflects a clear lack of safety awareness is prohibited.",
+    "rectification_advice": "Stop the distracting behaviour; keep attention on the work and surroundings, and use phones only in designated safe areas.",
+    "normative_rule": "person_present == yes AND construction_site_context == yes AND unsafe_awareness_lapse_present == yes",
+    "visual_screening_rule": "person_present == yes AND construction_site_context == yes AND unsafe_awareness_lapse_present == yes",
+    "visual_retrieval_text": "worker using phone, person looking at cellphone, distracted worker on site, worker wearing earphones",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "This rule mainly relies on facts visible in a single image; for review, a human can confirm the person, the work/hazard context, and the inattentive behaviour shown.",
+    "no_subject_default": "compliant"
+  },
+  {
+    "rule_id": "R-CIV-018-poor-overall-housekeeping",
+    "major_category": "Civilized Construction Hazard",
+    "subcategory": "Site housekeeping",
+    "rule_name": "Poor overall housekeeping: dirty/disorderly site appearance or substandard civilized construction",
+    "priority": "P3",
+    "evidence_types": [
+      "image",
+      "video",
+      "inspection_record"
+    ],
+    "thresholds": {},
+    "visual_checkpoints": {
+      "construction_site_context": "On a construction site. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "site_appearance_poor": "Site appearance dirty/disorderly or housekeeping clearly substandard, including standing water/ponding, accumulated mud, mixed materials and waste, or severely obstructed passages. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+      "specific_civil_defect_identified": "Specific housekeeping-defect type identifiable. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+    },
+    "required_checkpoints": [
+      "construction_site_context",
+      "site_appearance_poor",
+      "specific_civil_defect_identified"
+    ],
+    "critical_checkpoints": [
+      "construction_site_context",
+      "site_appearance_poor"
+    ],
+    "machine_rule": "construction_site_context == yes AND site_appearance_poor == yes",
+    "positive_keywords": [
+      "poor housekeeping",
+      "housekeeping substandard",
+      "housekeeping lagging",
+      "uncivilized condition",
+      "gate dirty/disorderly",
+      "poor site appearance",
+      "site dirty/disorderly",
+      "standing water",
+      "site ponding"
+    ],
+    "exclusion_keywords": [
+      "site tidy",
+      "housekeeping compliant",
+      "rectified"
+    ],
+    "source_level": "Industry standard / Shenzhen local standard",
+    "source_quote": "Shenzhen defines civilized construction as work that safeguards the working environment, urban sanitation and personnel health while reducing impact on surroundings; JGJ 59 provides a full classification for civilized-construction assessment.",
+    "rectification_advice": "Comprehensively rectify dirty/disorderly site appearance and substandard housekeeping, including draining and clearing standing water and accumulated mud; where a specific defect (e.g. hoarding, material stacking, waste removal, dust, standing water/drainage) is identifiable, rectify per the corresponding specific rule.",
+    "normative_rule": "construction_site_context == yes AND site_appearance_poor == yes",
+    "visual_screening_rule": "construction_site_context == yes AND site_appearance_poor == yes",
+    "visual_retrieval_text": "messy construction site, dirty disorderly site, poor housekeeping, scattered debris, standing water on site, tidy clean site",
+    "non_visual_fields": {},
+    "decision_scope": "normative_decision_available",
+    "review_prompt": "Catch-all for cases with no clearly identifiable specific housekeeping defect but a clearly poor overall site appearance; if a specific defect type can be identified, prefer the corresponding specific rule.",
+    "no_subject_default": "compliant"
+  }
+]

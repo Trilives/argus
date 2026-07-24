@@ -1,0 +1,37 @@
+# Byte-compiled / caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments / secrets (never commit endpoint URLs or keys)
+.venv/
+venv/
+.env
+.env.*
+*.local
+
+# Model weights
+*.pt
+*.bin
+*.safetensors
+models/
+scratch_models/
+
+# Bulk / private data must NEVER be committed to this public repo.
+# It intentionally ships only curated public subsets:
+#   examples/sample_images/  (20 privacy-reviewed demo images)
+#   results/**/*summary*.json + the aggregate retrieval summary
+# Do not add the full image pool, gold annotations, or per-image result dumps.
+/data/images/
+/data/gold/
+/data/annotations/
+/runs/
+/outputs/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

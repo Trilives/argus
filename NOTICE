@@ -1,0 +1,13 @@
+ARGus — Agentic Rule-Grounded Screening
+Copyright 2026 [The ARGus Authors — fill in before publishing]
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The rule library (data/rules/rules_en.json) encodes construction-safety
+requirements as paraphrased English summaries derived from national, industry,
+and Shenzhen local standards, plus engineering- and accident-report-derived
+rules. The Apache-2.0 license covers this repository's code and data
+representation; it does not assert rights over the underlying regulatory
+standards themselves, which remain the property of their issuing bodies. No
+verbatim standard document is redistributed here. See "Licensing, provenance,
+and redistribution" in README.md.

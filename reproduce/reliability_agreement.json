@@ -1,0 +1,227 @@
+{
+  "annotator": "anno2",
+  "subset": {
+    "fraction": 0.2,
+    "seed": 20260713,
+    "n": 100,
+    "of": 500
+  },
+  "n_images_compared": 100,
+  "n_images_missing_primary": 0,
+  "rule_set_exact_match": 0.77,
+  "rule_set_mean_jaccard": 0.906,
+  "n_shared_status_pairs": 171,
+  "status_raw_agreement": 0.982,
+  "status_cohen_kappa": 0.948,
+  "detection_binary_kappa": 0.948,
+  "disagreement_counts": {
+    "rule_only_primary": 14,
+    "rule_only_anno2": 12,
+    "status_conflict": 3
+  },
+  "disagreements": [
+    {
+      "image_id": "img_0187",
+      "rule_id": "R-CIV-003-material-stacking-labeling",
+      "kind": "rule_only_primary",
+      "primary": "compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_0190",
+      "rule_id": "R-EDG-003-roof-balcony-platform-edge",
+      "kind": "rule_only_primary",
+      "primary": "non_compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_0542",
+      "rule_id": "R-CIV-003-material-stacking-labeling",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "compliant"
+    },
+    {
+      "image_id": "img_0728",
+      "rule_id": "R-OPN-009-service-shaft-opening",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "non_compliant"
+    },
+    {
+      "image_id": "img_1035",
+      "rule_id": "R-CIV-018-poor-overall-housekeeping",
+      "kind": "rule_only_primary",
+      "primary": "non_compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_1091",
+      "rule_id": "R-CIV-003-material-stacking-labeling",
+      "kind": "rule_only_primary",
+      "primary": "non_compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_1105",
+      "rule_id": "R-CIV-001-hoarding-missing-low",
+      "kind": "rule_only_primary",
+      "primary": "compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_1105",
+      "rule_id": "R-EDG-003-roof-balcony-platform-edge",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "compliant"
+    },
+    {
+      "image_id": "img_1355",
+      "rule_id": "R-BHV-002-helmet-and-attire",
+      "kind": "rule_only_primary",
+      "primary": "non_compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_1467",
+      "rule_id": "R-EDG-006-pit-trench-edge",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "non_compliant"
+    },
+    {
+      "image_id": "img_0261",
+      "rule_id": "R-BHV-002-helmet-and-attire",
+      "kind": "status_conflict",
+      "primary": "compliant",
+      "anno2": "non_compliant"
+    },
+    {
+      "image_id": "img_0428",
+      "rule_id": "R-EDG-011-scaffold-layer-catch-net",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "compliant"
+    },
+    {
+      "image_id": "img_0520",
+      "rule_id": "R-EDG-007-guardrail-construction",
+      "kind": "status_conflict",
+      "primary": "compliant",
+      "anno2": "non_compliant"
+    },
+    {
+      "image_id": "img_0587",
+      "rule_id": "R-CIV-018-poor-overall-housekeeping",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "non_compliant"
+    },
+    {
+      "image_id": "img_0624",
+      "rule_id": "R-BHV-001-no-harness-at-height",
+      "kind": "rule_only_primary",
+      "primary": "undetermined",
+      "anno2": null
+    },
+    {
+      "image_id": "img_0624",
+      "rule_id": "R-BHV-002-helmet-and-attire",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "undetermined"
+    },
+    {
+      "image_id": "img_0648",
+      "rule_id": "R-CIV-003-material-stacking-labeling",
+      "kind": "rule_only_primary",
+      "primary": "compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_0671",
+      "rule_id": "R-EDG-007-guardrail-construction",
+      "kind": "rule_only_primary",
+      "primary": "compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_0679",
+      "rule_id": "R-BHV-002-helmet-and-attire",
+      "kind": "rule_only_primary",
+      "primary": "compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_0739",
+      "rule_id": "R-BHV-002-helmet-and-attire",
+      "kind": "rule_only_primary",
+      "primary": "compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_0867",
+      "rule_id": "R-BHV-002-helmet-and-attire",
+      "kind": "rule_only_primary",
+      "primary": "compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_0976",
+      "rule_id": "R-CIV-018-poor-overall-housekeeping",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "non_compliant"
+    },
+    {
+      "image_id": "img_1362",
+      "rule_id": "R-EDG-007-guardrail-construction",
+      "kind": "rule_only_primary",
+      "primary": "non_compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_1364",
+      "rule_id": "R-EDG-007-guardrail-construction",
+      "kind": "status_conflict",
+      "primary": "compliant",
+      "anno2": "non_compliant"
+    },
+    {
+      "image_id": "img_1364",
+      "rule_id": "R-EDG-003-roof-balcony-platform-edge",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "compliant"
+    },
+    {
+      "image_id": "img_1416",
+      "rule_id": "R-CIV-011-smoking-burning",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "non_compliant"
+    },
+    {
+      "image_id": "img_1463",
+      "rule_id": "R-EDG-003-roof-balcony-platform-edge",
+      "kind": "rule_only_primary",
+      "primary": "non_compliant",
+      "anno2": null
+    },
+    {
+      "image_id": "img_1463",
+      "rule_id": "R-EDG-005-scaffold-structure-gap",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "non_compliant"
+    },
+    {
+      "image_id": "img_1547",
+      "rule_id": "R-BHV-001-no-harness-at-height",
+      "kind": "rule_only_anno2",
+      "primary": null,
+      "anno2": "non_compliant"
+    }
+  ]
+}

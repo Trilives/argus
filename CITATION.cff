@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "ARGus — Agentic Rule-Grounded Screening"
+abstract: >-
+  An auditable framework for image-based regulatory compliance screening
+  against complex rule sets: a bounded retrieval agent proposes candidate rules
+  and a rule-grounded verdict keeps every decision traceable to a clause.
+license: Apache-2.0
+repository-code: "[repository URL — fill in before publishing]"
+authors:
+  - family-names: "[Author One — fill in]"
+  - family-names: "[Author Two — fill in]"
+preferred-citation:
+  type: article
+  title: >-
+    Agentic Rule Retrieval for Traceable, Rule-Grounded Visual Compliance
+    Screening against Complex Regulatory Rule Sets
+  authors:
+    - family-names: "[Author One — fill in]"
+    - family-names: "[Author Two — fill in]"
+  year: 2026
+  notes: "Under review at Advanced Engineering Informatics."

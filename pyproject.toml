@@ -1,0 +1,33 @@
+[project]
+name = "argus"
+version = "0.1.0"
+description = "ARGus — Agentic Rule-Grounded Screening: auditable visual regulatory compliance."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+dependencies = [
+    "openai>=1.0.0",
+    "pillow>=11.0.0",
+    "python-dotenv>=1.2.2",
+    "jsonschema>=4.0.0",
+    "numpy>=1.26.0",
+]
+
+# Model serving — only needed to run the VLM/judge pipeline against an
+# OpenAI-compatible endpoint (vLLM / SGLang). Not needed to read the code or to
+# author/validate rules. Install with: uv sync --group serving
+[dependency-groups]
+serving = [
+    "torch>=2.5.0",
+    "torchvision>=0.20.0",
+    "transformers>=4.51.0",
+    "accelerate>=1.0.0",
+    "huggingface-hub>=0.28.0",
+    "compressed-tensors>=0.15.0",
+    "vllm>=0.20.0",
+]
+
+# This repository is run as scripts over a src/ tree, not installed as a package,
+# so uv manages the environment without building the project itself.
+[tool.uv]
+package = false
