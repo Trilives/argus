@@ -1,0 +1,153 @@
+{
+  "cells": {
+    "R4_gated_sym": {
+      "gate": {
+        "n_images": 500,
+        "n_candidates": 1119,
+        "mean_candidates_per_image": 2.238,
+        "decisions": {
+          "applicable": 821,
+          "not_applicable": 79,
+          "unknown": 219
+        },
+        "routes": {
+          "formula_true": 749,
+          "gate_unknown": 219,
+          "gate_not_applicable": 79,
+          "formula_false": 40,
+          "unknown_needs_review": 31,
+          "not_visually_evaluable": 1
+        },
+        "filter_rate": 0.0706,
+        "filtered_correctly": 65,
+        "filtered_gold_violation": 14,
+        "filter_precision": 0.8228,
+        "abstention_rate": 0.1957,
+        "abstained_gold_violation": 108,
+        "image_abstention_rate": 0.362,
+        "coverage": 0.8043,
+        "n_claims": 749
+      },
+      "score": {
+        "cell": "R4_gated_sym",
+        "n": 500,
+        "gv_tp": 318,
+        "gv_pred": 749,
+        "gv_gold": 691,
+        "gv_precision_micro": 0.4246,
+        "gv_recall_micro": 0.4602,
+        "gv_f1_micro": 0.4417,
+        "gv_precision_macro": 0.4382,
+        "gv_recall_macro": 0.4922,
+        "coverage_mean": 0.4922,
+        "all_found_rate": 0.3962,
+        "cited_applicable_rate": 0.8566,
+        "img_precision": 0.9631,
+        "img_recall": 0.8856,
+        "img_f1": 0.9227,
+        "parse_errors": 0,
+        "pairs_used": 1119,
+        "pair_parse_errors": 0,
+        "pair_run_errors": 0
+      }
+    },
+    "R4fam_gated_sym": {
+      "gate": {
+        "n_images": 500,
+        "n_candidates": 3043,
+        "mean_candidates_per_image": 6.086,
+        "decisions": {
+          "applicable": 1642,
+          "not_applicable": 893,
+          "unknown": 508
+        },
+        "routes": {
+          "formula_true": 1499,
+          "gate_not_applicable": 893,
+          "gate_unknown": 508,
+          "formula_false": 86,
+          "unknown_needs_review": 48,
+          "no_subject_default": 8,
+          "not_visually_evaluable": 1
+        },
+        "filter_rate": 0.2935,
+        "filtered_correctly": 853,
+        "filtered_gold_violation": 40,
+        "filter_precision": 0.9552,
+        "abstention_rate": 0.1669,
+        "abstained_gold_violation": 128,
+        "image_abstention_rate": 0.628,
+        "coverage": 0.8331,
+        "n_claims": 1499
+      },
+      "score": {
+        "cell": "R4fam_gated_sym",
+        "n": 500,
+        "gv_tp": 372,
+        "gv_pred": 1499,
+        "gv_gold": 691,
+        "gv_precision_micro": 0.2482,
+        "gv_recall_micro": 0.5384,
+        "gv_f1_micro": 0.3397,
+        "gv_precision_macro": 0.2587,
+        "gv_recall_macro": 0.556,
+        "coverage_mean": 0.556,
+        "all_found_rate": 0.464,
+        "cited_applicable_rate": 0.9414,
+        "img_precision": 0.9536,
+        "img_recall": 0.9153,
+        "img_f1": 0.9341,
+        "parse_errors": 0,
+        "pairs_used": 3043,
+        "pair_parse_errors": 1,
+        "pair_run_errors": 0
+      }
+    }
+  },
+  "baselines": {
+    "R4_decoupled_sym": {
+      "cell": "R4_decoupled_sym",
+      "n": 500,
+      "gv_tp": 404,
+      "gv_pred": 962,
+      "gv_gold": 691,
+      "gv_precision_micro": 0.42,
+      "gv_recall_micro": 0.5847,
+      "gv_f1_micro": 0.4888,
+      "gv_precision_macro": 0.4415,
+      "gv_recall_macro": 0.6095,
+      "coverage_mean": 0.6095,
+      "all_found_rate": 0.4958,
+      "cited_applicable_rate": 0.8566,
+      "img_precision": 0.9601,
+      "img_recall": 0.9682,
+      "img_f1": 0.9641,
+      "parse_errors": 0,
+      "pairs_used": 1119,
+      "pair_parse_errors": 0,
+      "pair_run_errors": 0
+    },
+    "R4fam_decoupled_sym": {
+      "cell": "R4fam_decoupled_sym",
+      "n": 500,
+      "gv_tp": 495,
+      "gv_pred": 2376,
+      "gv_gold": 691,
+      "gv_precision_micro": 0.2083,
+      "gv_recall_micro": 0.7164,
+      "gv_f1_micro": 0.3228,
+      "gv_precision_macro": 0.2207,
+      "gv_recall_macro": 0.7226,
+      "coverage_mean": 0.7226,
+      "all_found_rate": 0.6419,
+      "cited_applicable_rate": 0.9414,
+      "img_precision": 0.9488,
+      "img_recall": 0.9809,
+      "img_f1": 0.9646,
+      "parse_errors": 0,
+      "pairs_used": 3043,
+      "pair_parse_errors": 0,
+      "pair_run_errors": 0
+    }
+  }
+}
