@@ -28,8 +28,8 @@ authors:
 preferred-citation:
   type: article
   title: >-
-    Agentic Rule Retrieval for Traceable, Rule-Grounded Visual Compliance
-    Screening against Complex Regulatory Rule Sets
+    Auditable Visual Compliance Screening of Construction Sites:
+    Rule-Applicability Retrieval as the Binding Constraint
   authors:
     - given-names: "Fangjie"
       family-names: "Wu"
@@ -42,4 +42,4 @@ preferred-citation:
     - given-names: "Jie"
       family-names: "Gong"
   year: 2026
-  notes: "Under review at Advanced Engineering Informatics."
+  notes: "Under review at the Journal of Computing in Civil Engineering (ASCE)."

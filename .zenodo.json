@@ -1,6 +1,6 @@
 {
   "title": "ARGus — Agentic Rule-Grounded Screening",
-  "description": "An auditable framework for image-based regulatory compliance screening against complex rule sets: a bounded retrieval agent proposes candidate rules and a rule-grounded verdict keeps every decision traceable to a clause. Code, rule library and schema, stage prompts, privacy-reviewed sample images, and aggregate result summaries accompanying the paper \"Agentic Rule Retrieval for Traceable, Rule-Grounded Visual Compliance Screening against Complex Regulatory Rule Sets\" (under review at Advanced Engineering Informatics).",
+  "description": "An auditable framework for image-based regulatory compliance screening against complex rule sets: a bounded retrieval agent proposes candidate rules and a rule-grounded verdict keeps every decision traceable to a clause. Code, rule library and schema, stage prompts, privacy-reviewed sample images, and aggregate result summaries accompanying the paper \"Auditable Visual Compliance Screening of Construction Sites: Rule-Applicability Retrieval as the Binding Constraint\" (under review at the Journal of Computing in Civil Engineering, ASCE).",
   "upload_type": "software",
   "license": "Apache-2.0",
   "access_right": "open",

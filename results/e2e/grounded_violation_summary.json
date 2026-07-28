@@ -1,5 +1,5 @@
 {
-  "gold_path": "/home/ares/Workspace/Civi/CS/data/annotations/image_rule_gold.json",
+  "gold_path": "data/annotations/image_rule_gold.json",
   "ceiling": {
     "images_violated": 188,
     "gold_violations": 287,

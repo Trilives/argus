@@ -1,0 +1,112 @@
+{
+  "rows": [
+    {
+      "model": "Qwen3.6-35B (main)",
+      "mode": "facts_rules",
+      "judge": "J1",
+      "pairs": 880,
+      "gv_precision": 0.8789,
+      "gv_recall": 0.6932,
+      "gv_f1": 0.7751,
+      "all_found": 0.6377,
+      "parse_errors": 23,
+      "run_errors": 0
+    },
+    {
+      "model": "Qwen3.6-35B (main)",
+      "mode": "image_rules",
+      "judge": "J2",
+      "pairs": 880,
+      "gv_precision": 0.8448,
+      "gv_recall": 0.89,
+      "gv_f1": 0.8668,
+      "all_found": 0.8453,
+      "parse_errors": 0,
+      "run_errors": 0
+    },
+    {
+      "model": "Qwen3.6-35B (main)",
+      "mode": "decoupled",
+      "judge": "J3",
+      "pairs": 880,
+      "gv_precision": 0.8324,
+      "gv_recall": 0.8625,
+      "gv_f1": 0.8472,
+      "all_found": 0.8093,
+      "parse_errors": 0,
+      "run_errors": 0
+    },
+    {
+      "model": "gemma-4-12B",
+      "mode": "facts_rules",
+      "judge": "J1",
+      "pairs": 880,
+      "gv_precision": 0.8953,
+      "gv_recall": 0.6064,
+      "gv_f1": 0.723,
+      "all_found": 0.5636,
+      "parse_errors": 0,
+      "run_errors": 0
+    },
+    {
+      "model": "gemma-4-12B",
+      "mode": "image_rules",
+      "judge": "J2",
+      "pairs": 880,
+      "gv_precision": 0.8424,
+      "gv_recall": 0.8046,
+      "gv_f1": 0.8231,
+      "all_found": 0.7331,
+      "parse_errors": 0,
+      "run_errors": 0
+    },
+    {
+      "model": "gemma-4-12B",
+      "mode": "decoupled",
+      "judge": "J3",
+      "pairs": 880,
+      "gv_precision": 0.851,
+      "gv_recall": 0.8017,
+      "gv_f1": 0.8256,
+      "all_found": 0.7436,
+      "parse_errors": 0,
+      "run_errors": 0
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "mode": "facts_rules",
+      "judge": "J1",
+      "pairs": 880,
+      "gv_precision": 0.875,
+      "gv_recall": 0.6585,
+      "gv_f1": 0.7514,
+      "all_found": 0.5953,
+      "parse_errors": 18,
+      "run_errors": 0
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "mode": "image_rules",
+      "judge": "J2",
+      "pairs": 880,
+      "gv_precision": 0.8431,
+      "gv_recall": 0.8712,
+      "gv_f1": 0.8569,
+      "all_found": 0.8178,
+      "parse_errors": 2,
+      "run_errors": 0
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "mode": "decoupled",
+      "judge": "J3",
+      "pairs": 880,
+      "gv_precision": 0.8358,
+      "gv_recall": 0.8321,
+      "gv_f1": 0.8339,
+      "all_found": 0.7775,
+      "parse_errors": 0,
+      "run_errors": 0
+    }
+  ]
+}

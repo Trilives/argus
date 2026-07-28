@@ -1,0 +1,85 @@
+{
+  "rows": [
+    {
+      "model": "Qwen3.6-35B",
+      "arm": "R1R4",
+      "gv_p": 0.347,
+      "gv_r": 0.6107,
+      "gv_f1": 0.4426,
+      "all_found": 0.5403,
+      "pairs": 1500,
+      "parse_err": 0
+    },
+    {
+      "model": "Qwen3.6-35B",
+      "arm": "BM25R4",
+      "gv_p": 0.3474,
+      "gv_r": 0.6295,
+      "gv_f1": 0.4478,
+      "all_found": 0.5508,
+      "pairs": 1500,
+      "parse_err": 0
+    },
+    {
+      "model": "gemma-4-12B",
+      "arm": "R4",
+      "gv_p": 0.4399,
+      "gv_r": 0.5615,
+      "gv_f1": 0.4933,
+      "all_found": 0.4661,
+      "pairs": 1119,
+      "parse_err": 0
+    },
+    {
+      "model": "gemma-4-12B",
+      "arm": "R1R4",
+      "gv_p": 0.3455,
+      "gv_r": 0.5499,
+      "gv_f1": 0.4243,
+      "all_found": 0.4703,
+      "pairs": 1500,
+      "parse_err": 0
+    },
+    {
+      "model": "gemma-4-12B",
+      "arm": "BM25R4",
+      "gv_p": 0.3513,
+      "gv_r": 0.5658,
+      "gv_f1": 0.4335,
+      "all_found": 0.4767,
+      "pairs": 1500,
+      "parse_err": 0
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "arm": "R4",
+      "gv_p": 0.4423,
+      "gv_r": 0.6049,
+      "gv_f1": 0.511,
+      "all_found": 0.5191,
+      "pairs": 1119,
+      "parse_err": 8
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "arm": "R1R4",
+      "gv_p": 0.3596,
+      "gv_r": 0.5876,
+      "gv_f1": 0.4462,
+      "all_found": 0.5148,
+      "pairs": 1500,
+      "parse_err": 4
+    },
+    {
+      "model": "Qwen3.5-9B",
+      "arm": "BM25R4",
+      "gv_p": 0.3486,
+      "gv_r": 0.6049,
+      "gv_f1": 0.4423,
+      "all_found": 0.5233,
+      "pairs": 1500,
+      "parse_err": 3
+    }
+  ],
+  "note": "R4 is the same-model J2 baseline; R1R4/BM25R4 are the RRF fusion arms (TOP_K=3 rerank, same width as R4). 35B main-table R4xJ2 = 0.514."
+}

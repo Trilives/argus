@@ -1,0 +1,22 @@
+{
+  "n_total": 50,
+  "n_rated": 50,
+  "raters": 2,
+  "mean_relevance_0to2": 1.87,
+  "distribution": {
+    "2": 47,
+    "1": 2,
+    "0": 1
+  },
+  "pct_fully_relevant": 0.84,
+  "pct_acceptable_ge1": 0.98,
+  "per_category_mean": {
+    "BHV": 1.938,
+    "CIV": 1.625,
+    "EDG": 2.0,
+    "OPN": 1.775
+  },
+  "cohen_kappa": 0.499,
+  "raw_agreement": 0.9,
+  "n_double_rated": 50
+}

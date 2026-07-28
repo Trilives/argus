@@ -537,7 +537,7 @@
       "repetition_penalty": 1.1,
       "guided_json": false
     },
-    "rule_index": "/home/ares/Workspace/Civi/CS/data/rule_assets/rule_index.json"
+    "rule_index": "data/rule_assets/rule_index.json"
   },
   "facts_sha": "dab45ebed62c438a04aa842c7998b813dd06dff4f2b6e074c8904e53f27e8fd7",
   "usage": {

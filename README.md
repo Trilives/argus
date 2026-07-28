@@ -7,9 +7,9 @@ A bounded retrieval **agent** proposes the few candidate rules that plausibly ap
 evidence — never the agent's free text. The agent proposes; the rule formula and a human
 inspector dispose.
 
-> **Status.** Research code accompanying a manuscript under review at *Advanced Engineering
-> Informatics* (Special Issue on Trustworthy Hybrid Human Agentic-AI Engineering Systems).
-> This repository is provided so reviewers can inspect the method and the rule schema.
+> **Status.** Research code accompanying a manuscript under review at the *Journal of Computing in
+> Civil Engineering* (ASCE). This repository is provided so reviewers can inspect the method, the
+> rule schema, and the aggregate results behind every table in the paper.
 
 ## What's here
 
@@ -159,8 +159,9 @@ paraphrase of the rule logic before publishing.
 ## Citation
 
 A BibTeX entry will be added on acceptance. For now, cite the manuscript
-"Agentic Rule Retrieval for Traceable, Rule-Grounded Visual Compliance Screening against Complex
-Regulatory Rule Sets" (under review).
+"Auditable Visual Compliance Screening of Construction Sites: Rule-Applicability Retrieval as the
+Binding Constraint" (under review), and the archived snapshot
+[10.5281/zenodo.21535054](https://doi.org/10.5281/zenodo.21535054).
 
 ---
 ### Before you make this public — checklist

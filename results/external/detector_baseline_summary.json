@@ -1,0 +1,243 @@
+{
+  "task": "helmet-compliance head-to-head (R-BHV-002) over all 500 gold images",
+  "detector": {
+    "weights": "keremberke/yolov8m-hard-hat-detection (best.pt)",
+    "classes": [
+      "Hardhat",
+      "NO-Hardhat"
+    ],
+    "trigger": "any NO-Hardhat box with conf >= tau"
+  },
+  "detector_sweep": [
+    {
+      "tp": 29,
+      "fp": 15,
+      "fn": 72,
+      "P": 0.659,
+      "R": 0.287,
+      "F1": 0.4,
+      "tau": 0.1,
+      "fired": 44
+    },
+    {
+      "tp": 24,
+      "fp": 9,
+      "fn": 77,
+      "P": 0.727,
+      "R": 0.238,
+      "F1": 0.358,
+      "tau": 0.15,
+      "fired": 33
+    },
+    {
+      "tp": 19,
+      "fp": 5,
+      "fn": 82,
+      "P": 0.792,
+      "R": 0.188,
+      "F1": 0.304,
+      "tau": 0.2,
+      "fired": 24
+    },
+    {
+      "tp": 18,
+      "fp": 4,
+      "fn": 83,
+      "P": 0.818,
+      "R": 0.178,
+      "F1": 0.293,
+      "tau": 0.25,
+      "fired": 22
+    },
+    {
+      "tp": 15,
+      "fp": 4,
+      "fn": 86,
+      "P": 0.789,
+      "R": 0.149,
+      "F1": 0.25,
+      "tau": 0.3,
+      "fired": 19
+    },
+    {
+      "tp": 12,
+      "fp": 3,
+      "fn": 89,
+      "P": 0.8,
+      "R": 0.119,
+      "F1": 0.207,
+      "tau": 0.35,
+      "fired": 15
+    },
+    {
+      "tp": 9,
+      "fp": 2,
+      "fn": 92,
+      "P": 0.818,
+      "R": 0.089,
+      "F1": 0.161,
+      "tau": 0.4,
+      "fired": 11
+    },
+    {
+      "tp": 4,
+      "fp": 1,
+      "fn": 97,
+      "P": 0.8,
+      "R": 0.04,
+      "F1": 0.075,
+      "tau": 0.5,
+      "fired": 5
+    },
+    {
+      "tp": 2,
+      "fp": 0,
+      "fn": 99,
+      "P": 1.0,
+      "R": 0.02,
+      "F1": 0.039,
+      "tau": 0.6,
+      "fired": 2
+    }
+  ],
+  "detector_best": {
+    "tp": 29,
+    "fp": 15,
+    "fn": 72,
+    "P": 0.659,
+    "R": 0.287,
+    "F1": 0.4,
+    "tau": 0.1,
+    "fired": 44
+  },
+  "detector_sweep_applicable_only": [
+    {
+      "tp": 29,
+      "fp": 1,
+      "fn": 72,
+      "P": 0.967,
+      "R": 0.287,
+      "F1": 0.443,
+      "tau": 0.1,
+      "fired": 30
+    },
+    {
+      "tp": 24,
+      "fp": 1,
+      "fn": 77,
+      "P": 0.96,
+      "R": 0.238,
+      "F1": 0.381,
+      "tau": 0.15,
+      "fired": 25
+    },
+    {
+      "tp": 19,
+      "fp": 0,
+      "fn": 82,
+      "P": 1.0,
+      "R": 0.188,
+      "F1": 0.317,
+      "tau": 0.2,
+      "fired": 19
+    },
+    {
+      "tp": 18,
+      "fp": 0,
+      "fn": 83,
+      "P": 1.0,
+      "R": 0.178,
+      "F1": 0.303,
+      "tau": 0.25,
+      "fired": 18
+    },
+    {
+      "tp": 15,
+      "fp": 0,
+      "fn": 86,
+      "P": 1.0,
+      "R": 0.149,
+      "F1": 0.259,
+      "tau": 0.3,
+      "fired": 15
+    },
+    {
+      "tp": 12,
+      "fp": 0,
+      "fn": 89,
+      "P": 1.0,
+      "R": 0.119,
+      "F1": 0.212,
+      "tau": 0.35,
+      "fired": 12
+    },
+    {
+      "tp": 9,
+      "fp": 0,
+      "fn": 92,
+      "P": 1.0,
+      "R": 0.089,
+      "F1": 0.164,
+      "tau": 0.4,
+      "fired": 9
+    },
+    {
+      "tp": 4,
+      "fp": 0,
+      "fn": 97,
+      "P": 1.0,
+      "R": 0.04,
+      "F1": 0.076,
+      "tau": 0.5,
+      "fired": 4
+    },
+    {
+      "tp": 2,
+      "fp": 0,
+      "fn": 99,
+      "P": 1.0,
+      "R": 0.02,
+      "F1": 0.039,
+      "tau": 0.6,
+      "fired": 2
+    }
+  ],
+  "detector_best_applicable_only": {
+    "tp": 29,
+    "fp": 1,
+    "fn": 72,
+    "P": 0.967,
+    "R": 0.287,
+    "F1": 0.443,
+    "tau": 0.1,
+    "fired": 30
+  },
+  "miss_breakdown": {
+    "violation_images": 101,
+    "has_no_hardhat_box": 31,
+    "only_hardhat_box": 70,
+    "no_detection": 0
+  },
+  "pipeline_R4xJ2_helmet": {
+    "tp": 62,
+    "fp": 5,
+    "fn": 39,
+    "P": 0.925,
+    "R": 0.614,
+    "F1": 0.738
+  },
+  "coverage": {
+    "violations_by_category": {
+      "OPN": 243,
+      "EDG": 250,
+      "BHV": 111,
+      "CIV": 87
+    },
+    "total_violation_pairs": 691,
+    "helmet_rule_violations": 101,
+    "ppe_suite_violations": 104,
+    "helmet_detector_coverage_frac": 0.146,
+    "ppe_suite_coverage_frac": 0.151
+  },
+  "caveat": "Off-the-shelf detector (not trained on these site images). Its low recall is (a) class-scheme mismatch — the binary {Hardhat,NO-Hardhat} cannot represent the rule's improper-wearing/chin-strap/attire branches (see miss_breakdown.only_hardhat_box) and (b) domain shift on far/small heads. An in-domain-trained detector would recover helmet-presence recall at PPE-box annotation cost, but still address only ~15% of the violation taxonomy (see coverage)."
+}
