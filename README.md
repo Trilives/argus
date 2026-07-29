@@ -7,9 +7,11 @@ A bounded retrieval **agent** proposes the few candidate rules that plausibly ap
 evidence — never the agent's free text. The agent proposes; the rule formula and a human
 inspector dispose.
 
-> **Status.** Research code accompanying a manuscript under review at the *Journal of Computing in
+> **Status.** Research code accompanying a manuscript submitted to the *Journal of Computing in
 > Civil Engineering* (ASCE). This repository is provided so reviewers can inspect the method, the
-> rule schema, and the aggregate results behind every table in the paper.
+> rule schema, and the aggregate results behind every table in the paper. It also hosts the paper's
+> **online supplement** ([`paper/supplement.pdf`](paper/supplement.pdf)): ASCE stopped hosting
+> Supplemental Materials files on 5 January 2025, so the manuscript links here instead.
 
 ## What's here
 
@@ -32,6 +34,7 @@ argus/
 │   ├── rules/rules_schema_en.json
 │   └── README.md                # gold data card (evaluation set is on request)
 ├── examples/                    # 20 privacy-reviewed sample images + a runnable walkthrough
+├── paper/supplement.pdf         # the paper's online supplement (ASCE no longer hosts these)
 ├── results/                     # aggregate metrics behind the paper's tables
 ├── reproduce/                   # freeze proof + label-only gold + GV scorer (verify the numbers)
 ├── tests/                       # hermetic unit tests for the core invariants
@@ -159,13 +162,20 @@ paraphrase of the rule logic before publishing.
 ## Citation
 
 A BibTeX entry will be added on acceptance. For now, cite the manuscript
-"Auditable Visual Compliance Screening of Construction Sites: Rule-Applicability Retrieval as the
-Binding Constraint" (under review), and the archived snapshot
-[10.5281/zenodo.21535054](https://doi.org/10.5281/zenodo.21535054).
+"Regulation-Grounded Visual Compliance Screening of Construction Sites: Rule Applicability Retrieval,
+Not Visual Judgement, Governs Accuracy" (submitted to the *Journal of Computing in Civil
+Engineering*, ASCE), and the archive
+[10.5281/zenodo.21535053](https://doi.org/10.5281/zenodo.21535053).
+
+That is the **all-versions** DOI: it always resolves to the latest release, which is what the
+paper's Data Availability Statement cites. To cite one exact snapshot, use the version DOI shown on
+that release's Zenodo page instead.
 
 ---
-### Before you make this public — checklist
-- [ ] Fill in the copyright holder in `NOTICE` and the author/citation block above.
+### Release checklist (run before tagging a new version)
+- [ ] Re-run `mirror_public_results.py` in the working repo so `results/` matches the paper.
 - [ ] Skim `source_quote` fields; loosen any summary judged too close to a protected clause.
-- [ ] Re-confirm no images / annotations / results / `.env` are staged (`.gitignore` covers them, but verify `git status`).
-- [ ] Optional: mint the Zenodo DOI and add it here and to the paper's Data Availability statement.
+- [ ] Confirm no images / annotations / per-pair dumps / `.env` are staged — `.gitignore` covers
+      them, but verify with `git status` rather than trusting it.
+- [ ] Refresh `paper/supplement.pdf` if the manuscript's supplement changed.
+- [ ] Bump `version` in `CITATION.cff` and `.zenodo.json`, then tag; Zenodo mints the version DOI.

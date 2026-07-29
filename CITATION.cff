@@ -7,29 +7,32 @@ abstract: >-
   and a rule-grounded verdict keeps every decision traceable to a clause.
 license: Apache-2.0
 repository-code: "https://github.com/Trilives/argus"
+doi: "10.5281/zenodo.21535053"
+version: "1.1.0"
+date-released: "2026-07-29"
 authors:
   - given-names: "Fangjie"
     family-names: "Wu"
-    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
+    affiliation: "China Construction Third Engineering Bureau Group Co. Ltd., Shenzhen, China"
   - given-names: "Xingpeng"
     family-names: "Jiang"
-    affiliation: "School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen)"
+    affiliation: "School of Computer Science and Technology, Harbin Institute of Technology, Shenzhen, China"
     orcid: "https://orcid.org/0009-0008-1578-3403"
   - given-names: "Wenlong"
     family-names: "Zhang"
-    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
+    affiliation: "China Construction Third Engineering Bureau Group Co. Ltd., Shenzhen, China"
   - given-names: "Boran"
     family-names: "Wang"
-    affiliation: "International Institute of Artificial Intelligence, Harbin Institute of Technology (Shenzhen)"
+    affiliation: "International Institute of Artificial Intelligence, Harbin Institute of Technology, Shenzhen, China"
     orcid: "https://orcid.org/0009-0007-9224-2697"
   - given-names: "Jie"
     family-names: "Gong"
-    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
+    affiliation: "China Construction Third Engineering Bureau Group Co. Ltd., Shenzhen, China"
 preferred-citation:
   type: article
   title: >-
-    Auditable Visual Compliance Screening of Construction Sites:
-    Rule-Applicability Retrieval as the Binding Constraint
+    Regulation-Grounded Visual Compliance Screening of Construction Sites:
+    Rule Applicability Retrieval, Not Visual Judgement, Governs Accuracy
   authors:
     - given-names: "Fangjie"
       family-names: "Wu"
@@ -42,4 +45,8 @@ preferred-citation:
     - given-names: "Jie"
       family-names: "Gong"
   year: 2026
-  notes: "Under review at the Journal of Computing in Civil Engineering (ASCE)."
+  journal: "Journal of Computing in Civil Engineering"
+  notes: >-
+    Submitted to the Journal of Computing in Civil Engineering (ASCE).
+    F. Wu and X. Jiang contributed equally and are joint first authors;
+    B. Wang is the corresponding author.
