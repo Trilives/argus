@@ -12,7 +12,9 @@ Regenerate with `scripts/mirror_public_results.py` in the full research reposito
 | File | What it backs |
 |---|---|
 | `retrieval/annotated_retrieval_summary.json` | Retrieval ladder — hit@k / recall@k for the fixed and agentic retrievers (R1–R4, BM25, SigLIP-2). |
+| `retrieval/rq1_metric_table.{json,md}` | The full ladder including the cost-matched non-agent controls (cross-encoder, one-shot VLM selector), with precision@k — the column showing that width, not agency, separates the arms. |
 | `retrieval/rrf_fusion_summary.{json,md}` | Reciprocal-rank fusion of BM25/R1 with R4: recall is purchasable at the retrieval level (hit@5 0.942). |
+| `retrieval/iter_sweep_summary.{json,md}` | Agent iteration-budget sweep (caps 2/4/8/16): mean iterations saturate near 3.3, so the cap is over-provisioned. |
 
 ## Judgement
 
@@ -20,6 +22,7 @@ Regenerate with `scripts/mirror_public_results.py` in the full research reposito
 |---|---|
 | `judgement/oracle_grounded_summary.json` | Oracle-rule judgement — the retrieval-free upper bound (GV-F1 0.867), which is why judgement is not the binding stage. |
 | `judgement/crossmodel_summary.{json,md}` | Cross-model replication (Qwen3.6-35B / gemma-4-12B / Qwen3.5-9B): the judge ordering is stable and barely scale-sensitive. |
+| `judgement/crossmodel_ci_summary.{json,md}` | Paired image-level bootstrap on that gap. A point estimate cannot support "indistinguishable", so this is what backs the claim: 9B vs 35B delta-F1 0.010, 95% CI [-0.004, 0.025] — **not** significant; gemma-4-12B 0.044, [0.027, 0.062] — significant. |
 
 ## End to end
 
@@ -33,13 +36,16 @@ Regenerate with `scripts/mirror_public_results.py` in the full research reposito
 | `e2e/compliant_fp_summary.json` | Compliant-image false-positive exposure against candidate width. |
 | `e2e/risk_coverage_summary.json` | Risk–coverage / selective-prediction behaviour. |
 | `e2e/split_leakage_summary.{json,md}` | Tuning exposure: cached predictions re-scored on disjoint strata of the frozen gold. |
+| `e2e/applicability_gate_summary.{json,md}` | The Kleene three-valued applicability gate: filter rate, filter precision, abstention and coverage per cell. |
+| `e2e/repeats_summary.json` | Run-to-run variance over repeat runs of the headline cells (decoding is stochastic; this is the spread the CIs sit on). |
 
 ## Data audit
 
 | File | What it backs |
 |---|---|
 | `data_audit/near_duplicates.{json,md}` | Perceptual-hash near-duplicate rates for the image pool and the gold set, with a threshold sweep. |
-| `data_audit/rule_provenance.{json,md}` | Per-rule screening-predicate derivation: transcribed clause vs. engineering-derived proxy, and decidability scope. |
+| `data_audit/rule_provenance.{json,md}` | Per-provision provenance: governing standard and provenance tag, plus the screening-predicate derivation (transcribed clause vs. engineering-derived proxy, dropped normative fields, decidability scope). Same table as the online supplement. |
+| `data_audit/agreement_stratified.md` | Inter-annotator agreement broken down by stratum, showing reliability is limited by provision *applicability* rather than compliance status. |
 
 ## External comparisons
 

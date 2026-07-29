@@ -1,0 +1,30 @@
+{
+  "mode": "image_rules",
+  "reps": 2000,
+  "seed": 20260716,
+  "reference": "Qwen3.6-35B-A3B",
+  "models": {
+    "Qwen3.5-9B": {
+      "n_paired_images": 500,
+      "reference_f1": 0.8668,
+      "model_f1": 0.8569,
+      "delta_f1": 0.0099,
+      "delta_f1_ci": [
+        -0.0043,
+        0.025
+      ],
+      "significant_95": false
+    },
+    "gemma-4-12B": {
+      "n_paired_images": 500,
+      "reference_f1": 0.8668,
+      "model_f1": 0.8231,
+      "delta_f1": 0.0437,
+      "delta_f1_ci": [
+        0.0266,
+        0.0607
+      ],
+      "significant_95": true
+    }
+  }
+}

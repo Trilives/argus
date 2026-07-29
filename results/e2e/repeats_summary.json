@@ -1,0 +1,40 @@
+{
+  "run_dirs": [
+    "results/e2e/repeats/r1",
+    "results/e2e/repeats/r2",
+    "results/e2e/repeats/r3"
+  ],
+  "cells": {
+    "R4_image_rules": {
+      "repeats": 3,
+      "gv_f1_micro_mean": 0.5163,
+      "gv_f1_micro_stdev": 0.0022,
+      "gv_f1_micro_values": [
+        0.5167,
+        0.5188,
+        0.5134
+      ],
+      "gv_precision_micro_mean": 0.4387,
+      "gv_precision_micro_stdev": 0.002,
+      "gv_precision_micro_values": [
+        0.4388,
+        0.4412,
+        0.4362
+      ],
+      "gv_recall_micro_mean": 0.6271,
+      "gv_recall_micro_stdev": 0.0025,
+      "gv_recall_micro_values": [
+        0.6281,
+        0.6295,
+        0.6237
+      ],
+      "all_found_rate_mean": 0.5403,
+      "all_found_rate_stdev": 0.003,
+      "all_found_rate_values": [
+        0.5424,
+        0.5424,
+        0.536
+      ]
+    }
+  }
+}

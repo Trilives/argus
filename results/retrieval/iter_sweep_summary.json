@@ -1,0 +1,48 @@
+{
+  "caps": {
+    "2": {
+      "n": 500,
+      "hit@1": 0.594,
+      "hit@3": 0.82,
+      "hit@5": 0.836,
+      "recall@3": 0.64,
+      "recall@5": 0.662,
+      "mean_iters": 2.0,
+      "max_iters_used": 2,
+      "failure_rate": 0.002
+    },
+    "4": {
+      "n": 500,
+      "hit@1": 0.606,
+      "hit@3": 0.784,
+      "hit@5": 0.792,
+      "recall@3": 0.61,
+      "recall@5": 0.62,
+      "mean_iters": 3.13,
+      "max_iters_used": 4,
+      "failure_rate": 0.006
+    },
+    "8": {
+      "n": 500,
+      "hit@1": 0.608,
+      "hit@3": 0.802,
+      "hit@5": 0.804,
+      "recall@3": 0.612,
+      "recall@5": 0.614,
+      "mean_iters": 3.31,
+      "max_iters_used": 8,
+      "failure_rate": 0.004
+    },
+    "16": {
+      "n": 500,
+      "hit@1": 0.618,
+      "hit@3": 0.794,
+      "hit@5": 0.806,
+      "recall@3": 0.61,
+      "recall@5": 0.623,
+      "mean_iters": 3.28,
+      "max_iters_used": 14,
+      "failure_rate": 0.006
+    }
+  }
+}
