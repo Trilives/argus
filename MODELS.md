@@ -8,7 +8,7 @@ stage (image facts, the retrieval agent, and the judgement).
 
 | Model | Role in the paper | HF id |
 |---|---|---|
-| Qwen3.5-9B | Vision + judge; the edge/deployment configuration (within 0.011 GV-F1 of the 35B judge) | `Qwen/Qwen3.5-9B` |
+| Qwen3.5-9B | Vision + judge; statistically indistinguishable from the 35B judge on oracle judgement (delta GV-F1 0.010, 95% CI [-0.004, 0.025]) | `Qwen/Qwen3.5-9B` |
 | Qwen3.6-35B-A3B-FP8 | Main-run vision model and judge | `Qwen/Qwen3.6-35B-A3B-FP8` |
 | gemma-4-12B-it | Cross-model judge (robustness) | `google/gemma-4-12b-it` |
 | SigLIP-2 (base/224) | R2 image-embedding retriever | `google/siglip2-base-patch16-224` |

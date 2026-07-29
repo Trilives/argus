@@ -1,11 +1,18 @@
-# ARGus — Agentic Rule-Grounded Screening
+# Regulation-Grounded Visual Compliance Screening of Construction Sites
 
-Reference implementation for an auditable framework that screens an image against a large,
-visually confusable regulatory rule set while keeping every decision traceable to a clause.
-A bounded retrieval **agent** proposes the few candidate rules that plausibly apply; a
-**human-auditable** verdict is then a function of a named rule formula and persisted checkpoint
-evidence — never the agent's free text. The agent proposes; the rule formula and a human
-inspector dispose.
+**ARGus** — code, provision library and evaluation harness for the paper of that name.
+
+Reference implementation and evaluation harness for **regulation-grounded visual compliance
+screening** of construction sites. Given a site photograph, a bounded retrieval **agent** proposes the
+few provisions that plausibly apply; the verdict is then computed from a named provision formula over
+persisted checkpoint evidence — never the agent's free text — so every decision traces back to a
+clause. The agent proposes; the provision formula and a human inspector dispose.
+
+The accompanying study locates where such pipelines fail. Handed the correct provision, the judge
+reaches a grounded-violation F1 of **0.867**; the best complete pipeline reaches **0.514**. So it is
+the *retrieval* step — deciding which provisions apply — and not the visual judgement that governs
+accuracy. And the intuitive fix does not work: grounded precision falls monotonically as the candidate
+set widens, from 0.44 at ~2.2 provisions per image to 0.16 across all 42.
 
 > **Status.** Research code accompanying a manuscript submitted to the *Journal of Computing in
 > Civil Engineering* (ASCE). This repository is provided so reviewers can inspect the method, the

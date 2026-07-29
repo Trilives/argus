@@ -1,14 +1,22 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper below."
-title: "ARGus — Agentic Rule-Grounded Screening"
+title: >-
+  Regulation-Grounded Visual Compliance Screening of Construction Sites:
+  Rule Applicability Retrieval, Not Visual Judgement, Governs Accuracy
+  — code, provision library and evaluation harness (ARGus)
 abstract: >-
-  An auditable framework for image-based regulatory compliance screening
-  against complex rule sets: a bounded retrieval agent proposes candidate rules
-  and a rule-grounded verdict keeps every decision traceable to a clause.
+  Reference implementation and evaluation harness for regulation-grounded visual
+  compliance screening of construction sites. Given a site photograph, a bounded
+  retrieval agent proposes the few provisions that plausibly apply, and the verdict
+  is computed from a named provision formula over persisted checkpoint evidence
+  rather than from model free text, so every decision traces back to a clause. The
+  accompanying study locates where such pipelines fail: it is the retrieval step --
+  deciding which provisions apply -- and not the visual judgement that governs
+  end-to-end accuracy, and grounded precision falls as the candidate set widens.
 license: Apache-2.0
 repository-code: "https://github.com/Trilives/argus"
 doi: "10.5281/zenodo.21535053"
-version: "1.1.1"
+version: "1.1.2"
 date-released: "2026-07-29"
 authors:
   - given-names: "Fangjie"
