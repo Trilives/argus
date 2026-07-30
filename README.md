@@ -1,4 +1,4 @@
-# Regulation-Grounded Visual Compliance Screening of Construction Sites
+# Applicability-Aware Rule Retrieval for Regulation-Grounded Construction-Site Visual Screening
 
 **ARGus** — code, provision library and evaluation harness for the paper of that name.
 
@@ -8,11 +8,15 @@ few provisions that plausibly apply; the verdict is then computed from a named p
 persisted checkpoint evidence — never the agent's free text — so every decision traces back to a
 clause. The agent proposes; the provision formula and a human inspector dispose.
 
-The accompanying study locates where such pipelines fail. Handed the correct provision, the judge
-reaches a grounded-violation F1 of **0.867**; the best complete pipeline reaches **0.514**. So it is
-the *retrieval* step — deciding which provisions apply — and not the visual judgement that governs
-accuracy. And the intuitive fix does not work: grounded precision falls monotonically as the candidate
-set widens, from 0.44 at ~2.2 provisions per image to 0.16 across all 42.
+The accompanying study reports where such pipelines fail. Handed the correct provision, the judge
+reaches a grounded-violation F1 of **0.867**; the best complete pipeline reaches **0.514**. Under the
+configurations tested it is therefore the *retrieval* step — deciding which provisions apply — rather
+than the visual judgement that dominates end-to-end accuracy. And the intuitive fix did not work:
+grounded precision decreased at every widening step measured. A controlled sweep of the candidate
+budget within a single retriever, holding the judge fixed, shows precision falling strictly and F1
+peaking at ~2 provisions per image for both a lexical and an agentic retriever
+([`results/e2e/k_scan_summary.md`](results/e2e/k_scan_summary.md)); three further widening
+interventions agree, down to 0.16 precision across all 42 provisions.
 
 > **Status.** Research code accompanying a manuscript submitted to the *Journal of Computing in
 > Civil Engineering* (ASCE). This repository is provided so reviewers can inspect the method, the
@@ -169,9 +173,8 @@ paraphrase of the rule logic before publishing.
 ## Citation
 
 A BibTeX entry will be added on acceptance. For now, cite the manuscript
-"Regulation-Grounded Visual Compliance Screening of Construction Sites: Rule Applicability Retrieval,
-Not Visual Judgement, Governs Accuracy" (submitted to the *Journal of Computing in Civil
-Engineering*, ASCE), and the archive
+"Applicability-Aware Rule Retrieval for Regulation-Grounded Construction-Site Visual Screening"
+(submitted to the *Journal of Computing in Civil Engineering*, ASCE), and the archive
 [10.5281/zenodo.21535053](https://doi.org/10.5281/zenodo.21535053).
 
 That is the **all-versions** DOI: it always resolves to the latest release, which is what the

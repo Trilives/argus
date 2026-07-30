@@ -1,7 +1,7 @@
 """Token/latency accounting shared by the model backends.
 
 ``OpenAIBackend.complete`` previously discarded ``response.usage``, so no run
-could report cost (docs/TODO.md "System and cost"). Every completed call now
+could report cost. Every completed call now
 lands in the module-level :data:`LEDGER`, keyed by ``(model, stage)``; runners
 write ``LEDGER.snapshot()`` into their summaries so the big re-runs produce an
 accuracy-cost table per cell as a side effect rather than needing a third pass.

@@ -46,6 +46,12 @@ Delta CIs come from independent within-stratum bootstrap (2000 reps, seed 202607
 | BM25_image_rules | train_images | 355 | 0.2758 | 0.4609 | 0.3451 | [0.3171, 0.3703] |
 | BM25_image_rules | val_images | 72 | 0.264 | 0.4896 | 0.3431 | [0.2891, 0.3929] |
 | BM25_image_rules | realistic_test_images | 73 | 0.2638 | 0.4479 | 0.332 | [0.2646, 0.3983] |
+| R2_image_rules | tuned_dev_subset | 105 | 0.2213 | 0.4308 | 0.2924 | [0.2385, 0.3429] |
+| R2_image_rules | held_out | 395 | 0.2409 | 0.4135 | 0.3045 | [0.2764, 0.332] |
+| R2_image_rules | held_out_clean | 381 | 0.2408 | 0.413 | 0.3042 | [0.2771, 0.332] |
+| R2_image_rules | train_images | 355 | 0.2341 | 0.4068 | 0.2972 | [0.2677, 0.3264] |
+| R2_image_rules | val_images | 72 | 0.2717 | 0.4896 | 0.3494 | [0.2847, 0.4128] |
+| R2_image_rules | realistic_test_images | 73 | 0.2159 | 0.3958 | 0.2794 | [0.2197, 0.3443] |
 | R1_image_rules | tuned_dev_subset | 105 | 0.1927 | 0.3231 | 0.2414 | [0.1886, 0.2978] |
 | R1_image_rules | held_out | 395 | 0.2074 | 0.3191 | 0.2514 | [0.2236, 0.28] |
 | R1_image_rules | held_out_clean | 381 | 0.2104 | 0.3222 | 0.2546 | [0.2267, 0.2851] |
@@ -65,4 +71,5 @@ Positive = the tuned subset scores higher, i.e. the all-500 headline is inflated
 | R4_decoupled_sym | 0.4888 | 0.5011 | -0.0628 | [-0.1352, 0.0093] | no | -0.0676 | -0.0474 | 0.5051 | -0.0668 | [-0.141, 0.0053] | no |
 | R3_image_rules | 0.4388 | 0.4523 | -0.0672 | [-0.129, -0.0029] | yes | -0.0713 | -0.0461 | 0.4552 | -0.0701 | [-0.137, -0.0033] | yes |
 | BM25_image_rules | 0.343 | 0.3429 | 0.0003 | [-0.0563, 0.0583] | no | -0.0113 | 0.036 | 0.3426 | 0.0006 | [-0.0597, 0.0575] | no |
+| R2_image_rules | 0.302 | 0.3045 | -0.0121 | [-0.0723, 0.0432] | no | -0.0196 | 0.0173 | 0.3042 | -0.0118 | [-0.0719, 0.0455] | no |
 | R1_image_rules | 0.2494 | 0.2514 | -0.01 | [-0.0688, 0.0544] | no | -0.0147 | 0.004 | 0.2546 | -0.0132 | [-0.0728, 0.0483] | no |

@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper below."
 title: >-
-  Regulation-Grounded Visual Compliance Screening of Construction Sites:
-  Rule Applicability Retrieval, Not Visual Judgement, Governs Accuracy
+  Applicability-Aware Rule Retrieval for Regulation-Grounded
+  Construction-Site Visual Screening
   — code, provision library and evaluation harness (ARGus)
 abstract: >-
   Reference implementation and evaluation harness for regulation-grounded visual
@@ -10,14 +10,15 @@ abstract: >-
   retrieval agent proposes the few provisions that plausibly apply, and the verdict
   is computed from a named provision formula over persisted checkpoint evidence
   rather than from model free text, so every decision traces back to a clause. The
-  accompanying study locates where such pipelines fail: it is the retrieval step --
-  deciding which provisions apply -- and not the visual judgement that governs
-  end-to-end accuracy, and grounded precision falls as the candidate set widens.
+  accompanying study reports where such pipelines fail: under the configurations
+  tested it is the retrieval step -- deciding which provisions apply -- rather than
+  the visual judgement that dominates end-to-end accuracy, and grounded precision
+  decreased at every step as the candidate set was widened.
 license: Apache-2.0
 repository-code: "https://github.com/Trilives/argus"
 doi: "10.5281/zenodo.21535053"
-version: "1.1.3"
-date-released: "2026-07-29"
+version: "1.2.0"
+date-released: "2026-07-30"
 authors:
   - given-names: "Fangjie"
     family-names: "Wu"
@@ -39,8 +40,8 @@ authors:
 preferred-citation:
   type: article
   title: >-
-    Regulation-Grounded Visual Compliance Screening of Construction Sites:
-    Rule Applicability Retrieval, Not Visual Judgement, Governs Accuracy
+    Applicability-Aware Rule Retrieval for Regulation-Grounded
+    Construction-Site Visual Screening
   authors:
     - given-names: "Fangjie"
       family-names: "Wu"

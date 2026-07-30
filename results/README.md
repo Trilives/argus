@@ -13,7 +13,7 @@ Regenerate with `scripts/mirror_public_results.py` in the full research reposito
 |---|---|
 | `retrieval/annotated_retrieval_summary.json` | Retrieval ladder — hit@k / recall@k for the fixed and agentic retrievers (R1–R4, BM25, SigLIP-2). |
 | `retrieval/rq1_metric_table.{json,md}` | The full ladder including the cost-matched non-agent controls (cross-encoder, one-shot VLM selector), with precision@k — the column showing that width, not agency, separates the arms. |
-| `retrieval/rrf_fusion_summary.{json,md}` | Reciprocal-rank fusion of BM25/R1 with R4: recall is purchasable at the retrieval level (hit@5 0.942). |
+| `retrieval/rrf_fusion_summary.{json,md}` | Reciprocal-rank fusion of BM25/R1 with R4: recall is purchasable at the retrieval level (hit@5 0.942) but does not convert end to end — see `e2e/rrf_e2e_summary`. |
 | `retrieval/iter_sweep_summary.{json,md}` | Agent iteration-budget sweep (caps 2/4/8/16): mean iterations saturate near 3.3, so the cap is over-provisioned. |
 
 ## Judgement
@@ -37,6 +37,8 @@ Regenerate with `scripts/mirror_public_results.py` in the full research reposito
 | `e2e/risk_coverage_summary.json` | Risk–coverage / selective-prediction behaviour. |
 | `e2e/split_leakage_summary.{json,md}` | Tuning exposure: cached predictions re-scored on disjoint strata of the frozen gold. |
 | `e2e/applicability_gate_summary.{json,md}` | The Kleene three-valued applicability gate: filter rate, filter precision, abstention and coverage per cell. |
+| `e2e/k_scan_summary.{json,md}` | Controlled candidate-budget sweep: one retriever cut at several widths with the judge and judgement mode held fixed, so width is separated from the mechanism that produced it. Grounded precision falls strictly and F1 peaks at k=2 for both a lexical and an agentic retriever. The k=2 optimum is read off the evaluation set, so the paper keeps the pre-specified k=3 everywhere; this file carries both. |
+| `e2e/error_composition_summary.{json,md}` | Error decomposition at the headline cell: retrieval misses vs judgement misses, and the same-category sibling share behind the sibling-confusion claim. |
 | `e2e/repeats_summary.json` | Run-to-run variance over repeat runs of the headline cells (decoding is stochastic; this is the spread the CIs sit on). |
 
 ## Data audit

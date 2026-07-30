@@ -2,8 +2,8 @@
 
 Each schema mirrors the output shape its prompt file already asks for
 (``Prompts_en/``); constrained decoding makes that shape a guarantee instead of
-a request, eliminating the silent parse-failure degradation the TODO flags
-(empty evidence, ``kept_ids or broad``). Schemas stay permissive — required
+a request, eliminating the silent parse-failure degradations it otherwise
+allows (empty evidence, ``kept_ids or broad``). Schemas stay permissive — required
 keys are only the ones a stage's parser actually reads, and extra keys are
 allowed — so constraining can never reject content the pipeline would have
 accepted.

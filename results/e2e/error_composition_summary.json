@@ -1,0 +1,29 @@
+{
+  "cell": "R4_image_rules",
+  "gold_violations": 691,
+  "tp": 430,
+  "recall_check": 0.6223,
+  "precision_check": 0.4379,
+  "fn_total": 261,
+  "fn_retrieval_miss": 221,
+  "fn_retrieval_miss_share": 0.8467,
+  "fn_retrieval_sibling_in_candidates": 143,
+  "fn_retrieval_no_same_category_candidate": 78,
+  "fn_judged_compliant": 26,
+  "fn_abstained_or_unjudged": 14,
+  "fn_by_category": {
+    "EDG": 98,
+    "CIV": 53,
+    "OPN": 66,
+    "BHV": 44
+  },
+  "fn_retrieval_miss_by_category": {
+    "EDG": 91,
+    "CIV": 49,
+    "OPN": 57,
+    "BHV": 24
+  },
+  "fp_total": 552,
+  "fp_same_category_as_gold_violation": 216,
+  "fp_other": 336
+}

@@ -823,6 +823,196 @@
       }
     },
     {
+      "cell": "R2_image_rules",
+      "n_all": 500,
+      "all_500": {
+        "n": 500,
+        "gv_tp": 288,
+        "gv_pred": 1216,
+        "gv_gold": 691,
+        "gv_precision_micro": 0.2368,
+        "gv_recall_micro": 0.4168,
+        "gv_f1_micro": 0.302,
+        "gv_precision_macro": 0.2278,
+        "gv_recall_macro": 0.4571,
+        "img_f1": 0.9697
+      },
+      "strata": {
+        "tuned_dev_subset": {
+          "n_images": 105,
+          "gv_precision_micro": 0.2213,
+          "gv_precision_ci": [
+            0.1783,
+            0.2618
+          ],
+          "gv_recall_micro": 0.4308,
+          "gv_recall_ci": [
+            0.3516,
+            0.5081
+          ],
+          "gv_f1_micro": 0.2924,
+          "gv_f1_ci": [
+            0.2385,
+            0.3429
+          ],
+          "gv_recall_macro": 0.457,
+          "img_f1": 0.9333
+        },
+        "held_out": {
+          "n_images": 395,
+          "gv_precision_micro": 0.2409,
+          "gv_precision_ci": [
+            0.2191,
+            0.2622
+          ],
+          "gv_recall_micro": 0.4135,
+          "gv_recall_ci": [
+            0.3721,
+            0.4568
+          ],
+          "gv_f1_micro": 0.3045,
+          "gv_f1_ci": [
+            0.2764,
+            0.332
+          ],
+          "gv_recall_macro": 0.4571,
+          "img_f1": 0.979
+        },
+        "held_out_clean": {
+          "n_images": 381,
+          "gv_precision_micro": 0.2408,
+          "gv_precision_ci": [
+            0.2194,
+            0.2629
+          ],
+          "gv_recall_micro": 0.413,
+          "gv_recall_ci": [
+            0.3728,
+            0.4567
+          ],
+          "gv_f1_micro": 0.3042,
+          "gv_f1_ci": [
+            0.2771,
+            0.332
+          ],
+          "gv_recall_macro": 0.4533,
+          "img_f1": 0.9796
+        },
+        "train_images": {
+          "n_images": 355,
+          "gv_precision_micro": 0.2341,
+          "gv_precision_ci": [
+            0.2108,
+            0.2572
+          ],
+          "gv_recall_micro": 0.4068,
+          "gv_recall_ci": [
+            0.3633,
+            0.4516
+          ],
+          "gv_f1_micro": 0.2972,
+          "gv_f1_ci": [
+            0.2677,
+            0.3264
+          ],
+          "gv_recall_macro": 0.4403,
+          "img_f1": 0.9708
+        },
+        "val_images": {
+          "n_images": 72,
+          "gv_precision_micro": 0.2717,
+          "gv_precision_ci": [
+            0.2229,
+            0.3216
+          ],
+          "gv_recall_micro": 0.4896,
+          "gv_recall_ci": [
+            0.3874,
+            0.6044
+          ],
+          "gv_f1_micro": 0.3494,
+          "gv_f1_ci": [
+            0.2847,
+            0.4128
+          ],
+          "gv_recall_macro": 0.5859,
+          "img_f1": 0.9778
+        },
+        "realistic_test_images": {
+          "n_images": 73,
+          "gv_precision_micro": 0.2159,
+          "gv_precision_ci": [
+            0.1686,
+            0.2682
+          ],
+          "gv_recall_micro": 0.3958,
+          "gv_recall_ci": [
+            0.3069,
+            0.4948
+          ],
+          "gv_f1_micro": 0.2794,
+          "gv_f1_ci": [
+            0.2197,
+            0.3443
+          ],
+          "gv_recall_macro": 0.4154,
+          "img_f1": 0.9559
+        }
+      },
+      "tuned_minus_held_out": {
+        "gv_f1_micro": {
+          "delta": -0.0121,
+          "ci": [
+            -0.0723,
+            0.0432
+          ],
+          "significant_95": false
+        },
+        "gv_precision_micro": {
+          "delta": -0.0196,
+          "ci": [
+            -0.0665,
+            0.0244
+          ],
+          "significant_95": false
+        },
+        "gv_recall_micro": {
+          "delta": 0.0173,
+          "ci": [
+            -0.0751,
+            0.1042
+          ],
+          "significant_95": false
+        }
+      },
+      "tuned_minus_held_out_clean": {
+        "gv_f1_micro": {
+          "delta": -0.0118,
+          "ci": [
+            -0.0719,
+            0.0455
+          ],
+          "significant_95": false
+        },
+        "gv_precision_micro": {
+          "delta": -0.0195,
+          "ci": [
+            -0.0646,
+            0.0253
+          ],
+          "significant_95": false
+        },
+        "gv_recall_micro": {
+          "delta": 0.0178,
+          "ci": [
+            -0.0763,
+            0.1084
+          ],
+          "significant_95": false
+        }
+      }
+    },
+    {
       "cell": "R1_image_rules",
       "n_all": 500,
       "all_500": {
