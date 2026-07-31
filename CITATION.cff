@@ -17,8 +17,8 @@ abstract: >-
 license: Apache-2.0
 repository-code: "https://github.com/Trilives/argus"
 doi: "10.5281/zenodo.21535053"
-version: "1.2.0"
-date-released: "2026-07-30"
+version: "1.2.1"
+date-released: "2026-07-31"
 authors:
   - given-names: "Fangjie"
     family-names: "Wu"
