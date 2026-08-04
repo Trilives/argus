@@ -1,7 +1,7 @@
 {
   "title": "Applicability-Aware Rule Retrieval for Regulation-Grounded Construction-Site Visual Screening — code, provision library and evaluation harness (ARGus)",
   "description": "Reference implementation and evaluation harness for regulation-grounded visual compliance screening of construction sites. Given a site photograph, a bounded retrieval agent proposes the few provisions that plausibly apply, and the verdict is computed from a named provision formula over persisted checkpoint evidence rather than from model free text, so every decision traces back to a clause. The accompanying study reports where such pipelines fail: under the configurations tested it is the retrieval step — deciding which provisions apply — rather than the visual judgement that dominates end-to-end accuracy, and grounded precision decreased at every step as the candidate set was widened. Includes the pipeline code, the 42-provision rule library and its schema, the stage prompts, privacy-reviewed sample images, the aggregate result summaries behind every table, and the paper's online supplement (paper/supplement.pdf), accompanying the paper \"Applicability-Aware Rule Retrieval for Regulation-Grounded Construction-Site Visual Screening\" (submitted to the Journal of Computing in Civil Engineering, ASCE).",
-  "version": "v1.2.2",
+  "version": "v1.2.3",
   "upload_type": "software",
   "license": "Apache-2.0",
   "access_right": "open",
