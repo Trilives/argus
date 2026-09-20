@@ -6,6 +6,10 @@ stage (image facts, the retrieval agent, and the judgement).
 
 ## Evaluated models
 
+These are the only models the reported results were produced on. Every number in the paper comes
+from one of them; checkpoints present in a working tree but absent from this table — including
+any `Qwen3-VL-*` directory — carry no reported result.
+
 | Model | Role in the paper | HF id |
 |---|---|---|
 | Qwen3.5-9B | Vision + judge; statistically indistinguishable from the 35B judge on oracle judgement (delta GV-F1 0.010, 95% CI [-0.004, 0.025]) | `Qwen/Qwen3.5-9B` |
