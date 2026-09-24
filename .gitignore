@@ -35,3 +35,9 @@ scratch_models/
 .DS_Store
 .idea/
 .vscode/
+
+# ConstructionSite-10k images are gated (CC BY-NC); fetched locally, never committed.
+/examples/public_images/
+# Local run outputs of run_rcasr.py / run_demo.py
+/results/demo_rcasr/
+/results/demo/

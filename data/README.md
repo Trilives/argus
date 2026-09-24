@@ -25,5 +25,6 @@ data-use agreement.
 summaries): retrieval hit@3 ladder 0.560 / 0.622 / 0.734 / 0.802 / 0.848 (R1 / SigLIP-2 / BM25 /
 R3 / R4); best end-to-end GV-F1 0.514; oracle-rule judgement GV-F1 0.867.
 
-The 20 images in `../examples/sample_images/` are a **disjoint, privacy-reviewed demonstration
-set** (no gold labels); their checksums are in that folder's `manifest.csv`.
+The 40 images in `../examples/sample_images/` are a **disjoint, anonymised demonstration set**
+(no gold labels); their checksums are in that folder's `manifest.csv` and the blur audit of
+P021–P040 in `anonymisation.json`.

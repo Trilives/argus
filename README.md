@@ -27,9 +27,11 @@ Headline results (all pre-specified; the internal evaluation uses site-grouped c
   checked byte for byte against this analysis code, and one stored site round is reported with
   operating proxies (no field-accuracy claim).
 
-> **Status.** Research code accompanying the manuscript above. Release **v2.0.0** adds RCASR on
+> **Status.** Research code accompanying the manuscript above. Release **v2.0.0** added RCASR on
 > top of the ARGus screening framework of the earlier study (releases v1.x), whose code, results and
-> online supplement are kept unchanged below.
+> online supplement are kept unchanged below. Release **v2.1.0** adds `run_rcasr.py`, a guide that
+> screens ConstructionSite-10k test images with your own gated access, and 20 more anonymised sample
+> images (see [`examples/README.md`](examples/README.md)).
 
 ## RCASR: what was added in v2.0.0
 
@@ -118,12 +120,13 @@ argus/
 │   ├── rules/rules_en.json      # the instantiated rule library (42 rules)
 │   ├── rules/rules_schema_en.json
 │   └── README.md                # gold data card (evaluation set is on request)
-├── examples/                    # 20 privacy-reviewed sample images + a runnable walkthrough
+├── examples/                    # 40 anonymised sample images + the RCASR guide (public images too)
 ├── paper/supplement.pdf         # the paper's online supplement (ASCE no longer hosts these)
 ├── results/                     # aggregate metrics behind the paper's tables
 ├── reproduce/                   # freeze proof + label-only gold + GV scorer (verify the numbers)
 ├── tests/                       # hermetic unit tests for the core invariants
-├── run_demo.py                  # end-to-end demo (API or local vLLM service)
+├── run_rcasr.py                 # RCASR on your images, frozen robot configuration
+├── run_demo.py                  # end-to-end ARGus demo (API or local vLLM service)
 ├── MODELS.md                    # evaluated models + serve commands
 ├── Prompts_en/                  # stage prompts (English runtime)
 ├── pyproject.toml               # uv project (core deps + optional `serving` group)
@@ -146,6 +149,15 @@ Running the VLM/judge pipeline additionally needs an OpenAI-compatible endpoint 
 dependency group. Prefix commands with `uv run` (e.g. `uv run python scripts/...`).
 
 ## Quick start
+
+**Screen images with RCASR.** `run_rcasr.py` runs the frozen configuration the robot runs, on the
+bundled samples or on ConstructionSite-10k test images fetched with your own gated access, and
+compares the result with the released public selection. See the guide in
+[`examples/README.md`](examples/README.md#rcasr-guide-screen-images-with-the-frozen-configuration-the-robot-runs).
+
+```bash
+RCASR_EXTRACTOR_URL=http://localhost:8000/v1 OPENAI_API_KEY=EMPTY uv run python run_rcasr.py examples/sample_images
+```
 
 **Run the end-to-end demo.** One multimodal model (default **Qwen3.5-9B**) runs every stage — image
 facts, the retrieval agent, and the judgement — over the bundled sample images. Two modes:
@@ -200,7 +212,7 @@ guessed), retrieval text, and `rectification_advice`. See `data/rules/rules_sche
 ## Data availability
 
 - **Included:** all source code (ARGus and RCASR), the rule library and schema, the RCASR atom
-  vocabulary and frozen configurations, the analysis plans, the stage prompts, 20 privacy-reviewed
+  vocabulary and frozen configurations, the analysis plans, the stage prompts, 40 anonymised
   **sample images** (`examples/sample_images/`, no gold labels), and the **aggregate result
   summaries** and input snapshots behind the papers' tables (`results/`).
 - **Not redistributed:** the ConstructionSite-10k labels and images (CC BY-NC 4.0, gated access from

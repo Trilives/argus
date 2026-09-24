@@ -1,6 +1,6 @@
 [project]
 name = "argus"
-version = "2.0.0"
+version = "2.1.0"
 description = "RCASR on ARGus: risk-controlled applicability set retrieval for auditable visual regulatory compliance."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -27,11 +27,12 @@ serving = [
     "vllm>=0.20.0",
 ]
 
-# RCASR analysis extras — only for re-running the experiment scripts (public parquet reading and
-# the diagnostic figures). Install with: uv sync --group analysis
+# RCASR analysis extras — for re-running the experiment scripts and fetching the public guide images
+# (parquet reading, diagnostic figures, Hugging Face download). Install with: uv sync --group analysis
 analysis = [
     "pyarrow>=17.0.0",
     "matplotlib>=3.9.0",
+    "huggingface-hub>=0.28.0",
 ]
 
 # This repository is run as scripts over a src/ tree, not installed as a package,
