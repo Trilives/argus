@@ -13,14 +13,14 @@ demonstration set, not an evaluation set. SHA-256 checksums and dimensions are i
   and were reviewed by hand.
 - **P021–P040** include workers, so their faces are blurred. Only what could identify someone is
   blurred, with boxes drawn by hand while viewing each image at full resolution:
-  - each visible face, from the helmet brim to the chin. The helmet, vest, harness and posture
-    stay visible, because they are what the screening rules check;
+  - each visible face, with a tight box over the eyes, nose and mouth. The helmet, vest, harness
+    and posture stay visible, because they are what the screening rules check;
   - text that names a company or the site: names and logos on vests and helmets, a posted
-    document, company signs and a hotel sign. Generic safety slogans (for example 当心坠落,
-    "beware of falling") and product brands stay readable.
+    document, company signs, a hotel sign and characters painted on a container. Generic safety
+    slogans (for example 当心坠落, "beware of falling") and product brands stay readable.
 
   Each box gets one Gaussian blur with sigma = 0.15 × the box's shorter side for a face and
-  0.30 × for text, at least 3 px. At most 1.4% of any image is blurred. The export checks
+  0.30 × for text, at least 3 px. At most 1.2% of any image is blurred. The export checks
   the result and refuses to write an image that fails:
   - a person detector must find no person without a face box, unless a reason is recorded (seen
     from behind, head out of frame, or a head a few pixels tall). Seven people are recorded this

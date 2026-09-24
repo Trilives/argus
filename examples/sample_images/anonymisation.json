@@ -1,5 +1,5 @@
 {
-  "method": "Gaussian blur of hand-drawn boxes only: each visible face (helmet brim to chin, sigma 0.15 x the box's shorter side) and each identifying text (sigma 0.3 x); every person detected at confidence >= 0.5 has a face box or a recorded reason it shows no face; residual detail <= 0.1 of the original in every box; pixels outside unchanged; re-encoded without metadata",
+  "method": "Gaussian blur of hand-drawn boxes only: each visible face (eyes, nose and mouth, sigma 0.15 x the box's shorter side) and each identifying text (sigma 0.3 x); every person detected at confidence >= 0.5 has a face box or a recorded reason it shows no face; residual detail <= 0.1 of the original in every box; pixels outside unchanged; re-encoded without metadata",
   "images": {
     "P021": {
       "faces": 0,
@@ -138,9 +138,9 @@
     },
     "P036": {
       "faces": 2,
-      "text_regions": 3,
+      "text_regions": 4,
       "people_without_visible_face": 2,
-      "blurred_fraction_of_image": 0.0055,
+      "blurred_fraction_of_image": 0.0118,
       "max_residual_detail_ratio": 0.0742,
       "pixels_changed_outside": 0,
       "exif_stripped": true
@@ -149,8 +149,8 @@
       "faces": 3,
       "text_regions": 0,
       "people_without_visible_face": 0,
-      "blurred_fraction_of_image": 0.0131,
-      "max_residual_detail_ratio": 0.0048,
+      "blurred_fraction_of_image": 0.0062,
+      "max_residual_detail_ratio": 0.0059,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
@@ -158,8 +158,8 @@
       "faces": 1,
       "text_regions": 3,
       "people_without_visible_face": 1,
-      "blurred_fraction_of_image": 0.004,
-      "max_residual_detail_ratio": 0.0211,
+      "blurred_fraction_of_image": 0.0027,
+      "max_residual_detail_ratio": 0.0404,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
@@ -167,7 +167,7 @@
       "faces": 1,
       "text_regions": 3,
       "people_without_visible_face": 0,
-      "blurred_fraction_of_image": 0.0044,
+      "blurred_fraction_of_image": 0.0028,
       "max_residual_detail_ratio": 0.0012,
       "pixels_changed_outside": 0,
       "exif_stripped": true
@@ -176,8 +176,8 @@
       "faces": 1,
       "text_regions": 2,
       "people_without_visible_face": 2,
-      "blurred_fraction_of_image": 0.0088,
-      "max_residual_detail_ratio": 0.0016,
+      "blurred_fraction_of_image": 0.0068,
+      "max_residual_detail_ratio": 0.0022,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     }
