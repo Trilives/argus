@@ -1,7 +1,7 @@
 [project]
 name = "argus"
-version = "0.1.0"
-description = "ARGus — Agentic Rule-Grounded Screening: auditable visual regulatory compliance."
+version = "2.0.0"
+description = "RCASR on ARGus: risk-controlled applicability set retrieval for auditable visual regulatory compliance."
 readme = "README.md"
 requires-python = ">=3.11"
 license = "Apache-2.0"
@@ -25,6 +25,13 @@ serving = [
     "huggingface-hub>=0.28.0",
     "compressed-tensors>=0.15.0",
     "vllm>=0.20.0",
+]
+
+# RCASR analysis extras — only for re-running the experiment scripts (public parquet reading and
+# the diagnostic figures). Install with: uv sync --group analysis
+analysis = [
+    "pyarrow>=17.0.0",
+    "matplotlib>=3.9.0",
 ]
 
 # This repository is run as scripts over a src/ tree, not installed as a package,

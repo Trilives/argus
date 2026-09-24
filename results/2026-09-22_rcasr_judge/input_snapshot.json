@@ -1,0 +1,32 @@
+{
+  "code_base_commit": "f105136731beba4b51244c4a187dfe2417ca02f6",
+  "file_sha256": {
+    "Prompts_en/decoupled/rule_evidence_prompt.md": "064ff4ec2fc38ceef7f59bd22a43b03927836c9b4a1ea4f7b7f21e23c090db67",
+    "data/rule_assets/rule_units.json": "9e64e1f7a49590f0d62b19a0a267894c8e2555806bc5924d4b5ab937ef3994bc",
+    "data/rules/proposed/rcasr_v1.json": "6f45348bac31d2f30a7a8f69ec8b759986d1fa25ddeb2b38317e12c138b32da6",
+    "data/rules/rules_en.json": "1cfd2dd2665d641913186255e1a04d3d9843985873d90ba4a3f04d21d0acaf84",
+    "experiments/retrieval/judge_rcasr.py": "ce246db32d1b2d8545aad7c671021ffe1586e5cc440c2fb6c4c978ee79411878",
+    "results/2026-09-22_rcasr_v2/rcasr_rows.jsonl": "c45b16bea869ba3b5355bd5cdb0c7d1a7221db861822d8b34f301f129c942801",
+    "results/retrieval/gold_facts_generic_en.json": "dab45ebed62c438a04aa842c7998b813dd06dff4f2b6e074c8904e53f27e8fd7",
+    "src/backends/openai_api.py": "6483472123a07703cdff6ed02fa95216bb14a0db8920ec527b9a1a3d42657e2d",
+    "src/config.py": "07b1ddafef3db6fb0dcbcab06170dfcbb23bedda8f451f3b281a456649300223",
+    "src/images.py": "6237283139e955fd896f0cea7c5aacb1d842b4690afc23f0ef0bd0d455b648e6",
+    "src/pipeline.py": "9b153aea7226b00d16de75b4490d93a21ef433286817c5026a5ea0d88d1bf601",
+    "src/prompts.py": "381ab4915f9a5c618285caed4565b1f87b51b58ecf849cf73ec615d6e4299490",
+    "src/rcasr_experiment.py": "8088ad20f0a84dc9b9fa274843e9dfee614e50efc6f8b63b9cb109c85fa2a061",
+    "src/rules.py": "fcd3d2f22b15fb85eb8d28320b63a8ac89e6c387faad7e4111dd336da5717c2d",
+    "src/schemas.py": "75aaf3132822c5ae8fb3079a44412964ae745d80278762e97dd70e4b5ad7facd",
+    "src/symbolic_judgement.py": "062d55160436a990401d7062a4007a4cf42f74347235a52c7d18dc83ba2a96d6"
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "pyarrow": "25.0.1"
+  },
+  "code_identity": "base commit plus exact working-file hashes; not a clean-commit claim",
+  "judge_model": "Qwen3.8-27B-FP8",
+  "mode": "decoupled_sym",
+  "guided_json": true,
+  "created_at": "2026-09-22T08:39:51.792928+00:00",
+  "scope": "gold-free per-pair judgement of every pair any E2/E5b arm selected"
+}

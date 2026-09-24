@@ -134,6 +134,37 @@ def _rule_defaults() -> dict[str, str]:
 _DEFAULTS: dict[str, str] | None = None
 
 
+def applicability_verdict(rule_evidence: dict[str, Any], *, subject_formula: str,
+                          requires_external_evidence: bool = False) -> dict[str, str]:
+    """V3 opt-in truth table with an explicit, separately authored subject gate.
+
+    Never infer applicability from the first violation atom. Existing v2 callers
+    keep their frozen behavior; a v3 caller must supply a validated subject gate.
+    This function does not add any label to gold or invoke a model.
+    """
+    if not subject_formula.strip():
+        raise FormulaError("v3 requires an explicit subject formula")
+    items = rule_evidence.get("checkpoint_evidence", [])
+    statuses = {}
+    for item in items:
+        if isinstance(item, dict) and item.get("checkpoint"):
+            key = item["checkpoint"]
+            if key in statuses:
+                raise ValueError(f"duplicate checkpoint: {key}")
+            statuses[key] = item.get("status", "need_review")
+    subject = eval_formula(subject_formula, statuses)
+    if subject is False:
+        return {"applicability": "not_applicable", "decision": "not_applicable"}
+    if subject is None:
+        return {"applicability": "unknown", "decision": "insufficient_visual_evidence"}
+    formula = rule_evidence.get("visual_screening_rule") or ""
+    if requires_external_evidence or formula.strip() == NOT_EVALUABLE:
+        return {"applicability": "applicable", "decision": "need_review"}
+    outcome = eval_formula(formula, statuses)
+    decision = "need_review" if outcome is None else "non_compliant" if outcome else "compliant"
+    return {"applicability": "applicable", "decision": decision}
+
+
 def symbolic_verdict(rule_evidence: dict[str, Any]) -> dict[str, Any]:
     """One rule's Stage-4 evidence item -> a judgement-shaped symbolic verdict."""
     global _DEFAULTS

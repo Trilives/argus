@@ -1,0 +1,98 @@
+{
+  "plan": "docs/paper_v3/design/S34_DEFAULT_PRESPEC.md",
+  "snapshot_sha256": "40e1c9e75fd8ed5e485fbf0eb457e1b7673b284ca9c252a70129b59e611df18d",
+  "decision": {
+    "checks_passed": true,
+    "adopt": "B_abstain_need_review",
+    "rule": "adopt B iff check 1 and check 2 hold exactly (prespec); cost is descriptive"
+  },
+  "internal_cache": {
+    "n_pairs": 2265,
+    "check1_a_reproduces_cache": true,
+    "check1_mismatches": [],
+    "check2_identical_non_compliant": true,
+    "n_non_compliant": 1432,
+    "routes": {
+      "formula_false": 616,
+      "formula_true": 1432,
+      "not_visually_evaluable": 27,
+      "unknown_needs_review": 77,
+      "no_subject_default": 113
+    },
+    "rerouted": {
+      "n": 113,
+      "share": 0.04988962472406181,
+      "transitions": {
+        "compliant->need_review": 113
+      }
+    }
+  },
+  "public_cache": {
+    "n_pairs": 374,
+    "check1_a_reproduces_cache": true,
+    "check1_mismatches": [],
+    "check2_identical_non_compliant": true,
+    "n_non_compliant": 325,
+    "routes": {
+      "formula_true": 325,
+      "no_subject_default": 17,
+      "unknown_needs_review": 26,
+      "formula_false": 6
+    },
+    "rerouted": {
+      "n": 17,
+      "share": 0.045454545454545456,
+      "transitions": {
+        "compliant->need_review": 17
+      }
+    }
+  },
+  "internal_e2e": {
+    "rcasr_bm25_w2": {
+      "A_frozen_compliant": {
+        "gv_recall": 0.48722986247544203,
+        "gv_precision_closed_world": 0.41680672268907565,
+        "false_alarms_per_image": 1.0028901734104045,
+        "need_review_rate": 0.05135520684736091
+      },
+      "B_abstain_need_review": {
+        "gv_recall": 0.48722986247544203,
+        "gv_precision_closed_world": 0.41680672268907565,
+        "false_alarms_per_image": 1.0028901734104045,
+        "need_review_rate": 0.06847360912981455
+      },
+      "rerouted_pairs": 12,
+      "rerouted_gold_status": {
+        "non_compliant": 4,
+        "unrecorded": 8
+      }
+    },
+    "rcasr_bm25_w3": {
+      "A_frozen_compliant": {
+        "gv_recall": 0.6247544204322201,
+        "gv_precision_closed_world": 0.3706293706293706,
+        "false_alarms_per_image": 1.560693641618497,
+        "need_review_rate": 0.06352261790182868
+      },
+      "B_abstain_need_review": {
+        "gv_recall": 0.6247544204322201,
+        "gv_precision_closed_world": 0.3706293706293706,
+        "false_alarms_per_image": 1.560693641618497,
+        "need_review_rate": 0.08084696823869104
+      },
+      "rerouted_pairs": 18,
+      "rerouted_gold_status": {
+        "non_compliant": 4,
+        "unrecorded": 14
+      }
+    }
+  },
+  "public_need_review_rate": {
+    "A_frozen_compliant": 0.06951871657754011,
+    "B_abstain_need_review": 0.11497326203208556
+  },
+  "limits": [
+    "gold-status counts of re-routed pairs are descriptive and development-exposed",
+    "need_review under B is an abstention for human review, not a verdict"
+  ]
+}

@@ -49,6 +49,10 @@ def rule_evidence_batch_prompt() -> str:
     return load_prompt(paths.RULE_EVIDENCE_BATCH_PROMPT_PATH)
 
 
+def applicability_gate_prompt() -> str:
+    return load_prompt(paths.APPLICABILITY_GATE_PROMPT_PATH)
+
+
 def judgement_prompt() -> str:
     return load_prompt(paths.JUDGEMENT_PROMPT_PATH)
 
@@ -177,6 +181,22 @@ def build_rule_evidence_messages(
     prompt = prompt.replace("<<RULE_JSON>>", compact_json(rule))
     prompt = prompt.replace("<<SCENE_FACTS_JSON>>", compact_json(scene_facts))
     prompt = prompt.replace("<<UNCLEAR_JSON>>", compact_json(list(unclear)))
+    return _image_text_messages(prompt)
+
+
+def build_applicability_messages(
+    *,
+    rule: dict[str, Any],
+    scene_facts: list[str],
+) -> list[dict[str, Any]]:
+    """Applicability gate: image + one rule's positive checkpoints -> presence only.
+
+    Deliberately narrower than Stage 4: the payload carries no defect checkpoints,
+    so the model cannot drift into judging compliance before applicability is settled.
+    """
+    prompt = applicability_gate_prompt()
+    prompt = prompt.replace("<<RULE_JSON>>", compact_json(rule))
+    prompt = prompt.replace("<<SCENE_FACTS_JSON>>", compact_json(scene_facts))
     return _image_text_messages(prompt)
 
 

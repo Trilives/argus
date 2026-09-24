@@ -36,6 +36,7 @@ from io_utils import extract_json_object, load_json
 from prompts import (
     build_chain_messages,
     build_fact_messages,
+    build_applicability_messages,
     build_facts_rules_messages,
     build_image_rules_messages,
     build_judgement_messages,
@@ -423,6 +424,64 @@ def evidence_rule_payload(rule_ids: list[str]) -> list[dict[str, Any]]:
             continue
         payload.append({field: rule.get(field) for field in _EVIDENCE_RULE_FIELDS})
     return payload
+
+
+def verify_applicability(
+    backend: ChatBackend,
+    image: Any,
+    scene_facts: list[str],
+    rule_ids: list[str],
+) -> list[dict[str, Any]]:
+    """Applicability gate: does each candidate provision govern this image at all?
+
+    One focused call per rule asking only about that rule's positive checkpoints
+    (:mod:`applicability_gate`), then the formula decides in code whether the rule
+    is filtered, admitted, or abstained on. No compliance verdict is produced here.
+    """
+    import applicability_gate as gate  # noqa: PLC0415  (avoids a circular import)
+
+    rules = rule_by_id(load_rule_units())
+    results: list[dict[str, Any]] = []
+    for rule_id in rule_ids:
+        rule = rules.get(rule_id)
+        if rule is None:
+            continue
+        formula = rule.get("visual_screening_rule") or ""
+        atoms = gate.positive_atoms(formula)
+        if not atoms:
+            # No positive atom: the formula cannot be refuted on presence alone,
+            # so the gate admits the rule rather than guessing.
+            results.append({
+                "rule_id": rule_id,
+                "decision": gate.APPLICABLE,
+                "checkpoint_statuses": {},
+                "checkpoint_evidence": [],
+                "parse_error": None,
+                "note": "no_positive_atom",
+            })
+            continue
+        messages = build_applicability_messages(
+            rule=gate.gate_payload(rule), scene_facts=scene_facts
+        )
+        with usage.stage("stage3b_applicability"):
+            response = backend.complete(
+                messages,
+                image=image,
+                max_tokens=config.MAX_NEW_TOKENS,
+                json_schema=schemas.guided("evidence"),
+            )
+        parsed, error = extract_json_object(response.content or "")
+        parsed = parsed if isinstance(parsed, dict) else {}
+        statuses = gate.statuses_from_evidence(parsed, atoms)
+        results.append({
+            "rule_id": rule_id,
+            "decision": gate.classify(formula, statuses),
+            "checkpoint_statuses": statuses,
+            "checkpoint_evidence": parsed.get("checkpoint_evidence", []),
+            "parse_error": error,
+            "note": None,
+        })
+    return results
 
 
 def extract_rule_evidence(

@@ -1,0 +1,5331 @@
+{
+  "0000005": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000007": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000009": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000019": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000020": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-011-severe-weather-operation",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000039": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000046": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-004-illegal-climbing",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000059": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-007-guardrail-construction"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000068": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-013-temporary-facilities",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0000072": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-011-smoking-burning",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000079": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000095": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-016-cable-on-ground",
+      "R-OPN-011-manhole-trench-cover"
+    ],
+    "facts_parse_error": null
+  },
+  "0000102": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0000116": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-006-uncertified-special-operation"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-007-illegal-electrical-work"
+    ],
+    "facts_parse_error": null
+  },
+  "0000117": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000118": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "facts_parse_error": null
+  },
+  "0000120": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000132": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000135": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0000149": {
+    "rcasr_bm25": [
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0000161": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000163": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000167": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "facts_parse_error": null
+  },
+  "0000193": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-003-material-stacking-labeling",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000203": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000229": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "facts_parse_error": null
+  },
+  "0000232": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-001-hoarding-missing-low",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000233": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000253": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-007-guardrail-construction",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0000327": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000328": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0000331": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000332": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-EDG-005-scaffold-structure-gap",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000361": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000369": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-007-guardrail-construction",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000370": {
+    "rcasr_bm25": [
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000376": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000386": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0000398": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000421": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-007-guardrail-construction",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000424": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000437": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000443": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000468": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000469": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000478": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-009-noise-exceedance"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000480": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0000490": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000502": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "facts_parse_error": null
+  },
+  "0000505": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-CIV-016-cable-on-ground",
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover"
+    ],
+    "facts_parse_error": null
+  },
+  "0000507": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000513": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000521": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000531": {
+    "rcasr_bm25": [
+      "R-EDG-007-guardrail-construction",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-OPN-004-vertical-and-low-sill-opening"
+    ],
+    "facts_parse_error": null
+  },
+  "0000545": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000550": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000564": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000571": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000599": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-001-horizontal-opening-protection"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000606": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-EDG-007-guardrail-construction",
+      "R-OPN-011-manhole-trench-cover"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000623": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000626": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-001-hoarding-missing-low"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0000641": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000645": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0000651": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000675": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000704": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000729": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000737": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000762": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-006-uncertified-special-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000766": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000786": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "facts_parse_error": null
+  },
+  "0000795": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000812": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000833": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "facts_parse_error": null
+  },
+  "0000841": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0000842": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-003-material-stacking-labeling"
+    ],
+    "bm25_matched": [
+      "R-CIV-003-material-stacking-labeling",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "facts_parse_error": null
+  },
+  "0000863": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-016-cable-on-ground",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0000871": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000874": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000877": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-013-temporary-facilities"
+    ],
+    "facts_parse_error": null
+  },
+  "0000878": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-007-illegal-electrical-work"
+    ],
+    "facts_parse_error": null
+  },
+  "0000895": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-OPN-011-manhole-trench-cover"
+    ],
+    "facts_parse_error": null
+  },
+  "0000901": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-003-material-stacking-labeling"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-001-hoarding-missing-low"
+    ],
+    "facts_parse_error": null
+  },
+  "0000912": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000925": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-007-guardrail-construction"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000937": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0000948": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0000951": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0000956": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0000972": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-012-passage-shed-protection",
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-004-illegal-climbing",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-007-guardrail-construction",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000987": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0000991": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-CIV-016-cable-on-ground",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0000993": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-004-illegal-climbing",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001033": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001034": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "facts_parse_error": null
+  },
+  "0001054": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001055": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001065": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0001071": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0001077": {
+    "rcasr_bm25": [
+      "R-EDG-007-guardrail-construction",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001079": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001081": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-007-guardrail-construction"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0001087": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0001090": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-007-illegal-electrical-work"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001096": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001104": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0001116": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001117": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001120": {
+    "rcasr_bm25": [
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-009-suspended-platform-lifting-violation",
+      "R-BHV-006-uncertified-special-operation",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0001129": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001135": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0001136": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0001141": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-BHV-006-uncertified-special-operation",
+      "R-CIV-003-material-stacking-labeling",
+      "R-BHV-013-damaged-lifting-gear"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001151": {
+    "rcasr_bm25": [
+      "R-CIV-003-material-stacking-labeling",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001153": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-006-uncertified-special-operation",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0001162": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0001164": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0001194": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001199": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0001208": {
+    "rcasr_bm25": [
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0001229": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-EDG-007-guardrail-construction"
+    ],
+    "facts_parse_error": null
+  },
+  "0001237": {
+    "rcasr_bm25": [
+      "R-BHV-010-hot-work-violation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-013-temporary-facilities"
+    ],
+    "facts_parse_error": null
+  },
+  "0001252": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001264": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001272": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-004-illegal-climbing",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001274": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-EDG-007-guardrail-construction"
+    ],
+    "facts_parse_error": null
+  },
+  "0001275": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001281": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001285": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001294": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-002-stair-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-013-temporary-facilities"
+    ],
+    "facts_parse_error": null
+  },
+  "0001305": {
+    "rcasr_bm25": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-009-service-shaft-opening"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0001306": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-009-noise-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0001325": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001343": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0001353": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-013-temporary-facilities"
+    ],
+    "facts_parse_error": null
+  },
+  "0001360": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001369": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001372": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001391": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001392": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-007-guardrail-construction",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0001396": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0001420": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-007-guardrail-construction"
+    ],
+    "facts_parse_error": null
+  },
+  "0001428": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-009-noise-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001431": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0001432": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-009-noise-exceedance"
+    ],
+    "bm25_matched": [
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001436": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-001-horizontal-opening-protection"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001444": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-CIV-011-smoking-burning"
+    ],
+    "facts_parse_error": null
+  },
+  "0001451": {
+    "rcasr_bm25": [
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-007-guardrail-construction",
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001453": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001460": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-007-guardrail-construction"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001470": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001473": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-007-guardrail-construction"
+    ],
+    "bm25_matched": [
+      "R-CIV-016-cable-on-ground",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-007-illegal-electrical-work"
+    ],
+    "facts_parse_error": null
+  },
+  "0001483": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001484": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0001493": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001500": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-004-illegal-climbing",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001509": {
+    "rcasr_bm25": [
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0001512": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001520": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0001530": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001531": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0001536": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001544": {
+    "rcasr_bm25": [
+      "R-BHV-007-illegal-electrical-work"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-007-illegal-electrical-work"
+    ],
+    "facts_parse_error": null
+  },
+  "0001545": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-011-severe-weather-operation",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "facts_parse_error": null
+  },
+  "0001554": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-OPN-004-vertical-and-low-sill-opening"
+    ],
+    "facts_parse_error": null
+  },
+  "0001558": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0001587": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-011-severe-weather-operation",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001597": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001598": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-001-hoarding-missing-low"
+    ],
+    "facts_parse_error": null
+  },
+  "0001623": {
+    "rcasr_bm25": [
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001639": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-011-manhole-trench-cover"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001654": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001658": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001661": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001667": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001671": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001675": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0001699": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-007-guardrail-construction",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001705": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001706": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-BHV-007-illegal-electrical-work"
+    ],
+    "facts_parse_error": null
+  },
+  "0001716": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001743": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-013-temporary-facilities",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0001746": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-003-material-stacking-labeling"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001763": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-011-severe-weather-operation",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001775": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0001789": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-011-smoking-burning"
+    ],
+    "facts_parse_error": null
+  },
+  "0001798": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0001799": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001804": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001812": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-001-horizontal-opening-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0001818": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0001842": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-CIV-003-material-stacking-labeling"
+    ],
+    "bm25_matched": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0001854": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001873": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0001892": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0001900": {
+    "rcasr_bm25": [
+      "R-CIV-003-material-stacking-labeling",
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-CIV-003-material-stacking-labeling",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0001915": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-006-tsp-exceedance",
+      "R-CIV-003-material-stacking-labeling"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "facts_parse_error": null
+  },
+  "0001918": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0001924": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001955": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0001963": {
+    "rcasr_bm25": [
+      "R-BHV-011-severe-weather-operation",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0001969": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0001981": {
+    "rcasr_bm25": [
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-011-severe-weather-operation",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0001982": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0001984": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0001986": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0001989": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0001999": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0002042": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002048": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-006-uncertified-special-operation",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-011-severe-weather-operation",
+      "R-BHV-009-suspended-platform-lifting-violation"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002062": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002066": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002067": {
+    "rcasr_bm25": [
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "facts_parse_error": null
+  },
+  "0002091": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002092": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-007-illegal-electrical-work",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0002093": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002104": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0002114": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0002141": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002150": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-007-guardrail-construction",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002151": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002153": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002158": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-EDG-012-passage-shed-protection",
+      "R-OPN-004-vertical-and-low-sill-opening"
+    ],
+    "bm25_matched": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002168": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002178": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-007-guardrail-construction",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002183": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-006-uncertified-special-operation",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0002198": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0002211": {
+    "rcasr_bm25": [
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-006-uncertified-special-operation",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0002219": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002242": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0002245": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-011-severe-weather-operation",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0002260": {
+    "rcasr_bm25": [
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0002262": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-009-noise-exceedance",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0002265": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-016-cable-on-ground",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "facts_parse_error": null
+  },
+  "0002270": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0002278": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002291": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "facts_parse_error": null
+  },
+  "0002305": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002344": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-011-manhole-trench-cover"
+    ],
+    "facts_parse_error": null
+  },
+  "0002348": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "facts_parse_error": null
+  },
+  "0002350": {
+    "rcasr_bm25": [
+      "R-BHV-010-hot-work-violation",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0002357": {
+    "rcasr_bm25": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "facts_parse_error": null
+  },
+  "0002359": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002361": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002367": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002395": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0002446": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002464": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-007-illegal-electrical-work"
+    ],
+    "facts_parse_error": null
+  },
+  "0002480": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-006-tsp-exceedance",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "bm25_matched": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0002485": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0002495": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002525": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-007-guardrail-construction",
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002526": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002534": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-003-material-stacking-labeling",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0002564": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002570": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "bm25_matched": [
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0002595": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "bm25_matched": [
+      "R-CIV-016-cable-on-ground",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002598": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0002599": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-013-temporary-facilities",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0002617": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0002624": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002626": {
+    "rcasr_bm25": [
+      "R-CIV-011-smoking-burning",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0002628": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0002668": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002674": {
+    "rcasr_bm25": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0002688": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-001-horizontal-opening-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0002709": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0002715": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0002729": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-OPN-011-manhole-trench-cover",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002738": {
+    "rcasr_bm25": [
+      "R-CIV-011-smoking-burning",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002740": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002753": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-006-uncertified-special-operation",
+      "R-BHV-011-severe-weather-operation",
+      "R-BHV-009-suspended-platform-lifting-violation",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-013-damaged-lifting-gear"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002815": {
+    "rcasr_bm25": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-007-guardrail-construction",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002848": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "facts_parse_error": null
+  },
+  "0002859": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-004-vertical-and-low-sill-opening"
+    ],
+    "facts_parse_error": null
+  },
+  "0002925": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002931": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0002936": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-011-smoking-burning"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0002939": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0002957": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0002962": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0002998": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003017": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0003026": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0003059": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-006-uncertified-special-operation",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-011-severe-weather-operation",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0003067": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-005-improper-ladder-use",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0003069": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-OPN-001-horizontal-opening-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0003071": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0003088": {
+    "rcasr_bm25": [
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003094": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0003106": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-007-guardrail-construction",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-004-vertical-and-low-sill-opening"
+    ],
+    "facts_parse_error": null
+  },
+  "0003156": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-003-material-stacking-labeling",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0003158": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-004-hoist-landing-platform",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0003164": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003181": {
+    "rcasr_bm25": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003188": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003206": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003217": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-013-temporary-facilities"
+    ],
+    "facts_parse_error": null
+  },
+  "0003224": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0003234": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-OPN-004-vertical-and-low-sill-opening"
+    ],
+    "facts_parse_error": null
+  },
+  "0003241": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-009-noise-exceedance",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "facts_parse_error": null
+  },
+  "0003242": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0003264": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": "invalid JSON object: Expecting ',' delimiter: line 18 column 3 (char 1144)"
+  },
+  "0003274": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003288": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0003302": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003339": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-005-improper-ladder-use",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003351": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0003379": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0003381": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0003386": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0003392": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0003416": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003420": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003423": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0003429": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0003433": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-006-uncertified-special-operation",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0003461": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003468": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "facts_parse_error": null
+  },
+  "0003479": {
+    "rcasr_bm25": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0003487": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003516": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0003546": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003550": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0003583": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-005-improper-ladder-use",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003613": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003632": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003667": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0003679": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003683": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003684": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0003718": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0003729": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-005-improper-ladder-use",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003743": {
+    "rcasr_bm25": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-011-smoking-burning"
+    ],
+    "facts_parse_error": null
+  },
+  "0003813": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0003825": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0003838": {
+    "rcasr_bm25": [
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0003841": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0003883": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0003919": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-002-stair-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0003922": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "bm25_matched": [
+      "R-EDG-005-scaffold-structure-gap",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003928": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0003943": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003952": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-013-temporary-facilities",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003964": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003972": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-006-uncertified-special-operation",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0003978": {
+    "rcasr_bm25": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-007-guardrail-construction",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0003994": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004023": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0004027": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0004032": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-011-severe-weather-operation",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-CIV-013-temporary-facilities"
+    ],
+    "facts_parse_error": null
+  },
+  "0004041": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0004069": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004074": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0004084": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004087": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004089": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004101": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004103": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004109": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0004111": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004113": {
+    "rcasr_bm25": [
+      "R-EDG-002-stair-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-003-roof-balcony-platform-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-002-stair-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0004118": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  },
+  "0004130": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004152": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-003-material-stacking-labeling",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004167": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-016-cable-on-ground",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0004171": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004187": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004189": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-005-scaffold-structure-gap"
+    ],
+    "facts_parse_error": null
+  },
+  "0004192": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0004196": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0004235": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0004260": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004273": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004279": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-001-horizontal-opening-protection",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-005-improper-ladder-use",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004328": {
+    "rcasr_bm25": [],
+    "bm25_matched": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": "no JSON object found"
+  },
+  "0004332": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-CIV-013-temporary-facilities"
+    ],
+    "facts_parse_error": null
+  },
+  "0004340": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004344": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004350": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0004380": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004398": {
+    "rcasr_bm25": [
+      "R-BHV-006-uncertified-special-operation",
+      "R-BHV-011-severe-weather-operation",
+      "R-BHV-009-suspended-platform-lifting-violation",
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-013-damaged-lifting-gear",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-008-machinery-area-not-cleared",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-006-uncertified-special-operation"
+    ],
+    "facts_parse_error": null
+  },
+  "0004433": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-005-scaffold-structure-gap",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004453": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-006-uncertified-special-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0004458": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004471": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "facts_parse_error": null
+  },
+  "0004472": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-OPN-011-manhole-trench-cover",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004488": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0004491": {
+    "rcasr_bm25": [
+      "R-CIV-008-road-dust-exceedance"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0004492": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004497": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-006-uncertified-special-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004543": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004549": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-008-machinery-area-not-cleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004552": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-011-manhole-trench-cover",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-OPN-009-service-shaft-opening",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004577": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-005-spoil-waste-overheight-uncleared",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "facts_parse_error": null
+  },
+  "0004582": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0004600": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-012-inattentive-unsafe-behavior"
+    ],
+    "facts_parse_error": null
+  },
+  "0004604": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0004619": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-006-pit-trench-edge",
+      "R-EDG-002-stair-edge",
+      "R-BHV-006-uncertified-special-operation",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-OPN-004-vertical-and-low-sill-opening",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-016-cable-on-ground"
+    ],
+    "facts_parse_error": null
+  },
+  "0004638": {
+    "rcasr_bm25": [
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-005-improper-ladder-use",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "facts_parse_error": null
+  },
+  "0004647": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-001-no-harness-at-height",
+      "R-OPN-001-horizontal-opening-protection"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "facts_parse_error": null
+  },
+  "0004680": {
+    "rcasr_bm25": [
+      "R-CIV-004-dusty-material-uncovered",
+      "R-CIV-008-road-dust-exceedance",
+      "R-CIV-018-poor-overall-housekeeping"
+    ],
+    "bm25_matched": [
+      "R-BHV-005-improper-ladder-use",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004700": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-005-improper-ladder-use"
+    ],
+    "facts_parse_error": null
+  },
+  "0004711": {
+    "rcasr_bm25": [
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "bm25_matched": [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-006-pit-trench-edge",
+      "R-CIV-005-spoil-waste-overheight-uncleared"
+    ],
+    "facts_parse_error": null
+  },
+  "0004716": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-011-severe-weather-operation",
+      "R-CIV-002-road-unhardened-water-mud",
+      "R-CIV-008-road-dust-exceedance",
+      "R-BHV-006-uncertified-special-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-004-dusty-material-uncovered"
+    ],
+    "facts_parse_error": null
+  },
+  "0004725": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-018-poor-overall-housekeeping",
+      "R-EDG-006-pit-trench-edge"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-EDG-011-scaffold-layer-catch-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004767": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-CIV-002-road-unhardened-water-mud"
+    ],
+    "facts_parse_error": null
+  },
+  "0004819": {
+    "rcasr_bm25": [
+      "R-EDG-003-roof-balcony-platform-edge",
+      "R-EDG-012-passage-shed-protection",
+      "R-BHV-001-no-harness-at-height"
+    ],
+    "bm25_matched": [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-EDG-012-passage-shed-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0004828": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire",
+      "R-CIV-004-dusty-material-uncovered",
+      "R-BHV-011-severe-weather-operation"
+    ],
+    "bm25_matched": [
+      "R-BHV-002-helmet-and-attire",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-OPN-001-horizontal-opening-protection"
+    ],
+    "facts_parse_error": null
+  },
+  "0004831": {
+    "rcasr_bm25": [
+      "R-BHV-001-no-harness-at-height",
+      "R-EDG-012-passage-shed-protection",
+      "R-EDG-011-scaffold-layer-catch-net",
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-BHV-004-illegal-climbing",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-OPN-005-elevator-shaft-door-and-net"
+    ],
+    "facts_parse_error": null
+  },
+  "0004847": {
+    "rcasr_bm25": [
+      "R-BHV-002-helmet-and-attire"
+    ],
+    "bm25_matched": [
+      "R-CIV-016-cable-on-ground",
+      "R-BHV-012-inattentive-unsafe-behavior",
+      "R-BHV-004-illegal-climbing"
+    ],
+    "facts_parse_error": null
+  }
+}

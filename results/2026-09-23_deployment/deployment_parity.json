@@ -1,0 +1,563 @@
+{
+  "what": "RCASR deployment runtime: parity rows, public E5b replay, and a bench live replay of 24 internal images",
+  "runtime_config_sha256": "28863683a6045d72bddd15f53c6da11dc3ecc1260da9c608b30a3e17d499c0b8",
+  "bench": {
+    "topology": "bench-workstation-4090+endpoint",
+    "extractor_served": [
+      "Qwen/Qwen3.5-9B"
+    ],
+    "judge_served_includes_frozen": true,
+    "analysis_workers": "4",
+    "sample": "internal evidence image ids, sorted, every 14th, first 24"
+  },
+  "parity_rows": [
+    {
+      "item": "weights theta",
+      "paper": [
+        0.5,
+        2
+      ],
+      "deployed": [
+        0.5,
+        2
+      ],
+      "match": true
+    },
+    {
+      "item": "tau / tau_open",
+      "paper": [
+        0,
+        0.7
+      ],
+      "deployed": [
+        0,
+        0.7
+      ],
+      "match": true
+    },
+    {
+      "item": "target mean width",
+      "paper": 2.0,
+      "deployed": 2.0,
+      "match": true
+    },
+    {
+      "item": "opening atoms",
+      "paper": [
+        "elevator_shaft_present",
+        "guardrail_present",
+        "horizontal_opening_present",
+        "pit_or_trench_edge_present",
+        "roof_balcony_platform_edge_present",
+        "shaft_opening_present"
+      ],
+      "deployed": [
+        "elevator_shaft_present",
+        "guardrail_present",
+        "horizontal_opening_present",
+        "pit_or_trench_edge_present",
+        "roof_balcony_platform_edge_present",
+        "shaft_opening_present"
+      ],
+      "match": true
+    },
+    {
+      "item": "extractor model",
+      "paper": "Qwen3.5-9B",
+      "deployed": "Qwen3.5-9B",
+      "match": true
+    },
+    {
+      "item": "extractor decoding",
+      "paper": {
+        "temperature": 0.0,
+        "enable_thinking": false,
+        "repetition_penalty": 1.1,
+        "top_logprobs": 5,
+        "max_tokens": {
+          "subject": 1536,
+          "state": 3072
+        },
+        "min_pixels": 200704,
+        "max_pixels": 2073600
+      },
+      "deployed": {
+        "temperature": 0.0,
+        "enable_thinking": false,
+        "repetition_penalty": 1.1,
+        "top_logprobs": 5,
+        "max_tokens": {
+          "subject": 1536,
+          "state": 3072
+        },
+        "min_pixels": 200704,
+        "max_pixels": 2073600
+      },
+      "match": true
+    },
+    {
+      "item": "judge model",
+      "paper": "Qwen3.8-27B-FP8",
+      "deployed": "Qwen3.8-27B-FP8",
+      "match": true
+    },
+    {
+      "item": "judge mode",
+      "paper": "decoupled_sym",
+      "deployed": "decoupled_sym",
+      "match": true
+    },
+    {
+      "item": "judge guided JSON",
+      "paper": true,
+      "deployed": true,
+      "match": true
+    },
+    {
+      "item": "facts guided JSON (public E5b facts stage)",
+      "paper": false,
+      "deployed": false,
+      "match": true
+    },
+    {
+      "item": "facts extractor (public E5b vs deployed)",
+      "paper": "Qwen/Qwen3.5-9B",
+      "deployed": "Qwen/Qwen3.5-9B",
+      "match": true
+    },
+    {
+      "item": "facts extractor (threshold population vs deployed)",
+      "paper": "Qwen/Qwen3.6-35B-A3B-FP8",
+      "deployed": "Qwen/Qwen3.5-9B",
+      "match": false,
+      "note": "stated difference: the width-2 threshold was fixed on priors from these facts; realised robot width is logged, recalibrate re-thresholds label-free"
+    },
+    {
+      "item": "threshold (recomputed, label-free)",
+      "paper": 0.962824466398786,
+      "deployed": 0.962824466398786,
+      "match": true
+    },
+    {
+      "item": "shipped CS bytes equal runtime pins",
+      "paper": [],
+      "deployed": [],
+      "match": true
+    },
+    {
+      "item": "runtime pins equal freeze pins",
+      "paper": true,
+      "deployed": true,
+      "match": true,
+      "pinned": 29,
+      "unpinned": [
+        "Prompts_en/shared/image_fact_prompt.md",
+        "Prompts_en/shared/retrieval_target_guidance.md",
+        "data/rules/rules.json",
+        "src/backends/__init__.py",
+        "src/backends/base.py",
+        "src/backends/usage.py",
+        "src/dataset.py",
+        "src/io_utils.py",
+        "src/paths.py",
+        "src/retrieval/__init__.py",
+        "src/retrieval/text_overlap.py",
+        "src/validation.py"
+      ]
+    }
+  ],
+  "live_vs_frozen": {
+    "status": "measured",
+    "n_frames": 24,
+    "identical_sets": 9,
+    "mean_jaccard": 0.5729166666666666,
+    "max_abs_score_diff": 0.7132924377461716,
+    "atom_p_yes_abs_diff": {
+      "n": 3144,
+      "mean": 0.0022565668657430547,
+      "max": 0.09646895722332487
+    },
+    "differing": [
+      {
+        "image_id": "img_0052",
+        "live": [],
+        "frozen": [
+          "R-BHV-001-no-harness-at-height"
+        ]
+      },
+      {
+        "image_id": "img_0137",
+        "live": [
+          "R-OPN-001-horizontal-opening-protection",
+          "R-OPN-004-vertical-and-low-sill-opening",
+          "R-OPN-005-elevator-shaft-door-and-net",
+          "R-OPN-009-service-shaft-opening"
+        ],
+        "frozen": [
+          "R-OPN-001-horizontal-opening-protection",
+          "R-OPN-005-elevator-shaft-door-and-net",
+          "R-OPN-009-service-shaft-opening"
+        ]
+      },
+      {
+        "image_id": "img_0002",
+        "live": [
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ],
+        "frozen": []
+      },
+      {
+        "image_id": "img_0203",
+        "live": [
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ],
+        "frozen": [
+          "R-BHV-002-helmet-and-attire",
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ]
+      },
+      {
+        "image_id": "img_0284",
+        "live": [],
+        "frozen": [
+          "R-BHV-002-helmet-and-attire",
+          "R-EDG-003-roof-balcony-platform-edge",
+          "R-OPN-001-horizontal-opening-protection"
+        ]
+      },
+      {
+        "image_id": "img_0235",
+        "live": [
+          "R-EDG-002-stair-edge"
+        ],
+        "frozen": [
+          "R-EDG-002-stair-edge",
+          "R-EDG-003-roof-balcony-platform-edge"
+        ]
+      },
+      {
+        "image_id": "img_0329",
+        "live": [
+          "R-EDG-003-roof-balcony-platform-edge",
+          "R-OPN-001-horizontal-opening-protection",
+          "R-OPN-009-service-shaft-opening"
+        ],
+        "frozen": [
+          "R-EDG-003-roof-balcony-platform-edge",
+          "R-OPN-001-horizontal-opening-protection"
+        ]
+      },
+      {
+        "image_id": "img_0470",
+        "live": [
+          "R-EDG-003-roof-balcony-platform-edge",
+          "R-OPN-001-horizontal-opening-protection"
+        ],
+        "frozen": [
+          "R-OPN-001-horizontal-opening-protection"
+        ]
+      },
+      {
+        "image_id": "img_0543",
+        "live": [
+          "R-BHV-001-no-harness-at-height",
+          "R-EDG-003-roof-balcony-platform-edge",
+          "R-EDG-007-guardrail-construction",
+          "R-OPN-001-horizontal-opening-protection"
+        ],
+        "frozen": [
+          "R-BHV-001-no-harness-at-height",
+          "R-BHV-002-helmet-and-attire",
+          "R-CIV-008-road-dust-exceedance",
+          "R-EDG-007-guardrail-construction"
+        ]
+      },
+      {
+        "image_id": "img_0575",
+        "live": [
+          "R-EDG-003-roof-balcony-platform-edge",
+          "R-OPN-001-horizontal-opening-protection",
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ],
+        "frozen": [
+          "R-EDG-002-stair-edge",
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ]
+      },
+      {
+        "image_id": "img_0734",
+        "live": [],
+        "frozen": [
+          "R-EDG-002-stair-edge",
+          "R-EDG-003-roof-balcony-platform-edge"
+        ]
+      },
+      {
+        "image_id": "img_0886",
+        "live": [
+          "R-CIV-004-dusty-material-uncovered"
+        ],
+        "frozen": []
+      },
+      {
+        "image_id": "img_0831",
+        "live": [
+          "R-BHV-001-no-harness-at-height",
+          "R-EDG-002-stair-edge",
+          "R-OPN-001-horizontal-opening-protection"
+        ],
+        "frozen": [
+          "R-BHV-001-no-harness-at-height",
+          "R-EDG-002-stair-edge"
+        ]
+      },
+      {
+        "image_id": "img_0940",
+        "live": [
+          "R-OPN-001-horizontal-opening-protection"
+        ],
+        "frozen": [
+          "R-EDG-003-roof-balcony-platform-edge",
+          "R-OPN-001-horizontal-opening-protection",
+          "R-OPN-009-service-shaft-opening"
+        ]
+      },
+      {
+        "image_id": "img_0995",
+        "live": [
+          "R-OPN-001-horizontal-opening-protection"
+        ],
+        "frozen": [
+          "R-CIV-003-material-stacking-labeling",
+          "R-OPN-001-horizontal-opening-protection",
+          "R-OPN-009-service-shaft-opening",
+          "R-OPN-011-manhole-trench-cover"
+        ]
+      }
+    ]
+  },
+  "attribution": {
+    "live_selection_eq_live_facts_plus_frozen_atoms": "23/24",
+    "frozen_selection_eq_frozen_facts_plus_live_atoms": "23/24",
+    "mean_width_live": 1.38,
+    "mean_width_frozen_same_images": 1.62
+  },
+  "bench_proxies": {
+    "outcomes": {
+      "n_frames": 24,
+      "counts": {
+        "violation": 17,
+        "need_review": 0,
+        "clear": 1,
+        "clear_empty": 6,
+        "error": 0
+      },
+      "rates": {
+        "violation": 0.7083333333333334,
+        "need_review": 0.0,
+        "clear": 0.041666666666666664,
+        "clear_empty": 0.25,
+        "error": 0.0
+      },
+      "flagged_frames_per_active_hour": 249.46560471639089,
+      "width": {
+        "n": 24,
+        "mean": 1.375,
+        "p50": 1.0,
+        "p95": 4.0,
+        "max": 4.0
+      },
+      "dark_frame_share": 0.125,
+      "selected_rules": [
+        [
+          "R-OPN-001-horizontal-opening-protection",
+          10
+        ],
+        [
+          "R-OPN-005-elevator-shaft-door-and-net",
+          6
+        ],
+        [
+          "R-EDG-003-roof-balcony-platform-edge",
+          5
+        ],
+        [
+          "R-EDG-002-stair-edge",
+          3
+        ],
+        [
+          "R-OPN-009-service-shaft-opening",
+          2
+        ],
+        [
+          "R-BHV-001-no-harness-at-height",
+          2
+        ],
+        [
+          "R-BHV-002-helmet-and-attire",
+          2
+        ],
+        [
+          "R-OPN-004-vertical-and-low-sill-opening",
+          1
+        ],
+        [
+          "R-EDG-007-guardrail-construction",
+          1
+        ],
+        [
+          "R-CIV-004-dusty-material-uncovered",
+          1
+        ]
+      ],
+      "flagged_rules": [
+        [
+          "R-OPN-001-horizontal-opening-protection",
+          10
+        ],
+        [
+          "R-EDG-003-roof-balcony-platform-edge",
+          5
+        ],
+        [
+          "R-OPN-005-elevator-shaft-door-and-net",
+          4
+        ],
+        [
+          "R-EDG-002-stair-edge",
+          3
+        ],
+        [
+          "R-OPN-009-service-shaft-opening",
+          2
+        ],
+        [
+          "R-BHV-001-no-harness-at-height",
+          2
+        ],
+        [
+          "R-BHV-002-helmet-and-attire",
+          2
+        ],
+        [
+          "R-OPN-004-vertical-and-low-sill-opening",
+          1
+        ],
+        [
+          "R-EDG-007-guardrail-construction",
+          1
+        ],
+        [
+          "R-CIV-004-dusty-material-uncovered",
+          1
+        ]
+      ]
+    },
+    "latency_s": {
+      "e2e_s": {
+        "n": 24,
+        "mean": 132.4137752353296,
+        "p50": 120.49836740799947,
+        "p95": 227.8028702790034,
+        "max": 240.73980422702152
+      },
+      "queue_wait_s": {
+        "n": 24,
+        "mean": 94.55067897375072,
+        "p50": 80.6549634130206,
+        "p95": 203.20559777203016,
+        "max": 206.2029419799801
+      },
+      "analysis_s": {
+        "n": 24,
+        "mean": 37.813381832415565,
+        "p50": 37.40727732604137,
+        "p95": 50.04033961100504,
+        "max": 56.6579967669677
+      },
+      "perception_s": {
+        "n": 24,
+        "mean": 26.120599118577957,
+        "p50": 25.136546225985512,
+        "p95": 32.262338764965534,
+        "max": 34.42273228795966
+      },
+      "score_s": {
+        "n": 24,
+        "mean": 0.0021662595124022723,
+        "p50": 0.0005702250055037439,
+        "p95": 0.0008986970060504973,
+        "max": 0.0377664040424861
+      },
+      "judge_s": {
+        "n": 24,
+        "mean": 11.690616454325209,
+        "p50": 13.436406719032675,
+        "p95": 23.196496602031402,
+        "max": 24.931434514990542
+      }
+    },
+    "stages": {
+      "facts": {
+        "model": "Qwen/Qwen3.5-9B",
+        "calls_per_frame": 1.0,
+        "seconds_per_call": {
+          "n": 24,
+          "mean": 6.112193337074132,
+          "p50": 5.897341303003486,
+          "p95": 9.181288068997674,
+          "max": 10.003241678001359
+        },
+        "errors": 0,
+        "prompt_tokens_per_frame": 2122.625,
+        "completion_tokens_per_frame": 215.41666666666666,
+        "calls_without_usage": 0
+      },
+      "judge": {
+        "model": "Qwen3.8-27B-FP8",
+        "calls_per_frame": 1.375,
+        "seconds_per_call": {
+          "n": 33,
+          "mean": 14.168121161971198,
+          "p50": 13.435719043016434,
+          "p95": 23.103947238996625,
+          "max": 24.838734351971652
+        },
+        "errors": 0,
+        "prompt_tokens_per_frame": 3981.75,
+        "completion_tokens_per_frame": 713.25,
+        "calls_without_usage": 0
+      },
+      "state": {
+        "model": "Qwen/Qwen3.5-9B",
+        "calls_per_frame": 1.0,
+        "seconds_per_call": {
+          "n": 24,
+          "mean": 24.380383122789983,
+          "p50": 24.47546017600689,
+          "p95": 26.100717057008296,
+          "max": 27.085854312987067
+        },
+        "errors": 0,
+        "prompt_tokens_per_frame": 4003.625,
+        "completion_tokens_per_frame": 1069.4166666666667,
+        "calls_without_usage": 0
+      },
+      "subject": {
+        "model": "Qwen/Qwen3.5-9B",
+        "calls_per_frame": 1.0,
+        "seconds_per_call": {
+          "n": 24,
+          "mean": 11.074338526668726,
+          "p50": 10.812786555034108,
+          "p95": 13.50854115904076,
+          "max": 13.712875408004038
+        },
+        "errors": 0,
+        "prompt_tokens_per_frame": 2770.625,
+        "completion_tokens_per_frame": 450.1666666666667,
+        "calls_without_usage": 0
+      }
+    }
+  }
+}

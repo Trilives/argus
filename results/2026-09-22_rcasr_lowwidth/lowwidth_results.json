@@ -1,0 +1,233 @@
+{
+  "plan": "docs/paper_v3/design/LOWWIDTH_E2_PRESPEC.md",
+  "snapshot_sha256": "d7535bf6eab223eb107a576de98152df0a2521d2973873046c5ce8eceb3f189a",
+  "target_width": 2.0,
+  "realised": {
+    "width_mean": 2.0260115606936417,
+    "width_median": 2.0,
+    "width_p95": 5.0,
+    "empty_selection_rate": 0.11271676300578035,
+    "judged_pairs_total": 701,
+    "width_3_pairs_total": 1039
+  },
+  "judge": {
+    "source": "results/2026-09-22_rcasr_judge/internal_pairs.jsonl",
+    "new_pairs_judged": 0,
+    "n_verdicts_used": 1635,
+    "parse_errors_among_used": 0,
+    "tokens_per_pair": "not recorded per pair in the judge cache; judge cost scales with judged pairs per image"
+  },
+  "extractor_tokens_per_image": {
+    "subject_prompt_tokens": 2620.542,
+    "subject_completion_tokens": 449.91,
+    "state_prompt_tokens": 3853.542,
+    "state_completion_tokens": 1068.938
+  },
+  "gates": {
+    "W1_recall_noninferior": {
+      "delta": 0.053045186640471476,
+      "ci": [
+        -0.006040270548913314,
+        0.1065616392555206
+      ],
+      "margin": -0.03,
+      "passed": true
+    },
+    "W2_fewer_false_alarms": {
+      "delta": -0.277456647398844,
+      "ci": [
+        -0.43121976046321026,
+        -0.11204501915708825
+      ],
+      "passed": true
+    },
+    "review_workload_claim": {
+      "passed": true,
+      "rule": "both W1 and W2 must pass"
+    }
+  },
+  "arms": {
+    "rcasr_bm25_w2": {
+      "gv_recall": 0.48722986247544203,
+      "gv_precision_closed_world": 0.41680672268907565,
+      "gv_f1_closed_world": 0.4492753623188406,
+      "false_alarms_per_image": 1.0028901734104045,
+      "false_alarm_gold_status": {
+        "unrecorded": 334,
+        "compliant": 12,
+        "undetermined": 1
+      },
+      "misses_per_image": 0.7543352601156069,
+      "need_review_rate": 0.05135520684736091,
+      "exact_image_success": 0.15606936416184972,
+      "macro_family_recall": {
+        "BHV": 0.7571428571428571,
+        "CIV": 0.1724137931034483,
+        "EDG": 0.4068627450980392,
+        "OPN": 0.576271186440678
+      },
+      "width_mean": 2.0260115606936417,
+      "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision",
+      "vs_bm25_w3": {
+        "gv_recall_delta": 0.053045186640471476,
+        "fa_per_image_delta": -0.277456647398844,
+        "gv_recall_delta_ci": [
+          -0.006040270548913314,
+          0.1065616392555206
+        ],
+        "fa_per_image_delta_ci": [
+          -0.43121976046321026,
+          -0.11204501915708825
+        ],
+        "unit": "confirmed site unit (near-duplicate clusters fused)",
+        "n_units": 48,
+        "repeats": 2000,
+        "seed": 20260922,
+        "interpretation": "site-clustered paired bootstrap over cross-fitted held-out selections; retrospective"
+      }
+    },
+    "bm25_w3": {
+      "gv_recall": 0.43418467583497056,
+      "gv_precision_closed_world": 0.3328313253012048,
+      "gv_f1_closed_world": 0.3768115942028986,
+      "false_alarms_per_image": 1.2803468208092486,
+      "false_alarm_gold_status": {
+        "unrecorded": 428,
+        "compliant": 14,
+        "undetermined": 1
+      },
+      "misses_per_image": 0.8323699421965318,
+      "need_review_rate": 0.03464870067372473,
+      "exact_image_success": 0.09248554913294797,
+      "macro_family_recall": {
+        "BHV": 0.6,
+        "CIV": 0.06896551724137931,
+        "EDG": 0.28431372549019607,
+        "OPN": 0.6610169491525424
+      },
+      "width_mean": 3.0028901734104045,
+      "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+    },
+    "rcasr_bm25_w3": {
+      "gv_recall": 0.6247544204322201,
+      "gv_precision_closed_world": 0.3706293706293706,
+      "gv_f1_closed_world": 0.46525237746891,
+      "false_alarms_per_image": 1.560693641618497,
+      "false_alarm_gold_status": {
+        "unrecorded": 520,
+        "compliant": 19,
+        "undetermined": 1
+      },
+      "misses_per_image": 0.5520231213872833,
+      "need_review_rate": 0.06352261790182868,
+      "exact_image_success": 0.12716763005780346,
+      "macro_family_recall": {
+        "BHV": 0.8428571428571429,
+        "CIV": 0.41379310344827586,
+        "EDG": 0.5343137254901961,
+        "OPN": 0.711864406779661
+      },
+      "width_mean": 3.0028901734104045,
+      "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision",
+      "vs_bm25_w3": {
+        "gv_recall_delta": 0.1905697445972495,
+        "fa_per_image_delta": 0.28034682080924855,
+        "gv_recall_delta_ci": [
+          0.14200535289452815,
+          0.23005631681656197
+        ],
+        "fa_per_image_delta_ci": [
+          0.08267398146529113,
+          0.49573923086829125
+        ],
+        "unit": "confirmed site unit (near-duplicate clusters fused)",
+        "n_units": 48,
+        "repeats": 2000,
+        "seed": 20260922,
+        "interpretation": "site-clustered paired bootstrap over cross-fitted held-out selections; retrospective"
+      }
+    },
+    "bm25_w2_matched": {
+      "gv_recall": 0.3693516699410609,
+      "gv_precision_closed_world": 0.40085287846481876,
+      "gv_f1_closed_world": 0.3844580777096114,
+      "false_alarms_per_image": 0.8121387283236994,
+      "false_alarm_gold_status": {
+        "unrecorded": 270,
+        "compliant": 11
+      },
+      "misses_per_image": 0.9277456647398844,
+      "need_review_rate": 0.034236804564907276,
+      "exact_image_success": 0.13872832369942195,
+      "macro_family_recall": {
+        "BHV": 0.5571428571428572,
+        "CIV": 0.06896551724137931,
+        "EDG": 0.22058823529411764,
+        "OPN": 0.5649717514124294
+      },
+      "width_mean": 2.0260115606936417,
+      "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision",
+      "vs_bm25_w3": {
+        "gv_recall_delta": -0.06483300589390967,
+        "fa_per_image_delta": -0.4682080924855492,
+        "gv_recall_delta_ci": [
+          -0.08735075262489547,
+          -0.04224928730700841
+        ],
+        "fa_per_image_delta_ci": [
+          -0.5282501801973472,
+          -0.40449348744006297
+        ],
+        "unit": "confirmed site unit (near-duplicate clusters fused)",
+        "n_units": 48,
+        "repeats": 2000,
+        "seed": 20260922,
+        "interpretation": "site-clustered paired bootstrap over cross-fitted held-out selections; retrospective"
+      }
+    }
+  },
+  "diagnostic_curve_no_gate": {
+    "1.0": {
+      "width_mean": 1.0057803468208093,
+      "gv_recall": 0.2966601178781925,
+      "false_alarms_per_image": 0.42485549132947975,
+      "misses_per_image": 1.0346820809248556,
+      "need_review_rate": 0.040229885057471264
+    },
+    "1.5": {
+      "width_mean": 1.4884393063583814,
+      "gv_recall": 0.3968565815324165,
+      "false_alarms_per_image": 0.684971098265896,
+      "misses_per_image": 0.8872832369942196,
+      "need_review_rate": 0.04271844660194175
+    },
+    "2.0": {
+      "width_mean": 2.0260115606936417,
+      "gv_recall": 0.48722986247544203,
+      "false_alarms_per_image": 1.0028901734104045,
+      "misses_per_image": 0.7543352601156069,
+      "need_review_rate": 0.05135520684736091
+    },
+    "2.5": {
+      "width_mean": 2.5028901734104045,
+      "gv_recall": 0.5658153241650294,
+      "false_alarms_per_image": 1.254335260115607,
+      "misses_per_image": 0.638728323699422,
+      "need_review_rate": 0.053117782909930716
+    },
+    "3.0": {
+      "width_mean": 3.0028901734104045,
+      "gv_recall": 0.6247544204322201,
+      "false_alarms_per_image": 1.560693641618497,
+      "misses_per_image": 0.5520231213872833,
+      "need_review_rate": 0.06352261790182868
+    }
+  },
+  "limits": [
+    "all images development-exposed; retrospective cross-fitting, not an independent test",
+    "judge verdicts are the width-3 E2 cache (two serving stacks, 11 parse errors) reused unchanged",
+    "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent",
+    "the diagnostic curve is post-hoc and supports no claim; the arm is width 2 only"
+  ],
+  "n_evidence_images": 500
+}

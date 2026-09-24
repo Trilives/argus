@@ -1,11 +1,33 @@
 # Results (aggregate)
 
-Machine-readable summaries behind the paper's tables, computed on the frozen 500-image gold set
+Machine-readable summaries behind the paper's tables, for the earlier study computed on the frozen 500-image gold set
 (see `../data/README.md`). These are **aggregate** metrics: no images, no gold labels, and no
 per-pair model outputs are included. The one exception is the near-duplicate audit, which lists bare
 image identifiers — no labels, no imagery — and only for the perceptual-hash clusters it reports.
 
 Regenerate with `scripts/mirror_public_results.py` in the full research repository.
+
+## RCASR (v2.0.0): the tables of the current paper
+
+Each run directory keeps its research-repository path and carries the `input_snapshot.json` that
+pins its inputs by SHA-256. The analysis plans are in `../docs/paper_v3/design/`.
+
+| File | What it backs |
+|---|---|
+| `2026-09-22_rcasr_v2/rcasr_results.json` | Internal evaluation (346 images, 48 site units, five site-grouped folds): the pre-specified gates, every arm and one-factor ablation at matched width (BM25 and agent priors), CRC calibration, per-site transfer, leave-one-family-out and harm accounting. Site names are replaced by `site_NN`, and lost gold pairs are reduced to counts. |
+| `2026-09-22_rcasr_judge/e2e_results.json` | End-to-end screening with one frozen judge at width 3: grounded-violation recall/precision/F1, false alarms and review load per arm. |
+| `2026-09-22_rcasr_lowwidth/lowwidth_results.json` | The pre-specified width-2 arm against BM25 at width 3: non-inferior recall, false alarms per image 1.28 → 1.00, empty-set rate, token cost. |
+| `2026-09-22_rcasr_public/public_results.json` | ConstructionSite-10k auxiliary evaluation (412 test images with a recorded violation): detection per public rule. |
+| `2026-09-22_rcasr_public/final_config.json` | The configuration frozen on the internal images before public scoring. |
+| `2026-09-22_rcasr_public/public_selection.json` | RCASR's and matched BM25's selected provisions for each public test image. |
+| `2026-09-23_s34_default/s34_results.json` | The no-subject abstention default: identical `non_compliant` sets under both rules on every judged pair, and the review-load change. |
+| `2026-09-23_deployment/deployment_parity.json` | Runtime parity: the deployed selector reproduces the frozen selections; stated facts-model difference. |
+| `2026-09-23_deployment/deployment_simulation.json` | Stored-frame replay through the deployed runtime (pilot): decision rates, realised width and latency per slice. |
+| `2026-09-23_deployment/onrobot_round.json` | The on-robot round under the frozen and the site-recalibrated threshold: the proxies of the robot table. Unlabelled, so there are no accuracy figures. |
+
+The runtime configurations the robot runs are in `../configs/`.
+
+## ARGus (v1.x): the tables of the earlier study
 
 ## Retrieval
 

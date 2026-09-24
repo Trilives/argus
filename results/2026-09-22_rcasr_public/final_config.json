@@ -1,0 +1,13 @@
+{
+  "fitted_on": "346 internal site images (all folds); pre-specified grid; width 3.0",
+  "internal_freeze": "results/2026-09-22_rcasr_v2",
+  "internal_snapshot_sha256": "b78d41d1d9e9ba0bba4f784e60f0223cea2070ff9384f85ea4dd15280d2ee692",
+  "theta": [
+    0.5,
+    2
+  ],
+  "tau": 0,
+  "tau_open": 0.7,
+  "internal_resubstitution_recall": 0.7190569744597249,
+  "public_threshold_rule": "global threshold at mean width 3.0 on the public population (label-free)"
+}

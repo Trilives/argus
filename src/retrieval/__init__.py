@@ -3,8 +3,10 @@
 ``get_retriever`` resolves a method name to a configured :class:`Retriever`. The
 two methods are compared head-to-head in the paper:
 
-- ``text_overlap`` — dependency-free RAG baseline over the prebuilt rule index.
-- ``agent_grep``   — a tool-calling LLM that greps the rule library itself.
+- ``text_overlap``  — dependency-free RAG baseline over the prebuilt rule index.
+- ``bm25``          — Okapi BM25 over the same index and query.
+- ``cross_encoder`` — off-the-shelf cross-attention reranker over all 42 rules.
+- ``agent_grep``    — a tool-calling LLM that greps the rule library itself.
 """
 
 from __future__ import annotations
@@ -41,6 +43,15 @@ def get_retriever(method: str) -> Retriever:
         if not isinstance(rule_index, list):
             raise ValueError(f"Expected list rule index at {paths.RULE_INDEX_PATH}")
         return BM25Retriever(rule_index)
+    if method == "cross_encoder":
+        import paths
+        from io_utils import load_json
+        from retrieval.cross_encoder import CrossEncoderRetriever
+
+        rule_index = load_json(paths.RULE_INDEX_PATH)
+        if not isinstance(rule_index, list):
+            raise ValueError(f"Expected list rule index at {paths.RULE_INDEX_PATH}")
+        return CrossEncoderRetriever(rule_index)
     if method == "agent_grep":
         from retrieval.agent_grep import AgentGrepRetriever
 
@@ -50,8 +61,8 @@ def get_retriever(method: str) -> Retriever:
         # pipeline.retrieve_candidates); retrieve(query) raises by design.
         return build_visual_agent_retriever()
     raise ValueError(
-        f"Unknown retrieval method: {method!r} "
-        "(expected 'text_overlap', 'bm25', 'agent_grep', or 'agent_grep_visual')"
+        f"Unknown retrieval method: {method!r} (expected 'text_overlap', 'bm25', "
+        "'cross_encoder', 'agent_grep', or 'agent_grep_visual')"
     )
 
 

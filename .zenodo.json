@@ -1,7 +1,7 @@
 {
-  "title": "Applicability-Aware Rule Retrieval for Regulation-Grounded Construction-Site Visual Screening — code, provision library and evaluation harness (ARGus)",
-  "description": "Reference implementation and evaluation harness for regulation-grounded visual compliance screening of construction sites. Given a site photograph, a bounded retrieval agent proposes the few provisions that plausibly apply, and the verdict is computed from a named provision formula over persisted checkpoint evidence rather than from model free text, so every decision traces back to a clause. The accompanying study reports where such pipelines fail: under the configurations tested it is the retrieval step — deciding which provisions apply — rather than the visual judgement that dominates end-to-end accuracy, and grounded precision decreased at every step as the candidate set was widened. Includes the pipeline code, the 42-provision rule library and its schema, the stage prompts, privacy-reviewed sample images, the aggregate result summaries behind every table, and the paper's online supplement (paper/supplement.pdf), accompanying the paper \"Applicability-Aware Rule Retrieval for Regulation-Grounded Construction-Site Visual Screening\" (submitted to the Journal of Computing in Civil Engineering, ASCE).",
-  "version": "v1.2.3",
+  "title": "Risk-Controlled Applicability Set Retrieval (RCASR) for Regulation-Grounded Construction-Site Visual Screening — code, frozen configurations, analysis plans and aggregate results (ARGus)",
+  "description": "Code and evaluation artifacts for Risk-Controlled Applicability Set Retrieval (RCASR), accompanying the manuscript \"Risk-Controlled Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening\". Screening a site photograph against a regulation library first requires deciding which provisions apply. RCASR frames this as set prediction under asymmetric miss/exposure cost: it re-weights a retrieval prior by the probability that each provision's compiled subject and state conditions hold, computed from token-level posteriors over 131 rule-agnostic visual atoms with abstention, and selects a set at a target mean width or under conformal risk control. On 346 photographs from 48 sites under a 42-provision regime, with site-grouped cross-fitting, recorded-violation recall at a matched mean width of three rose from 0.515 (BM25) to 0.709. A pre-specified width-two arm kept BM25's width-three recall while cutting false alarms per image from 1.28 to 1.00. Frozen before public scoring, RCASR raised ConstructionSite-10k violation detection for harness use from 0.08 to 0.80 and for PPE from 0.43 to 0.67. The configuration runs on a quadruped patrol robot. This release (v2.0.0) adds the RCASR code, the frozen runtime configurations, the pre-specified analysis plans, SHA-256 input snapshots and the aggregate results behind every table, on top of the ARGus screening framework of the earlier study (v1.x), whose code, provision library, prompts, privacy-reviewed sample images, aggregate results and online supplement are retained. Site imagery, gold annotations and per-pair model outputs are not included; they are available from the corresponding author under a data-use agreement.",
+  "version": "v2.0.0",
   "upload_type": "software",
   "license": "Apache-2.0",
   "access_right": "open",
@@ -30,12 +30,14 @@
     }
   ],
   "keywords": [
-    "regulatory compliance screening",
-    "agentic retrieval",
-    "rule grounding",
-    "vision-language models",
     "construction safety",
-    "auditable AI"
+    "regulation compliance",
+    "vision-language models",
+    "retrieval-augmented generation",
+    "set-valued prediction",
+    "conformal risk control",
+    "site inspection",
+    "false alarms"
   ],
   "related_identifiers": [
     {

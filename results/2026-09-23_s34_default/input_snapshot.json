@@ -1,0 +1,25 @@
+{
+  "code_base_commit": "1a2094aa4b8d4e3befd862423e0c02c313461ad5",
+  "file_sha256": {
+    "data/annotations/image_rule_gold.json": "c5674b785ec716b42fe2533fc342d72c6c0554a6e75d8d1940ba8bf055f35d18",
+    "data/rules/rules_en.json": "1cfd2dd2665d641913186255e1a04d3d9843985873d90ba4a3f04d21d0acaf84",
+    "docs/paper_v3/design/S34_DEFAULT_PRESPEC.md": "71a474fdee719334ed9cfda39058389289ecd54c72f8fd366bd884870a159558",
+    "experiments/retrieval/eval_s34_default.py": "99316ebb8eb65e2fc800579079c465a11ca077eb07e9817ad9acbc985b30b04c",
+    "results/2026-09-22_rcasr_judge/input_snapshot.json": "3066b49a1c1e45e24e792c70837203d4b3b990c2886a1d7f82ec1600fec39fc0",
+    "results/2026-09-22_rcasr_judge/internal_pairs.jsonl": "14b4d3f532d7c10e8852157028b8e5024e7a8757a7a59959bcf8d07d663cd5d2",
+    "results/2026-09-22_rcasr_judge/public_pairs.jsonl": "6a9d2cf592f363b0f42e5cddec619742570d543e3c6e5bfcf55c2f2597b48be2",
+    "results/2026-09-22_rcasr_lowwidth/lowwidth_rows.jsonl": "24248bbbc7030ae1fc597b2236cf58a425375406db9d77925bd40bfad80db17d",
+    "results/2026-09-22_rcasr_v2/rcasr_rows.jsonl": "c45b16bea869ba3b5355bd5cdb0c7d1a7221db861822d8b34f301f129c942801",
+    "src/rcasr_experiment.py": "8088ad20f0a84dc9b9fa274843e9dfee614e50efc6f8b63b9cb109c85fa2a061",
+    "src/symbolic_judgement.py": "062d55160436a990401d7062a4007a4cf42f74347235a52c7d18dc83ba2a96d6"
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "pyarrow": "25.0.1"
+  },
+  "code_identity": "base commit plus exact working-file hashes; not a clean-commit claim",
+  "plan_path": "docs/paper_v3/design/S34_DEFAULT_PRESPEC.md",
+  "created_at": "2026-09-23T07:33:01.556433+00:00",
+  "scope": "frozen E2 judge cache (internal + public pairs); symbolic recomputation only"
+}

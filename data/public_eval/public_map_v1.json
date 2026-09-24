@@ -1,0 +1,197 @@
+{
+  "version": "public_map_v1",
+  "status": "FROZEN — authored 2026-09-20, before any public-set system scoring",
+  "created_at": "2026-09-20",
+  "declarer": "project author; internal expert mapping, no external panel and no practitioner validation",
+  "purpose": "Make Regime A (the dataset's released labels) scoreable against the 42-rule library without expanding a broad source rule into positives for every narrower provision.",
+  "semantics": {
+    "direction": "source_positive_implies_expected_library_flag",
+    "satisfaction": "any_of — one listed provision flagged confirms the source positive; never all_of",
+    "absent_public_rule": "unknown; never compliant and never not_applicable",
+    "unmapped_library_rules": "unscoreable on this dataset. A flag on one is neither a hit nor a false positive.",
+    "supported_endpoints": [
+      "per-rule detection rate over mapped source positives",
+      "mapped-subset agreement"
+    ],
+    "unsupported_endpoints": [
+      "precision",
+      "F1",
+      "exact-set match",
+      "inapplicable exposure",
+      "field prevalence"
+    ],
+    "why_precision_is_unsupported": "The release records violations only; it does not distinguish a compliant image from one where the rule never applied, so a negative class does not exist."
+  },
+  "source_dataset": {
+    "name": "ConstructionSite 10k",
+    "authors": "Xuezheng Chen, Zhengbo Zou",
+    "journal": "Data-Centric Engineering 7, e11 (2026)",
+    "doi": "10.1017/dce.2026.10044",
+    "license": "CC BY-NC 4.0, gated; not redistributed",
+    "split": "test",
+    "rule_text_reference": "dataset card 'The four safety rules in the dataset', data/ConstructionSite-10k/README.md",
+    "annotator": "one MASc student; no reported inter-annotator agreement"
+  },
+  "binding": {
+    "library_file": "data/rules/rules_en.json",
+    "library_sha256": "1cfd2dd2665d641913186255e1a04d3d9843985873d90ba4a3f04d21d0acaf84",
+    "source_rule_signature": "dae0921f310c78027acbb42985d62831bcf363cc837093ef03c110a668fe71f7",
+    "public_labels_file": "data/public_eval/public_labels_test.jsonl",
+    "public_labels_sha256": "ec2646bedc175ffa3e5cfe587cefd8ac32f98fb9c26d580874d1e607da921467",
+    "public_manifest_file": "data/public_eval/manifest.json",
+    "public_manifest_sha256": "28bb0a594989dbb9c1ca126f3e4edb5a1ebb4359a1eca45843759e6169413f88"
+  },
+  "mappings": [
+    {
+      "public_rule": "rule_1",
+      "source_text": "Use of basic PPE when on foot at construction sites. (hard hats, properly worn clothes covering shoulders and legs, shoes that can cover toes, high-visibility retroreflective vests at night, face shield or safety glasses when cutting, welding, grinding, or drilling).",
+      "targets": [
+        "R-BHV-002-helmet-and-attire"
+      ],
+      "satisfaction": "any_of",
+      "coverage": "partial",
+      "conditions": [
+        "R-BHV-002 requires person_present AND construction_site_context, both entailed by the source rule's 'when on foot at construction sites'.",
+        "Head protection (helmet present, worn correctly, chin strap) and clothing compliance are inside R-BHV-002. Its source quote names hi-vis clothing and vests and prohibits shorts and slippers, so body covering, footwear and high-visibility are inside the mapped scope."
+      ],
+      "exclusions": [
+        "Eye and face protection when cutting, welding, grinding or drilling has no counterpart anywhere in the 42-rule library. Handled by derivation rule_1_eye_face_only."
+      ],
+      "assumptions": [
+        "The release records no structured field for which PPE item failed; the free-text 'reason' is the only discriminator, and the single derivation below is the only inference taken from it."
+      ]
+    },
+    {
+      "public_rule": "rule_2",
+      "source_text": "Use of safety harness when working from a height of three meters and the edges are without any edge protection.",
+      "targets": [
+        "R-BHV-001-no-harness-at-height"
+      ],
+      "satisfaction": "any_of",
+      "coverage": "full_for_the_harness_endpoint",
+      "conditions": [
+        "R-BHV-001 triggers at 2 m or higher (thresholds.work_at_height_m_min = 2). The source rule's 3 m precondition lies strictly inside that, so every rule_2 positive satisfies the library's height condition. The converse does not hold and no negative is inferred.",
+        "R-BHV-001's visual_screening_rule substitutes near_edge_or_opening for the unobservable height; the source rule's 'edges without any edge protection' makes that proxy hold on every rule_2 positive."
+      ],
+      "exclusions": [
+        "No edge-protection provision is a target. 'the edges are without any edge protection' is a precondition of the source rule's harness requirement, not an assertion that a specific edge provision was violated, and the release does not identify the edge type. Expanding it into positives for each narrower edge provision is exactly what this mapping forbids."
+      ],
+      "assumptions": []
+    },
+    {
+      "public_rule": "rule_3",
+      "source_text": "Adoption of edge protection or edge warning including guardrails, fences, for underground projects three meters in depth with steep retaining wall and for human to stand.",
+      "targets": [
+        "R-EDG-006-pit-trench-edge",
+        "R-EDG-003-roof-balcony-platform-edge",
+        "R-OPN-001-horizontal-opening-protection"
+      ],
+      "satisfaction": "any_of",
+      "coverage": "partial",
+      "conditions": [
+        "any_of, never all_of: one source positive is confirmed by a flag on any one listed provision. The library splits this source rule across three narrower provisions, so requiring all of them would manufacture misses.",
+        "R-EDG-006 triggers at a fall height of 2 m or more, inside the source rule's 3 m precondition, so the depth condition holds on every rule_3 positive.",
+        "The source rule accepts edge *warning* as satisfaction; R-EDG-006 and R-EDG-003 require a guardrail and enclosure. A source positive therefore still violates the library, but a source negative does not imply library compliance. Only the positive direction is used.",
+        "The target set is authored from the subjects the release's own reasons actually name in the frozen test split: 48 excavation/pit/trench, 9 concrete platform or slab edge, 4 floor opening."
+      ],
+      "exclusions": [
+        "R-EDG-002-stair-edge, R-EDG-004-hoist-landing-platform, R-EDG-005-scaffold-structure-gap, R-EDG-011-scaffold-layer-catch-net, R-EDG-012-passage-shed-protection: no rule_3 positive in the frozen split names a stair, hoist landing, scaffold or passage-shed subject. Adding them would widen the target with no label support.",
+        "R-OPN-004, R-OPN-005, R-OPN-009, R-OPN-011: vertical/low-sill openings, shaft doors, service shafts and closed manhole covers are different subjects from the floor openings the reasons describe.",
+        "Natural-ground and reinforcement subjects (cliff, standalone slope or embankment, rebar cage) are governed by no library provision. Handled by derivation rule_3_unmapped_edge_subject."
+      ],
+      "assumptions": [
+        "The source rule as written is narrower than the annotator applied it — its text says 'underground projects three meters in depth with steep retaining wall', but positives include platform edges and floor openings. This mapping follows the applied scope, with the discrepancy recorded as a construct-validity limit of the source labels."
+      ]
+    },
+    {
+      "public_rule": "rule_4",
+      "source_text": "Appearance of worker in the blind spots of the operator and within the operation radius of excavators in operation, or excavators with operators inside.",
+      "targets": [
+        "R-BHV-008-machinery-area-not-cleared"
+      ],
+      "satisfaction": "any_of",
+      "coverage": "partial",
+      "conditions": [
+        "R-BHV-008's visual_screening_rule is machine_operating AND person_in_danger_zone, which is the source rule's 'worker in the blind spots of the operator and within the operation radius of excavators in operation'."
+      ],
+      "exclusions": [
+        "R-BHV-009-suspended-platform-lifting-violation, R-BHV-013-damaged-lifting-gear, R-CIV-014-fire-access-blocked: different subjects; proximity to an excavator is not a suspended-platform, lifting-gear or access-route finding."
+      ],
+      "assumptions": [
+        "The source rule also covers 'excavators with operators inside', where the machine may be stationary and the library's machine_operating condition may not hold. The release does not mark that subset, so no rule_4 positive is excluded on this ground. The gap can only cost the library recall, never inflate it."
+      ]
+    }
+  ],
+  "derivations": [
+    {
+      "id": "rule_1_eye_face_only",
+      "public_rule": "rule_1",
+      "field": "reason",
+      "effect": "unknown",
+      "match": "(?i)\\b(eye|eyes|goggle|goggles|glasses|face shield|faceshield|visor|welding mask)\\b",
+      "unless": "(?i)\\b(hard hat|hardhat|helmet|hi-?vis|high.?visibility|vest|clothes|clothing|shirt|sweatshirt|shorts|trousers|pants|shoe|shoes|boot|boots|slipper|slippers|footwear|PPE)\\b",
+      "reason": "A rule_1 positive attributed only to eye or face protection is outside the library's coverage. It is unscoreable, not a miss."
+    },
+    {
+      "id": "rule_3_unmapped_edge_subject",
+      "public_rule": "rule_3",
+      "field": "reason",
+      "effect": "unknown",
+      "match": "(?i)\\b(cliff|slope|slopes|embankment|embankments|hill|hillside|mound|rebar|cage)\\b",
+      "unless": "(?i)\\b(excavat\\w*|pit|pits|trench|trenches|ditch|foundation|opening|openings|hole|holes|platform|slab|floor|deck|roof)\\b",
+      "reason": "A rule_3 positive naming only natural ground or a reinforcement cage has no governing library provision. It is unscoreable, not a miss."
+    }
+  ],
+  "mapped_library_rules": [
+    "R-BHV-001-no-harness-at-height",
+    "R-BHV-002-helmet-and-attire",
+    "R-BHV-008-machinery-area-not-cleared",
+    "R-EDG-003-roof-balcony-platform-edge",
+    "R-EDG-006-pit-trench-edge",
+    "R-OPN-001-horizontal-opening-protection"
+  ],
+  "unmapped_library_rules": [
+    "R-BHV-004-illegal-climbing",
+    "R-BHV-005-improper-ladder-use",
+    "R-BHV-006-uncertified-special-operation",
+    "R-BHV-007-illegal-electrical-work",
+    "R-BHV-009-suspended-platform-lifting-violation",
+    "R-BHV-010-hot-work-violation",
+    "R-BHV-011-severe-weather-operation",
+    "R-BHV-012-inattentive-unsafe-behavior",
+    "R-BHV-013-damaged-lifting-gear",
+    "R-CIV-001-hoarding-missing-low",
+    "R-CIV-002-road-unhardened-water-mud",
+    "R-CIV-003-material-stacking-labeling",
+    "R-CIV-004-dusty-material-uncovered",
+    "R-CIV-005-spoil-waste-overheight-uncleared",
+    "R-CIV-006-tsp-exceedance",
+    "R-CIV-007-vehicle-wash",
+    "R-CIV-008-road-dust-exceedance",
+    "R-CIV-009-noise-exceedance",
+    "R-CIV-010-dormitory-noncompliant",
+    "R-CIV-011-smoking-burning",
+    "R-CIV-012-public-signboards-missing",
+    "R-CIV-013-temporary-facilities",
+    "R-CIV-014-fire-access-blocked",
+    "R-CIV-015-fire-equipment-missing",
+    "R-CIV-016-cable-on-ground",
+    "R-CIV-018-poor-overall-housekeeping",
+    "R-EDG-002-stair-edge",
+    "R-EDG-004-hoist-landing-platform",
+    "R-EDG-005-scaffold-structure-gap",
+    "R-EDG-007-guardrail-construction",
+    "R-EDG-011-scaffold-layer-catch-net",
+    "R-EDG-012-passage-shed-protection",
+    "R-OPN-004-vertical-and-low-sill-opening",
+    "R-OPN-005-elevator-shaft-door-and-net",
+    "R-OPN-009-service-shaft-opening",
+    "R-OPN-011-manhole-trench-cover"
+  ],
+  "limits": [
+    "Auxiliary validation only. Four source rules cannot exercise applicability-set retrieval over 42 provisions.",
+    "At least 219 public IDs are already locally exposed (see the paper-v3 inventory); no independence claim attaches to this mapping.",
+    "Mapping quality is unvalidated: one declarer, no second rater, no practitioner review.",
+    "Nothing here is tuned on system output; the mapping was authored and hashed before any public-set scoring run."
+  ]
+}

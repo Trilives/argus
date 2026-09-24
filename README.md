@@ -1,28 +1,102 @@
-# Applicability-Aware Rule Retrieval for Regulation-Grounded Construction-Site Visual Screening
+# Risk-Controlled Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening
 
-**ARGus** — code, provision library and evaluation harness for the paper of that name.
+**RCASR** (on the **ARGus** framework): code, frozen configurations, analysis plans and aggregate
+results for the paper of that name.
 
-Reference implementation and evaluation harness for **regulation-grounded visual compliance
-screening** of construction sites. Given a site photograph, a bounded retrieval **agent** proposes the
-few provisions that plausibly apply; the verdict is then computed from a named provision formula over
-persisted checkpoint evidence — never the agent's free text — so every decision traces back to a
-clause. The agent proposes; the provision formula and a human inspector dispose.
+Screening a site photograph against a regulation library first requires deciding which provisions
+apply. Fixed top-*k* retrieval ranks provisions by textual relevance, not visible applicability, so
+widening the list buys recall only by exposing the judge to inapplicable provisions. RCASR frames
+applicability as **set prediction under asymmetric miss/exposure cost**. It re-weights a retrieval
+prior by the probability that each provision's compiled subject and state conditions hold, computed
+from token-level posteriors over 131 rule-agnostic visual atoms with abstention. It then selects a
+set either at a target mean width (budget mode) or under conformal risk control on the miss rate.
 
-The accompanying study reports where such pipelines fail. Handed the correct provision, the judge
-reaches a grounded-violation F1 of **0.867**; the best complete pipeline reaches **0.514**. Under the
-configurations tested it is therefore the *retrieval* step — deciding which provisions apply — rather
-than the visual judgement that dominates end-to-end accuracy. And the intuitive fix did not work:
-grounded precision decreased at every widening step measured. A controlled sweep of the candidate
-budget within a single retriever, holding the judge fixed, shows precision falling strictly and F1
-peaking at ~2 provisions per image for both a lexical and an agentic retriever
-([`results/e2e/k_scan_summary.md`](results/e2e/k_scan_summary.md)); three further widening
-interventions agree, down to 0.16 precision across all 42 provisions.
+Headline results (all pre-specified; the internal evaluation uses site-grouped cross-fitting):
 
-> **Status.** Research code accompanying a manuscript submitted to the *Journal of Computing in
-> Civil Engineering* (ASCE). This repository is provided so reviewers can inspect the method, the
-> rule schema, and the aggregate results behind every table in the paper. It also hosts the paper's
-> **online supplement** ([`paper/supplement.pdf`](paper/supplement.pdf)): ASCE stopped hosting
-> Supplemental Materials files on 5 January 2025, so the manuscript links here instead.
+- **346 photographs, 48 sites, 42 provisions, matched mean width 3.** Recorded-violation recall
+  rose from 0.515 (BM25) to 0.709. RCASR beat an unstructured adaptive threshold and a ternary
+  screen, and matched a multi-turn agent retriever.
+- **Width-2 arm.** With one frozen judge, a pre-specified width-2 arm kept BM25's width-3 recall.
+  False alarms per image fell from 1.28 to 1.00.
+- **ConstructionSite-10k (public).** Frozen before public scoring, RCASR raised violation detection
+  for harness use from 0.08 to 0.80 and for PPE from 0.43 to 0.67. It lost the excavator-radius
+  rule; the mechanism is reported in the paper.
+- **Conformal risk control.** It held its miss-risk target, at a price of about ten candidates per
+  image at α = 0.10.
+- **Patrol robot.** The configuration runs on a quadruped patrol robot. The deployed runtime is
+  checked byte for byte against this analysis code, and one stored site round is reported with
+  operating proxies (no field-accuracy claim).
+
+> **Status.** Research code accompanying the manuscript above. Release **v2.0.0** adds RCASR on
+> top of the ARGus screening framework of the earlier study (releases v1.x), whose code, results and
+> online supplement are kept unchanged below.
+
+## RCASR: what was added in v2.0.0
+
+```
+src/
+├── rcasr.py                 # structured applicability score + width / CRC selection
+├── atom_posterior.py        # token-level atom posteriors with abstention (two rule-agnostic passes)
+├── typed_schema.py, typed_predicates.py, typed_evidence.py   # provision formulas compiled over atoms
+├── rcasr_experiment.py      # site-grouped cross-fitting, arms, ablations, gates, CRC calibration
+├── site_partition.py        # site units and folds (near-duplicate clusters fused)
+├── set_selection*.py        # set-selection metrics and matched-width reporting
+├── public_map.py            # frozen mapping of ConstructionSite-10k rules to the library
+└── research_snapshot.py     # SHA-256 input snapshots and their verification
+experiments/retrieval/
+├── eval_rcasr.py            # internal evaluation (evidence → cross-fitted selection)
+├── judge_rcasr.py, judge_rcasr_shard.py   # frozen end-to-end judge over the selected sets
+├── eval_lowwidth_e2.py      # the pre-specified width-2 arm
+├── eval_rcasr_public.py     # public auxiliary evaluation (ConstructionSite-10k)
+└── eval_s34_default.py      # the no-subject abstention default adopted by the deployed judge
+configs/
+├── rcasr_runtime_v1.json              # the frozen configuration the robot runs (sha256 ea624e49…)
+└── rcasr_runtime_v1_recal_site.json   # its label-free, site-recalibrated threshold (sha256 4cad9da1…)
+data/rules/proposed/rcasr_v1.json      # frozen RCASR hyper-parameters and pre-specified grid
+data/rules/proposed/typed_evidence_v1.json   # the 131-atom vocabulary and per-provision bindings
+data/rule_assets/                      # rule units and the BM25 index built from the library
+data/public_eval/public_map_v1.json    # public rule mapping (the public labels are not redistributed)
+docs/paper_v3/design/*.md              # analysis plans, each written before its run
+results/2026-09-2*/                    # aggregate results + input snapshots for every v3 table
+```
+
+**Verify the freeze.** Each `results/2026-09-2*/input_snapshot.json` lists the SHA-256 of every input
+of that run. Paths are kept as in the research repository, so they resolve here. The analysis plans,
+frozen configurations, rule assets, experiment scripts and RCASR modules match their recorded hashes
+byte for byte (75 entries). The rest do not verify here, each for a stated reason:
+
+- **Restricted inputs are not released:** gold labels, images, site keys, scene facts, atom
+  evidence and per-pair verdicts.
+- **Files belong to this public package, not to the research checkout:** `pyproject.toml`,
+  `uv.lock`, and `src/config.py` / `src/schemas.py` (comments only).
+- **Redacted:** `results/2026-09-22_rcasr_v2/rcasr_results.json` (see Tables below).
+- **Re-serialised JSON:** `results/data_audit/near_duplicates.json` is the v1.x copy, with the same
+  content in different formatting.
+- **Skip guard added:** `tests/test_site_partition.py` skips when the restricted site keys are
+  absent.
+
+`configs/rcasr_runtime_v1.json` names the snapshots it was derived from, and those hashes verify
+against the files here.
+
+**Tables.** `results/README.md` maps every table of the paper to the file behind it. The internal
+result `results/2026-09-22_rcasr_v2/rcasr_results.json` is released with construction-project names
+replaced by `site_NN` and lost gold pairs reduced to counts, so its hash differs from the research
+copy.
+
+**Tests.** `python -m unittest discover -s tests` runs 118 tests without models or restricted data;
+8 skip because they need the restricted site keys or the ConstructionSite-10k labels.
+
+## The ARGus framework (earlier study, releases v1.x)
+
+The screening framework RCASR plugs into. Given a site photograph, a bounded retrieval **agent**
+proposes the few provisions that plausibly apply. The verdict is then computed from a named provision
+formula over persisted checkpoint evidence, never the agent's free text, so every decision traces
+back to a clause. The earlier study measured where such screening fails: handed the correct
+provision, the judge reaches a grounded-violation F1 of **0.867**, while the best complete
+configuration reaches **0.514**. Retrieval, deciding which provisions apply, dominated end-to-end
+accuracy, and grounded precision fell at every widening step measured
+([`results/e2e/k_scan_summary.md`](results/e2e/k_scan_summary.md)). That finding motivates RCASR.
+The earlier study's online supplement is [`paper/supplement.pdf`](paper/supplement.pdf).
 
 ## What's here
 
@@ -125,9 +199,13 @@ guessed), retrieval text, and `rectification_advice`. See `data/rules/rules_sche
 
 ## Data availability
 
-- **Included:** all source code, the rule library and schema, the stage prompts, 20 privacy-reviewed
+- **Included:** all source code (ARGus and RCASR), the rule library and schema, the RCASR atom
+  vocabulary and frozen configurations, the analysis plans, the stage prompts, 20 privacy-reviewed
   **sample images** (`examples/sample_images/`, no gold labels), and the **aggregate result
-  summaries** behind the paper's tables (`results/`).
+  summaries** and input snapshots behind the papers' tables (`results/`).
+- **Not redistributed:** the ConstructionSite-10k labels and images (CC BY-NC 4.0, gated access from
+  their authors). Only the frozen rule mapping and RCASR's per-image selections on the public test
+  images are included.
 - **On reasonable request:** the full construction-site image pool and the gold image–rule
   annotations. Site imagery contains identifiable people and is governed by a site-operator
   agreement, so it is released under a data-use agreement, not publicly. See `data/README.md`.
@@ -172,10 +250,9 @@ paraphrase of the rule logic before publishing.
 
 ## Citation
 
-A BibTeX entry will be added on acceptance. For now, cite the manuscript
-"Applicability-Aware Rule Retrieval for Regulation-Grounded Construction-Site Visual Screening"
-(submitted to the *Journal of Computing in Civil Engineering*, ASCE), and the archive
-[10.5281/zenodo.21535053](https://doi.org/10.5281/zenodo.21535053).
+A BibTeX entry will be added on acceptance. For now, cite the manuscript "Risk-Controlled
+Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening" and the
+archive [10.5281/zenodo.21535053](https://doi.org/10.5281/zenodo.21535053).
 
 That is the **all-versions** DOI: it always resolves to the latest release, which is what the
 paper's Data Availability Statement cites. To cite one exact snapshot, use the version DOI shown on
@@ -183,7 +260,8 @@ that release's Zenodo page instead.
 
 ---
 ### Release checklist (run before tagging a new version)
-- [ ] Re-run `mirror_public_results.py` in the working repo so `results/` matches the paper.
+- [ ] Re-run `mirror_public_results.py` in the working repo so `results/` matches the paper (it also
+      copies the v3 configs, analysis plans and rule assets byte for byte).
 - [ ] Skim `source_quote` fields; loosen any summary judged too close to a protected clause.
 - [ ] Confirm no images / annotations / per-pair dumps / `.env` are staged — `.gitignore` covers
       them, but verify with `git status` rather than trusting it.

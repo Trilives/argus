@@ -1,0 +1,199 @@
+{
+  "version": "rcasr_runtime_v1+recal",
+  "status": "FROZEN - derived label-free from the E2-era freezes; never edit, derive a new version",
+  "created_at": "2026-09-23T11:01:53+00:00",
+  "sources": {
+    "data/rules/proposed/rcasr_v1.json": "6f45348bac31d2f30a7a8f69ec8b759986d1fa25ddeb2b38317e12c138b32da6",
+    "results/2026-09-22_rcasr_public/final_config.json": "f4e9fd708a627d82d9c0a43740c67c581832c1de516113a696b09f3599fecf00",
+    "results/2026-09-22_rcasr_v2/input_snapshot.json": "b78d41d1d9e9ba0bba4f784e60f0223cea2070ff9384f85ea4dd15280d2ee692",
+    "results/2026-09-22_rcasr_lowwidth/input_snapshot.json": "d7535bf6eab223eb107a576de98152df0a2521d2973873046c5ce8eceb3f189a",
+    "results/2026-09-23_s34_default/input_snapshot.json": "40e1c9e75fd8ed5e485fbf0eb457e1b7673b284ca9c252a70129b59e611df18d",
+    "results/2026-09-23_s34_default/s34_results.json": "b7cc8faedbb9c79d6e449af893cce45f0a2615ec4ba7cc11be20ebe61d4976ac"
+  },
+  "method": {
+    "prior": "bm25",
+    "prior_map": "b / (1 + b) over the generic Stage-1 facts",
+    "facts": {
+      "mode": "generic",
+      "retrieval_method": "agent_grep",
+      "guided_json": false,
+      "extractor": "the deployed extractor below",
+      "frozen_facts_models": {
+        "threshold_population": "Qwen/Qwen3.6-35B-A3B-FP8",
+        "public_e5b": "Qwen/Qwen3.5-9B"
+      }
+    },
+    "theta": [
+      0.5,
+      2
+    ],
+    "tau": 0,
+    "tau_open": 0.7,
+    "opening_atoms": [
+      "elevator_shaft_present",
+      "guardrail_present",
+      "horizontal_opening_present",
+      "pit_or_trench_edge_present",
+      "roof_balcony_platform_edge_present",
+      "shaft_opening_present"
+    ],
+    "target_width": 2.0,
+    "threshold": 0.835448556180549,
+    "threshold_population": {
+      "kind": "robot frames from telemetry, label-free",
+      "n_frames": 685,
+      "sessions": [
+        "Output/telemetry/local-172",
+        "Output/telemetry/local-173",
+        "Output/telemetry/local-174",
+        "Output/telemetry/local-175",
+        "Output/telemetry/local-176",
+        "Output/telemetry/local-181",
+        "Output/telemetry/local-178",
+        "Output/telemetry/local-179",
+        "Output/telemetry/local-180",
+        "Output/telemetry/dog0904-185",
+        "Output/telemetry/dog0904-193",
+        "Output/telemetry/dog0904-194",
+        "Output/telemetry/dog0904-195",
+        "Output/telemetry/dog0904-196",
+        "Output/telemetry/dog0904-197",
+        "Output/telemetry/dog0904-198",
+        "Output/telemetry/dog0904-199",
+        "Output/telemetry/dog0904-201",
+        "Output/telemetry/dog0904-202",
+        "Output/telemetry/dog0904-203",
+        "Output/telemetry/dog0904-204"
+      ]
+    },
+    "cap": null
+  },
+  "extractor": {
+    "model_id": "Qwen3.5-9B",
+    "served_model_name": "Qwen/Qwen3.5-9B",
+    "model_dir": "Model/Qwen3.5-9B",
+    "decoding": {
+      "temperature": 0.0,
+      "enable_thinking": false,
+      "repetition_penalty": 1.1,
+      "top_logprobs": 5,
+      "max_tokens": {
+        "subject": 1536,
+        "state": 3072
+      },
+      "min_pixels": 200704,
+      "max_pixels": 2073600
+    },
+    "config": "data/rules/proposed/rcasr_v1.json"
+  },
+  "judge": {
+    "model_id": "Qwen3.8-27B-FP8",
+    "mode": "decoupled_sym",
+    "guided_json": true,
+    "no_subject_default": {
+      "label": "need_review",
+      "arm": "B_abstain_need_review",
+      "checks_passed": true,
+      "freeze": "results/2026-09-23_s34_default",
+      "paper_frozen_judge": "compliant"
+    }
+  },
+  "pinned_files": {
+    "src/atom_posterior.py": "ecc56f2fec46803a6f13b0614a23457efaf07335b367b066a1b36e9ec386a1a5",
+    "src/backends/__init__.py": "a3f2cb4fd56c49111defac24b7e75636b433f26072bc965c9e5354d9fa1512c1",
+    "src/backends/base.py": "fa0576cd537be6b997202c1706af7bcb2ff8404eeb33df80896e7a7034f46408",
+    "src/backends/openai_api.py": "6483472123a07703cdff6ed02fa95216bb14a0db8920ec527b9a1a3d42657e2d",
+    "src/backends/usage.py": "836eb4839727b2d3a55405bde88bedab26138f19912d5696621f82dffa5d1796",
+    "src/config.py": "07b1ddafef3db6fb0dcbcab06170dfcbb23bedda8f451f3b281a456649300223",
+    "src/dataset.py": "ec5bdaca236b4e3661d90478452d26bcda88f2109eea2c7fae65ec03f9670b92",
+    "src/images.py": "6237283139e955fd896f0cea7c5aacb1d842b4690afc23f0ef0bd0d455b648e6",
+    "src/io_utils.py": "8cb2fbf081fd5ea85962570498c1242817f04b4b851828c613eae1e25d2be4e2",
+    "src/paths.py": "464646e0118fefca83c3026213edd405bd151ffe06b93b180ea0b415acfe7d17",
+    "src/pipeline.py": "9b153aea7226b00d16de75b4490d93a21ef433286817c5026a5ea0d88d1bf601",
+    "src/prompts.py": "381ab4915f9a5c618285caed4565b1f87b51b58ecf849cf73ec615d6e4299490",
+    "src/rcasr.py": "3237778300ed23ea37a3913cca9da2ae61e02a585bbf003eabcc13cafc009fbd",
+    "src/rcasr_experiment.py": "8088ad20f0a84dc9b9fa274843e9dfee614e50efc6f8b63b9cb109c85fa2a061",
+    "src/research_snapshot.py": "802ffd0b82cfb55617cc752e013b1ad007d2917c5f03833fd0f10ab77d72e051",
+    "src/retrieval/__init__.py": "1a3e02d0e45c45c3cff7cadb2c8022ea2223272d408b7e6cb14f05a09a760964",
+    "src/retrieval/base.py": "133643d90e181e20e331b88c50fc37dcc55df83804171d833705fab9e5132051",
+    "src/retrieval/bm25.py": "2835d7dbcc0263105da5e2dff5034e909d586f4cdd63954ff315ef73a92c0d8f",
+    "src/retrieval/text_overlap.py": "b9bba07ba6de7d3fd44dcd1a8c7707c2a6d6cf81879366f3360849d5652702bc",
+    "src/rules.py": "fcd3d2f22b15fb85eb8d28320b63a8ac89e6c387faad7e4111dd336da5717c2d",
+    "src/schemas.py": "75aaf3132822c5ae8fb3079a44412964ae745d80278762e97dd70e4b5ad7facd",
+    "src/set_selection.py": "92358ede8c0e2ca103ba27f774f5047f1b7cfaeb4a2b3fe73effa90c5e75cb24",
+    "src/set_selection_metrics.py": "f7422249cbfd8fd171f56482fff94c55969b0401338b8ceeeb4436ff93309352",
+    "src/set_selection_report.py": "d88c40ff69d2aa5fd79ee581126042276f8da968724894aaa637ab3964d6b4ca",
+    "src/site_partition.py": "932b650e22029acd3b74983831bfcd81000940a86673aa032df3aaa86974c0d8",
+    "src/subject_screen.py": "3ecb3f8a57ea316a8b418d1839190e36023610f4a6070b699aca62fc4224b890",
+    "src/symbolic_judgement.py": "062d55160436a990401d7062a4007a4cf42f74347235a52c7d18dc83ba2a96d6",
+    "src/typed_evidence.py": "fd1d2c7de62d8511301df4ed14e16389b1663a43605a5a88eedad7c51b3ecf4f",
+    "src/typed_predicates.py": "31a9fb48c795746d05560c6cb0a1c7d1d337d022bfc039de7e7160a2fc3c132d",
+    "src/typed_schema.py": "6e3a34c87d373111009ac7c4fd440190f5cae12a82af76216abae8c647622240",
+    "src/validation.py": "bb281c40175ce09bb9d7b2f11c78132e231ae63dc8b380c2548b7c6c192151b9",
+    "data/rules/rules_en.json": "1cfd2dd2665d641913186255e1a04d3d9843985873d90ba4a3f04d21d0acaf84",
+    "data/rules/rules.json": "d947cb31654be243fff72ecdd9c4ff8b6c414ec58462964fd7f76906654cac61",
+    "data/rules/proposed/typed_evidence_v1.json": "bf754ad294a7f640f05a37623d15e7ad3fdc2e2f4003e223b36c9995ed7a0f5a",
+    "data/rules/proposed/rcasr_v1.json": "6f45348bac31d2f30a7a8f69ec8b759986d1fa25ddeb2b38317e12c138b32da6",
+    "data/rules/proposed/subject_screen_v2.json": "1b9f517e6c3b92748704e1e9819739b3c67dfab00613cbbdc14c17d4dc1c243d",
+    "data/rule_assets/rule_index.json": "1043f483e63208732fd175004ffa005ca5c7b8ecd538d40ae6cc9d13125bf300",
+    "data/rule_assets/rule_units.json": "9e64e1f7a49590f0d62b19a0a267894c8e2555806bc5924d4b5ab937ef3994bc",
+    "Prompts_en/shared/image_fact_prompt.md": "1a950d99bdeb3f1ce52f3d94ba77f5034595a0cafabbcd2424d4c48524645b17",
+    "Prompts_en/shared/retrieval_target_guidance.md": "08fcdac706aaf49fb1ec1d6ec93242fc40aff399a7d7c716723505f02df0e6f1",
+    "Prompts_en/decoupled/rule_evidence_prompt.md": "064ff4ec2fc38ceef7f59bd22a43b03927836c9b4a1ea4f7b7f21e23c090db67"
+  },
+  "pin_report": {
+    "freezes": [
+      "results/2026-09-22_rcasr_evidence",
+      "results/2026-09-22_rcasr_v2",
+      "results/2026-09-22_rcasr_judge",
+      "results/2026-09-22_rcasr_public",
+      "results/2026-09-22_rcasr_lowwidth"
+    ],
+    "pinned_by_a_freeze": [
+      "Prompts_en/decoupled/rule_evidence_prompt.md",
+      "data/rule_assets/rule_index.json",
+      "data/rule_assets/rule_units.json",
+      "data/rules/proposed/rcasr_v1.json",
+      "data/rules/proposed/subject_screen_v2.json",
+      "data/rules/proposed/typed_evidence_v1.json",
+      "data/rules/rules_en.json",
+      "src/atom_posterior.py",
+      "src/backends/openai_api.py",
+      "src/config.py",
+      "src/images.py",
+      "src/pipeline.py",
+      "src/prompts.py",
+      "src/rcasr.py",
+      "src/rcasr_experiment.py",
+      "src/research_snapshot.py",
+      "src/retrieval/base.py",
+      "src/retrieval/bm25.py",
+      "src/rules.py",
+      "src/schemas.py",
+      "src/set_selection.py",
+      "src/set_selection_metrics.py",
+      "src/set_selection_report.py",
+      "src/site_partition.py",
+      "src/subject_screen.py",
+      "src/symbolic_judgement.py",
+      "src/typed_evidence.py",
+      "src/typed_predicates.py",
+      "src/typed_schema.py"
+    ],
+    "not_pinned_by_any_freeze": [
+      "Prompts_en/shared/image_fact_prompt.md",
+      "Prompts_en/shared/retrieval_target_guidance.md",
+      "data/rules/rules.json",
+      "src/backends/__init__.py",
+      "src/backends/base.py",
+      "src/backends/usage.py",
+      "src/dataset.py",
+      "src/io_utils.py",
+      "src/paths.py",
+      "src/retrieval/__init__.py",
+      "src/retrieval/text_overlap.py",
+      "src/validation.py"
+    ]
+  },
+  "parent_sha256": "ea624e490981f8561bbeb20a8f8f0b22c59faf37f358f9709c5aa29694d09d03"
+}

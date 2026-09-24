@@ -1,0 +1,1577 @@
+{
+ "schema": "rcasr_deploy.simulation_record.v1",
+ "date": "2026-09-23",
+ "scope": "Deployment proxies over stored robot frames replayed through the frozen runtime. Proxies only: no accuracy, prevalence or false-alarm claim.",
+ "runtime_config_sha256": "ea624e490981f8561bbeb20a8f8f0b22c59faf37f358f9709c5aa29694d09d03",
+ "slices": {
+  "old_site_bright": {
+   "description": "old camera, construction site, bright (local 172-176, 181)",
+   "volume": {
+    "tasks": 6,
+    "captured": 38,
+    "duplicates": 1475,
+    "backlog_dropped": 0,
+    "capture_errors": 0,
+    "analysed": 38,
+    "analysis_errors": 0,
+    "stale_dropped": 0,
+    "undrained": 0,
+    "wall_hours": 0.08631161876249178,
+    "active_hours": 0.08631161876249178
+   },
+   "outcomes": {
+    "n_frames": 38,
+    "counts": {
+     "violation": 8,
+     "need_review": 4,
+     "clear": 3,
+     "clear_empty": 23,
+     "error": 0
+    },
+    "rates": {
+     "violation": 0.21052631578947367,
+     "need_review": 0.10526315789473684,
+     "clear": 0.07894736842105263,
+     "clear_empty": 0.6052631578947368,
+     "error": 0.0
+    },
+    "flagged_frames_per_active_hour": 92.68740541194136,
+    "width": {
+     "n": 38,
+     "mean": 0.42105263157894735,
+     "p50": 0.0,
+     "p95": 1.0,
+     "max": 2.0
+    },
+    "dark_frame_share": 0.02631578947368421,
+    "selected_rules": [
+     [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      9
+     ],
+     [
+      "R-BHV-002-helmet-and-attire",
+      5
+     ],
+     [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      2
+     ]
+    ],
+    "flagged_rules": [
+     [
+      "R-BHV-002-helmet-and-attire",
+      4
+     ],
+     [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      3
+     ],
+     [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      2
+     ]
+    ],
+    "flagged_families": {
+     "BHV": 6,
+     "OPN": 3
+    },
+    "judged_pairs": 16,
+    "abstained_no_subject_pairs": 3
+   },
+   "latency_s": {
+    "e2e_s": {
+     "n": 38,
+     "mean": 36.173189951891175,
+     "p50": 37.97773975896416,
+     "p95": 51.45842493599048,
+     "max": 52.29462983796839
+    },
+    "queue_wait_s": {
+     "n": 38,
+     "mean": 4.352380438839502,
+     "p50": 0.0034544910304248333,
+     "p95": 23.263452783983666,
+     "max": 30.36437670502346
+    },
+    "analysis_s": {
+     "n": 38,
+     "mean": 31.81825984191413,
+     "p50": 28.397673584986478,
+     "p95": 45.412158326013014,
+     "max": 50.815762063954026
+    },
+    "perception_s": {
+     "n": 38,
+     "mean": 27.00848934162825,
+     "p50": 26.064798651030287,
+     "p95": 35.8179781610379,
+     "max": 37.429412104946095
+    },
+    "score_s": {
+     "n": 38,
+     "mean": 0.000638279396011249,
+     "p50": 0.000649412046186626,
+     "p95": 0.0008075230289250612,
+     "max": 0.000833652971778065
+    },
+    "judge_s": {
+     "n": 38,
+     "mean": 4.809132220889871,
+     "p50": 0.00037195096956565976,
+     "p95": 14.655595548974816,
+     "max": 15.744462984031998
+    }
+   },
+   "stages": {
+    "facts": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 1.0,
+     "seconds_per_call": {
+      "n": 38,
+      "mean": 4.490144133316598,
+      "p50": 4.370955589984078,
+      "p95": 6.1767231179983355,
+      "max": 6.36139312305022
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 1300.0,
+     "completion_tokens_per_frame": 174.44736842105263,
+     "calls_without_usage": 0
+    },
+    "judge": {
+     "model": "Qwen3.8-27B-FP8",
+     "calls_per_frame": 0.42105263157894735,
+     "seconds_per_call": {
+      "n": 16,
+      "mean": 11.825110158624739,
+      "p50": 11.738515292003285,
+      "p95": 14.994564783002716,
+      "max": 14.994564783002716
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 932.421052631579,
+     "completion_tokens_per_frame": 226.6578947368421,
+     "calls_without_usage": 0
+    },
+    "state": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 1.0,
+     "seconds_per_call": {
+      "n": 38,
+      "mean": 23.830212825739228,
+      "p50": 24.163410277978983,
+      "p95": 25.964994746027514,
+      "max": 26.00895148300333
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 3226.0,
+     "completion_tokens_per_frame": 1068.6842105263158,
+     "calls_without_usage": 0
+    },
+    "subject": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 1.0,
+     "seconds_per_call": {
+      "n": 38,
+      "mean": 10.698434325420653,
+      "p50": 10.581575150950812,
+      "p95": 11.807210617989767,
+      "max": 11.880552315968089
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 1993.0,
+     "completion_tokens_per_frame": 449.89473684210526,
+     "calls_without_usage": 0
+    }
+   }
+  },
+  "old_site_dark": {
+   "description": "old camera, construction site, dark basement (local 178-180)",
+   "volume": {
+    "tasks": 3,
+    "captured": 3,
+    "duplicates": 217,
+    "backlog_dropped": 0,
+    "capture_errors": 0,
+    "analysed": 3,
+    "analysis_errors": 0,
+    "stale_dropped": 0,
+    "undrained": 0,
+    "wall_hours": 0.017399583673347176,
+    "active_hours": 0.017399583673347176
+   },
+   "outcomes": {
+    "n_frames": 3,
+    "counts": {
+     "violation": 0,
+     "need_review": 0,
+     "clear": 0,
+     "clear_empty": 3,
+     "error": 0
+    },
+    "rates": {
+     "violation": 0.0,
+     "need_review": 0.0,
+     "clear": 0.0,
+     "clear_empty": 1.0,
+     "error": 0.0
+    },
+    "flagged_frames_per_active_hour": 0.0,
+    "width": {
+     "n": 3,
+     "mean": 0.0,
+     "p50": 0.0,
+     "p95": 0.0,
+     "max": 0.0
+    },
+    "dark_frame_share": 1.0,
+    "selected_rules": [],
+    "flagged_rules": [],
+    "flagged_families": {},
+    "judged_pairs": 0,
+    "abstained_no_subject_pairs": 0
+   },
+   "latency_s": {
+    "e2e_s": {
+     "n": 3,
+     "mean": 20.875886407331564,
+     "p50": 20.86189340899,
+     "p95": 20.920328259002417,
+     "max": 20.920328259002417
+    },
+    "queue_wait_s": {
+     "n": 3,
+     "mean": 0.003343669328993807,
+     "p50": 0.003170071984641254,
+     "p95": 0.0038005440146662295,
+     "max": 0.0038005440146662295
+    },
+    "analysis_s": {
+     "n": 3,
+     "mean": 20.870448476673726,
+     "p50": 20.856657279015053,
+     "p95": 20.914490766997915,
+     "max": 20.914490766997915
+    },
+    "perception_s": {
+     "n": 3,
+     "mean": 20.86947939298504,
+     "p50": 20.855710286006797,
+     "p95": 20.913487062964123,
+     "max": 20.913487062964123
+    },
+    "score_s": {
+     "n": 3,
+     "mean": 0.0007155426622678837,
+     "p50": 0.0007089930004440248,
+     "p95": 0.0007366130012087524,
+     "max": 0.0007366130012087524
+    },
+    "judge_s": {
+     "n": 3,
+     "mean": 0.00025354102641964954,
+     "p50": 0.00024756102357059717,
+     "p95": 0.0002670910325832665,
+     "max": 0.0002670910325832665
+    }
+   },
+   "stages": {
+    "facts": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 1.0,
+     "seconds_per_call": {
+      "n": 3,
+      "mean": 4.266958421348439,
+      "p50": 4.324507750978228,
+      "p95": 4.6994327360298485,
+      "max": 4.6994327360298485
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 1300.0,
+     "completion_tokens_per_frame": 181.0,
+     "calls_without_usage": 0
+    },
+    "state": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 1.0,
+     "seconds_per_call": {
+      "n": 3,
+      "mean": 20.786501852989506,
+      "p50": 20.77415132400347,
+      "p95": 20.829229819006287,
+      "max": 20.829229819006287
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 3226.0,
+     "completion_tokens_per_frame": 1069.6666666666667,
+     "calls_without_usage": 0
+    },
+    "subject": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 1.0,
+     "seconds_per_call": {
+      "n": 3,
+      "mean": 9.406888577330392,
+      "p50": 9.410177173966076,
+      "p95": 9.41303285700269,
+      "max": 9.41303285700269
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 1993.0,
+     "completion_tokens_per_frame": 449.0,
+     "calls_without_usage": 0
+    }
+   }
+  },
+  "gopro_site_dark": {
+   "description": "GoPro, construction site, dark basement (dog0904 185, 193-199, 201-204)",
+   "volume": {
+    "tasks": 12,
+    "captured": 649,
+    "duplicates": 182,
+    "backlog_dropped": 0,
+    "capture_errors": 0,
+    "analysed": 649,
+    "analysis_errors": 5,
+    "stale_dropped": 0,
+    "undrained": 0,
+    "wall_hours": 1.0910677842599883,
+    "active_hours": 1.0910677842599883
+   },
+   "outcomes": {
+    "n_frames": 649,
+    "counts": {
+     "violation": 67,
+     "need_review": 3,
+     "clear": 1,
+     "clear_empty": 573,
+     "error": 5
+    },
+    "rates": {
+     "violation": 0.10323574730354391,
+     "need_review": 0.004622496147919877,
+     "clear": 0.0015408320493066256,
+     "clear_empty": 0.8828967642526965,
+     "error": 0.007704160246533128
+    },
+    "flagged_frames_per_active_hour": 61.407733750880055,
+    "width": {
+     "n": 644,
+     "mean": 0.11335403726708075,
+     "p50": 0.0,
+     "p95": 1.0,
+     "max": 2.0
+    },
+    "dark_frame_share": 0.9642857142857143,
+    "selected_rules": [
+     [
+      "R-BHV-002-helmet-and-attire",
+      64
+     ],
+     [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      3
+     ],
+     [
+      "R-OPN-001-horizontal-opening-protection",
+      3
+     ],
+     [
+      "R-OPN-005-elevator-shaft-door-and-net",
+      1
+     ],
+     [
+      "R-BHV-010-hot-work-violation",
+      1
+     ],
+     [
+      "R-CIV-008-road-dust-exceedance",
+      1
+     ]
+    ],
+    "flagged_rules": [
+     [
+      "R-BHV-002-helmet-and-attire",
+      62
+     ],
+     [
+      "R-BHV-012-inattentive-unsafe-behavior",
+      3
+     ],
+     [
+      "R-OPN-001-horizontal-opening-protection",
+      3
+     ],
+     [
+      "R-BHV-010-hot-work-violation",
+      1
+     ]
+    ],
+    "flagged_families": {
+     "BHV": 66,
+     "OPN": 3
+    },
+    "judged_pairs": 73,
+    "abstained_no_subject_pairs": 0
+   },
+   "latency_s": {
+    "e2e_s": {
+     "n": 649,
+     "mean": 1113.2092278119694,
+     "p50": 973.6794374920428,
+     "p95": 2701.409732737986,
+     "max": 2847.741301130969
+    },
+    "queue_wait_s": {
+     "n": 649,
+     "mean": 1078.4524163575168,
+     "p50": 939.8970555530395,
+     "p95": 2670.2017975099734,
+     "max": 2825.3958140969626
+    },
+    "analysis_s": {
+     "n": 644,
+     "mean": 35.022791887157,
+     "p50": 33.983102778031025,
+     "p95": 47.39931855502073,
+     "max": 57.030171175953
+    },
+    "perception_s": {
+     "n": 644,
+     "mean": 33.368157432259494,
+     "p50": 33.664513170020655,
+     "p95": 37.80448835698189,
+     "max": 51.520328295009676
+    },
+    "score_s": {
+     "n": 644,
+     "mean": 0.0005807291505921933,
+     "p50": 0.0005966720054857433,
+     "p95": 0.0008033110061660409,
+     "max": 0.0009875799878500402
+    },
+    "judge_s": {
+     "n": 644,
+     "mean": 1.6540537257469115,
+     "p50": 0.0007394429994747043,
+     "p95": 14.888203690003138,
+     "max": 24.403542154992465
+    }
+   },
+   "stages": {
+    "facts": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 0.9922958397534669,
+     "seconds_per_call": {
+      "n": 644,
+      "mean": 4.8079216386759525,
+      "p50": 4.716610850009602,
+      "p95": 7.516123923996929,
+      "max": 10.35243344999617
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 2441.0477657935285,
+     "completion_tokens_per_frame": 172.8890600924499,
+     "calls_without_usage": 0
+    },
+    "judge": {
+     "model": "Qwen3.8-27B-FP8",
+     "calls_per_frame": 0.11248073959938366,
+     "seconds_per_call": {
+      "n": 73,
+      "mean": 13.439561016546651,
+      "p50": 13.667437475000042,
+      "p95": 16.439217073027976,
+      "max": 20.29996895097429
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 352.99537750385207,
+     "completion_tokens_per_frame": 67.3235747303544,
+     "calls_without_usage": 0
+    },
+    "state": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 0.9922958397534669,
+     "seconds_per_call": {
+      "n": 644,
+      "mean": 27.923100054397477,
+      "p50": 28.313148148998152,
+      "p95": 29.402245419973042,
+      "max": 30.685003541992046
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 4292.671802773498,
+     "completion_tokens_per_frame": 1064.744221879815,
+     "calls_without_usage": 0
+    },
+    "subject": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 0.9922958397534669,
+     "seconds_per_call": {
+      "n": 644,
+      "mean": 12.11526615014551,
+      "p50": 12.25504043098772,
+      "p95": 12.889153176976833,
+      "max": 14.909304707020056
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 3069.171032357473,
+     "completion_tokens_per_frame": 445.8151001540832,
+     "calls_without_usage": 0
+    }
+   }
+  },
+  "nonsite_old_office": {
+   "description": "old camera, office/bring-up, not a site (local 111, 161, 163-167, 191-196)",
+   "volume": {
+    "tasks": 13,
+    "captured": 14,
+    "duplicates": 240,
+    "backlog_dropped": 0,
+    "capture_errors": 0,
+    "analysed": 14,
+    "analysis_errors": 0,
+    "stale_dropped": 0,
+    "undrained": 0,
+    "wall_hours": 0.07843106324810328,
+    "active_hours": 0.07843106324810328
+   },
+   "outcomes": {
+    "n_frames": 14,
+    "counts": {
+     "violation": 0,
+     "need_review": 0,
+     "clear": 0,
+     "clear_empty": 14,
+     "error": 0
+    },
+    "rates": {
+     "violation": 0.0,
+     "need_review": 0.0,
+     "clear": 0.0,
+     "clear_empty": 1.0,
+     "error": 0.0
+    },
+    "flagged_frames_per_active_hour": 0.0,
+    "width": {
+     "n": 14,
+     "mean": 0.0,
+     "p50": 0.0,
+     "p95": 0.0,
+     "max": 0.0
+    },
+    "dark_frame_share": 0.0,
+    "selected_rules": [],
+    "flagged_rules": [],
+    "flagged_families": {},
+    "judged_pairs": 0,
+    "abstained_no_subject_pairs": 0
+   },
+   "latency_s": {
+    "e2e_s": {
+     "n": 14,
+     "mean": 21.685256339214643,
+     "p50": 20.83903570100665,
+     "p95": 29.95509058702737,
+     "max": 29.95509058702737
+    },
+    "queue_wait_s": {
+     "n": 14,
+     "mean": 0.00628450934891589,
+     "p50": 0.003804759995546192,
+     "p95": 0.03681869100546464,
+     "max": 0.03681869100546464
+    },
+    "analysis_s": {
+     "n": 14,
+     "mean": 21.675605653868324,
+     "p50": 20.832095740013756,
+     "p95": 29.948538520024158,
+     "max": 29.948538520024158
+    },
+    "perception_s": {
+     "n": 14,
+     "mean": 21.67442927864613,
+     "p50": 20.83088280603988,
+     "p95": 29.947461378003936,
+     "max": 29.947461378003936
+    },
+    "score_s": {
+     "n": 14,
+     "mean": 0.0004565010021906346,
+     "p50": 0.00048186100320890546,
+     "p95": 0.0009341320255771279,
+     "max": 0.0009341320255771279
+    },
+    "judge_s": {
+     "n": 14,
+     "mean": 0.0007198742200021765,
+     "p50": 0.0007244229782372713,
+     "p95": 0.0009426429751329124,
+     "max": 0.0009426429751329124
+    }
+   },
+   "stages": {
+    "facts": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 1.0,
+     "seconds_per_call": {
+      "n": 14,
+      "mean": 5.8413812124261835,
+      "p50": 4.0863058299873956,
+      "p95": 29.94546228297986,
+      "max": 29.94546228297986
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 1300.0,
+     "completion_tokens_per_frame": 261.57142857142856,
+     "calls_without_usage": 0
+    },
+    "state": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 1.0,
+     "seconds_per_call": {
+      "n": 14,
+      "mean": 20.953077725010058,
+      "p50": 20.711062435992062,
+      "p95": 22.39331187203061,
+      "max": 22.39331187203061
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 3226.0,
+     "completion_tokens_per_frame": 1069.0714285714287,
+     "calls_without_usage": 0
+    },
+    "subject": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 1.0,
+     "seconds_per_call": {
+      "n": 14,
+      "mean": 9.476983314500623,
+      "p50": 9.397857474978082,
+      "p95": 10.326905334950425,
+      "max": 10.326905334950425
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 1993.0,
+     "completion_tokens_per_frame": 449.35714285714283,
+     "calls_without_usage": 0
+    }
+   }
+  },
+  "nonsite_gopro": {
+   "description": "GoPro, office/lab/showroom, not a site (dog0904 2, 10, 12, 111-117, 205)",
+   "volume": {
+    "tasks": 11,
+    "captured": 401,
+    "duplicates": 15,
+    "backlog_dropped": 0,
+    "capture_errors": 0,
+    "analysed": 401,
+    "analysis_errors": 1,
+    "stale_dropped": 0,
+    "undrained": 0,
+    "wall_hours": 0.7082378317205197,
+    "active_hours": 0.7082378317205197
+   },
+   "outcomes": {
+    "n_frames": 401,
+    "counts": {
+     "violation": 0,
+     "need_review": 0,
+     "clear": 0,
+     "clear_empty": 400,
+     "error": 1
+    },
+    "rates": {
+     "violation": 0.0,
+     "need_review": 0.0,
+     "clear": 0.0,
+     "clear_empty": 0.9975062344139651,
+     "error": 0.0024937655860349127
+    },
+    "flagged_frames_per_active_hour": 0.0,
+    "width": {
+     "n": 400,
+     "mean": 0.0,
+     "p50": 0.0,
+     "p95": 0.0,
+     "max": 0.0
+    },
+    "dark_frame_share": 0.085,
+    "selected_rules": [],
+    "flagged_rules": [],
+    "flagged_families": {},
+    "judged_pairs": 0,
+    "abstained_no_subject_pairs": 0
+   },
+   "latency_s": {
+    "e2e_s": {
+     "n": 401,
+     "mean": 542.8201716674403,
+     "p50": 543.0470597809763,
+     "p95": 1102.8101236199727,
+     "max": 1204.335304658045
+    },
+    "queue_wait_s": {
+     "n": 401,
+     "mean": 507.2746757396444,
+     "p50": 510.47410227300134,
+     "p95": 1070.0316071759444,
+     "max": 1177.5825440420303
+    },
+    "analysis_s": {
+     "n": 400,
+     "mean": 35.63077808101196,
+     "p50": 33.33892017300241,
+     "p95": 49.3164136899868,
+     "max": 58.54215912998188
+    },
+    "perception_s": {
+     "n": 400,
+     "mean": 35.62909050996386,
+     "p50": 33.33621598104946,
+     "p95": 49.31515884998953,
+     "max": 58.53947890602285
+    },
+    "score_s": {
+     "n": 400,
+     "mean": 0.00034150166509789415,
+     "p50": 0.00033484899904578924,
+     "p95": 0.0004743419704027474,
+     "max": 0.0008210879750549793
+    },
+    "judge_s": {
+     "n": 400,
+     "mean": 0.001346069382998394,
+     "p50": 0.0006447660271078348,
+     "p95": 0.00417521595954895,
+     "max": 0.00717137404717505
+    }
+   },
+   "stages": {
+    "facts": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 0.9975062344139651,
+     "seconds_per_call": {
+      "n": 400,
+      "mean": 7.5934193449003216,
+      "p50": 3.0683385300217196,
+      "p95": 38.31041851802729,
+      "max": 42.25045075599337
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 2453.865336658354,
+     "completion_tokens_per_frame": 290.90773067331673,
+     "calls_without_usage": 0
+    },
+    "state": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 0.9975062344139651,
+     "seconds_per_call": {
+      "n": 400,
+      "mean": 27.942344710533654,
+      "p50": 28.44314554700395,
+      "p95": 29.293217907950748,
+      "max": 30.75402687204769
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 4315.211970074813,
+     "completion_tokens_per_frame": 1067.5935162094763,
+     "calls_without_usage": 0
+    },
+    "subject": {
+     "model": "Qwen/Qwen3.5-9B",
+     "calls_per_frame": 0.9975062344139651,
+     "seconds_per_call": {
+      "n": 400,
+      "mean": 12.015406775367737,
+      "p50": 12.079080655996222,
+      "p95": 12.80560532596428,
+      "max": 14.979516660969239
+     },
+     "errors": 0,
+     "prompt_tokens_per_frame": 3085.286783042394,
+     "completion_tokens_per_frame": 448.8279301745636,
+     "calls_without_usage": 0
+    }
+   }
+  }
+ },
+ "audit": {
+  "dog0904": [
+   {
+    "run": "2",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1920x1080",
+    "sharpness_p50": "135.6",
+    "luminance_p50": "117.7",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-28",
+    "last_day": "2026-07-28"
+   },
+   {
+    "run": "10",
+    "frames": "202",
+    "unreadable": "0",
+    "kept_by_dedup": "202",
+    "resolution": "1920x1080",
+    "sharpness_p50": "190.3",
+    "luminance_p50": "112.5",
+    "dark_share": "0.064",
+    "torn_share": "0.0",
+    "first_day": "2026-08-06",
+    "last_day": "2026-08-06"
+   },
+   {
+    "run": "12",
+    "frames": "169",
+    "unreadable": "0",
+    "kept_by_dedup": "169",
+    "resolution": "1920x1080",
+    "sharpness_p50": "193.5",
+    "luminance_p50": "115.1",
+    "dark_share": "0.112",
+    "torn_share": "0.0",
+    "first_day": "2026-08-07",
+    "last_day": "2026-08-07"
+   },
+   {
+    "run": "111",
+    "frames": "22",
+    "unreadable": "0",
+    "kept_by_dedup": "10",
+    "resolution": "1920x1080",
+    "sharpness_p50": "531.6",
+    "luminance_p50": "100.7",
+    "dark_share": "0.045",
+    "torn_share": "0.045",
+    "first_day": "2026-07-02",
+    "last_day": "2026-07-02"
+   },
+   {
+    "run": "112",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1920x1080",
+    "sharpness_p50": "577.8",
+    "luminance_p50": "102.2",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-03",
+    "last_day": "2026-07-03"
+   },
+   {
+    "run": "113",
+    "frames": "2",
+    "unreadable": "0",
+    "kept_by_dedup": "2",
+    "resolution": "1920x1080",
+    "sharpness_p50": "577.5",
+    "luminance_p50": "102.9",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-03",
+    "last_day": "2026-07-03"
+   },
+   {
+    "run": "114",
+    "frames": "2",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1920x1080",
+    "sharpness_p50": "558.1",
+    "luminance_p50": "103.0",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-03",
+    "last_day": "2026-07-03"
+   },
+   {
+    "run": "115",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1920x1080",
+    "sharpness_p50": "602.7",
+    "luminance_p50": "102.7",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-03",
+    "last_day": "2026-07-03"
+   },
+   {
+    "run": "116",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1920x1080",
+    "sharpness_p50": "598.1",
+    "luminance_p50": "102.7",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-03",
+    "last_day": "2026-07-03"
+   },
+   {
+    "run": "117",
+    "frames": "3",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1920x1080",
+    "sharpness_p50": "575.1",
+    "luminance_p50": "102.3",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-03",
+    "last_day": "2026-07-03"
+   },
+   {
+    "run": "185",
+    "frames": "180",
+    "unreadable": "0",
+    "kept_by_dedup": "17",
+    "resolution": "1920x1080",
+    "sharpness_p50": "80.8",
+    "luminance_p50": "46.9",
+    "dark_share": "1.0",
+    "torn_share": "0.022",
+    "first_day": "2026-07-09",
+    "last_day": "2026-07-09"
+   },
+   {
+    "run": "193",
+    "frames": "20",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1920x1080",
+    "sharpness_p50": "104.3",
+    "luminance_p50": "46.6",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-09",
+    "last_day": "2026-07-09"
+   },
+   {
+    "run": "194",
+    "frames": "5",
+    "unreadable": "0",
+    "kept_by_dedup": "5",
+    "resolution": "1920x1080",
+    "sharpness_p50": "112.1",
+    "luminance_p50": "50.6",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-09",
+    "last_day": "2026-07-09"
+   },
+   {
+    "run": "195",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1920x1080",
+    "sharpness_p50": "79.2",
+    "luminance_p50": "39.3",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-09",
+    "last_day": "2026-07-09"
+   },
+   {
+    "run": "196",
+    "frames": "32",
+    "unreadable": "0",
+    "kept_by_dedup": "32",
+    "resolution": "1920x1080",
+    "sharpness_p50": "22.4",
+    "luminance_p50": "60.2",
+    "dark_share": "0.844",
+    "torn_share": "0.156",
+    "first_day": "2026-07-09",
+    "last_day": "2026-07-09"
+   },
+   {
+    "run": "197",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1920x1080",
+    "sharpness_p50": "69.8",
+    "luminance_p50": "40.5",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-10",
+    "last_day": "2026-07-10"
+   },
+   {
+    "run": "198",
+    "frames": "26",
+    "unreadable": "0",
+    "kept_by_dedup": "26",
+    "resolution": "1920x1080",
+    "sharpness_p50": "24.8",
+    "luminance_p50": "69.2",
+    "dark_share": "0.885",
+    "torn_share": "0.115",
+    "first_day": "2026-07-10",
+    "last_day": "2026-07-10"
+   },
+   {
+    "run": "199",
+    "frames": "5",
+    "unreadable": "0",
+    "kept_by_dedup": "5",
+    "resolution": "1920x1080",
+    "sharpness_p50": "98.4",
+    "luminance_p50": "60.0",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-07-10",
+    "last_day": "2026-07-10"
+   },
+   {
+    "run": "201",
+    "frames": "22",
+    "unreadable": "0",
+    "kept_by_dedup": "22",
+    "resolution": "1920x1080",
+    "sharpness_p50": "31.3",
+    "luminance_p50": "66.7",
+    "dark_share": "0.864",
+    "torn_share": "0.182",
+    "first_day": "2026-07-10",
+    "last_day": "2026-07-10"
+   },
+   {
+    "run": "202",
+    "frames": "22",
+    "unreadable": "0",
+    "kept_by_dedup": "22",
+    "resolution": "1920x1080",
+    "sharpness_p50": "25.6",
+    "luminance_p50": "61.5",
+    "dark_share": "0.955",
+    "torn_share": "0.182",
+    "first_day": "2026-07-10",
+    "last_day": "2026-07-10"
+   },
+   {
+    "run": "203",
+    "frames": "23",
+    "unreadable": "0",
+    "kept_by_dedup": "23",
+    "resolution": "1920x1080",
+    "sharpness_p50": "59.2",
+    "luminance_p50": "61.0",
+    "dark_share": "0.957",
+    "torn_share": "0.174",
+    "first_day": "2026-07-10",
+    "last_day": "2026-07-10"
+   },
+   {
+    "run": "204",
+    "frames": "494",
+    "unreadable": "5",
+    "kept_by_dedup": "489",
+    "resolution": "1920x1080",
+    "sharpness_p50": "47.2",
+    "luminance_p50": "37.4",
+    "dark_share": "0.98",
+    "torn_share": "0.051",
+    "first_day": "2026-07-10",
+    "last_day": "2026-07-10"
+   },
+   {
+    "run": "205",
+    "frames": "12",
+    "unreadable": "0",
+    "kept_by_dedup": "12",
+    "resolution": "1920x1080",
+    "sharpness_p50": "365.6",
+    "luminance_p50": "109.9",
+    "dark_share": "0.083",
+    "torn_share": "0.0",
+    "first_day": "1970-01-01",
+    "last_day": "2026-07-21"
+   }
+  ],
+  "local": [
+   {
+    "run": "111",
+    "frames": "55",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "252.2",
+    "luminance_p50": "101.6",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "161",
+    "frames": "35",
+    "unreadable": "0",
+    "kept_by_dedup": "2",
+    "resolution": "1280x720",
+    "sharpness_p50": "359.7",
+    "luminance_p50": "160.5",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-21",
+    "last_day": "2026-05-21"
+   },
+   {
+    "run": "163",
+    "frames": "4",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "284.4",
+    "luminance_p50": "102.5",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-21",
+    "last_day": "2026-05-21"
+   },
+   {
+    "run": "164",
+    "frames": "25",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "371.7",
+    "luminance_p50": "160.4",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-21",
+    "last_day": "2026-05-21"
+   },
+   {
+    "run": "165",
+    "frames": "35",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "365.8",
+    "luminance_p50": "159.0",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-21",
+    "last_day": "2026-05-21"
+   },
+   {
+    "run": "166",
+    "frames": "10",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "524.8",
+    "luminance_p50": "151.2",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-21",
+    "last_day": "2026-05-21"
+   },
+   {
+    "run": "167",
+    "frames": "46",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "150.1",
+    "luminance_p50": "160.9",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-21",
+    "last_day": "2026-05-21"
+   },
+   {
+    "run": "172",
+    "frames": "400",
+    "unreadable": "0",
+    "kept_by_dedup": "9",
+    "resolution": "1280x720",
+    "sharpness_p50": "112.8",
+    "luminance_p50": "135.6",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-23",
+    "last_day": "2026-05-23"
+   },
+   {
+    "run": "173",
+    "frames": "350",
+    "unreadable": "0",
+    "kept_by_dedup": "7",
+    "resolution": "1280x720",
+    "sharpness_p50": "92.9",
+    "luminance_p50": "157.8",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-25",
+    "last_day": "2026-05-25"
+   },
+   {
+    "run": "174",
+    "frames": "351",
+    "unreadable": "0",
+    "kept_by_dedup": "9",
+    "resolution": "1280x720",
+    "sharpness_p50": "99.4",
+    "luminance_p50": "165.6",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-25",
+    "last_day": "2026-05-25"
+   },
+   {
+    "run": "175",
+    "frames": "152",
+    "unreadable": "0",
+    "kept_by_dedup": "4",
+    "resolution": "1280x720",
+    "sharpness_p50": "77.4",
+    "luminance_p50": "152.7",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-25",
+    "last_day": "2026-05-25"
+   },
+   {
+    "run": "176",
+    "frames": "211",
+    "unreadable": "0",
+    "kept_by_dedup": "8",
+    "resolution": "1280x720",
+    "sharpness_p50": "146.3",
+    "luminance_p50": "158.1",
+    "dark_share": "0.005",
+    "torn_share": "0.0",
+    "first_day": "2026-05-25",
+    "last_day": "2026-05-25"
+   },
+   {
+    "run": "178",
+    "frames": "84",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "47.6",
+    "luminance_p50": "28.2",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-06-01",
+    "last_day": "2026-06-01"
+   },
+   {
+    "run": "179",
+    "frames": "64",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "35.1",
+    "luminance_p50": "29.5",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-06-01",
+    "last_day": "2026-06-01"
+   },
+   {
+    "run": "180",
+    "frames": "72",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "45.4",
+    "luminance_p50": "28.2",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-06-01",
+    "last_day": "2026-06-01"
+   },
+   {
+    "run": "181",
+    "frames": "49",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "266.5",
+    "luminance_p50": "143.3",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-06-01",
+    "last_day": "2026-06-01"
+   },
+   {
+    "run": "191",
+    "frames": "5",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "581.1",
+    "luminance_p50": "133.0",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "192",
+    "frames": "3",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "581.5",
+    "luminance_p50": "133.0",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "193",
+    "frames": "3",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "468.9",
+    "luminance_p50": "119.5",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "194",
+    "frames": "7",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "578.0",
+    "luminance_p50": "130.0",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "195",
+    "frames": "13",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "542.4",
+    "luminance_p50": "121.9",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "196",
+    "frames": "13",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "520.4",
+    "luminance_p50": "122.9",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-only",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "642.2",
+    "luminance_p50": "157.0",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "smoke-20260804-1939",
+    "frames": "3",
+    "unreadable": "0",
+    "kept_by_dedup": "3",
+    "resolution": "1920x1080",
+    "sharpness_p50": "642.3",
+    "luminance_p50": "76.1",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-08-04",
+    "last_day": "2026-08-04"
+   },
+   {
+    "run": "manual-camera-size-align",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "643.2",
+    "luminance_p50": "162.7",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-vlm-20260520-124944",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "646.9",
+    "luminance_p50": "156.2",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-vlm-20260520-125357",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "648.6",
+    "luminance_p50": "149.7",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-vlm-20260520-132058",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "635.1",
+    "luminance_p50": "164.2",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-vlm-20260520-145428",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "157.3",
+    "luminance_p50": "68.7",
+    "dark_share": "1.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-vlm-20260520-164803",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "564.8",
+    "luminance_p50": "134.2",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-vlm-20260520-164900",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "566.2",
+    "luminance_p50": "134.5",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-vlm-20260520-165653",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "567.8",
+    "luminance_p50": "133.4",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-vlm-20260520-170040",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "573.2",
+    "luminance_p50": "132.9",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   },
+   {
+    "run": "manual-camera-vlm-20260520-192344",
+    "frames": "1",
+    "unreadable": "0",
+    "kept_by_dedup": "1",
+    "resolution": "1280x720",
+    "sharpness_p50": "567.5",
+    "luminance_p50": "128.6",
+    "dark_share": "0.0",
+    "torn_share": "0.0",
+    "first_day": "2026-05-20",
+    "last_day": "2026-05-20"
+   }
+  ]
+ },
+ "recal_check_planned": {
+  "target_width": 2.0,
+  "n_calibration_frames": 673,
+  "n_evaluation_frames": 371,
+  "frozen_threshold": 0.962824466398786,
+  "recalibrated_threshold": 0.8257307224368376,
+  "calibration_window": {
+   "frozen": {
+    "mean_width": 0.10846953937592868,
+    "empty_rate": 0.8945022288261516
+   },
+   "recalibrated": {
+    "mean_width": 2.0,
+    "empty_rate": 0.2213967310549777
+   }
+  },
+  "evaluation_window": {
+   "frozen": {
+    "mean_width": 0.0,
+    "empty_rate": 1.0
+   },
+   "recalibrated": {
+    "mean_width": 0.0026954177897574125,
+    "empty_rate": 0.9973045822102425
+   }
+  },
+  "note": "label-free; frames newly selected under the recalibrated threshold are not judged"
+ }
+}

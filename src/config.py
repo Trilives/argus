@@ -37,8 +37,9 @@ RUN_MODEL = False
 
 # === local vLLM backend (GPU) ================================================
 # Must be a vision model: VLM_BACKEND drives the image-fact + evidence-chain
-# stages, so a text-only model (e.g. Qwen3.5-4B) cannot serve here.
-LOCAL_MODEL_NAME = "Qwen3-VL-8B-Instruct"
+# stages. Every Qwen3.5 checkpoint carries a vision_config and is multimodal, so
+# 9B serves the image and judge roles alike; it is the local default in MODELS.md.
+LOCAL_MODEL_NAME = "Qwen3.5-9B"
 LOCAL_MODEL_DIR = paths.MODEL_ROOT / LOCAL_MODEL_NAME
 
 # === OpenAI-compatible endpoint backend ======================================

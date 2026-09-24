@@ -1,0 +1,2704 @@
+{
+  "version": "typed_evidence_v1",
+  "status": "experimental overlay; not practitioner-validated or applied to frozen library",
+  "source_library_sha256": "1cfd2dd2665d641913186255e1a04d3d9843985873d90ba4a3f04d21d0acaf84",
+  "scope": "All Boolean and numeric names in both machine_rule and visual_screening_rule; checkpoint-only names are not silently added.",
+  "subject_semantics": "Necessary subject-domain screen only; positive is not complete legal applicability. Scope IDs must bind the same entity/region or explicitly inspected scene.",
+  "atoms": {
+    "aisle_width_m": {
+      "canonical": "aisle_width_m",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-010-dormitory-noncompliant"
+      ],
+      "definitions": {
+        "R-CIV-010-dormitory-noncompliant": "Normative-decision field for aisle_width_m; usually not reliably obtainable from a single image."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "m"
+    },
+    "alarm_duration_min": {
+      "canonical": "alarm_duration_min",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-006-tsp-exceedance"
+      ],
+      "definitions": {
+        "R-CIV-006-tsp-exceedance": "Alarm duration, in minutes."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "min"
+    },
+    "alternative_protection_present": {
+      "canonical": "alternative_protection_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-009-service-shaft-opening"
+      ],
+      "definitions": {
+        "R-OPN-009-service-shaft-opening": "When the opening is not closed, a compliant guardrail, vertical net or horizontal net provides continuous alternative fall protection."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "anti_outward_opening_device_present": {
+      "canonical": "anti_outward_opening_device_present",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-004-hoist-landing-platform"
+      ],
+      "definitions": {
+        "R-EDG-004-hoist-landing-platform": "A latch, stop or equivalent device preventing the landing door from opening outward is visibly present. Judge only clear visible evidence; avoid hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "area_per_person_m2": {
+      "canonical": "area_per_person_m2",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-010-dormitory-noncompliant"
+      ],
+      "definitions": {
+        "R-CIV-010-dormitory-noncompliant": "Normative-decision field for area_per_person_m2; usually not reliably obtainable from a single image."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "m2/person"
+    },
+    "auto_wash_facility_present": {
+      "canonical": "auto_wash_facility_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-007-vehicle-wash"
+      ],
+      "definitions": {
+        "R-CIV-007-vehicle-wash": "Automatic wash facility present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "basket_or_lifting_operation_present": {
+      "canonical": "basket_or_lifting_operation_present",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-009-suspended-platform-lifting-violation"
+      ],
+      "definitions": {
+        "R-BHV-009-suspended-platform-lifting-violation": "Suspended platform or lifting operation present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "bed_layers": {
+      "canonical": "bed_layers",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-010-dormitory-noncompliant"
+      ],
+      "definitions": {
+        "R-CIV-010-dormitory-noncompliant": "Number of dormitory bunk tiers."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "count"
+    },
+    "blocked_by_materials": {
+      "canonical": "blocked_by_materials",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-014-fire-access-blocked"
+      ],
+      "definitions": {
+        "R-CIV-014-fire-access-blocked": "Blocked by materials/waste/equipment. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "body_visible": {
+      "canonical": "body_visible",
+      "kind": "visibility",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-002-helmet-and-attire"
+      ],
+      "definitions": {
+        "R-BHV-002-helmet-and-attire": "Is the person's body / overall attire visible? (only judge attire when the body is visible)"
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "bottom_edge_flush_with_platform": {
+      "canonical": "bottom_edge_flush_with_platform",
+      "kind": "spatial",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-004-vertical-and-low-sill-opening"
+      ],
+      "definitions": {
+        "R-OPN-004-vertical-and-low-sill-opening": "Is the opening's bottom edge flush with the platform or floor (no noticeable threshold or upstand)? A toe board is required only when the bottom edge is flush; judge only clear visible evidence, avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "bunk_over_2_tiers": {
+      "canonical": "bunk_over_2_tiers",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-010-dormitory-noncompliant"
+      ],
+      "definitions": {
+        "R-CIV-010-dormitory-noncompliant": "Are the dormitory bunks visibly more than 2 tiers (3+ tiers; coarse, not a measurement). Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "burning_present": {
+      "canonical": "burning_present",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-011-smoking-burning"
+      ],
+      "definitions": {
+        "R-CIV-011-smoking-burning": "Waste or other material is visibly being burned on site. Judge only clear visible evidence; avoid hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "cable_crossing_passage": {
+      "canonical": "cable_crossing_passage",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-016-cable-on-ground"
+      ],
+      "definitions": {
+        "R-CIV-016-cable-on-ground": "Cable crossing person/vehicle passage. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "cable_on_ground": {
+      "canonical": "cable_on_ground",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-016-cable-on-ground"
+      ],
+      "definitions": {
+        "R-CIV-016-cable-on-ground": "Cable lying on the ground. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "cable_protected_or_elevated": {
+      "canonical": "cable_protected_or_elevated",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-016-cable-on-ground"
+      ],
+      "definitions": {
+        "R-CIV-016-cable-on-ground": "Cable elevated or protected. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "catch_pan_present": {
+      "canonical": "catch_pan_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-010-hot-work-violation"
+      ],
+      "definitions": {
+        "R-BHV-010-hot-work-violation": "Spark-catch pan present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "certificate_valid": {
+      "canonical": "certificate_valid",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-006-uncertified-special-operation"
+      ],
+      "definitions": {
+        "R-BHV-006-uncertified-special-operation": "Whether the certificate is valid in the license system; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "chin_strap_fastened": {
+      "canonical": "chin_strap_fastened",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-002-helmet-and-attire"
+      ],
+      "definitions": {
+        "R-BHV-002-helmet-and-attire": "When a helmet is worn, is the chin strap visible and fastened/close to the chin? Skip when no helmet or occluded/far view."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "civilized_construction_board_present": {
+      "canonical": "civilized_construction_board_present",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-012-public-signboards-missing"
+      ],
+      "definitions": {
+        "R-CIV-012-public-signboards-missing": "Civilized-construction board present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "clearance_within_48h": {
+      "canonical": "clearance_within_48h",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-005-spoil-waste-overheight-uncleared"
+      ],
+      "definitions": {
+        "R-CIV-005-spoil-waste-overheight-uncleared": "Whether removed within 48 hours; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": true,
+      "reason": "Elapsed clearance time requires temporally linked records."
+    },
+    "climbing_behavior_present": {
+      "canonical": "climbing_behavior_present",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-004-illegal-climbing"
+      ],
+      "definitions": {
+        "R-BHV-004-illegal-climbing": "Climbing behavior present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "closure_or_cover_secure": {
+      "canonical": "closure_or_cover_secure",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-009-service-shaft-opening"
+      ],
+      "definitions": {
+        "R-OPN-009-service-shaft-opening": "The visible seal, door or cover is intact, securely fixed and not loose, displaced or lifted."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "clothing_compliant": {
+      "canonical": "clothing_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-002-helmet-and-attire"
+      ],
+      "definitions": {
+        "R-BHV-002-helmet-and-attire": "When the body is visible, is attire compliant (hi-vis clothing/vest or uniform workwear, without bare torso, shorts, slippers or other clearly unsuitable attire)?"
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "combustibles_cleared": {
+      "canonical": "combustibles_cleared",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-010-hot-work-violation"
+      ],
+      "definitions": {
+        "R-BHV-010-hot-work-violation": "Surrounding combustibles cleared. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "construction_site_context": {
+      "canonical": "construction_site_context",
+      "kind": "context",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-002-helmet-and-attire",
+        "R-BHV-012-inattentive-unsafe-behavior",
+        "R-CIV-018-poor-overall-housekeeping"
+      ],
+      "definitions": {
+        "R-BHV-002-helmet-and-attire": "On a construction site?",
+        "R-BHV-012-inattentive-unsafe-behavior": "On a construction site?",
+        "R-CIV-018-poor-overall-housekeeping": "On a construction site. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "cover_fixed": {
+      "canonical": "cover_fixed",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-001-horizontal-opening-protection"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Cover fixed against displacement. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "cover_intact": {
+      "canonical": "cover_intact",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-011-manhole-trench-cover"
+      ],
+      "definitions": {
+        "R-OPN-011-manhole-trench-cover": "Cover/lid intact. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "cover_load_bearing": {
+      "canonical": "cover_load_bearing",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-001-horizontal-opening-protection"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Whether the cover load capacity meets requirements; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "cover_present": {
+      "canonical": "cover_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-001-horizontal-opening-protection",
+        "R-OPN-011-manhole-trench-cover"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Cover present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-OPN-011-manhole-trench-cover": "Cover or manhole lid present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "cover_restored": {
+      "canonical": "cover_restored",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-011-manhole-trench-cover"
+      ],
+      "definitions": {
+        "R-OPN-011-manhole-trench-cover": "Promptly restored after opening. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "covered_or_enclosed": {
+      "canonical": "covered_or_enclosed",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-004-dusty-material-uncovered"
+      ],
+      "definitions": {
+        "R-CIV-004-dusty-material-uncovered": "Covered or enclosed storage. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "day_noise_db": {
+      "canonical": "day_noise_db",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-009-noise-exceedance"
+      ],
+      "definitions": {
+        "R-CIV-009-noise-exceedance": "Daytime construction-boundary noise, in dB(A)."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "dB(A)"
+    },
+    "dense_scaffold_present": {
+      "canonical": "dense_scaffold_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-011-scaffold-layer-catch-net"
+      ],
+      "definitions": {
+        "R-EDG-011-scaffold-layer-catch-net": "A dense multi-level or large-area scaffold (full/birdcage, ground-supported, or fine-mesh type) built from closely spaced standards and ledgers is visible."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "designated_smoking_area": {
+      "canonical": "designated_smoking_area",
+      "kind": "context",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-011-smoking-burning"
+      ],
+      "definitions": {
+        "R-CIV-011-smoking-burning": "Whether this is a designated smoking area; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "door_bottom_gap_compliant": {
+      "canonical": "door_bottom_gap_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-005-elevator-shaft-door-and-net": "Whether the door bottom-to-ground gap is at most 50 mm; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "door_height_compliant": {
+      "canonical": "door_height_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-005-elevator-shaft-door-and-net": "Whether the protective door is at least 1.5 m high; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "door_locked_or_closed": {
+      "canonical": "door_locked_or_closed",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-004-hoist-landing-platform"
+      ],
+      "definitions": {
+        "R-EDG-004-hoist-landing-platform": "Protective door securely closed. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "dormitory_present": {
+      "canonical": "dormitory_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-010-dormitory-noncompliant"
+      ],
+      "definitions": {
+        "R-CIV-010-dormitory-noncompliant": "Dormitory present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "dusty_material_present": {
+      "canonical": "dusty_material_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-004-dusty-material-uncovered"
+      ],
+      "definitions": {
+        "R-CIV-004-dusty-material-uncovered": "Dust-prone sand, aggregate, earth or powder stock is visibly present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "edge_closed": {
+      "canonical": "edge_closed",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-003-roof-balcony-platform-edge"
+      ],
+      "definitions": {
+        "R-EDG-003-roof-balcony-platform-edge": "Edge sealed. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "electrical_ppe_present": {
+      "canonical": "electrical_ppe_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-007-illegal-electrical-work"
+      ],
+      "definitions": {
+        "R-BHV-007-illegal-electrical-work": "Electrical-work PPE worn. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "electrical_work_present": {
+      "canonical": "electrical_work_present",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-007-illegal-electrical-work"
+      ],
+      "definitions": {
+        "R-BHV-007-illegal-electrical-work": "Wiring or electrical work present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "electrician_certificate_valid": {
+      "canonical": "electrician_certificate_valid",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-007-illegal-electrical-work"
+      ],
+      "definitions": {
+        "R-BHV-007-illegal-electrical-work": "Whether the electrician license is valid; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "electronic_notice_present": {
+      "canonical": "electronic_notice_present",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-013-temporary-facilities"
+      ],
+      "definitions": {
+        "R-CIV-013-temporary-facilities": "Whether the gate is fitted with an electronic notice board. A single gate image often frames the board out even where one is installed, so its absence cannot be reliably inferred and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "elevator_shaft_present": {
+      "canonical": "elevator_shaft_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-005-elevator-shaft-door-and-net": "A vertical opening of appropriate width and height for human passage, with the lower edge of the opening flush with the landing and no noticeable threshold."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "exit_dust_g_m2": {
+      "canonical": "exit_dust_g_m2",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-008-road-dust-exceedance"
+      ],
+      "definitions": {
+        "R-CIV-008-road-dust-exceedance": "Normative-decision field for exit_dust_g_m2; usually not reliably obtainable from a single image."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "g/m2"
+    },
+    "external_stair_present": {
+      "canonical": "external_stair_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-002-stair-edge"
+      ],
+      "definitions": {
+        "R-EDG-002-stair-edge": "External stair present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "extinguisher_present": {
+      "canonical": "fire_extinguisher_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-015-fire-equipment-missing"
+      ],
+      "definitions": {
+        "R-CIV-015-fire-equipment-missing": "Fire extinguisher present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fall_layer_present": {
+      "canonical": "fall_layer_present",
+      "kind": "spatial",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-011-scaffold-layer-catch-net"
+      ],
+      "definitions": {
+        "R-EDG-011-scaffold-layer-catch-net": "The scaffold has a working/planked level where a person could stand, or a tier presenting a fall risk."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fall_or_trip_risk_present": {
+      "canonical": "fall_or_trip_risk_present",
+      "kind": "hazard",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-011-manhole-trench-cover"
+      ],
+      "definitions": {
+        "R-OPN-011-manhole-trench-cover": "Fall or trip risk present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fall_risk_present": {
+      "canonical": "fall_risk_present",
+      "kind": "hazard",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-003-roof-balcony-platform-edge",
+        "R-EDG-007-guardrail-construction",
+        "R-OPN-004-vertical-and-low-sill-opening",
+        "R-OPN-009-service-shaft-opening"
+      ],
+      "definitions": {
+        "R-OPN-004-vertical-and-low-sill-opening": "Fall-from-height risk present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-OPN-009-service-shaft-opening": "Person-fall risk present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-003-roof-balcony-platform-edge": "Fall risk present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-007-guardrail-construction": "Fall-from-height risk present?"
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "falling_object_risk_present": {
+      "canonical": "falling_object_risk_present",
+      "kind": "hazard",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-012-passage-shed-protection"
+      ],
+      "definitions": {
+        "R-EDG-012-passage-shed-protection": "Falling-object exposure over or beside that area: work at height, hoisting, material stacked at an upper edge, or an open structural edge above. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fence_continuous": {
+      "canonical": "fence_continuous",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-001-hoarding-missing-low"
+      ],
+      "definitions": {
+        "R-CIV-001-hoarding-missing-low": "Hoarding continuous and closed. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fence_height_compliant": {
+      "canonical": "fence_height_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-001-hoarding-missing-low"
+      ],
+      "definitions": {
+        "R-CIV-001-hoarding-missing-low": "Whether the hoarding height is compliant; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fence_present": {
+      "canonical": "fence_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-001-hoarding-missing-low"
+      ],
+      "definitions": {
+        "R-CIV-001-hoarding-missing-low": "Hoarding present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fire_access_or_exit_present": {
+      "canonical": "fire_access_or_exit_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-014-fire-access-blocked"
+      ],
+      "definitions": {
+        "R-CIV-014-fire-access-blocked": "Fire access or emergency exit present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fire_box_or_fire_point_present": {
+      "canonical": "fire_box_or_fire_point_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-015-fire-equipment-missing"
+      ],
+      "definitions": {
+        "R-CIV-015-fire-equipment-missing": "Fire box or fire point present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fire_equipment_sufficient": {
+      "canonical": "fire_equipment_sufficient",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-015-fire-equipment-missing"
+      ],
+      "definitions": {
+        "R-CIV-015-fire-equipment-missing": "Fire equipment sufficient. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fire_extinguisher_present": {
+      "canonical": "fire_extinguisher_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-010-hot-work-violation"
+      ],
+      "definitions": {
+        "R-BHV-010-hot-work-violation": "Fire extinguisher present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fire_security_board_present": {
+      "canonical": "fire_security_board_present",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-012-public-signboards-missing"
+      ],
+      "definitions": {
+        "R-CIV-012-public-signboards-missing": "Fire-security board present. Judge only clear visible evidence; avoid hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "fire_watch_present": {
+      "canonical": "fire_watch_present",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-010-hot-work-violation"
+      ],
+      "definitions": {
+        "R-BHV-010-hot-work-violation": "Fire watch present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "gap_continuous": {
+      "canonical": "gap_continuous",
+      "kind": "spatial",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-005-scaffold-structure-gap"
+      ],
+      "definitions": {
+        "R-EDG-005-scaffold-structure-gap": "Gap continuous. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "gate_guard_or_realname_system_present": {
+      "canonical": "gate_guard_or_realname_system_present",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-013-temporary-facilities"
+      ],
+      "definitions": {
+        "R-CIV-013-temporary-facilities": "Whether a gate booth, turnstile, real-name device or personnel-control facility is visible at the entrance."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "ground_hardened": {
+      "canonical": "ground_hardened",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-002-road-unhardened-water-mud"
+      ],
+      "definitions": {
+        "R-CIV-002-road-unhardened-water-mud": "Ground hardened. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "guardrail_compliant": {
+      "canonical": "guardrail_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-003-roof-balcony-platform-edge",
+        "R-OPN-004-vertical-and-low-sill-opening"
+      ],
+      "definitions": {
+        "R-OPN-004-vertical-and-low-sill-opening": "Compliant railing present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-003-roof-balcony-platform-edge": "Compliant guardrail present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "guardrail_grossly_low": {
+      "canonical": "guardrail_grossly_low",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-007-guardrail-construction"
+      ],
+      "definitions": {
+        "R-EDG-007-guardrail-construction": "Does the guardrail top rail look grossly too low (clearly below ~waist / 1.2 m; coarse, not a measurement)?"
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "guardrail_height_compliant": {
+      "canonical": "guardrail_height_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-007-guardrail-construction",
+        "R-OPN-001-horizontal-opening-protection"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Whether the guardrail height is compliant; cannot be reliably decided from a single image and needs external evidence or human review.",
+        "R-EDG-007-guardrail-construction": "Whether the top rail is at least 1.2 m high; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "guardrail_present": {
+      "canonical": "guardrail_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-002-stair-edge",
+        "R-EDG-006-pit-trench-edge",
+        "R-EDG-007-guardrail-construction",
+        "R-OPN-001-horizontal-opening-protection"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Guardrail present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-002-stair-edge": "Guardrail installed. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-006-pit-trench-edge": "Guardrail present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-007-guardrail-construction": "Guardrail present (any)?"
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "guardrail_stable": {
+      "canonical": "guardrail_stable",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-002-stair-edge",
+        "R-EDG-006-pit-trench-edge",
+        "R-EDG-007-guardrail-construction"
+      ],
+      "definitions": {
+        "R-EDG-002-stair-edge": "Guardrail stable. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-006-pit-trench-edge": "Guardrail secure. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-007-guardrail-construction": "Does the guardrail look unstable (widely spaced posts, missing rails, large gaps, loose, deformed, tilted or broken)? Coarse, not a spacing measurement."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "harness_anchored": {
+      "canonical": "harness_anchored",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-001-no-harness-at-height"
+      ],
+      "definitions": {
+        "R-BHV-001-no-harness-at-height": "Harness anchored to a reliable point. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "harness_worn": {
+      "canonical": "harness_worn",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-001-no-harness-at-height"
+      ],
+      "definitions": {
+        "R-BHV-001-no-harness-at-height": "Harness worn. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "head_visible": {
+      "canonical": "head_visible",
+      "kind": "visibility",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-002-helmet-and-attire"
+      ],
+      "definitions": {
+        "R-BHV-002-helmet-and-attire": "Is the person's head visible? (only judge helmet wearing when a head is visible)"
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "height_over_2m": {
+      "canonical": "height_over_2m",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-006-pit-trench-edge"
+      ],
+      "definitions": {
+        "R-EDG-006-pit-trench-edge": "Whether the fall height is at least 2 m."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "helmet_present": {
+      "canonical": "helmet_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-002-helmet-and-attire"
+      ],
+      "definitions": {
+        "R-BHV-002-helmet-and-attire": "Helmet worn?"
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "helmet_worn_correctly": {
+      "canonical": "helmet_worn_correctly",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-002-helmet-and-attire"
+      ],
+      "definitions": {
+        "R-BHV-002-helmet-and-attire": "When a helmet is worn, is it on the crown with correct orientation/position and chin strap fastened? Skip when no helmet is worn."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "high_risk_operation_present": {
+      "canonical": "high_risk_operation_present",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-011-severe-weather-operation"
+      ],
+      "definitions": {
+        "R-BHV-011-severe-weather-operation": "Lifting/height/installation/dismantling work present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "hoist_platform_present": {
+      "canonical": "hoist_platform_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-004-hoist-landing-platform"
+      ],
+      "definitions": {
+        "R-EDG-004-hoist-landing-platform": "Construction hoist landing platform present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "horizontal_opening_present": {
+      "canonical": "horizontal_opening_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-001-horizontal-opening-protection"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Non-vertical opening present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "horizontal_protection_present": {
+      "canonical": "horizontal_protection_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-005-scaffold-structure-gap"
+      ],
+      "definitions": {
+        "R-EDG-005-scaffold-structure-gap": "Horizontal protection present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "hot_work_permit_valid": {
+      "canonical": "hot_work_permit_valid",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-010-hot-work-violation"
+      ],
+      "definitions": {
+        "R-BHV-010-hot-work-violation": "Whether the hot-work authorization is valid for the time, place and activity."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "hot_work_present": {
+      "canonical": "hot_work_present",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-010-hot-work-violation"
+      ],
+      "definitions": {
+        "R-BHV-010-hot-work-violation": "Hot work or welding/cutting at height or an exposed edge is present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "independent_lifeline_present": {
+      "canonical": "independent_lifeline_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-009-suspended-platform-lifting-violation"
+      ],
+      "definitions": {
+        "R-BHV-009-suspended-platform-lifting-violation": "Lifeline independently suspended. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "inner_safety_net_present": {
+      "canonical": "inner_safety_net_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-005-elevator-shaft-door-and-net": "Judge only when the shaft interior is visible: whether a safety net / horizontal net / other fall-arrest closure is present in the visible range; when the interior is not visible do not decide on this and defer to inspection records."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "inner_safety_net_spacing_compliant": {
+      "canonical": "inner_safety_net_spacing_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-005-elevator-shaft-door-and-net": "Whether the safety-net floor spacing is compliant; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "inner_shaft_visible": {
+      "canonical": "inner_shaft_visible",
+      "kind": "visibility",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-005-elevator-shaft-door-and-net": "Whether the shaft interior (walls, floors below, or net layers) is within the visible frame; judge no when the opening is closed or the viewpoint cannot see inside the shaft."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "inspection_status_valid": {
+      "canonical": "inspection_status_valid",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-015-fire-equipment-missing"
+      ],
+      "definitions": {
+        "R-CIV-015-fire-equipment-missing": "Whether fire equipment is regularly inspected and valid; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "ladder_on_scaffold": {
+      "canonical": "ladder_on_scaffold",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-005-improper-ladder-use"
+      ],
+      "definitions": {
+        "R-BHV-005-improper-ladder-use": "Ladder set up on scaffold working level. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "ladder_present": {
+      "canonical": "ladder_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-005-improper-ladder-use"
+      ],
+      "definitions": {
+        "R-BHV-005-improper-ladder-use": "Ladder in use. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "ladder_use_stable": {
+      "canonical": "ladder_use_stable",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-005-improper-ladder-use"
+      ],
+      "definitions": {
+        "R-BHV-005-improper-ladder-use": "Ladder use stable. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "layer_safety_net_present": {
+      "canonical": "layer_safety_net_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-011-scaffold-layer-catch-net"
+      ],
+      "definitions": {
+        "R-EDG-011-scaffold-layer-catch-net": "A horizontal safety net (catch net) or equivalent fall-arrest net is laid across the scaffold working level/tier."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "lifting_gear_damaged": {
+      "canonical": "lifting_gear_damaged",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-013-damaged-lifting-gear"
+      ],
+      "definitions": {
+        "R-BHV-013-damaged-lifting-gear": "Lifting gear/rigging damaged. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "lifting_gear_present": {
+      "canonical": "lifting_gear_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-013-damaged-lifting-gear"
+      ],
+      "definitions": {
+        "R-BHV-013-damaged-lifting-gear": "Lifting gear or rigging present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "lockout_tagout_present": {
+      "canonical": "lockout_tagout_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-007-illegal-electrical-work"
+      ],
+      "definitions": {
+        "R-BHV-007-illegal-electrical-work": "Lockout/tagout or isolation present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "low_sill_opening_present": {
+      "canonical": "low_sill_opening_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-004-vertical-and-low-sill-opening"
+      ],
+      "definitions": {
+        "R-OPN-004-vertical-and-low-sill-opening": "Low-sill opening present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "machine_operating": {
+      "canonical": "machine_operating",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-008-machinery-area-not-cleared"
+      ],
+      "definitions": {
+        "R-BHV-008-machinery-area-not-cleared": "Machinery operating. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "main_road_or_processing_area_present": {
+      "canonical": "main_road_or_processing_area_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-002-road-unhardened-water-mud"
+      ],
+      "definitions": {
+        "R-CIV-002-road-unhardened-water-mud": "A site main road or processing area is present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "main_site_vehicle_road_present": {
+      "canonical": "main_site_vehicle_road_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [],
+      "definitions": {},
+      "external_only": false,
+      "reason": "A main internal site vehicle road is within the evaluated scope; an adjacent public road is insufficient."
+    },
+    "main_vehicle_road_dust_g_m2": {
+      "canonical": "main_vehicle_road_dust_g_m2",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-008-road-dust-exceedance"
+      ],
+      "definitions": {
+        "R-CIV-008-road-dust-exceedance": "Normative-decision field for main_vehicle_road_dust_g_m2; usually not reliably obtainable from a single image."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "g/m2"
+    },
+    "manager_roster_board_present": {
+      "canonical": "manager_roster_board_present",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-012-public-signboards-missing"
+      ],
+      "definitions": {
+        "R-CIV-012-public-signboards-missing": "Manager roster board present. Judge only clear visible evidence; avoid hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "manhole_or_trench_cover_required": {
+      "canonical": "manhole_or_trench_cover_required",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-011-manhole-trench-cover"
+      ],
+      "definitions": {
+        "R-OPN-011-manhole-trench-cover": "Manhole/trench/rain-grate location present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "manhole_or_trench_present": {
+      "canonical": "manhole_or_trench_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [],
+      "definitions": {},
+      "external_only": false,
+      "reason": "A manhole or trench is within the evaluated scope; this does not assert that a cover is legally required."
+    },
+    "material_label_present": {
+      "canonical": "material_label_present",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-003-material-stacking-labeling"
+      ],
+      "definitions": {
+        "R-CIV-003-material-stacking-labeling": "Non-visual evidence: whether material label boards, zone signs, or name/spec labels are fully set. Because labels are usually too small to be reliably captured or read in standard images, this requires external evidence or manual verification."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "materials_present": {
+      "canonical": "materials_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-003-material-stacking-labeling"
+      ],
+      "definitions": {
+        "R-CIV-003-material-stacking-labeling": "Materials/components/tools present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "mud_pollution_present": {
+      "canonical": "mud_pollution_present",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-002-road-unhardened-water-mud"
+      ],
+      "definitions": {
+        "R-CIV-002-road-unhardened-water-mud": "Obvious mud present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "near_edge_or_opening": {
+      "canonical": "near_edge_or_opening",
+      "kind": "spatial",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-001-no-harness-at-height"
+      ],
+      "definitions": {
+        "R-BHV-001-no-harness-at-height": "Near an edge or opening. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "net_fixed_and_intact": {
+      "canonical": "net_fixed_and_intact",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-011-scaffold-layer-catch-net"
+      ],
+      "definitions": {
+        "R-EDG-011-scaffold-layer-catch-net": "The installed safety net appears secured and continuous, without obvious damage, tearing, large detachment, or whole-sheet rolling; minor sag or wrinkling is treated as normal."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "night_max_level_exceed_db": {
+      "canonical": "night_max_level_exceed_db",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-009-noise-exceedance"
+      ],
+      "definitions": {
+        "R-CIV-009-noise-exceedance": "Nighttime maximum sound-level exceedance, in dB(A)."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "dB(A)"
+    },
+    "night_noise_db": {
+      "canonical": "night_noise_db",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-009-noise-exceedance"
+      ],
+      "definitions": {
+        "R-CIV-009-noise-exceedance": "Nighttime construction-boundary noise, in dB(A)."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "dB(A)"
+    },
+    "noise_sensitive_buildings_nearby": {
+      "canonical": "noise_sensitive_buildings_nearby",
+      "kind": "context",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-009-noise-exceedance"
+      ],
+      "definitions": {
+        "R-CIV-009-noise-exceedance": "Whether noise-sensitive buildings are located around the construction site, making the quoted boundary limits applicable."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "non_personnel_equipment_carrying_person": {
+      "canonical": "non_personnel_equipment_carrying_person",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-009-suspended-platform-lifting-violation"
+      ],
+      "definitions": {
+        "R-BHV-009-suspended-platform-lifting-violation": "Non-personnel equipment lifting people. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "office_living_separated_from_work_area": {
+      "canonical": "office_living_separated_from_work_area",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-013-temporary-facilities"
+      ],
+      "definitions": {
+        "R-CIV-013-temporary-facilities": "Whether the office/living area is separated from the work area; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "opening_closed": {
+      "canonical": "opening_closed",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-009-service-shaft-opening"
+      ],
+      "definitions": {
+        "R-OPN-009-service-shaft-opening": "The opening is closed by a rigid permanent seal, door or cover. Judge only clear visible evidence; avoid hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "operation_suspended": {
+      "canonical": "operation_suspended",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-011-severe-weather-operation"
+      ],
+      "definitions": {
+        "R-BHV-011-severe-weather-operation": "Work suspended. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "outer_stair_net_present": {
+      "canonical": "outer_stair_net_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-002-stair-edge"
+      ],
+      "definitions": {
+        "R-EDG-002-stair-edge": "External stair enclosed with vertical net. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "overload_visible_or_recorded": {
+      "canonical": "overload_visible_or_recorded",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-009-suspended-platform-lifting-violation"
+      ],
+      "definitions": {
+        "R-BHV-009-suspended-platform-lifting-violation": "Whether overloading is present; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": true,
+      "reason": "Composite visual-or-recorded load claim is retained opaque; external confirmation required."
+    },
+    "passage_clear": {
+      "canonical": "passage_clear",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-014-fire-access-blocked"
+      ],
+      "definitions": {
+        "R-CIV-014-fire-access-blocked": "Passage clear. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "passage_or_work_area_present": {
+      "canonical": "passage_or_work_area_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-012-passage-shed-protection"
+      ],
+      "definitions": {
+        "R-EDG-012-passage-shed-protection": "A pedestrian passage, site entrance way, processing/rebar shed bay or similar area where people walk or work beneath something. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "permit_publicized": {
+      "canonical": "permit_publicized",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-012-public-signboards-missing"
+      ],
+      "definitions": {
+        "R-CIV-012-public-signboards-missing": "Whether permit documents are publicized; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "person_in_danger_zone": {
+      "canonical": "person_in_danger_zone",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-008-machinery-area-not-cleared"
+      ],
+      "definitions": {
+        "R-BHV-008-machinery-area-not-cleared": "Person within danger radius. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "person_present": {
+      "canonical": "person_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-001-no-harness-at-height",
+        "R-BHV-002-helmet-and-attire",
+        "R-BHV-004-illegal-climbing",
+        "R-BHV-012-inattentive-unsafe-behavior"
+      ],
+      "definitions": {
+        "R-BHV-001-no-harness-at-height": "Person present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-BHV-002-helmet-and-attire": "Person present?",
+        "R-BHV-004-illegal-climbing": "Person present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-BHV-012-inattentive-unsafe-behavior": "Person present?"
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "persons_per_room": {
+      "canonical": "persons_per_room",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-010-dormitory-noncompliant"
+      ],
+      "definitions": {
+        "R-CIV-010-dormitory-noncompliant": "Number of occupants in the dormitory room."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "count"
+    },
+    "pile_height_compliant": {
+      "canonical": "pile_height_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-005-spoil-waste-overheight-uncleared"
+      ],
+      "definitions": {
+        "R-CIV-005-spoil-waste-overheight-uncleared": "Whether the stacking height is at most 1.5 m; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "pit_or_trench_edge_present": {
+      "canonical": "pit_or_trench_edge_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-006-pit-trench-edge"
+      ],
+      "definitions": {
+        "R-EDG-006-pit-trench-edge": "Pit / trench edge present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "platform_door_height_compliant": {
+      "canonical": "platform_door_height_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-004-hoist-landing-platform"
+      ],
+      "definitions": {
+        "R-EDG-004-hoist-landing-platform": "Whether the platform-opening door is at least 1.8 m high; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "post_spacing_compliant": {
+      "canonical": "post_spacing_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-007-guardrail-construction"
+      ],
+      "definitions": {
+        "R-EDG-007-guardrail-construction": "Whether the post spacing is at most 2 m; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "power_isolated": {
+      "canonical": "power_isolated",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-007-illegal-electrical-work"
+      ],
+      "definitions": {
+        "R-BHV-007-illegal-electrical-work": "Power isolation confirmable. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": true,
+      "reason": "Electrical isolation cannot be established from visual appearance alone."
+    },
+    "project_overview_board_present": {
+      "canonical": "project_overview_board_present",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-012-public-signboards-missing"
+      ],
+      "definitions": {
+        "R-CIV-012-public-signboards-missing": "Project overview board present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "protection_intact_and_stable": {
+      "canonical": "protection_intact_and_stable",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-001-horizontal-opening-protection",
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Is the opening's existing cover/protection intact and stable (not removed, opened or damaged)? Treat intact & stable as compliant.",
+        "R-OPN-005-elevator-shaft-door-and-net": "Whether the installed shaft door, enclosure, and any visible in-shaft safety net are intact, undamaged, stable, and continuous, with no obvious breakage, deformation, detachment, gaps, or removal."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "protective_door_present": {
+      "canonical": "protective_door_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-005-elevator-shaft-door-and-net": "Protective door present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "protective_shed_present": {
+      "canonical": "protective_shed_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-012-passage-shed-protection"
+      ],
+      "definitions": {
+        "R-EDG-012-passage-shed-protection": "An anti-smash or cantilever protective shed is built over the passage or work area; answer no when the area stands open overhead with no shed at all. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "rail_spacing_compliant": {
+      "canonical": "rail_spacing_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-007-guardrail-construction"
+      ],
+      "definitions": {
+        "R-EDG-007-guardrail-construction": "Whether the rail spacing is compliant; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "roof_balcony_platform_edge_present": {
+      "canonical": "roof_balcony_platform_edge_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-003-roof-balcony-platform-edge"
+      ],
+      "definitions": {
+        "R-EDG-003-roof-balcony-platform-edge": "Roof, balcony, platform or floor/structural slab edge present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "safe_distance_present": {
+      "canonical": "safe_distance_present",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-013-temporary-facilities"
+      ],
+      "definitions": {
+        "R-CIV-013-temporary-facilities": "Whether a safe distance is maintained; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "safety_board_present": {
+      "canonical": "safety_board_present",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-012-public-signboards-missing"
+      ],
+      "definitions": {
+        "R-CIV-012-public-signboards-missing": "Safety-production board present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "safety_lock_functional": {
+      "canonical": "safety_lock_functional",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-009-suspended-platform-lifting-violation"
+      ],
+      "definitions": {
+        "R-BHV-009-suspended-platform-lifting-violation": "Whether the suspended-platform safety lock is functional; requires inspection or test evidence."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "safety_net_present": {
+      "canonical": "safety_net_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-001-horizontal-opening-protection"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Complete and continuous safety net / mesh present with no visible tears or gaps; a missing, torn, or discontinuous net counts as absent. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "scaffold_structure_gap_present": {
+      "canonical": "scaffold_structure_gap_present",
+      "kind": "spatial",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-005-scaffold-structure-gap"
+      ],
+      "definitions": {
+        "R-EDG-005-scaffold-structure-gap": "Scaffold-structure gap present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "scrap_condition_met": {
+      "canonical": "scrap_condition_met",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-013-damaged-lifting-gear"
+      ],
+      "definitions": {
+        "R-BHV-013-damaged-lifting-gear": "Scrap condition met. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": true,
+      "reason": "A retirement criterion requires inspection/measurement against its standard."
+    },
+    "sedimentation_facility_present": {
+      "canonical": "sedimentation_facility_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-007-vehicle-wash"
+      ],
+      "definitions": {
+        "R-CIV-007-vehicle-wash": "Sedimentation/filtration facility present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "severe_weather_present": {
+      "canonical": "severe_weather_present",
+      "kind": "context",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-011-severe-weather-operation"
+      ],
+      "definitions": {
+        "R-BHV-011-severe-weather-operation": "Whether severe weather (thunderstorm/heavy snow/dense fog/high wind) is present; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "shaft_opening_present": {
+      "canonical": "shaft_opening_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-009-service-shaft-opening"
+      ],
+      "definitions": {
+        "R-OPN-009-service-shaft-opening": "Service/vent/utility shaft opening present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "shed_covering_intact": {
+      "canonical": "shed_covering_intact",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-012-passage-shed-protection"
+      ],
+      "definitions": {
+        "R-EDG-012-passage-shed-protection": "The shed roof and its lateral protection are continuous, with no missing panels, holes, collapsed spans, or removed sections left unrestored. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "short_edge_mm": {
+      "canonical": "short_edge_mm",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-OPN-001-horizontal-opening-protection",
+        "R-OPN-004-vertical-and-low-sill-opening"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Opening short-edge dimension, in mm.",
+        "R-OPN-004-vertical-and-low-sill-opening": "Opening short-edge dimension, in mm."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "mm"
+    },
+    "side_enclosure_present": {
+      "canonical": "side_enclosure_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-004-hoist-landing-platform",
+        "R-EDG-006-pit-trench-edge"
+      ],
+      "definitions": {
+        "R-EDG-004-hoist-landing-platform": "Mesh or tool-type panel enclosure is present along the platform sides. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-006-pit-trench-edge": "Mesh or tool-type panel enclosure is present along the exposed edge. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "side_guardrail_present": {
+      "canonical": "side_guardrail_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-004-hoist-landing-platform"
+      ],
+      "definitions": {
+        "R-EDG-004-hoist-landing-platform": "Side guardrails present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "sill_height_below_800mm": {
+      "canonical": "sill_height_below_800mm",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-004-vertical-and-low-sill-opening"
+      ],
+      "definitions": {
+        "R-OPN-004-vertical-and-low-sill-opening": "Whether the sill height is below 800 mm; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "site_appearance_poor": {
+      "canonical": "site_appearance_poor",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-018-poor-overall-housekeeping"
+      ],
+      "definitions": {
+        "R-CIV-018-poor-overall-housekeeping": "Site appearance dirty/disorderly or housekeeping clearly substandard, including standing water/ponding, accumulated mud, mixed materials and waste, or severely obstructed passages. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "site_boundary_present": {
+      "canonical": "site_boundary_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-001-hoarding-missing-low"
+      ],
+      "definitions": {
+        "R-CIV-001-hoarding-missing-low": "Site boundary present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "site_exit_present": {
+      "canonical": "site_exit_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-007-vehicle-wash"
+      ],
+      "definitions": {
+        "R-CIV-007-vehicle-wash": "Site exit present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "site_gate_present": {
+      "canonical": "site_gate_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-012-public-signboards-missing",
+        "R-CIV-013-temporary-facilities"
+      ],
+      "definitions": {
+        "R-CIV-012-public-signboards-missing": "Site gate present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference.",
+        "R-CIV-013-temporary-facilities": "Whether a main or secondary site gate is visible."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "site_plan_board_present": {
+      "canonical": "site_plan_board_present",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-012-public-signboards-missing"
+      ],
+      "definitions": {
+        "R-CIV-012-public-signboards-missing": "Site layout plan present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "smoking_present": {
+      "canonical": "smoking_present",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-011-smoking-burning"
+      ],
+      "definitions": {
+        "R-CIV-011-smoking-burning": "A person is visibly smoking on site. Judge only clear visible evidence; avoid hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "special_operation_present": {
+      "canonical": "special_operation_present",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-006-uncertified-special-operation"
+      ],
+      "definitions": {
+        "R-BHV-006-uncertified-special-operation": "Special operation present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "spoil_grossly_overheight": {
+      "canonical": "spoil_grossly_overheight",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-005-spoil-waste-overheight-uncleared"
+      ],
+      "definitions": {
+        "R-CIV-005-spoil-waste-overheight-uncleared": "Is the spoil/waste piled grossly over height (clearly too high; coarse, not a measurement). Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "stacking_orderly": {
+      "canonical": "stacking_orderly",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-003-material-stacking-labeling"
+      ],
+      "definitions": {
+        "R-CIV-003-material-stacking-labeling": "Stacked orderly. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "stair_edge_present": {
+      "canonical": "stair_edge_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-002-stair-edge"
+      ],
+      "definitions": {
+        "R-EDG-002-stair-edge": "Stairwell / flight edge present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "standing_water_present": {
+      "canonical": "standing_water_present",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-002-road-unhardened-water-mud"
+      ],
+      "definitions": {
+        "R-CIV-002-road-unhardened-water-mud": "Obvious ponding present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "still_in_use": {
+      "canonical": "still_in_use",
+      "kind": "activity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-013-damaged-lifting-gear"
+      ],
+      "definitions": {
+        "R-BHV-013-damaged-lifting-gear": "Still in use. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "supervision_phone_board_present": {
+      "canonical": "supervision_phone_board_present",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-012-public-signboards-missing"
+      ],
+      "definitions": {
+        "R-CIV-012-public-signboards-missing": "Supervision contact board present. Judge only clear visible evidence; avoid hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "temporary_cable_present": {
+      "canonical": "temporary_cable_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-016-cable-on-ground"
+      ],
+      "definitions": {
+        "R-CIV-016-cable-on-ground": "Temporary cable present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "temporary_facilities_present": {
+      "canonical": "temporary_facilities_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-013-temporary-facilities"
+      ],
+      "definitions": {
+        "R-CIV-013-temporary-facilities": "Whether office areas, living quarters, prefab huts, a gate post or a real-name access lane are visible. Whether they are separated from the work area at a safe distance is out of single-image scope; see non_visual_fields."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "ten_meter_interval_closure_compliant": {
+      "canonical": "ten_meter_interval_closure_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-011-scaffold-layer-catch-net"
+      ],
+      "definitions": {
+        "R-EDG-011-scaffold-layer-catch-net": "Whether horizontal safety-net closure is provided at vertical intervals not exceeding 10 m below the working level."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "toe_board_height_compliant": {
+      "canonical": "toe_board_height_compliant",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-007-guardrail-construction"
+      ],
+      "definitions": {
+        "R-EDG-007-guardrail-construction": "Whether the toe board is at least 180 mm high; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "toe_board_mm": {
+      "canonical": "toe_board_mm",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-OPN-001-horizontal-opening-protection"
+      ],
+      "definitions": {
+        "R-OPN-001-horizontal-opening-protection": "Toe board / kickboard height, in mm."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "mm"
+    },
+    "toe_board_present": {
+      "canonical": "toe_board_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-EDG-004-hoist-landing-platform",
+        "R-EDG-007-guardrail-construction",
+        "R-OPN-004-vertical-and-low-sill-opening",
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-004-vertical-and-low-sill-opening": "Toe board present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-OPN-005-elevator-shaft-door-and-net": "Toe board present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-004-hoist-landing-platform": "Toe board present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference.",
+        "R-EDG-007-guardrail-construction": "Toe board / kickboard present at the base?"
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "trip_or_electric_risk_present": {
+      "canonical": "trip_or_electric_risk_present",
+      "kind": "hazard",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-016-cable-on-ground"
+      ],
+      "definitions": {
+        "R-CIV-016-cable-on-ground": "Trip or electric-shock risk present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "tsp_15min_avg_mg_m3": {
+      "canonical": "tsp_15min_avg_mg_m3",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-006-tsp-exceedance"
+      ],
+      "definitions": {
+        "R-CIV-006-tsp-exceedance": "TSP 15-minute average concentration, in mg/m3."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "mg/m3"
+    },
+    "two_persons_on_same_ladder": {
+      "canonical": "two_persons_on_same_ladder",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-005-improper-ladder-use"
+      ],
+      "definitions": {
+        "R-BHV-005-improper-ladder-use": "Two people on the same ladder. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "unsafe_awareness_lapse_present": {
+      "canonical": "unsafe_awareness_lapse_present",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-012-inattentive-unsafe-behavior"
+      ],
+      "definitions": {
+        "R-BHV-012-inattentive-unsafe-behavior": "Does the person show a clear lapse in safety awareness -- e.g., using or looking at a phone, wearing earphones, or otherwise visibly inattentive -- while in a work or hazard area (at height, near edges/openings, near operating machinery or site traffic)? Judge only clearly visible behaviour; a person plainly at rest in a designated safe/rest area is not a violation."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "unsafe_climbing_object": {
+      "canonical": "unsafe_climbing_object",
+      "kind": "violation",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-004-illegal-climbing"
+      ],
+      "definitions": {
+        "R-BHV-004-illegal-climbing": "Climbing scaffold/rebar cage/brace (non-access member). Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "upper_isolation_protection_present": {
+      "canonical": "upper_isolation_protection_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-005-elevator-shaft-door-and-net"
+      ],
+      "definitions": {
+        "R-OPN-005-elevator-shaft-door-and-net": "Whether isolation protection is provided above the active shaft work level."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "vehicle_clean_before_exit": {
+      "canonical": "vehicle_clean_before_exit",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-007-vehicle-wash"
+      ],
+      "definitions": {
+        "R-CIV-007-vehicle-wash": "Vehicle washed clean before exit. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "vertical_net_or_panel_present": {
+      "canonical": "vertical_net_or_panel_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-004-vertical-and-low-sill-opening"
+      ],
+      "definitions": {
+        "R-OPN-004-vertical-and-low-sill-opening": "Vertical net or panel present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "vertical_opening_present": {
+      "canonical": "vertical_opening_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-OPN-004-vertical-and-low-sill-opening"
+      ],
+      "definitions": {
+        "R-OPN-004-vertical-and-low-sill-opening": "Vertical opening present. Judge only clear visible evidence; avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "wash_platform_length_m": {
+      "canonical": "wash_platform_length_m",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-007-vehicle-wash"
+      ],
+      "definitions": {
+        "R-CIV-007-vehicle-wash": "Normative-decision field for wash_platform_length_m; usually not reliably obtainable from a single image."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "m"
+    },
+    "wash_platform_width_m": {
+      "canonical": "wash_platform_width_m",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-007-vehicle-wash"
+      ],
+      "definitions": {
+        "R-CIV-007-vehicle-wash": "Normative-decision field for wash_platform_width_m; usually not reliably obtainable from a single image."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "m"
+    },
+    "wash_time_s": {
+      "canonical": "wash_time_s",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-007-vehicle-wash"
+      ],
+      "definitions": {
+        "R-CIV-007-vehicle-wash": "Normative-decision field for wash_time_s; usually not reliably obtainable from a single image."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "s"
+    },
+    "wash_water_m3_per_vehicle": {
+      "canonical": "wash_water_m3_per_vehicle",
+      "kind": "measurement",
+      "value_type": "number",
+      "source_rules": [
+        "R-CIV-007-vehicle-wash"
+      ],
+      "definitions": {
+        "R-CIV-007-vehicle-wash": "Normative-decision field for wash_water_m3_per_vehicle; usually not reliably obtainable from a single image."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning.",
+      "unit": "m3/vehicle"
+    },
+    "waste_or_spoil_present": {
+      "canonical": "waste_or_spoil_present",
+      "kind": "entity",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-005-spoil-waste-overheight-uncleared"
+      ],
+      "definitions": {
+        "R-CIV-005-spoil-waste-overheight-uncleared": "Spoil or waste present. Use broad construction-site visual screening; allow normal work traces and flag only clear material disorder. Avoid precise measurement or hidden-state inference."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "within_planned_area": {
+      "canonical": "within_planned_area",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-CIV-003-material-stacking-labeling"
+      ],
+      "definitions": {
+        "R-CIV-003-material-stacking-labeling": "Whether stacking follows the site layout; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "work_area_cleared": {
+      "canonical": "work_area_cleared",
+      "kind": "state",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-008-machinery-area-not-cleared"
+      ],
+      "definitions": {
+        "R-BHV-008-machinery-area-not-cleared": "Whether the work area is cleared; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "work_at_height": {
+      "canonical": "work_at_height",
+      "kind": "hazard",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-001-no-harness-at-height"
+      ],
+      "definitions": {
+        "R-BHV-001-no-harness-at-height": "Whether this is work at height; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    },
+    "worker_identity_matched": {
+      "canonical": "worker_identity_matched",
+      "kind": "document",
+      "value_type": "boolean",
+      "source_rules": [
+        "R-BHV-006-uncertified-special-operation"
+      ],
+      "definitions": {
+        "R-BHV-006-uncertified-special-operation": "Whether the person's identity matches the certificate; cannot be reliably decided from a single image and needs external evidence or human review."
+      },
+      "external_only": false,
+      "reason": "Preserve the source predicate and its rule-specific meaning."
+    }
+  },
+  "aliases": [
+    {
+      "members": [
+        "extinguisher_present",
+        "fire_extinguisher_present"
+      ],
+      "canonical": "fire_extinguisher_present",
+      "relation": "exact predicate name alias; observations still require matching rule/subject scope"
+    }
+  ],
+  "preserved_distinctions": [
+    {
+      "members": [
+        "guardrail_present",
+        "side_guardrail_present",
+        "fence_present"
+      ],
+      "relation": "different barrier/location predicates, not synonyms"
+    },
+    {
+      "members": [
+        "guardrail_compliant",
+        "guardrail_stable",
+        "guardrail_height_compliant"
+      ],
+      "relation": "rollup versus components, no equivalence imposed"
+    },
+    {
+      "members": [
+        "safety_net_present",
+        "inner_safety_net_present",
+        "layer_safety_net_present",
+        "outer_stair_net_present",
+        "vertical_net_or_panel_present"
+      ],
+      "relation": "different locations and protection kinds; no unqualified evidence propagation"
+    },
+    {
+      "members": [
+        "cover_fixed",
+        "closure_or_cover_secure"
+      ],
+      "relation": "simple versus disjunctive protection predicate"
+    },
+    {
+      "members": [
+        "fall_risk_present",
+        "fall_or_trip_risk_present",
+        "trip_or_electric_risk_present"
+      ],
+      "relation": "different disjunctions remain opaque"
+    },
+    {
+      "members": [
+        "work_at_height",
+        "height_over_2m"
+      ],
+      "relation": "activity/hazard versus measured threshold"
+    },
+    {
+      "members": [
+        "protection_intact_and_stable",
+        "cover_intact",
+        "net_fixed_and_intact",
+        "shed_covering_intact"
+      ],
+      "relation": "compound and object-specific states, not aliases"
+    },
+    {
+      "members": [
+        "certificate_valid",
+        "worker_identity_matched",
+        "permit_publicized"
+      ],
+      "relation": "distinct documentary predicates"
+    }
+  ],
+  "gates": {
+    "R-OPN-001-horizontal-opening-protection": {
+      "formula": "horizontal_opening_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-OPN-004-vertical-and-low-sill-opening": {
+      "formula": "vertical_opening_present == yes OR low_sill_opening_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-OPN-005-elevator-shaft-door-and-net": {
+      "formula": "elevator_shaft_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-OPN-009-service-shaft-opening": {
+      "formula": "shaft_opening_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-EDG-002-stair-edge": {
+      "formula": "stair_edge_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-EDG-003-roof-balcony-platform-edge": {
+      "formula": "roof_balcony_platform_edge_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-EDG-004-hoist-landing-platform": {
+      "formula": "hoist_platform_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-EDG-005-scaffold-structure-gap": {
+      "formula": "scaffold_structure_gap_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-EDG-006-pit-trench-edge": {
+      "formula": "pit_or_trench_edge_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-EDG-007-guardrail-construction": {
+      "formula": "guardrail_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-001-no-harness-at-height": {
+      "formula": "person_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-002-helmet-and-attire": {
+      "formula": "person_present == yes AND construction_site_context == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-004-illegal-climbing": {
+      "formula": "person_present == yes AND climbing_behavior_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-005-improper-ladder-use": {
+      "formula": "ladder_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-006-uncertified-special-operation": {
+      "formula": "special_operation_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-007-illegal-electrical-work": {
+      "formula": "electrical_work_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-008-machinery-area-not-cleared": {
+      "formula": "machine_operating == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-009-suspended-platform-lifting-violation": {
+      "formula": "basket_or_lifting_operation_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-010-hot-work-violation": {
+      "formula": "hot_work_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-011-severe-weather-operation": {
+      "formula": "high_risk_operation_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-001-hoarding-missing-low": {
+      "formula": "site_boundary_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-002-road-unhardened-water-mud": {
+      "formula": "main_road_or_processing_area_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-003-material-stacking-labeling": {
+      "formula": "materials_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-004-dusty-material-uncovered": {
+      "formula": "dusty_material_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-005-spoil-waste-overheight-uncleared": {
+      "formula": "waste_or_spoil_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-006-tsp-exceedance": {
+      "formula": "construction_site_context == yes",
+      "reason": "Conservative site-domain gate; dust activity is not required to infer the scope of an external concentration reading."
+    },
+    "R-CIV-007-vehicle-wash": {
+      "formula": "site_exit_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-008-road-dust-exceedance": {
+      "formula": "site_exit_present == yes OR main_site_vehicle_road_present == yes",
+      "reason": "Site exit or internal main vehicle road; measured dust load is still external."
+    },
+    "R-CIV-009-noise-exceedance": {
+      "formula": "construction_site_context == yes AND noise_sensitive_buildings_nearby == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-010-dormitory-noncompliant": {
+      "formula": "dormitory_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-011-smoking-burning": {
+      "formula": "person_present == yes OR construction_site_context == yes",
+      "reason": "Person or site context covers smoking and unattended burning without gating on either violation."
+    },
+    "R-CIV-012-public-signboards-missing": {
+      "formula": "site_gate_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-013-temporary-facilities": {
+      "formula": "temporary_facilities_present == yes OR site_gate_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-014-fire-access-blocked": {
+      "formula": "fire_access_or_exit_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-015-fire-equipment-missing": {
+      "formula": "fire_box_or_fire_point_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-EDG-011-scaffold-layer-catch-net": {
+      "formula": "dense_scaffold_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-EDG-012-passage-shed-protection": {
+      "formula": "passage_or_work_area_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-OPN-011-manhole-trench-cover": {
+      "formula": "manhole_or_trench_present == yes",
+      "reason": "Physical manhole/trench domain separated from the original cover-required condition."
+    },
+    "R-CIV-016-cable-on-ground": {
+      "formula": "temporary_cable_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-013-damaged-lifting-gear": {
+      "formula": "lifting_gear_present == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-BHV-012-inattentive-unsafe-behavior": {
+      "formula": "person_present == yes AND construction_site_context == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    },
+    "R-CIV-018-poor-overall-housekeeping": {
+      "formula": "construction_site_context == yes",
+      "reason": "Explicit subject-domain formula authored from rule text; excludes violation and protection-state tests."
+    }
+  },
+  "source_rule_signature": "dae0921f310c78027acbb42985d62831bcf363cc837093ef03c110a668fe71f7"
+}

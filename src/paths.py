@@ -79,6 +79,7 @@ RULE_EVIDENCE_PROMPT_PATH = PROMPT_DECOUPLED_DIR / "rule_evidence_prompt.md"
 # subject type (the J3-sym-strict arm); forked so cached pairs stay prompt-bound
 RULE_EVIDENCE_STRICT_PROMPT_PATH = PROMPT_DECOUPLED_DIR / "rule_evidence_strict_prompt.md"
 RULE_EVIDENCE_BATCH_PROMPT_PATH = PROMPT_DECOUPLED_DIR / "rule_evidence_batch_prompt.md"
+APPLICABILITY_GATE_PROMPT_PATH = PROMPT_DECOUPLED_DIR / "applicability_gate_prompt.md"
 JUDGEMENT_PROMPT_PATH = PROMPT_DECOUPLED_DIR / "judgement_prompt.md"
 
 # rule_refine/: aggregate-then-filter retrieval refinement (Stage 2.5a/b/c,

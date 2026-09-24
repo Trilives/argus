@@ -1,46 +1,47 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite the paper below."
 title: >-
-  Applicability-Aware Rule Retrieval for Regulation-Grounded
+  Risk-Controlled Applicability Set Retrieval (RCASR) for Regulation-Grounded
   Construction-Site Visual Screening
-  — code, provision library and evaluation harness (ARGus)
+  — code, frozen configurations, analysis plans and aggregate results (ARGus)
 abstract: >-
-  Reference implementation and evaluation harness for regulation-grounded visual
-  compliance screening of construction sites. Given a site photograph, a bounded
-  retrieval agent proposes the few provisions that plausibly apply, and the verdict
-  is computed from a named provision formula over persisted checkpoint evidence
-  rather than from model free text, so every decision traces back to a clause. The
-  accompanying study reports where such pipelines fail: under the configurations
-  tested it is the retrieval step -- deciding which provisions apply -- rather than
-  the visual judgement that dominates end-to-end accuracy, and grounded precision
-  decreased at every step as the candidate set was widened.
+  Code and evaluation artifacts for Risk-Controlled Applicability Set Retrieval
+  (RCASR). Screening a site photograph against a regulation library first requires
+  deciding which provisions apply. RCASR frames this as set prediction under
+  asymmetric miss/exposure cost: it re-weights a retrieval prior by the probability
+  that each provision's compiled subject and state conditions hold, computed from
+  token-level posteriors over 131 rule-agnostic visual atoms with abstention, and
+  selects a set at a target mean width or under conformal risk control. Includes the
+  frozen runtime configurations, pre-specified analysis plans, SHA-256 input
+  snapshots and the aggregate results behind every table, on top of the ARGus
+  screening framework of the earlier study (releases v1.x).
 license: Apache-2.0
 repository-code: "https://github.com/Trilives/argus"
 doi: "10.5281/zenodo.21535053"
-version: "1.2.3"
-date-released: "2026-08-04"
+version: "2.0.0"
+date-released: "2026-09-24"
 authors:
   - given-names: "Fangjie"
     family-names: "Wu"
-    affiliation: "China Construction Third Engineering Bureau Group Co. Ltd., Shenzhen, China"
+    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd., Shenzhen, China"
   - given-names: "Xingpeng"
     family-names: "Jiang"
     affiliation: "School of Computer Science and Technology, Harbin Institute of Technology, Shenzhen, China"
     orcid: "https://orcid.org/0009-0008-1578-3403"
   - given-names: "Wenlong"
     family-names: "Zhang"
-    affiliation: "China Construction Third Engineering Bureau Group Co. Ltd., Shenzhen, China"
+    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd., Shenzhen, China"
   - given-names: "Boran"
     family-names: "Wang"
     affiliation: "International Institute of Artificial Intelligence, Harbin Institute of Technology, Shenzhen, China"
     orcid: "https://orcid.org/0009-0007-9224-2697"
   - given-names: "Jie"
     family-names: "Gong"
-    affiliation: "China Construction Third Engineering Bureau Group Co. Ltd., Shenzhen, China"
+    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd., Shenzhen, China"
 preferred-citation:
   type: article
   title: >-
-    Applicability-Aware Rule Retrieval for Regulation-Grounded
+    Risk-Controlled Applicability Set Retrieval for Regulation-Grounded
     Construction-Site Visual Screening
   authors:
     - given-names: "Fangjie"
@@ -54,8 +55,7 @@ preferred-citation:
     - given-names: "Jie"
       family-names: "Gong"
   year: 2026
-  journal: "Journal of Computing in Civil Engineering"
   notes: >-
-    Submitted to the Journal of Computing in Civil Engineering (ASCE).
+    Manuscript under submission.
     F. Wu and X. Jiang contributed equally and are joint first authors;
     B. Wang is the corresponding author.

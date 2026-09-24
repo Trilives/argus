@@ -1,0 +1,212 @@
+{
+  "version": "rcasr_v1",
+  "status": "FROZEN — authored 2026-09-22 before any RCASR inference; plan docs/paper_v3/design/RCASR_PRESPEC.md",
+  "plan_path": "docs/paper_v3/design/RCASR_PRESPEC.md",
+  "plan_addenda": [
+    "docs/paper_v3/design/RCASR_PROPOSAL.md"
+  ],
+  "source_overlay": "data/rules/proposed/typed_evidence_v1.json",
+  "extractor": {
+    "model_id": "Qwen3.5-9B",
+    "model_dir": "Model/Qwen3.5-9B",
+    "served_model_name": "Qwen/Qwen3.5-9B",
+    "serving": "local vLLM 0.24.0 OpenAI server; command in Machine.md 'Serving Qwen3.5-9B locally'",
+    "base_url_env": "RCASR_EXTRACTOR_BASE_URL"
+  },
+  "decoding": {
+    "temperature": 0.0,
+    "enable_thinking": false,
+    "repetition_penalty": 1.1,
+    "top_logprobs": 5,
+    "max_tokens": {
+      "subject": 1536,
+      "state": 3072
+    },
+    "min_pixels": 200704,
+    "max_pixels": 2073600
+  },
+  "passes": {
+    "subject": {
+      "questions_from": "data/rules/proposed/subject_screen_v2.json",
+      "questions_sha256": "1b9f517e6c3b92748704e1e9819739b3c67dfab00613cbbdc14c17d4dc1c243d"
+    },
+    "state": {
+      "instruction_template": "You are cataloguing what is visible in one photograph of a work site. For each numbered statement, answer strictly with one word:\n  yes     — you can see that this is the case in this photograph.\n  no      — you can see that this is NOT the case in this photograph.\n  unclear — the framing, distance, lighting or occlusion does not let you decide.\n\nAnswer 'no' only when the photograph actually shows it is not the case. If a statement describes a property of something (its condition, fixing, position or use) and that thing is not in the photograph, answer 'unclear'. If you would have to guess, answer 'unclear'. Do not infer from what is typical on a work site; report only this photograph.\n\nStatements:\n{statements}\n\nReply with one JSON object and nothing else, mapping every statement id to \"yes\", \"no\" or \"unclear\". Include all {n} ids exactly once.",
+      "questions": {
+        "alternative_protection_present": "Where a floor or wall opening is left uncovered, a guardrail, vertical net or horizontal net runs continuously around or across it.",
+        "anti_outward_opening_device_present": "A latch, stop or similar device that keeps a lift-landing protective door from swinging outward is visible.",
+        "auto_wash_facility_present": "An automatic wheel- or vehicle-washing facility is visible.",
+        "blocked_by_materials": "A walkway, passage, exit or access route is obstructed by materials, waste or equipment.",
+        "body_visible": "At least one person's body (torso and clothing) is visible clearly enough to see what they are wearing.",
+        "bottom_edge_flush_with_platform": "A wall opening's bottom edge is flush with the floor or platform, with no upstand or threshold.",
+        "bunk_over_2_tiers": "Bunk beds with three or more tiers are visible.",
+        "burning_present": "Waste or other material is being burned in the open.",
+        "cable_crossing_passage": "An electrical cable crosses a walkway or vehicle route.",
+        "cable_on_ground": "An electrical cable lies directly on the ground or floor.",
+        "cable_protected_or_elevated": "Visible electrical cables are raised overhead or run inside a protective sleeve, cover or trough.",
+        "catch_pan_present": "A pan or tray for catching sparks or hot slag is placed under hot work.",
+        "chin_strap_fastened": "On a visible helmet, the chin strap is fastened under the chin.",
+        "civilized_construction_board_present": "A signboard about tidy/civilised construction is displayed.",
+        "closure_or_cover_secure": "A visible seal, door or cover over an opening is intact and firmly fixed, not loose, displaced or lifted.",
+        "clothing_compliant": "People whose body is visible wear high-visibility clothing or uniform workwear (no bare torso, shorts or slippers).",
+        "combustibles_cleared": "The area around hot work is clear of combustible material.",
+        "cover_fixed": "A cover over an opening, pit or manhole is fixed in place so it cannot slide or be pushed off.",
+        "cover_intact": "A cover or lid over an opening, pit or manhole is whole and undamaged.",
+        "cover_present": "A cover, plate or manhole lid is placed over a floor opening, pit, trench or manhole.",
+        "cover_restored": "A cover that was opened for work has been put back in place.",
+        "covered_or_enclosed": "Loose bulk material (sand, soil, cement, spoil) is covered with sheeting or netting, or stored in an enclosure.",
+        "door_locked_or_closed": "A protective door at a lift shaft or opening is shut.",
+        "edge_closed": "An exposed floor, platform or slab edge is closed off by a barrier, panel or net.",
+        "electrical_ppe_present": "A person doing electrical work wears insulating gloves, insulating footwear or similar electrical protective gear.",
+        "external_stair_present": "A temporary external stair tower or access stair on the outside of the structure is visible.",
+        "extinguisher_present": "A fire extinguisher is visible.",
+        "fall_layer_present": "A scaffold has a planked working level or tier where a person could stand.",
+        "fall_or_trip_risk_present": "There is a place where a person could fall or trip — an unprotected edge, opening, hole, or obstruction underfoot.",
+        "fall_risk_present": "A person could fall from height here — an unprotected edge, opening or elevated work position.",
+        "falling_object_risk_present": "Objects could fall onto people below — work at height, hoisting, or material stacked at an upper edge.",
+        "fence_continuous": "The site boundary hoarding is continuous and closed, without gaps or fallen panels.",
+        "fence_present": "A site boundary hoarding or fence is visible.",
+        "fire_equipment_sufficient": "Fire-fighting equipment (extinguishers, hose reels, sand buckets) is provided in adequate quantity for the area shown.",
+        "fire_extinguisher_present": "A fire extinguisher is placed near the work being done.",
+        "fire_security_board_present": "A fire-safety notice board is displayed.",
+        "fire_watch_present": "A person is standing by to watch for fire during hot work.",
+        "gap_continuous": "A barrier or protection runs continuously, without breaks or gaps.",
+        "gate_guard_or_realname_system_present": "A gate booth, turnstile, identity check device or guard post is visible at an entrance.",
+        "ground_hardened": "The ground surface of roads or yards is hardened (concrete, asphalt or paving) rather than bare soil.",
+        "guardrail_compliant": "Guardrails at an edge or opening have a top rail, mid rail and toe board and look sound.",
+        "guardrail_grossly_low": "A guardrail's top rail is clearly far below waist height.",
+        "guardrail_stable": "Guardrails are firmly fixed and upright, not loose, leaning or broken.",
+        "harness_anchored": "A person's safety harness lanyard is clipped to an anchor point or lifeline.",
+        "harness_worn": "A person working at height wears a full-body safety harness.",
+        "head_visible": "At least one person's head is visible clearly enough to see whether they wear a helmet.",
+        "helmet_present": "The people whose heads are visible wear safety helmets.",
+        "helmet_worn_correctly": "Visible helmets sit squarely on the head, facing forward, with the chin strap fastened.",
+        "horizontal_protection_present": "A horizontal net, deck or cover is installed across a shaft or opening.",
+        "independent_lifeline_present": "An independent lifeline rope, separate from the working rope, hangs alongside suspended work.",
+        "inner_safety_net_present": "A safety net or horizontal closure is installed inside a lift shaft.",
+        "inner_shaft_visible": "The inside of a lift shaft (its walls, lower floors or net layers) is within the frame.",
+        "ladder_on_scaffold": "A ladder stands on a scaffold working level.",
+        "ladder_use_stable": "A ladder in use stands firmly, at a safe angle, on even ground.",
+        "layer_safety_net_present": "A horizontal catch net is laid across a scaffold working level or tier.",
+        "lifting_gear_damaged": "Slings, chains, hooks or other lifting gear look damaged, frayed or deformed.",
+        "lockout_tagout_present": "A lock, tag or isolation device is fitted on electrical switchgear or machinery.",
+        "manager_roster_board_present": "A board listing site managers is displayed.",
+        "manhole_or_trench_cover_required": "A manhole, trench, drain or rain grate opening is present in the ground.",
+        "mud_pollution_present": "Mud is tracked onto a road or paved surface.",
+        "near_edge_or_opening": "A person is working close to an unprotected edge or opening.",
+        "net_fixed_and_intact": "An installed safety net is secured and continuous, without tears, large detachment or sagging.",
+        "non_personnel_equipment_carrying_person": "A person is riding on or lifted by equipment not meant to carry people (a load hook, material hoist, bucket or forks).",
+        "opening_closed": "An opening is closed by a rigid permanent seal, door or cover.",
+        "outer_stair_net_present": "An external stair tower is enclosed with vertical netting.",
+        "passage_clear": "Walkways and passages are clear of obstruction.",
+        "person_in_danger_zone": "A person stands under a suspended load or within the swing or working radius of operating machinery.",
+        "project_overview_board_present": "A project overview signboard is displayed.",
+        "protection_intact_and_stable": "Existing protection at an opening, shaft or edge (cover, door, enclosure or net) is intact and stable, not removed, opened or damaged.",
+        "protective_door_present": "A protective door or gate is installed at a lift-shaft landing or wall opening.",
+        "protective_shed_present": "An overhead protective shed or canopy is built over a walkway or work area.",
+        "safety_board_present": "A work-safety notice board is displayed.",
+        "safety_net_present": "A complete and continuous safety net or mesh is installed at an edge, opening or scaffold face.",
+        "sedimentation_facility_present": "A sedimentation tank or water-filtration facility is visible.",
+        "shed_covering_intact": "A protective shed's roof and side protection are continuous, without missing panels, holes or collapsed spans.",
+        "side_enclosure_present": "Mesh or panel enclosure runs along the sides of a platform or exposed edge.",
+        "side_guardrail_present": "Guardrails are fitted along the sides of a platform, stair or walkway.",
+        "site_appearance_poor": "The site looks dirty or disorderly — scattered debris, standing water, accumulated waste or untidy material.",
+        "site_plan_board_present": "A site layout plan board is displayed.",
+        "smoking_present": "A person is smoking.",
+        "spoil_grossly_overheight": "Spoil, soil or waste is piled clearly far too high.",
+        "stacking_orderly": "Materials are stacked neatly and stably.",
+        "standing_water_present": "Standing water or ponding is visible on the ground.",
+        "still_in_use": "Equipment or a facility that looks worn or damaged is still being used.",
+        "supervision_phone_board_present": "A board with supervision or complaint contact phone numbers is displayed.",
+        "toe_board_present": "A toe board runs along the bottom of a guardrail or platform edge.",
+        "trip_or_electric_risk_present": "There is a tripping or electric-shock hazard, such as loose cables or exposed live parts.",
+        "two_persons_on_same_ladder": "Two people are on the same ladder at once.",
+        "unsafe_awareness_lapse_present": "A worker shows a clear lapse in attention — using a phone, wearing earphones, or sleeping or lying down in a work area.",
+        "unsafe_climbing_object": "A person is climbing on a scaffold member, rebar cage, brace or other structure that is not an access route.",
+        "vehicle_clean_before_exit": "Vehicles leaving the site are washed clean, with no mud on wheels or body.",
+        "vertical_net_or_panel_present": "A vertical net or solid panel is installed across an opening or along an edge."
+      },
+      "unknown_only": [
+        "scrap_condition_met"
+      ]
+    }
+  },
+  "abstention": {
+    "opening_atoms": [
+      "elevator_shaft_present",
+      "guardrail_present",
+      "horizontal_opening_present",
+      "pit_or_trench_edge_present",
+      "roof_balcony_platform_edge_present",
+      "shaft_opening_present"
+    ],
+    "opening_atoms_provenance": "subject-screen v2 harm table on all 500 images (disclosed: not fold-blind)"
+  },
+  "score": {
+    "log_floor": 0.0001,
+    "r4_prior": {
+      "rank_1_to_4": "(5 - rank) / 5",
+      "unretrieved": 0.1
+    }
+  },
+  "grid": {
+    "theta_gate": [
+      0,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "theta_state": [
+      0,
+      0.5,
+      1,
+      2,
+      4
+    ],
+    "tau": [
+      0,
+      0.5,
+      0.7,
+      0.8,
+      0.9,
+      0.95
+    ],
+    "tau_open": [
+      0,
+      0.5,
+      0.7,
+      0.8,
+      0.9,
+      0.95,
+      0.99
+    ]
+  },
+  "folds": {
+    "k": 5,
+    "seed": 20260922,
+    "calibration_fold": "(held_out + 1) mod k"
+  },
+  "selection": {
+    "alphas": [
+      0.05,
+      0.1,
+      0.2
+    ],
+    "primary_alpha": 0.1,
+    "cap": 3,
+    "group_min_size": 30
+  },
+  "gates": {
+    "recall_delta": 0.03,
+    "bootstrap_repeats": 2000,
+    "bootstrap_seed": 20260922,
+    "null_seed": 20260922
+  },
+  "judge": {
+    "model_id": "Qwen3.8-27B-FP8",
+    "mode": "decoupled_sym",
+    "base_url_env": "OPENAI_BASE_URL",
+    "facts": "results/retrieval/gold_facts_generic_en.json"
+  }
+}

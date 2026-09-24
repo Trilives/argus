@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-07-20",
+  "basis": "results/retrieval/visual_confusion_analysis.json — R4 visual-agent eval rows on the frozen 500-gold; families group rules whose *visual subject* is shared and whose distinction (orientation, subtype, severity) drives systematic within-cluster retrieval confusions.",
+  "evidence": {
+    "opening": "OPN-001<->OPN-004 18x, OPN-001->OPN-009 9x, OPN-005->OPN-001 9x, OPN-001->OPN-005 7x, OPN-005->OPN-004 7x, OPN-011->OPN-009 1x (horizontal vs vertical vs shaft openings)",
+    "edge-guardrail": "EDG-003->EDG-007 7x; EDG-002/EDG-003 same subcategory, both dominated by cross-cluster OPN confusions",
+    "scaffold": "EDG-011->EDG-005 5x (EDG-011 misses 9/10)",
+    "ppe": "BHV-002->BHV-001 10x",
+    "site-mess": "CIV-018->CIV-003 5x, CIV-003->CIV-018 2x, CIV-005->CIV-018 1x (piled material vs waste vs housekeeping is a semantic split of one visual)",
+    "merged-boundary": "cross-major EDG->OPN confusions: EDG-003->OPN-001 15x, EDG-002->OPN-001 15x, EDG-007->OPN-004 15x, EDG-007->OPN-001 14x, EDG-002->OPN-004 10x, EDG-003->OPN-004 12x (an unprotected slab boundary reads as either an edge or a horizontal opening)"
+  },
+  "offline_headroom_k3": {
+    "conservative": {"recall_base": 0.6148, "recall_family_expanded": 0.7705, "mean_candidate_width": 6.09},
+    "merged-boundary": {"recall_base": 0.6148, "recall_family_expanded": 0.8239, "mean_candidate_width": 7.99}
+  },
+  "canonical": "conservative",
+  "configs": {
+    "conservative": {
+      "opening": [
+        "R-OPN-001-horizontal-opening-protection",
+        "R-OPN-004-vertical-and-low-sill-opening",
+        "R-OPN-005-elevator-shaft-door-and-net",
+        "R-OPN-009-service-shaft-opening",
+        "R-OPN-011-manhole-trench-cover"
+      ],
+      "edge-guardrail": [
+        "R-EDG-002-stair-edge",
+        "R-EDG-003-roof-balcony-platform-edge",
+        "R-EDG-007-guardrail-construction"
+      ],
+      "scaffold": [
+        "R-EDG-005-scaffold-structure-gap",
+        "R-EDG-011-scaffold-layer-catch-net"
+      ],
+      "ppe": [
+        "R-BHV-001-no-harness-at-height",
+        "R-BHV-002-helmet-and-attire"
+      ],
+      "site-mess": [
+        "R-CIV-003-material-stacking-labeling",
+        "R-CIV-005-spoil-waste-overheight-uncleared",
+        "R-CIV-018-poor-overall-housekeeping"
+      ]
+    },
+    "merged-boundary": {
+      "boundary": [
+        "R-OPN-001-horizontal-opening-protection",
+        "R-OPN-004-vertical-and-low-sill-opening",
+        "R-OPN-005-elevator-shaft-door-and-net",
+        "R-OPN-009-service-shaft-opening",
+        "R-OPN-011-manhole-trench-cover",
+        "R-EDG-002-stair-edge",
+        "R-EDG-003-roof-balcony-platform-edge",
+        "R-EDG-007-guardrail-construction"
+      ],
+      "scaffold": [
+        "R-EDG-005-scaffold-structure-gap",
+        "R-EDG-011-scaffold-layer-catch-net"
+      ],
+      "ppe": [
+        "R-BHV-001-no-harness-at-height",
+        "R-BHV-002-helmet-and-attire"
+      ],
+      "site-mess": [
+        "R-CIV-003-material-stacking-labeling",
+        "R-CIV-005-spoil-waste-overheight-uncleared",
+        "R-CIV-018-poor-overall-housekeeping"
+      ]
+    }
+  }
+}
