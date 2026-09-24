@@ -1,179 +1,183 @@
 {
-  "method": "two-pass Gaussian blur of every detected head, the top of every detected person and hand-drawn text/signage regions; residual detail <= 0.1 of the original in every region; pixels outside unchanged; re-encoded without metadata",
+  "method": "Gaussian blur of hand-drawn boxes only: each visible face (helmet brim to chin, sigma 0.15 x the box's shorter side) and each identifying text (sigma 0.3 x); every person detected at confidence >= 0.5 has a face box or a recorded reason it shows no face; residual detail <= 0.1 of the original in every box; pixels outside unchanged; re-encoded without metadata",
   "images": {
     "P021": {
-      "regions": 1,
-      "by_kind": {
-        "person_top": 1
-      },
-      "max_residual_detail_ratio": 0.0016,
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P022": {
-      "regions": 0,
-      "by_kind": {},
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
       "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P023": {
-      "regions": 8,
-      "by_kind": {
-        "head": 5,
-        "manual": 3
-      },
-      "max_residual_detail_ratio": 0.0117,
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P024": {
-      "regions": 0,
-      "by_kind": {},
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
       "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P025": {
-      "regions": 0,
-      "by_kind": {},
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
       "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P026": {
-      "regions": 0,
-      "by_kind": {},
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
       "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P027": {
-      "regions": 5,
-      "by_kind": {
-        "head": 4,
-        "manual": 1
-      },
-      "max_residual_detail_ratio": 0.0054,
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P028": {
-      "regions": 1,
-      "by_kind": {
-        "manual": 1
-      },
-      "max_residual_detail_ratio": 0.0014,
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P029": {
-      "regions": 0,
-      "by_kind": {},
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
       "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P030": {
-      "regions": 3,
-      "by_kind": {
-        "head": 2,
-        "person_top": 1
-      },
-      "max_residual_detail_ratio": 0.002,
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P031": {
-      "regions": 2,
-      "by_kind": {
-        "head": 2
-      },
-      "max_residual_detail_ratio": 0.0035,
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P032": {
-      "regions": 2,
-      "by_kind": {
-        "head": 2
-      },
-      "max_residual_detail_ratio": 0.0005,
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P033": {
-      "regions": 0,
-      "by_kind": {},
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
       "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P034": {
-      "regions": 0,
-      "by_kind": {},
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
       "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P035": {
-      "regions": 0,
-      "by_kind": {},
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
       "max_residual_detail_ratio": 0.0,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P036": {
-      "regions": 14,
-      "by_kind": {
-        "head": 6,
-        "person_top": 6,
-        "manual": 2
-      },
-      "max_residual_detail_ratio": 0.0213,
+      "faces": 2,
+      "text_regions": 3,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0055,
+      "max_residual_detail_ratio": 0.0742,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P037": {
-      "regions": 7,
-      "by_kind": {
-        "head": 4,
-        "person_top": 3
-      },
-      "max_residual_detail_ratio": 0.0021,
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0131,
+      "max_residual_detail_ratio": 0.0048,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P038": {
-      "regions": 7,
-      "by_kind": {
-        "head": 2,
-        "person_top": 2,
-        "manual": 3
-      },
-      "max_residual_detail_ratio": 0.0058,
+      "faces": 1,
+      "text_regions": 3,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.004,
+      "max_residual_detail_ratio": 0.0211,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P039": {
-      "regions": 4,
-      "by_kind": {
-        "head": 1,
-        "person_top": 1,
-        "manual": 2
-      },
-      "max_residual_detail_ratio": 0.0015,
+      "faces": 1,
+      "text_regions": 3,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0044,
+      "max_residual_detail_ratio": 0.0012,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     },
     "P040": {
-      "regions": 10,
-      "by_kind": {
-        "head": 4,
-        "person_top": 3,
-        "manual": 3
-      },
-      "max_residual_detail_ratio": 0.0251,
+      "faces": 1,
+      "text_regions": 2,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0088,
+      "max_residual_detail_ratio": 0.0016,
       "pixels_changed_outside": 0,
       "exif_stripped": true
     }

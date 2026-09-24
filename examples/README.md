@@ -11,25 +11,27 @@ demonstration set, not an evaluation set. SHA-256 checksums and dimensions are i
 
 - **P001–P020** were chosen to contain no identifiable individuals or label-bearing markings,
   and were reviewed by hand.
-- **P021–P040** include workers, so they are anonymised with a Gaussian blur. Each image blurs:
-  - every head found by a hard-hat/head detector, at low confidence, with the box padded by 35%;
-  - the top 30% of every person found by a COCO person detector, as a second net for missed heads;
-  - hand-drawn boxes over text that could identify a company, site or device: names on vests,
-    brand names on formwork, posted documents, site signage and a camera watermark. Each box was
-    drawn while viewing the image at full resolution.
+- **P021–P040** include workers, so their faces are blurred. Only what could identify someone is
+  blurred, with boxes drawn by hand while viewing each image at full resolution:
+  - each visible face, from the helmet brim to the chin. The helmet, vest, harness and posture
+    stay visible, because they are what the screening rules check;
+  - text that names a company or the site: names and logos on vests and helmets, a posted
+    document, company signs and a hotel sign. Generic safety slogans (for example 当心坠落,
+    "beware of falling") and product brands stay readable.
 
-  Every region gets a two-pass Gaussian blur with sigma = max(8 px, 0.25 × the region's shorter
-  side), so larger regions get a stronger blur. The export checks the pixels and refuses to write
-  an image that fails:
-  - in every region, the residual detail (variance of the Laplacian) must fall to at most 0.10 of
-    the original. The largest ratio across the 20 images is 0.025;
-  - every pixel outside the regions must be unchanged. The count is 0 for all 20;
+  Each box gets one Gaussian blur with sigma = 0.15 × the box's shorter side for a face and
+  0.30 × for text, at least 3 px. At most 1.4% of any image is blurred. The export checks
+  the result and refuses to write an image that fails:
+  - a person detector must find no person without a face box, unless a reason is recorded (seen
+    from behind, head out of frame, or a head a few pixels tall). Seven people are recorded this
+    way;
+  - in every box, the residual detail (variance of the Laplacian) must fall to at most 0.10 of
+    the original. The largest ratio across the 20 images is 0.074;
+  - every pixel outside the boxes must be unchanged. The count is 0 for all 20;
   - the file is re-encoded from pixels (JPEG q90) and read back to confirm it carries no
     EXIF, ICC profile or comment.
 
-  `sample_images/anonymisation.json` records the region count, their kinds and these checks for
-  each image. Generic safety slogans (for example 当心坠落, "beware of falling") are left
-  readable because they are part of what a screener sees.
+  `sample_images/anonymisation.json` records these counts and checks for each image.
 
 ## RCASR guide: screen images with the frozen configuration the robot runs
 
