@@ -1,0 +1,14 @@
+{
+  "pairs": 1622,
+  "ledger": {
+    "Qwen/Qwen3.5-9B": {
+      "stage4_evidence": {
+        "calls": 1622,
+        "prompt_tokens": 4484740,
+        "completion_tokens": 768532,
+        "calls_without_usage": 0,
+        "latency_s": 24543.539
+      }
+    }
+  }
+}

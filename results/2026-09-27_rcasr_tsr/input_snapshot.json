@@ -1,0 +1,87 @@
+{
+  "code_base_commit": "519d5c9fd63067df9837db14507283ac14986891",
+  "file_sha256": {
+    "data/annotations/image_rule_gold.json": "c5674b785ec716b42fe2533fc342d72c6c0554a6e75d8d1940ba8bf055f35d18",
+    "data/rule_assets/rule_index.json": "1043f483e63208732fd175004ffa005ca5c7b8ecd538d40ae6cc9d13125bf300",
+    "data/rules/proposed/rcasr_v1_tsr.json": "4e0038a9ae6d70046eed27e3cca2beec79ad82319bdb800abc25bee5f1750706",
+    "data/rules/proposed/typed_evidence_v1.json": "bf754ad294a7f640f05a37623d15e7ad3fdc2e2f4003e223b36c9995ed7a0f5a",
+    "data/rules/rules_en.json": "1cfd2dd2665d641913186255e1a04d3d9843985873d90ba4a3f04d21d0acaf84",
+    "data/splits/site_keys_confirmed.json": "a0a1e106525eaad85ee00aef288fee1b22fb988b499cb6be5ad90c806d1c9957",
+    "docs/paper_v3/design/TWO_STAGE_PRIOR_PRESPEC.md": "aa71b9111b3b394a5bb3319283a494e529a2c9500d9fc50bfdc2cfb6de7f2a99",
+    "experiments/retrieval/eval_rcasr.py": "eaa42a6ff4120fa8d5520b0c1ac74077f0860a0b48a39526c72ba11baf5aa8fc",
+    "experiments/retrieval/eval_rcasr_tsr.py": "4baad272a53b2dd5efab3be7fda0ccca3a2ff1ffd9bbd885370c221c7c5349fb",
+    "pyproject.toml": "228260c5f30c04792cc43a887c65ab4e4471b65dae15109a8f495d808d8e65bc",
+    "results/2026-09-22_rcasr_v2/input_snapshot.json": "b78d41d1d9e9ba0bba4f784e60f0223cea2070ff9384f85ea4dd15280d2ee692",
+    "results/2026-09-22_rcasr_v2/rcasr_results.json": "c856a7e7fe1f2c254752ebea0ebff5c779eed0f4cc4275c34b7d0825f9d6de11",
+    "results/2026-09-22_rcasr_v2/rcasr_rows.jsonl": "c45b16bea869ba3b5355bd5cdb0c7d1a7221db861822d8b34f301f129c942801",
+    "results/data_audit/near_duplicates.json": "049199d496ef1d8db6a2245274961d3cfa4f3bf5a29faafca4173e66e4aea48b",
+    "results/retrieval/agent_grep_visual_eval.json": "907d9db9cbdb78160f3580c43e317cc15155520926c6c8ea55154cd5e161063a",
+    "results/retrieval/gold_facts_generic_en.json": "dab45ebed62c438a04aa842c7998b813dd06dff4f2b6e074c8904e53f27e8fd7",
+    "src/atom_posterior.py": "ecc56f2fec46803a6f13b0614a23457efaf07335b367b066a1b36e9ec386a1a5",
+    "src/config.py": "07b1ddafef3db6fb0dcbcab06170dfcbb23bedda8f451f3b281a456649300223",
+    "src/images.py": "6237283139e955fd896f0cea7c5aacb1d842b4690afc23f0ef0bd0d455b648e6",
+    "src/rcasr.py": "3237778300ed23ea37a3913cca9da2ae61e02a585bbf003eabcc13cafc009fbd",
+    "src/rcasr_experiment.py": "8088ad20f0a84dc9b9fa274843e9dfee614e50efc6f8b63b9cb109c85fa2a061",
+    "src/research_snapshot.py": "802ffd0b82cfb55617cc752e013b1ad007d2917c5f03833fd0f10ab77d72e051",
+    "src/retrieval/base.py": "133643d90e181e20e331b88c50fc37dcc55df83804171d833705fab9e5132051",
+    "src/retrieval/bm25.py": "2835d7dbcc0263105da5e2dff5034e909d586f4cdd63954ff315ef73a92c0d8f",
+    "src/retrieval/cross_encoder.py": "7ad1a4b36e952c424043a24e4bb2f1d1509b2ff1a8fab4b2674d528ecdc94a98",
+    "src/retrieval/siglip.py": "3632a1041c8cf558e1888c97dbf06656648407556cdc7c8e69d3c80ca456be33",
+    "src/set_selection.py": "92358ede8c0e2ca103ba27f774f5047f1b7cfaeb4a2b3fe73effa90c5e75cb24",
+    "src/set_selection_metrics.py": "f7422249cbfd8fd171f56482fff94c55969b0401338b8ceeeb4436ff93309352",
+    "src/set_selection_report.py": "d88c40ff69d2aa5fd79ee581126042276f8da968724894aaa637ab3964d6b4ca",
+    "src/site_partition.py": "932b650e22029acd3b74983831bfcd81000940a86673aa032df3aaa86974c0d8",
+    "src/two_stage_prior.py": "187829dac6c4998da33437bf1126b55be56952d9dfa2d319eefc533f2b305bda",
+    "src/typed_predicates.py": "31a9fb48c795746d05560c6cb0a1c7d1d337d022bfc039de7e7160a2fc3c132d",
+    "src/typed_schema.py": "6e3a34c87d373111009ac7c4fd440190f5cae12a82af76216abae8c647622240",
+    "tests/test_atom_posterior.py": "7d23bf40996042f911ea6f7489e6f8fc7ebecd7b8826d16424bf69762f516cad",
+    "tests/test_rcasr.py": "f499411f47e315d5cf77f7db2026571437840cb99521a06ff0646a2242c89c73",
+    "tests/test_site_partition.py": "ee4153158ceaeafc2a2bd97e58b4b7cb4dac37e8a8f97349fc52f87771cb6fec",
+    "tests/test_two_stage_prior.py": "daafa616491e3635c53088d0ee3435c21eae7579235d2981f54fb235803bb020",
+    "uv.lock": "82bfad6e38b66f70c3878c0fec1ba944a1a464881b884d6ef0ff4053ae6c9e2d"
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "pyarrow": "25.0.1"
+  },
+  "code_identity": "base commit plus exact working-file hashes; not a clean-commit claim",
+  "plan_path": "docs/paper_v3/design/TWO_STAGE_PRIOR_PRESPEC.md",
+  "config_path": "data/rules/proposed/rcasr_v1_tsr.json",
+  "base_freeze": "results/2026-09-22_rcasr_v2",
+  "models": {
+    "stage1": {
+      "model_id": "google/siglip2-base-patch16-224",
+      "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "sha256": {
+        "config.json": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+        "model.safetensors": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+        "preprocessor_config.json": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+        "special_tokens_map.json": "baec30ea10906f16adb8c18af7a34023002c1746542612b8b41c9f09e1351351",
+        "tokenizer.json": "cb9140fae3ac5122c972d37adf83e1248471a38147ad76f8215c8872c6fd8322",
+        "tokenizer_config.json": "14afe629fe4959b9e0d51e1852b8d9f7ad074f90a1a7125a4fcdd17f06e78fc8"
+      },
+      "parameters": 375187970
+    },
+    "stage2": {
+      "model_id": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "revision": "c5ee24cb16019beea0893ab7796b1df96625c6b8",
+      "sha256": {
+        "config.json": "380e02c93f431831be65d99a4e7e5f67c133985bf2e77d9d4eba46847190bacc",
+        "model.safetensors": "821d1aa69520101d6e0737f78a042ae25b19e5cb9160701909d10434f4aeb0ae",
+        "special_tokens_map.json": "3c3507f36dff57bce437223db3b3081d1e2b52ec3e56ee55438193ecb2c94dd6",
+        "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+        "tokenizer_config.json": "a5c2e5a7b1a29a0702cd28c08a399b5ecc110c263009d17f7e3b415f25905fd8",
+        "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+      },
+      "parameters": 22714113
+    }
+  },
+  "created_at": "2026-09-27T03:49:01.722439+00:00",
+  "scope": "346 site images, site-grouped cross-fitting on the v2 folds; retrieval level; retrospective, not an independent test",
+  "private_images": {
+    "n": 500,
+    "sha256_of_sorted_name_hash_lines": "f387356e0882e145039654af450a5ce14bbc06b4fc8ab32a2dbf11cd41ecf8ee"
+  },
+  "redaction": "the per-image entries (private photographs) are collapsed into one digest"
+}

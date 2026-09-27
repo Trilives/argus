@@ -1,0 +1,457 @@
+{
+  "plan": "docs/paper_v3/design/MODEL_SWAP_PRESPEC.md",
+  "reference": {
+    "rcasr_w2": {
+      "gv_recall": 0.48722986247544203,
+      "gv_precision_closed_world": 0.41680672268907565,
+      "gv_f1_closed_world": 0.4492753623188406,
+      "false_alarms_per_image": 1.0028901734104045,
+      "false_alarm_gold_status": {
+        "unrecorded": 334,
+        "compliant": 12,
+        "undetermined": 1
+      },
+      "misses_per_image": 0.7543352601156069,
+      "need_review_rate": 0.05135520684736091,
+      "exact_image_success": 0.15606936416184972,
+      "macro_family_recall": {
+        "BHV": 0.7571428571428571,
+        "CIV": 0.1724137931034483,
+        "EDG": 0.4068627450980392,
+        "OPN": 0.576271186440678
+      },
+      "width_mean": 2.0260115606936417,
+      "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+    },
+    "bm25_w3": {
+      "gv_recall": 0.43418467583497056,
+      "gv_precision_closed_world": 0.3328313253012048,
+      "gv_f1_closed_world": 0.3768115942028986,
+      "false_alarms_per_image": 1.2803468208092486,
+      "false_alarm_gold_status": {
+        "unrecorded": 428,
+        "compliant": 14,
+        "undetermined": 1
+      },
+      "misses_per_image": 0.8323699421965318,
+      "need_review_rate": 0.03464870067372473,
+      "exact_image_success": 0.09248554913294797,
+      "macro_family_recall": {
+        "BHV": 0.6,
+        "CIV": 0.06896551724137931,
+        "EDG": 0.28431372549019607,
+        "OPN": 0.6610169491525424
+      },
+      "width_mean": 3.0028901734104045,
+      "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+    }
+  },
+  "arms": {
+    "q9": {
+      "model": "Qwen/Qwen3.5-9B",
+      "metrics": {
+        "rcasr_w3": {
+          "gv_recall": 0.5658153241650294,
+          "gv_precision_closed_world": 0.3317972350230415,
+          "gv_f1_closed_world": 0.41830065359477125,
+          "false_alarms_per_image": 1.676300578034682,
+          "false_alarm_gold_status": {
+            "unrecorded": 565,
+            "compliant": 14,
+            "undetermined": 1
+          },
+          "misses_per_image": 0.638728323699422,
+          "need_review_rate": 0.07647628267182963,
+          "exact_image_success": 0.0953757225433526,
+          "macro_family_recall": {
+            "BHV": 0.35714285714285715,
+            "CIV": 0.29310344827586204,
+            "EDG": 0.5588235294117647,
+            "OPN": 0.7457627118644068
+          },
+          "width_mean": 2.985549132947977,
+          "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+        },
+        "rcasr_w2": {
+          "gv_recall": 0.4774066797642436,
+          "gv_precision_closed_world": 0.40298507462686567,
+          "gv_f1_closed_world": 0.4370503597122302,
+          "false_alarms_per_image": 1.0404624277456647,
+          "false_alarm_gold_status": {
+            "unrecorded": 348,
+            "compliant": 12
+          },
+          "misses_per_image": 0.7687861271676301,
+          "need_review_rate": 0.05209840810419682,
+          "exact_image_success": 0.13872832369942195,
+          "macro_family_recall": {
+            "BHV": 0.34285714285714286,
+            "CIV": 0.1896551724137931,
+            "EDG": 0.45588235294117646,
+            "OPN": 0.6497175141242938
+          },
+          "width_mean": 1.9971098265895955,
+          "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+        },
+        "bm25_w3": {
+          "gv_recall": 0.45972495088408644,
+          "gv_precision_closed_world": 0.30115830115830117,
+          "gv_f1_closed_world": 0.3639191290824261,
+          "false_alarms_per_image": 1.569364161849711,
+          "false_alarm_gold_status": {
+            "unrecorded": 533,
+            "compliant": 10
+          },
+          "misses_per_image": 0.7947976878612717,
+          "need_review_rate": 0.10164569215876089,
+          "exact_image_success": 0.03468208092485549,
+          "macro_family_recall": {
+            "BHV": 0.21428571428571427,
+            "CIV": 0.06896551724137931,
+            "EDG": 0.38235294117647056,
+            "OPN": 0.7740112994350282
+          },
+          "width_mean": 2.985549132947977,
+          "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+        }
+      },
+      "C1_within_arm": {
+        "gv_recall_delta": 0.017681728880157177,
+        "fa_per_image_delta": -0.5289017341040463,
+        "gv_recall_delta_ci": [
+          -0.02244712710323514,
+          0.056853521943477967
+        ],
+        "fa_per_image_delta_ci": [
+          -0.6826214638635923,
+          -0.37497344192634574
+        ],
+        "unit": "confirmed site unit (near-duplicate clusters fused)",
+        "n_units": 48,
+        "repeats": 2000,
+        "seed": 20260922,
+        "interpretation": "site-clustered paired bootstrap over cross-fitted held-out selections; retrospective",
+        "W1_recall_noninferior": true,
+        "W2_fewer_false_alarms": true
+      },
+      "C2_vs_reference": {
+        "gv_recall_delta": -0.00982318271119842,
+        "fa_per_image_delta": 0.037572254335260125,
+        "gv_recall_delta_ci": [
+          -0.08077169784958528,
+          0.05235113570916853
+        ],
+        "fa_per_image_delta_ci": [
+          -0.04606230650154799,
+          0.12121212121212122
+        ],
+        "recall_wording": "no detectable difference from the reference",
+        "fa_wording": "no detectable difference from the reference"
+      },
+      "C3_P1": {
+        "recall_delta": 0.1650294695481337,
+        "recall_delta_ci": [
+          0.12120964142240738,
+          0.2119419786620369
+        ],
+        "bar": 0.03,
+        "passed": true
+      },
+      "fit": {
+        "failed_descriptions": 0,
+        "widths": {
+          "rcasr_w3": 2.985549132947977,
+          "rcasr_w2": 1.9971098265895955,
+          "bm25_w3": 2.985549132947977
+        }
+      },
+      "judge": {
+        "pairs": 1622,
+        "parse_errors": 0,
+        "seconds_mean": 15.221366948516808
+      },
+      "latency": {
+        "latency_gpu48": {
+          "label": "gpu48",
+          "n": 30,
+          "errors": 0,
+          "p50_s": 32.84267177199945,
+          "p95_s": 37.37206407391932,
+          "perception_p50_s": 21.726016608532518
+        }
+      }
+    },
+    "q9f": {
+      "model": "Qwen/Qwen3.5-9B-FP8",
+      "metrics": {
+        "rcasr_w3": {
+          "gv_recall": 0.5540275049115914,
+          "gv_precision_closed_world": 0.319365798414496,
+          "gv_f1_closed_world": 0.4051724137931034,
+          "false_alarms_per_image": 1.7369942196531791,
+          "false_alarm_gold_status": {
+            "unrecorded": 583,
+            "compliant": 17,
+            "undetermined": 1
+          },
+          "misses_per_image": 0.6560693641618497,
+          "need_review_rate": 0.07932011331444759,
+          "exact_image_success": 0.06936416184971098,
+          "macro_family_recall": {
+            "BHV": 0.38571428571428573,
+            "CIV": 0.2413793103448276,
+            "EDG": 0.5147058823529411,
+            "OPN": 0.768361581920904
+          },
+          "width_mean": 3.060693641618497,
+          "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+        },
+        "rcasr_w2": {
+          "gv_recall": 0.4518664047151277,
+          "gv_precision_closed_world": 0.3872053872053872,
+          "gv_f1_closed_world": 0.4170444242973708,
+          "false_alarms_per_image": 1.0520231213872833,
+          "false_alarm_gold_status": {
+            "unrecorded": 356,
+            "undetermined": 1,
+            "compliant": 7
+          },
+          "misses_per_image": 0.8063583815028902,
+          "need_review_rate": 0.06512301013024602,
+          "exact_image_success": 0.1069364161849711,
+          "macro_family_recall": {
+            "BHV": 0.35714285714285715,
+            "CIV": 0.1206896551724138,
+            "EDG": 0.4215686274509804,
+            "OPN": 0.632768361581921
+          },
+          "width_mean": 1.9971098265895955,
+          "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+        },
+        "bm25_w3": {
+          "gv_recall": 0.4656188605108055,
+          "gv_precision_closed_world": 0.29924242424242425,
+          "gv_f1_closed_world": 0.36433512682551883,
+          "false_alarms_per_image": 1.6040462427745665,
+          "false_alarm_gold_status": {
+            "unrecorded": 539,
+            "compliant": 14,
+            "undetermined": 2
+          },
+          "misses_per_image": 0.7861271676300579,
+          "need_review_rate": 0.10292728989612843,
+          "exact_image_success": 0.023121387283236993,
+          "macro_family_recall": {
+            "BHV": 0.22857142857142856,
+            "CIV": 0.017241379310344827,
+            "EDG": 0.39705882352941174,
+            "OPN": 0.7853107344632768
+          },
+          "width_mean": 3.060693641618497,
+          "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+        }
+      },
+      "C1_within_arm": {
+        "gv_recall_delta": -0.013752455795677798,
+        "fa_per_image_delta": -0.5520231213872833,
+        "gv_recall_delta_ci": [
+          -0.05263157894736842,
+          0.02478189739938289
+        ],
+        "fa_per_image_delta_ci": [
+          -0.6900050737113343,
+          -0.3912894986932764
+        ],
+        "unit": "confirmed site unit (near-duplicate clusters fused)",
+        "n_units": 48,
+        "repeats": 2000,
+        "seed": 20260922,
+        "interpretation": "site-clustered paired bootstrap over cross-fitted held-out selections; retrospective",
+        "W1_recall_noninferior": false,
+        "W2_fewer_false_alarms": true
+      },
+      "C2_vs_reference": {
+        "gv_recall_delta": -0.035363457760314354,
+        "fa_per_image_delta": 0.04913294797687873,
+        "gv_recall_delta_ci": [
+          -0.10485510457284651,
+          0.03216755767604111
+        ],
+        "fa_per_image_delta_ci": [
+          -0.06486076999138783,
+          0.16513440287375553
+        ],
+        "recall_wording": "no detectable difference from the reference",
+        "fa_wording": "no detectable difference from the reference"
+      },
+      "C3_P1": {
+        "recall_delta": 0.14538310412573674,
+        "recall_delta_ci": [
+          0.08179022463666308,
+          0.20643874770123855
+        ],
+        "bar": 0.03,
+        "passed": true
+      },
+      "fit": {
+        "failed_descriptions": 0,
+        "widths": {
+          "rcasr_w3": 3.060693641618497,
+          "rcasr_w2": 1.9971098265895955,
+          "bm25_w3": 3.060693641618497
+        }
+      },
+      "judge": {
+        "pairs": 1655,
+        "parse_errors": 0,
+        "seconds_mean": 11.97156358303529
+      },
+      "latency": {
+        "latency_gpu16cap": {
+          "label": "gpu16cap",
+          "n": 30,
+          "errors": 0,
+          "p50_s": 29.855286591511685,
+          "p95_s": 34.13828295152634,
+          "perception_p50_s": 20.001460651517846
+        }
+      }
+    },
+    "q27": {
+      "model": "Qwen3.8-27B-FP8",
+      "metrics": {
+        "rcasr_w3": {
+          "gv_recall": 0.5717092337917485,
+          "gv_precision_closed_world": 0.32513966480446926,
+          "gv_f1_closed_world": 0.41452991452991456,
+          "false_alarms_per_image": 1.745664739884393,
+          "false_alarm_gold_status": {
+            "unrecorded": 579,
+            "undetermined": 2,
+            "compliant": 23
+          },
+          "misses_per_image": 0.630057803468208,
+          "need_review_rate": 0.058150619637750235,
+          "exact_image_success": 0.0838150289017341,
+          "macro_family_recall": {
+            "BHV": 0.8285714285714286,
+            "CIV": 0.43103448275862066,
+            "EDG": 0.43137254901960786,
+            "OPN": 0.6779661016949152
+          },
+          "width_mean": 3.031791907514451,
+          "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+        },
+        "rcasr_w2": {
+          "gv_recall": 0.4538310412573674,
+          "gv_precision_closed_world": 0.37745098039215685,
+          "gv_f1_closed_world": 0.41213202497769846,
+          "false_alarms_per_image": 1.1011560693641618,
+          "false_alarm_gold_status": {
+            "unrecorded": 361,
+            "undetermined": 2,
+            "compliant": 18
+          },
+          "misses_per_image": 0.8034682080924855,
+          "need_review_rate": 0.04428571428571428,
+          "exact_image_success": 0.1531791907514451,
+          "macro_family_recall": {
+            "BHV": 0.8142857142857143,
+            "CIV": 0.22413793103448276,
+            "EDG": 0.28431372549019607,
+            "OPN": 0.5819209039548022
+          },
+          "width_mean": 2.023121387283237,
+          "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+        },
+        "bm25_w3": {
+          "gv_recall": 0.4243614931237721,
+          "gv_precision_closed_world": 0.32286995515695066,
+          "gv_f1_closed_world": 0.36672325976230896,
+          "false_alarms_per_image": 1.3092485549132948,
+          "false_alarm_gold_status": {
+            "unrecorded": 439,
+            "compliant": 13,
+            "undetermined": 1
+          },
+          "misses_per_image": 0.846820809248555,
+          "need_review_rate": 0.01811248808388942,
+          "exact_image_success": 0.08959537572254335,
+          "macro_family_recall": {
+            "BHV": 0.7714285714285715,
+            "CIV": 0.08620689655172414,
+            "EDG": 0.20588235294117646,
+            "OPN": 0.6497175141242938
+          },
+          "width_mean": 3.031791907514451,
+          "precision_note": "closed-world precision treats unrecorded pairs as non-violations; assumption-dependent, not an estimate of true precision"
+        }
+      },
+      "C1_within_arm": {
+        "gv_recall_delta": 0.029469548133595314,
+        "fa_per_image_delta": -0.20809248554913307,
+        "gv_recall_delta_ci": [
+          -0.013536460839085312,
+          0.0743595041322314
+        ],
+        "fa_per_image_delta_ci": [
+          -0.40156130634071807,
+          0.012636174752919723
+        ],
+        "unit": "confirmed site unit (near-duplicate clusters fused)",
+        "n_units": 48,
+        "repeats": 2000,
+        "seed": 20260922,
+        "interpretation": "site-clustered paired bootstrap over cross-fitted held-out selections; retrospective",
+        "W1_recall_noninferior": true,
+        "W2_fewer_false_alarms": false
+      },
+      "C2_vs_reference": {
+        "gv_recall_delta": -0.03339882121807464,
+        "fa_per_image_delta": 0.09826589595375723,
+        "gv_recall_delta_ci": [
+          -0.08186178613095069,
+          0.01710870988867052
+        ],
+        "fa_per_image_delta_ci": [
+          -0.04661679025423729,
+          0.25224172038609766
+        ],
+        "recall_wording": "no detectable difference from the reference",
+        "fa_wording": "no detectable difference from the reference"
+      },
+      "C3_P1": {
+        "recall_delta": 0.1552062868369351,
+        "recall_delta_ci": [
+          0.09930381921249022,
+          0.21206137860549626
+        ],
+        "bar": 0.03,
+        "passed": true
+      },
+      "fit": {
+        "failed_descriptions": 0,
+        "widths": {
+          "rcasr_w3": 3.031791907514451,
+          "rcasr_w2": 2.023121387283237,
+          "bm25_w3": 3.031791907514451
+        }
+      },
+      "judge": {
+        "pairs": 1674,
+        "parse_errors": 0,
+        "seconds_mean": 47.84308020372408
+      },
+      "latency": {
+        "latency_gpu48": {
+          "label": "gpu48",
+          "n": 30,
+          "errors": 0,
+          "p50_s": 85.46118564798962,
+          "p95_s": 90.4456395490677,
+          "perception_p50_s": 54.93947867298266
+        }
+      }
+    }
+  }
+}

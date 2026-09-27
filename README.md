@@ -21,6 +21,11 @@ Headline results (all pre-specified; the internal evaluation uses site-grouped c
 - **ConstructionSite-10k (public).** Frozen before public scoring, RCASR raised violation detection
   for harness use from 0.08 to 0.80 and for PPE from 0.43 to 0.67. It lost the excavator-radius
   rule; the mechanism is reported in the paper.
+- **Two-stage retrieval prior.** On a SigLIP 2 → cross-encoder prior, RCASR raised recall at matched
+  width 3 from 0.509 to 0.640 (+0.132, 95% site CI [+0.085, +0.171]). As a fixed top-3, that retriever
+  was no better than BM25, and RCASR on it stayed below RCASR on BM25.
+- **One model end to end.** Run on a single 9B model, the whole chain showed no detectable difference
+  in recall or false alarms from the reported three-model configuration.
 - **Conformal risk control.** It held its miss-risk target, at a price of about ten candidates per
   image at α = 0.10.
 - **Patrol robot.** The configuration runs on a quadruped patrol robot. The deployed runtime is
@@ -31,7 +36,9 @@ Headline results (all pre-specified; the internal evaluation uses site-grouped c
 > top of the ARGus screening framework of the earlier study (releases v1.x), whose code, results and
 > online supplement are kept unchanged below. Release **v2.1.0** adds `run_rcasr.py`, a guide that
 > screens ConstructionSite-10k test images with your own gated access, and 20 more anonymised sample
-> images (see [`examples/README.md`](examples/README.md)).
+> images (see [`examples/README.md`](examples/README.md)). Release **v2.1.1** adds the artifacts behind two
+> further results of the paper, the single-model chain and the two-stage retrieval prior, and re-blurs samples
+> P021–P040 on faces and identifying text only, so protective equipment stays visible.
 
 ## RCASR: what was added in v2.0.0
 
@@ -50,7 +57,9 @@ experiments/retrieval/
 ├── judge_rcasr.py, judge_rcasr_shard.py   # frozen end-to-end judge over the selected sets
 ├── eval_lowwidth_e2.py      # the pre-specified width-2 arm
 ├── eval_rcasr_public.py     # public auxiliary evaluation (ConstructionSite-10k)
-└── eval_s34_default.py      # the no-subject abstention default adopted by the deployed judge
+├── eval_s34_default.py      # the no-subject abstention default adopted by the deployed judge
+├── eval_model_swap.py       # the whole chain on one model (v2.1.1)
+└── eval_rcasr_tsr.py        # RCASR on a two-stage retrieval prior (v2.1.1; src/two_stage_prior.py)
 configs/
 ├── rcasr_runtime_v1.json              # the frozen configuration the robot runs (sha256 ea624e49…)
 └── rcasr_runtime_v1_recal_site.json   # its label-free, site-recalibrated threshold (sha256 4cad9da1…)
@@ -65,13 +74,15 @@ results/2026-09-2*/                    # aggregate results + input snapshots for
 **Verify the freeze.** Each `results/2026-09-2*/input_snapshot.json` lists the SHA-256 of every input
 of that run. Paths are kept as in the research repository, so they resolve here. The analysis plans,
 frozen configurations, rule assets, experiment scripts and RCASR modules match their recorded hashes
-byte for byte (75 entries). The rest do not verify here, each for a stated reason:
+byte for byte (247 snapshot entries over 69 distinct files). The rest do not verify here, each for a stated reason:
 
 - **Restricted inputs are not released:** gold labels, images, site keys, scene facts, atom
   evidence and per-pair verdicts.
 - **Files belong to this public package, not to the research checkout:** `pyproject.toml`,
   `uv.lock`, and `src/config.py` / `src/schemas.py` (comments only).
-- **Redacted:** `results/2026-09-22_rcasr_v2/rcasr_results.json` (see Tables below).
+- **Redacted:** `results/2026-09-22_rcasr_v2/rcasr_results.json` and
+  `results/2026-09-27_rcasr_tsr/tsr_results.json` (see `results/README.md`). The two-stage run's
+  snapshot collapses its 500 image entries into one digest; its other hashes are unchanged.
 - **Re-serialised JSON:** `results/data_audit/near_duplicates.json` is the v1.x copy, with the same
   content in different formatting.
 - **Skip guard added:** `tests/test_site_partition.py` skips when the restricted site keys are

@@ -1,0 +1,398 @@
+{
+  "failed_descriptions": 0,
+  "folds": [
+    {
+      "held_out": 0,
+      "calibration_fold": 1,
+      "n_fitting": 207,
+      "n_test": 70,
+      "theta": [
+        1,
+        2
+      ],
+      "tau": 0,
+      "tau_open": 0.7,
+      "width": 3.0,
+      "threshold": 0.9330923101303151,
+      "recall": 0.68561872909699
+    },
+    {
+      "held_out": 1,
+      "calibration_fold": 2,
+      "n_fitting": 208,
+      "n_test": 69,
+      "theta": [
+        0.5,
+        2
+      ],
+      "tau": 0,
+      "tau_open": 0.7,
+      "width": 3.0,
+      "threshold": 0.9358201150693389,
+      "recall": 0.6897689768976898
+    },
+    {
+      "held_out": 2,
+      "calibration_fold": 3,
+      "n_fitting": 208,
+      "n_test": 69,
+      "theta": [
+        0.5,
+        1
+      ],
+      "tau": 0,
+      "tau_open": 0.7,
+      "width": 3.0,
+      "threshold": 0.9452086560209814,
+      "recall": 0.6842105263157895
+    },
+    {
+      "held_out": 3,
+      "calibration_fold": 4,
+      "n_fitting": 208,
+      "n_test": 69,
+      "theta": [
+        0.5,
+        2
+      ],
+      "tau": 0,
+      "tau_open": 0.7,
+      "width": 3.0,
+      "threshold": 0.9391303470188187,
+      "recall": 0.6634615384615384
+    },
+    {
+      "held_out": 4,
+      "calibration_fold": 0,
+      "n_fitting": 207,
+      "n_test": 69,
+      "theta": [
+        0.5,
+        1
+      ],
+      "tau": 0,
+      "tau_open": 0.7,
+      "width": 3.0,
+      "threshold": 0.9443359463874508,
+      "recall": 0.6440129449838188
+    }
+  ],
+  "metrics": {
+    "n_images": 346,
+    "n_positive_images": 344,
+    "n_empty_positive_images": 2,
+    "positive_pairs": 509,
+    "hits": 340,
+    "recall_micro": 0.6679764243614931,
+    "risk": 0.2791425818882466,
+    "risk_positive_only": 0.280765503875969,
+    "width_mean": 3.060693641618497,
+    "width_median": 3.0,
+    "width_p95": 7.0,
+    "width_total": 1059,
+    "cap_review_rate": 0.34971098265895956,
+    "empty_selection_rate": 0.03757225433526012,
+    "macro_rule_recall": 0.455691515663407,
+    "macro_family_recall": 0.6566473608730459,
+    "by_rule": {
+      "R-BHV-001-no-harness-at-height": {
+        "positive_support": 2,
+        "hits": 1,
+        "recall": 0.5
+      },
+      "R-BHV-002-helmet-and-attire": {
+        "positive_support": 63,
+        "hits": 62,
+        "recall": 0.9841269841269841
+      },
+      "R-BHV-008-machinery-area-not-cleared": {
+        "positive_support": 1,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-BHV-012-inattentive-unsafe-behavior": {
+        "positive_support": 4,
+        "hits": 2,
+        "recall": 0.5
+      },
+      "R-CIV-001-hoarding-missing-low": {
+        "positive_support": 6,
+        "hits": 2,
+        "recall": 0.3333333333333333
+      },
+      "R-CIV-003-material-stacking-labeling": {
+        "positive_support": 13,
+        "hits": 1,
+        "recall": 0.07692307692307693
+      },
+      "R-CIV-004-dusty-material-uncovered": {
+        "positive_support": 2,
+        "hits": 2,
+        "recall": 1.0
+      },
+      "R-CIV-005-spoil-waste-overheight-uncleared": {
+        "positive_support": 1,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-CIV-011-smoking-burning": {
+        "positive_support": 6,
+        "hits": 1,
+        "recall": 0.16666666666666666
+      },
+      "R-CIV-014-fire-access-blocked": {
+        "positive_support": 3,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-CIV-016-cable-on-ground": {
+        "positive_support": 1,
+        "hits": 1,
+        "recall": 1.0
+      },
+      "R-CIV-018-poor-overall-housekeeping": {
+        "positive_support": 26,
+        "hits": 13,
+        "recall": 0.5
+      },
+      "R-EDG-002-stair-edge": {
+        "positive_support": 73,
+        "hits": 63,
+        "recall": 0.863013698630137
+      },
+      "R-EDG-003-roof-balcony-platform-edge": {
+        "positive_support": 49,
+        "hits": 37,
+        "recall": 0.7551020408163265
+      },
+      "R-EDG-005-scaffold-structure-gap": {
+        "positive_support": 6,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-EDG-006-pit-trench-edge": {
+        "positive_support": 7,
+        "hits": 2,
+        "recall": 0.2857142857142857
+      },
+      "R-EDG-007-guardrail-construction": {
+        "positive_support": 69,
+        "hits": 15,
+        "recall": 0.21739130434782608
+      },
+      "R-OPN-001-horizontal-opening-protection": {
+        "positive_support": 107,
+        "hits": 89,
+        "recall": 0.8317757009345794
+      },
+      "R-OPN-004-vertical-and-low-sill-opening": {
+        "positive_support": 26,
+        "hits": 20,
+        "recall": 0.7692307692307693
+      },
+      "R-OPN-005-elevator-shaft-door-and-net": {
+        "positive_support": 31,
+        "hits": 23,
+        "recall": 0.7419354838709677
+      },
+      "R-OPN-009-service-shaft-opening": {
+        "positive_support": 12,
+        "hits": 6,
+        "recall": 0.5
+      },
+      "R-OPN-011-manhole-trench-cover": {
+        "positive_support": 1,
+        "hits": 0,
+        "recall": 0.0
+      }
+    },
+    "by_family": {
+      "BHV": {
+        "positive_support": 70,
+        "hits": 65,
+        "recall": 0.9285714285714286
+      },
+      "CIV": {
+        "positive_support": 58,
+        "hits": 20,
+        "recall": 0.3448275862068966
+      },
+      "EDG": {
+        "positive_support": 204,
+        "hits": 117,
+        "recall": 0.5735294117647058
+      },
+      "OPN": {
+        "positive_support": 177,
+        "hits": 138,
+        "recall": 0.7796610169491526
+      }
+    }
+  },
+  "reference_metrics": {
+    "n_images": 346,
+    "n_positive_images": 344,
+    "n_empty_positive_images": 2,
+    "positive_pairs": 509,
+    "hits": 266,
+    "recall_micro": 0.5225933202357563,
+    "risk": 0.42485549132947975,
+    "risk_positive_only": 0.4273255813953488,
+    "width_mean": 3.060693641618497,
+    "width_median": 3.0,
+    "width_p95": 4.0,
+    "width_total": 1059,
+    "cap_review_rate": 0.06069364161849711,
+    "empty_selection_rate": 0.0,
+    "macro_rule_recall": 0.3702408031242246,
+    "macro_family_recall": 0.4391962863462159,
+    "by_rule": {
+      "R-BHV-001-no-harness-at-height": {
+        "positive_support": 2,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-BHV-002-helmet-and-attire": {
+        "positive_support": 63,
+        "hits": 31,
+        "recall": 0.49206349206349204
+      },
+      "R-BHV-008-machinery-area-not-cleared": {
+        "positive_support": 1,
+        "hits": 1,
+        "recall": 1.0
+      },
+      "R-BHV-012-inattentive-unsafe-behavior": {
+        "positive_support": 4,
+        "hits": 1,
+        "recall": 0.25
+      },
+      "R-CIV-001-hoarding-missing-low": {
+        "positive_support": 6,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-CIV-003-material-stacking-labeling": {
+        "positive_support": 13,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-CIV-004-dusty-material-uncovered": {
+        "positive_support": 2,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-CIV-005-spoil-waste-overheight-uncleared": {
+        "positive_support": 1,
+        "hits": 1,
+        "recall": 1.0
+      },
+      "R-CIV-011-smoking-burning": {
+        "positive_support": 6,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-CIV-014-fire-access-blocked": {
+        "positive_support": 3,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-CIV-016-cable-on-ground": {
+        "positive_support": 1,
+        "hits": 1,
+        "recall": 1.0
+      },
+      "R-CIV-018-poor-overall-housekeeping": {
+        "positive_support": 26,
+        "hits": 1,
+        "recall": 0.038461538461538464
+      },
+      "R-EDG-002-stair-edge": {
+        "positive_support": 73,
+        "hits": 52,
+        "recall": 0.7123287671232876
+      },
+      "R-EDG-003-roof-balcony-platform-edge": {
+        "positive_support": 49,
+        "hits": 33,
+        "recall": 0.673469387755102
+      },
+      "R-EDG-005-scaffold-structure-gap": {
+        "positive_support": 6,
+        "hits": 2,
+        "recall": 0.3333333333333333
+      },
+      "R-EDG-006-pit-trench-edge": {
+        "positive_support": 7,
+        "hits": 0,
+        "recall": 0.0
+      },
+      "R-EDG-007-guardrail-construction": {
+        "positive_support": 69,
+        "hits": 1,
+        "recall": 0.014492753623188406
+      },
+      "R-OPN-001-horizontal-opening-protection": {
+        "positive_support": 107,
+        "hits": 98,
+        "recall": 0.9158878504672897
+      },
+      "R-OPN-004-vertical-and-low-sill-opening": {
+        "positive_support": 26,
+        "hits": 23,
+        "recall": 0.8846153846153846
+      },
+      "R-OPN-005-elevator-shaft-door-and-net": {
+        "positive_support": 31,
+        "hits": 18,
+        "recall": 0.5806451612903226
+      },
+      "R-OPN-009-service-shaft-opening": {
+        "positive_support": 12,
+        "hits": 3,
+        "recall": 0.25
+      },
+      "R-OPN-011-manhole-trench-cover": {
+        "positive_support": 1,
+        "hits": 0,
+        "recall": 0.0
+      }
+    },
+    "by_family": {
+      "BHV": {
+        "positive_support": 70,
+        "hits": 33,
+        "recall": 0.4714285714285714
+      },
+      "CIV": {
+        "positive_support": 58,
+        "hits": 3,
+        "recall": 0.05172413793103448
+      },
+      "EDG": {
+        "positive_support": 204,
+        "hits": 88,
+        "recall": 0.43137254901960786
+      },
+      "OPN": {
+        "positive_support": 177,
+        "hits": 142,
+        "recall": 0.8022598870056498
+      }
+    }
+  },
+  "C3_P1_rcasr_bm25_vs_bm25": {
+    "recall_delta": 0.14538310412573674,
+    "recall_delta_ci": [
+      0.08179022463666308,
+      0.20643874770123855
+    ],
+    "bar": 0.03,
+    "passed": true
+  },
+  "widths": {
+    "rcasr_w3": 3.060693641618497,
+    "rcasr_w2": 1.9971098265895955,
+    "bm25_w3": 3.060693641618497
+  }
+}

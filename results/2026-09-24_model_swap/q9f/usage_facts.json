@@ -1,0 +1,14 @@
+{
+  "images": 346,
+  "ledger": {
+    "Qwen/Qwen3.5-9B-FP8": {
+      "stage1_facts": {
+        "calls": 346,
+        "prompt_tokens": 686187,
+        "completion_tokens": 75650,
+        "calls_without_usage": 0,
+        "latency_s": 2554.303
+      }
+    }
+  }
+}

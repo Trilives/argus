@@ -1,0 +1,14 @@
+{
+  "pairs": 1655,
+  "ledger": {
+    "Qwen/Qwen3.5-9B-FP8": {
+      "stage4_evidence": {
+        "calls": 1655,
+        "prompt_tokens": 4565722,
+        "completion_tokens": 791209,
+        "calls_without_usage": 0,
+        "latency_s": 19668.219
+      }
+    }
+  }
+}

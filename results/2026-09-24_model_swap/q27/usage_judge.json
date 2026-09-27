@@ -1,0 +1,14 @@
+{
+  "pairs": 1674,
+  "ledger": {
+    "Qwen3.8-27B-FP8": {
+      "stage4_evidence": {
+        "calls": 1674,
+        "prompt_tokens": 4691759,
+        "completion_tokens": 772051,
+        "calls_without_usage": 0,
+        "latency_s": 79944.785
+      }
+    }
+  }
+}

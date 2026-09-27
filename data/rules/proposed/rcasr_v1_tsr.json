@@ -1,0 +1,22 @@
+{
+  "version": "rcasr_v1_tsr",
+  "status": "frozen 2026-09-27 before the first run",
+  "plan_path": "docs/paper_v3/design/TWO_STAGE_PRIOR_PRESPEC.md",
+  "base_config": "data/rules/proposed/rcasr_v1.json",
+  "base_freeze": "results/2026-09-22_rcasr_v2",
+  "library": "data/rule_assets/rule_index.json",
+  "stage1": {
+    "model_id": "google/siglip2-base-patch16-224",
+    "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+    "text_field": "visual_retrieval_text",
+    "depth": 10
+  },
+  "stage2": {
+    "model_id": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "revision": "c5ee24cb16019beea0893ab7796b1df96625c6b8",
+    "doc_field": "evidence_chain_text",
+    "query_cache": "results/retrieval/gold_facts_generic_en.json"
+  },
+  "prior": {"map": "rank", "unretrieved": "0.5 / (M + 1)"},
+  "budget_width": 3.0
+}
