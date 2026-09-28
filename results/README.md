@@ -26,6 +26,7 @@ pins its inputs by SHA-256. The analysis plans are in `../docs/paper_v3/design/`
 | `2026-09-24_model_swap/model_swap_results.json` | The whole chain on one model (Qwen3.5-9B, its FP8 checkpoint, Qwen3.8-27B-FP8): per-arm metrics at width 2, the within-arm gates, the paired difference from the reported configuration, judge cost and per-frame latency (v2.1.1). Per-arm `input_snapshot.json`, `fit.json` and token usage are in `q9/`, `q9f/`, `q27/`. |
 | `2026-09-27_rcasr_tsr/tsr_results.json` | RCASR on a two-stage retrieval prior (SigLIP 2 top ten, cross-encoder rerank): gates T1/T2/TN, one-factor ablations at matched width, the width-3 context comparisons, CRC, leave-one-family-out, harm and cost (v2.1.1). Sites are renamed `site_NN` as in the v2 result, and lost pairs are reduced to a count. |
 | `2026-09-23_deployment/onrobot_round.json` | The on-robot round under the frozen and the site-recalibrated threshold: the proxies of the robot table. Unlabelled, so there are no accuracy figures. |
+| `2026-09-27_onrobot_fp8/onrobot_fp8.json` | The whole chain on the robot's own GPU: one Qwen3.5-9B-FP8 checkpoint as extractor and judge, on the same 76-frame round at the site-recalibrated threshold. Per-frame latency percentiles, GPU memory, serving settings, checkpoint hashes and proxies (v2.2.0; §4.9). Unlabelled, so there are no accuracy figures. Its configuration is `../configs/rcasr_runtime_v1_recal_site_q9f.json`. |
 
 The runtime configurations the robot runs are in `../configs/`.
 

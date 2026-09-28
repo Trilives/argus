@@ -38,7 +38,9 @@ Headline results (all pre-specified; the internal evaluation uses site-grouped c
 > screens ConstructionSite-10k test images with your own gated access, and 20 more anonymised sample
 > images (see [`examples/README.md`](examples/README.md)). Release **v2.1.1** adds the artifacts behind two
 > further results of the paper, the single-model chain and the two-stage retrieval prior, and re-blurs samples
-> P021–P040 on faces and identifying text only, so protective equipment stays visible.
+> P021–P040 on faces and identifying text only, so protective equipment stays visible. Release **v2.2.0**
+> publishes the 500 gold photographs with workers' faces blurred (`data/gold_images/`, CC BY 4.0), and adds
+> the configuration and record of the whole chain run on the robot's own GPU.
 
 ## RCASR: what was added in v2.0.0
 
@@ -62,7 +64,8 @@ experiments/retrieval/
 └── eval_rcasr_tsr.py        # RCASR on a two-stage retrieval prior (v2.1.1; src/two_stage_prior.py)
 configs/
 ├── rcasr_runtime_v1.json              # the frozen configuration the robot runs (sha256 ea624e49…)
-└── rcasr_runtime_v1_recal_site.json   # its label-free, site-recalibrated threshold (sha256 4cad9da1…)
+├── rcasr_runtime_v1_recal_site.json   # its label-free, site-recalibrated threshold (sha256 4cad9da1…)
+└── rcasr_runtime_v1_recal_site_q9f.json  # the same, one FP8 checkpoint as extractor and judge (16a14292…)
 data/rules/proposed/rcasr_v1.json      # frozen RCASR hyper-parameters and pre-specified grid
 data/rules/proposed/typed_evidence_v1.json   # the 131-atom vocabulary and per-provision bindings
 data/rule_assets/                      # rule units and the BM25 index built from the library
@@ -76,8 +79,9 @@ of that run. Paths are kept as in the research repository, so they resolve here.
 frozen configurations, rule assets, experiment scripts and RCASR modules match their recorded hashes
 byte for byte (247 snapshot entries over 69 distinct files). The rest do not verify here, each for a stated reason:
 
-- **Restricted inputs are not released:** gold labels, images, site keys, scene facts, atom
-  evidence and per-pair verdicts.
+- **Restricted inputs are not released:** the unblurred images (the released ones in
+  `data/gold_images/` are blurred and scaled, so their hashes differ), the full gold records, site
+  keys, scene facts, atom evidence and per-pair verdicts.
 - **Files belong to this public package, not to the research checkout:** `pyproject.toml`,
   `uv.lock`, and `src/config.py` / `src/schemas.py` (comments only).
 - **Redacted:** `results/2026-09-22_rcasr_v2/rcasr_results.json` and
@@ -130,7 +134,7 @@ argus/
 ├── data/
 │   ├── rules/rules_en.json      # the instantiated rule library (42 rules)
 │   ├── rules/rules_schema_en.json
-│   └── README.md                # gold data card (evaluation set is on request)
+│   └── README.md                # gold data card; gold_images/ = the 500 blurred gold images
 ├── examples/                    # 40 anonymised sample images + the RCASR guide (public images too)
 ├── paper/supplement.pdf         # the paper's online supplement (ASCE no longer hosts these)
 ├── results/                     # aggregate metrics behind the paper's tables
@@ -223,15 +227,16 @@ guessed), retrieval text, and `rectification_advice`. See `data/rules/rules_sche
 ## Data availability
 
 - **Included:** all source code (ARGus and RCASR), the rule library and schema, the RCASR atom
-  vocabulary and frozen configurations, the analysis plans, the stage prompts, 40 anonymised
-  **sample images** (`examples/sample_images/`, no gold labels), and the **aggregate result
-  summaries** and input snapshots behind the papers' tables (`results/`).
+  vocabulary and frozen configurations, the analysis plans, the stage prompts, the **500 gold
+  images** with workers' faces blurred (`data/gold_images/`, CC BY 4.0) and their **label-only gold**
+  (`reproduce/gold_labels.json`), 40 anonymised **sample images** (`examples/sample_images/`), and the
+  **aggregate result summaries** and input snapshots behind the papers' tables (`results/`).
 - **Not redistributed:** the ConstructionSite-10k labels and images (CC BY-NC 4.0, gated access from
   their authors). Only the frozen rule mapping and RCASR's per-image selections on the public test
   images are included.
-- **On reasonable request:** the full construction-site image pool and the gold image–rule
-  annotations. Site imagery contains identifiable people and is governed by a site-operator
-  agreement, so it is released under a data-use agreement, not publicly. See `data/README.md`.
+- **On reasonable request:** the unblurred photographs, the full gold records with their evidence
+  text, and the site keys, under a data-use agreement: unblurred imagery shows identifiable people.
+  See `data/README.md`.
 
 ## Reproducibility
 
@@ -250,7 +255,8 @@ See `reproduce/REPRODUCE.md`. Images, scene facts, and evidence text stay on req
 ## Licensing, provenance, and redistribution
 
 Source code and the rule representation are released under the **Apache License 2.0** (`LICENSE`,
-`NOTICE`).
+`NOTICE`). The gold images in `data/gold_images/` are released under **CC BY 4.0**
+(`data/gold_images/LICENSE`).
 
 We audited the bundle for redistribution before release:
 

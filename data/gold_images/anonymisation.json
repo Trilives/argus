@@ -1,0 +1,4505 @@
+{
+  "method": "Gaussian blur of reviewed boxes only: each visible face (eyes, nose and mouth, sigma 0.25 x the box's shorter side) and each identifying text (company and project names, person names and signatures, phone numbers, addresses, watermarks; sigma 0.3 x); every person detected at confidence >= 0.5 has a face box or a recorded reason it shows no face; residual detail <= 0.1 of the original (or a Laplacian variance <= 5.0) in every box, overlapping boxes merged; pixels outside unchanged; then scaled to at most 2048 px and re-encoded without metadata",
+  "images": {
+    "img_0002": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0003": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0006": {
+      "faces": 0,
+      "text_regions": 1,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0047,
+      "max_residual_detail_ratio": 0.0006,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0007": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0009": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0014": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0025,
+      "max_residual_detail_ratio": 0.0015,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0017": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0018": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0061,
+      "max_residual_detail_ratio": 0.0015,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0024": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0028": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0035": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0040": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0045": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0063,
+      "max_residual_detail_ratio": 0.0007,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0049": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0052": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0002,
+      "max_residual_detail_ratio": 0.0206,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0055": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0059": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0062": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0063": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0066": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0071": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0074": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0075": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0089": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0092": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0094": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0097": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0101": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0106": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.1113,
+      "max_residual_detail_ratio": 0.0037,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0109": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0028,
+      "max_residual_detail_ratio": 0.0038,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0115": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0116": {
+      "faces": 0,
+      "text_regions": 1,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0319,
+      "max_residual_detail_ratio": 0.0006,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0117": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0005,
+      "max_residual_detail_ratio": 0.0069,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0119": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0007,
+      "max_residual_detail_ratio": 0.0219,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0125": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0129": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0007,
+      "max_residual_detail_ratio": 0.0248,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0131": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0132": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0133": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0134": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0135": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0136": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0137": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0141": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0142": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0143": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0147": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.1219,
+      "max_residual_detail_ratio": 0.0004,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0150": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0151": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0155": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0158": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0159": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0160": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0161": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0162": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0163": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0848,
+      "max_residual_detail_ratio": 0.0059,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0164": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0167": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0168": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.1051,
+      "max_residual_detail_ratio": 0.0005,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0176": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0177": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0179": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0185": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0187": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0188": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0189": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0190": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0192": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0194": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0199": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0203": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0016,
+      "max_residual_detail_ratio": 0.0843,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0206": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0207": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0210": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0216": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0807,
+      "max_residual_detail_ratio": 0.0003,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0218": {
+      "faces": 3,
+      "text_regions": 2,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0842,
+      "max_residual_detail_ratio": 0.0023,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0220": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0222": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0224": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0225": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0229": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0006,
+      "max_residual_detail_ratio": 0.0026,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0230": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0232": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0234": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0235": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0236": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0241": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0244": {
+      "faces": 4,
+      "text_regions": 0,
+      "people_without_visible_face": 3,
+      "blurred_fraction_of_image": 0.0054,
+      "max_residual_detail_ratio": 0.0225,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0252": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0256": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0258": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0260": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0261": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0012,
+      "max_residual_detail_ratio": 0.0029,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0263": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0266": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0267": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0272": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0283": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0284": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0017,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0286": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0287": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0293": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0296": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0298": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0303": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0309": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0311": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0314": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0319": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0324": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0327": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0328": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0329": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0331": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0332": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0334": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0022,
+      "max_residual_detail_ratio": 0.0041,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0335": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.002,
+      "max_residual_detail_ratio": 0.0014,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0336": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.1052,
+      "max_residual_detail_ratio": 0.0005,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0341": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0351": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0363": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0366": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0368": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0369": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0373": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0374": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0377": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0378": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0381": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0384": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0166,
+      "max_residual_detail_ratio": 0.0294,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0385": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0064,
+      "max_residual_detail_ratio": 0.0117,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0388": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0389": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0391": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0013,
+      "max_residual_detail_ratio": 0.0039,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0394": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0085,
+      "max_residual_detail_ratio": 0.0008,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0402": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0006,
+      "max_residual_detail_ratio": 0.0004,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0408": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0418": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0428": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0430": {
+      "faces": 2,
+      "text_regions": 1,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.006,
+      "max_residual_detail_ratio": 0.0167,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0433": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0435": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0621,
+      "max_residual_detail_ratio": 0.0008,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0436": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0441": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0445": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0008,
+      "max_residual_detail_ratio": 0.0138,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0446": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0448": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0505,
+      "max_residual_detail_ratio": 0.0038,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0450": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0451": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0452": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0453": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0458": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0467": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0469": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0470": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0474": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0477": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0482": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0491": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0008,
+      "max_residual_detail_ratio": 0.0351,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0494": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0495": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0498": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0499": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0501": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0502": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0022,
+      "max_residual_detail_ratio": 0.0103,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0504": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0505": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0506": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0508": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0513": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0004,
+      "max_residual_detail_ratio": 0.003,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0515": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0516": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0518": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0520": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0988,
+      "max_residual_detail_ratio": 0.0004,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0526": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0529": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0012,
+      "max_residual_detail_ratio": 0.0048,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0535": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0537": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0538": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0539": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0540": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0542": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0543": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0012,
+      "max_residual_detail_ratio": 0.0329,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0544": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0547": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0549": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0551": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0553": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0557": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0560": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0563": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0564": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0565": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0567": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0066,
+      "max_residual_detail_ratio": 0.024,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0570": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0003,
+      "max_residual_detail_ratio": 0.1069,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0571": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0007,
+      "max_residual_detail_ratio": 0.0055,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0575": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0579": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.1055,
+      "max_residual_detail_ratio": 0.0007,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0582": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0583": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0585": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0587": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0589": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0592": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0593": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0601": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0602": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0612": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0616": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0228,
+      "max_residual_detail_ratio": 0.0009,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0620": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0005,
+      "max_residual_detail_ratio": 0.0131,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0621": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0002,
+      "max_residual_detail_ratio": 0.0357,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0623": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0624": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0625": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0628": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0630": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0631": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0635": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0645": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0647": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0006,
+      "max_residual_detail_ratio": 0.0036,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0648": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0654": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0011,
+      "max_residual_detail_ratio": 0.0021,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0655": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0664": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0665": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0009,
+      "max_residual_detail_ratio": 0.0345,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0671": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0001,
+      "max_residual_detail_ratio": 0.0008,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0679": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0778,
+      "max_residual_detail_ratio": 0.0004,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0687": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0033,
+      "max_residual_detail_ratio": 0.3052,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0688": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0690": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0695": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0697": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0700": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0705": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0719": {
+      "faces": 5,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0075,
+      "max_residual_detail_ratio": 0.0018,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0728": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0729": {
+      "faces": 4,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0039,
+      "max_residual_detail_ratio": 0.0072,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0733": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0734": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0735": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0736": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0738": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0739": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0741": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0742": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0744": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0748": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0759": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.001,
+      "max_residual_detail_ratio": 0.0007,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0760": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0026,
+      "max_residual_detail_ratio": 0.0015,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0761": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0766": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0774": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0776": {
+      "faces": 4,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0008,
+      "max_residual_detail_ratio": 0.035,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0778": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0779": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0782": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0789": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0792": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0795": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0797": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0006,
+      "max_residual_detail_ratio": 0.0244,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0799": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0807": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0811": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0818": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.1219,
+      "max_residual_detail_ratio": 0.0037,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0822": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0831": {
+      "faces": 4,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0011,
+      "max_residual_detail_ratio": 0.0275,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0833": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0841": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0846": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0847": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0849": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0002,
+      "max_residual_detail_ratio": 0.0016,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0853": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0801,
+      "max_residual_detail_ratio": 0.0003,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0860": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0865": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0866": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0867": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.1232,
+      "max_residual_detail_ratio": 0.0018,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0873": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0874": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0878": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0048,
+      "max_residual_detail_ratio": 0.0018,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0885": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0886": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0887": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0006,
+      "max_residual_detail_ratio": 0.0235,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0888": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0037,
+      "max_residual_detail_ratio": 0.0276,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0891": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0009,
+      "max_residual_detail_ratio": 0.0016,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0892": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0009,
+      "max_residual_detail_ratio": 0.0015,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0899": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0024,
+      "max_residual_detail_ratio": 0.0368,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0910": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0920": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0922": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0929": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0930": {
+      "faces": 4,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0044,
+      "max_residual_detail_ratio": 0.0047,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0931": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0935": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0938": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0940": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0941": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 3,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0942": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0947": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0242,
+      "max_residual_detail_ratio": 0.0123,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0949": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0950": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0003,
+      "max_residual_detail_ratio": 0.0024,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0958": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0959": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0976": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0977": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0982": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0983": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0984": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0005,
+      "max_residual_detail_ratio": 0.0523,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0985": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0995": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_0996": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1001": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0002,
+      "max_residual_detail_ratio": 0.0491,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1002": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1010": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1011": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1018": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0009,
+      "max_residual_detail_ratio": 0.0047,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1023": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1026": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1030": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1035": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1040": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1043": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0006,
+      "max_residual_detail_ratio": 0.0451,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1044": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0992,
+      "max_residual_detail_ratio": 0.0006,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1045": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1050": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.1842,
+      "max_residual_detail_ratio": 0.0007,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1054": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1055": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1057": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1065": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0008,
+      "max_residual_detail_ratio": 0.1803,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1066": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0575,
+      "max_residual_detail_ratio": 0.0089,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1072": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1073": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1082": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1084": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0802,
+      "max_residual_detail_ratio": 0.0006,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1085": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1087": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0012,
+      "max_residual_detail_ratio": 0.0202,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1091": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1094": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1098": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0007,
+      "max_residual_detail_ratio": 0.1098,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1099": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1100": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0154,
+      "max_residual_detail_ratio": 0.0131,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1104": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1105": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0002,
+      "max_residual_detail_ratio": 0.004,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1107": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1110": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1117": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1120": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0009,
+      "max_residual_detail_ratio": 0.0031,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1129": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1130": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1131": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1132": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1134": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1137": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1141": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1148": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1150": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1161": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1162": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1165": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1169": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1174": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 4,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1179": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 5,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1180": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1183": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1184": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1193": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1196": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1198": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1202": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1207": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1210": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.001,
+      "max_residual_detail_ratio": 0.019,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1215": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0013,
+      "max_residual_detail_ratio": 0.0019,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1221": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0005,
+      "max_residual_detail_ratio": 0.1139,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1222": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0011,
+      "max_residual_detail_ratio": 0.0034,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1227": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1228": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0065,
+      "max_residual_detail_ratio": 0.0015,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1231": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1233": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1235": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1236": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1237": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1240": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1243": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1248": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1249": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0005,
+      "max_residual_detail_ratio": 0.0224,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1250": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1254": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1255": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1258": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1261": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1267": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0006,
+      "max_residual_detail_ratio": 0.0042,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1268": {
+      "faces": 4,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0012,
+      "max_residual_detail_ratio": 0.1828,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1277": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1279": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1281": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0007,
+      "max_residual_detail_ratio": 0.0119,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1283": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0006,
+      "max_residual_detail_ratio": 0.0127,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1286": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0028,
+      "max_residual_detail_ratio": 0.0074,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1287": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0011,
+      "max_residual_detail_ratio": 0.0032,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1288": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0001,
+      "max_residual_detail_ratio": 0.0066,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1289": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0022,
+      "max_residual_detail_ratio": 0.0132,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1293": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0001,
+      "max_residual_detail_ratio": 0.0072,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1295": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1301": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0803,
+      "max_residual_detail_ratio": 0.0063,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1302": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0977,
+      "max_residual_detail_ratio": 0.0054,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1306": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1309": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1310": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1311": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1313": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1317": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1319": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0029,
+      "max_residual_detail_ratio": 0.0064,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1323": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0016,
+      "max_residual_detail_ratio": 0.1385,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1328": {
+      "faces": 5,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0133,
+      "max_residual_detail_ratio": 0.0046,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1329": {
+      "faces": 4,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0007,
+      "max_residual_detail_ratio": 0.0563,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1331": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0009,
+      "max_residual_detail_ratio": 0.0204,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1333": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1343": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1345": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1347": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1350": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0013,
+      "max_residual_detail_ratio": 0.0023,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1351": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0134,
+      "max_residual_detail_ratio": 0.0507,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1352": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0009,
+      "max_residual_detail_ratio": 0.0027,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1355": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0029,
+      "max_residual_detail_ratio": 0.0012,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1362": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0591,
+      "max_residual_detail_ratio": 0.0003,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1363": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0002,
+      "max_residual_detail_ratio": 0.0015,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1364": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0054,
+      "max_residual_detail_ratio": 0.002,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1371": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0034,
+      "max_residual_detail_ratio": 0.0047,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1372": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0004,
+      "max_residual_detail_ratio": 0.0053,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1373": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1374": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0566,
+      "max_residual_detail_ratio": 0.0003,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1377": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.059,
+      "max_residual_detail_ratio": 0.0007,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1385": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0634,
+      "max_residual_detail_ratio": 0.0003,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1386": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0062,
+      "max_residual_detail_ratio": 0.0036,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1387": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0009,
+      "max_residual_detail_ratio": 0.0028,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1389": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1390": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0193,
+      "max_residual_detail_ratio": 0.0115,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1394": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0069,
+      "max_residual_detail_ratio": 0.0051,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1396": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1397": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0126,
+      "max_residual_detail_ratio": 0.0074,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1400": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0125,
+      "max_residual_detail_ratio": 0.0046,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1403": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0029,
+      "max_residual_detail_ratio": 0.0053,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1405": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0201,
+      "max_residual_detail_ratio": 0.0038,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1409": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1410": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0018,
+      "max_residual_detail_ratio": 0.0072,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1416": {
+      "faces": 4,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0009,
+      "max_residual_detail_ratio": 0.0023,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1421": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1430": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.066,
+      "max_residual_detail_ratio": 0.0007,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1437": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1438": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1443": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1444": {
+      "faces": 5,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0957,
+      "max_residual_detail_ratio": 0.0088,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1446": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1458": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0012,
+      "max_residual_detail_ratio": 0.0466,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1463": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0169,
+      "max_residual_detail_ratio": 0.0021,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1465": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1467": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1471": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1472": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1474": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1477": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1479": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1483": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1484": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1491": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1492": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1493": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1494": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0017,
+      "max_residual_detail_ratio": 0.0017,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1495": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0027,
+      "max_residual_detail_ratio": 0.0011,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1497": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1499": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0008,
+      "max_residual_detail_ratio": 0.0145,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1502": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1509": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0006,
+      "max_residual_detail_ratio": 0.0036,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1510": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0004,
+      "max_residual_detail_ratio": 0.0107,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1514": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1517": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1518": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1519": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1524": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1526": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1528": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1530": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1533": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1537": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1538": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 2,
+      "blurred_fraction_of_image": 0.0001,
+      "max_residual_detail_ratio": 0.0016,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1541": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1543": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1546": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0956,
+      "max_residual_detail_ratio": 0.0017,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1547": {
+      "faces": 4,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0948,
+      "max_residual_detail_ratio": 0.0028,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1548": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0005,
+      "max_residual_detail_ratio": 0.0044,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1555": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0012,
+      "max_residual_detail_ratio": 0.032,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1558": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.001,
+      "max_residual_detail_ratio": 0.0031,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1561": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0071,
+      "max_residual_detail_ratio": 0.005,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1562": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0052,
+      "max_residual_detail_ratio": 0.0052,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1564": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1568": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0008,
+      "max_residual_detail_ratio": 0.0983,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1569": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.001,
+      "max_residual_detail_ratio": 0.015,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1570": {
+      "faces": 3,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0005,
+      "max_residual_detail_ratio": 0.0867,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1571": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1574": {
+      "faces": 0,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0,
+      "max_residual_detail_ratio": 0.0,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1575": {
+      "faces": 1,
+      "text_regions": 0,
+      "people_without_visible_face": 0,
+      "blurred_fraction_of_image": 0.0008,
+      "max_residual_detail_ratio": 0.0036,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    },
+    "img_1576": {
+      "faces": 2,
+      "text_regions": 0,
+      "people_without_visible_face": 1,
+      "blurred_fraction_of_image": 0.0023,
+      "max_residual_detail_ratio": 0.006,
+      "pixels_changed_outside": 0,
+      "exif_stripped": true
+    }
+  }
+}

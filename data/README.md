@@ -4,13 +4,16 @@
 
 - `rules/rules_en.json` — the instantiated rule library (42 rules).
 - `rules/rules_schema_en.json` — the JSON Schema for a rule unit.
+- `gold_images/` — the 500 gold photographs with workers' faces blurred (v2.2.0, CC BY 4.0); see
+  [`gold_images/README.md`](gold_images/README.md). Their labels are
+  [`../reproduce/gold_labels.json`](../reproduce/gold_labels.json).
 
-## Evaluation gold set — data card (NOT included; available on request)
+## Evaluation gold set — data card
 
-The quantitative results were computed on a frozen gold set that is **not distributed** in this
-repository. Site imagery contains identifiable people and is governed by a site-operator
-agreement; image-level annotations are available from the authors on reasonable request under a
-data-use agreement.
+The quantitative results were computed on the frozen gold set below. Its photographs (faces
+blurred) and its label-only annotations are included. The unblurred photographs, the full gold
+records with their evidence text, and the site keys are not distributed; they are available from the
+authors on reasonable request under a data-use agreement.
 
 | Property | Value |
 |---|---|

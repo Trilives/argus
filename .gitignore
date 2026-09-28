@@ -22,9 +22,10 @@ scratch_models/
 
 # Bulk / private data must NEVER be committed to this public repo.
 # It intentionally ships only curated public subsets:
-#   examples/sample_images/  (20 privacy-reviewed demo images)
+#   examples/sample_images/  (40 privacy-reviewed demo images)
+#   data/gold_images/        (the 500 gold images, faces blurred and reviewed one by one, v2.2.0)
 #   results/**/*summary*.json + the aggregate retrieval summary
-# Do not add the full image pool, gold annotations, or per-image result dumps.
+# Do not add unblurred images, the full gold records, or per-image result dumps.
 /data/images/
 /data/gold/
 /data/annotations/

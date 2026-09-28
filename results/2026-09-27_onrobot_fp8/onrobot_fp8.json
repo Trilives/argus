@@ -1,0 +1,343 @@
+{
+  "schema": "rcasr_deploy.onrobot_record.v1",
+  "date": "2026-09-27",
+  "scope": "Whole RCASR chain on the robot's own GPU: one Qwen3.5-9B-FP8 as extractor and judge. Round 28+29 (76 stored frames) replayed on the robot. Cost and proxies only; the round is unlabelled.",
+  "prespec": "docs/paper_v3/design/ONROBOT_FP8_PRESPEC.md",
+  "config": {
+    "file": "deploy/config/rcasr_runtime_v1_recal_site_q9f.json",
+    "sha256": "16a142921794ee566fa5859afcd2fc2338606894b582c2fee0235a02e7bdc0df",
+    "parent_sha256": "4cad9da19ca5084a760155983d13c438c75d2fa2384cc9e6c20aa4611d4a811f",
+    "threshold": 0.835448556180549
+  },
+  "hardware": {
+    "robot": "Unitree B2",
+    "gpu": "NVIDIA GeForce RTX 4080 (laptop) 16 GB",
+    "gpu_total_mib": 16376
+  },
+  "serving": {
+    "vllm": "0.21.0 (robot's Civi environment; desktop runs used 0.24.0)",
+    "flags": "--served-model-name Qwen/Qwen3.5-9B-FP8 --max-model-len 16384 --max-num-seqs 8 --reasoning-parser qwen3 --gpu-memory-utilization 0.90",
+    "fallbacks_used": [],
+    "weights_gib": 11.23,
+    "kv_cache_tokens": 21065,
+    "max_concurrency_at_16384": 1.29,
+    "vllm_process_mib": 13326,
+    "gpu_idle_before_mib": 419
+  },
+  "checkpoint_identity": {
+    "robot_path": "~/桌面/civi-site-vision-new/Model/Qwen3.5-9B-FP8",
+    "reference": "CS/Model/Qwen3.5-9B-FP8 (model-swap arm Q9F)",
+    "files_sha256": {
+      "config.json": "aefc3d4b3b58bb1a717cb2ae296b634bc11da45f2c1387e5d89d5771e3ce0f7d",
+      "model.safetensors-00001-of-00004.safetensors": "0dfd3aa92cd03edd2003675aff185b6548aaa456624adc1cf5e8206a44f26c64",
+      "model.safetensors-00002-of-00004.safetensors": "76f81186dff15f1daa7215f8c10e8d81dc0249c73e105037e8384499e364a5a8",
+      "model.safetensors-00003-of-00004.safetensors": "5f4e873020351a54dd526ec424635ae06a566b0767f8ba8d1677060bc99289d7",
+      "model.safetensors-00004-of-00004.safetensors": "08992f17a9028fb2877bdba5010d22dedb5825ea9ceb9af0075523d8111707e4"
+    },
+    "identical": true
+  },
+  "run": {
+    "frames": 76,
+    "errors": 0,
+    "window": {
+      "start": "2026-09-27T18:56:05.316000+08:00",
+      "end": "2026-09-27T19:19:21.716000+08:00",
+      "minutes": 23.3
+    },
+    "timings_s": {
+      "analysis_s": {
+        "p50": 38.30225371400002,
+        "p95": 45.377670466999916,
+        "max": 50.812528832,
+        "n": 76
+      },
+      "perception_s": {
+        "p50": 24.257335345,
+        "p95": 31.61418606699999,
+        "max": 35.24043652,
+        "n": 76
+      },
+      "judge_s": {
+        "p50": 14.038975016999984,
+        "p95": 17.312616829000035,
+        "max": 22.79386092999971,
+        "n": 76
+      }
+    },
+    "width_mean": 2.1052631578947367,
+    "judged_pairs": 160,
+    "abstained_no_subject": 7,
+    "decisions": {
+      "need_review": 53,
+      "violation": 22,
+      "clear": 1
+    },
+    "models": [
+      "Qwen/Qwen3.5-9B-FP8"
+    ],
+    "call_errors": 0,
+    "gpu": {
+      "samples": 1396,
+      "memory_used_mib": {
+        "p50": 13750,
+        "p95": 13750,
+        "max": 13750,
+        "n": 1396
+      },
+      "memory_total_mib": 16376,
+      "utilisation_pct": {
+        "mean": 99.35959885386819,
+        "p50": 100,
+        "p95": 100,
+        "max": 100,
+        "n": 1396
+      }
+    },
+    "agreement_with_reference": {
+      "paired_frames": 76,
+      "same_frame_bytes": 76,
+      "identical_selection": 42,
+      "identical_decision": 46,
+      "mean_jaccard": 0.8078947368421052
+    }
+  },
+  "proxies": {
+    "scope": "Deployment proxies only: volume, abstention, latency, tokens and cost. No field accuracy, prevalence or false-alarm rate is estimable from unlabelled field logs; flagged frames per hour are alerts, not false alarms.",
+    "runtime_configs": [
+      "16a142921794ee566fa5859afcd2fc2338606894b582c2fee0235a02e7bdc0df"
+    ],
+    "topologies": [
+      "robot runtime (B2, stationary in lab); one Qwen3.5-9B-FP8 on the robot RTX 4080 16 GB as extractor and judge"
+    ],
+    "bundle_verified": true,
+    "volume": {
+      "tasks": 2,
+      "captured": 76,
+      "duplicates": 0,
+      "backlog_dropped": 0,
+      "capture_errors": 0,
+      "analysed": 76,
+      "analysis_errors": 0,
+      "stale_dropped": 0,
+      "undrained": 0,
+      "wall_hours": 0.3878069282158333,
+      "active_hours": 0.3878069282158333
+    },
+    "outcomes": {
+      "n_frames": 76,
+      "counts": {
+        "violation": 22,
+        "need_review": 53,
+        "clear": 1,
+        "clear_empty": 0,
+        "error": 0
+      },
+      "rates": {
+        "violation": 0.2894736842105263,
+        "need_review": 0.6973684210526315,
+        "clear": 0.013157894736842105,
+        "clear_empty": 0.0,
+        "error": 0.0
+      },
+      "flagged_frames_per_active_hour": 56.72925984384667,
+      "width": {
+        "n": 76,
+        "mean": 2.1052631578947367,
+        "p50": 2.0,
+        "p95": 4.0,
+        "max": 6.0
+      },
+      "dark_frame_share": 0.05263157894736842,
+      "selected_rules": [
+        [
+          "R-CIV-006-tsp-exceedance",
+          71
+        ],
+        [
+          "R-BHV-002-helmet-and-attire",
+          45
+        ],
+        [
+          "R-CIV-012-public-signboards-missing",
+          16
+        ],
+        [
+          "R-CIV-013-temporary-facilities",
+          12
+        ],
+        [
+          "R-CIV-001-hoarding-missing-low",
+          6
+        ],
+        [
+          "R-BHV-006-uncertified-special-operation",
+          3
+        ],
+        [
+          "R-BHV-012-inattentive-unsafe-behavior",
+          2
+        ],
+        [
+          "R-OPN-001-horizontal-opening-protection",
+          2
+        ],
+        [
+          "R-BHV-007-illegal-electrical-work",
+          2
+        ],
+        [
+          "R-CIV-009-noise-exceedance",
+          1
+        ]
+      ],
+      "flagged_rules": [
+        [
+          "R-BHV-002-helmet-and-attire",
+          13
+        ],
+        [
+          "R-CIV-013-temporary-facilities",
+          8
+        ],
+        [
+          "R-OPN-001-horizontal-opening-protection",
+          2
+        ],
+        [
+          "R-BHV-012-inattentive-unsafe-behavior",
+          1
+        ]
+      ],
+      "flagged_families": {
+        "BHV": 14,
+        "CIV": 8,
+        "OPN": 2
+      },
+      "judged_pairs": 160,
+      "abstained_no_subject_pairs": 7
+    },
+    "latency_s": {
+      "e2e_s": {
+        "n": 76,
+        "mean": 393.6458009880921,
+        "p50": 368.18401694800014,
+        "p95": 818.053945072,
+        "max": 869.8789383980002
+      },
+      "queue_wait_s": {
+        "n": 76,
+        "mean": 357.5253537955395,
+        "p50": 322.9858406390001,
+        "p95": 791.397637695,
+        "max": 844.852579028
+      },
+      "analysis_s": {
+        "n": 76,
+        "mean": 36.11115825028948,
+        "p50": 38.30225371400002,
+        "p95": 45.377670466999916,
+        "max": 50.812528832
+      },
+      "perception_s": {
+        "n": 76,
+        "mean": 25.20378452057894,
+        "p50": 24.257335345,
+        "p95": 31.61418606699999,
+        "max": 35.24043652
+      },
+      "score_s": {
+        "n": 76,
+        "mean": 0.0006672193552653402,
+        "p50": 0.0005853889999798412,
+        "p95": 0.0008619860000180779,
+        "max": 0.004552262000061091
+      },
+      "judge_s": {
+        "n": 76,
+        "mean": 10.90670651035527,
+        "p50": 14.038975016999984,
+        "p95": 17.312616829000035,
+        "max": 22.79386092999971
+      }
+    },
+    "stages": {
+      "facts": {
+        "model": "Qwen/Qwen3.5-9B-FP8",
+        "calls_per_frame": 1.0,
+        "seconds_per_call": {
+          "n": 76,
+          "mean": 5.851493544368424,
+          "p50": 5.694932231000166,
+          "p95": 7.190750487000059,
+          "max": 10.347464543000115
+        },
+        "errors": 0,
+        "prompt_tokens_per_frame": 2461.0,
+        "completion_tokens_per_frame": 213.6184210526316,
+        "calls_without_usage": 0
+      },
+      "judge": {
+        "model": "Qwen/Qwen3.5-9B-FP8",
+        "calls_per_frame": 2.1052631578947367,
+        "seconds_per_call": {
+          "n": 160,
+          "mean": 8.516341818918756,
+          "p50": 7.76260248199992,
+          "p95": 16.340422898000043,
+          "max": 22.74939634600014
+        },
+        "errors": 0,
+        "prompt_tokens_per_frame": 6747.736842105263,
+        "completion_tokens_per_frame": 725.7368421052631,
+        "calls_without_usage": 0
+      },
+      "state": {
+        "model": "Qwen/Qwen3.5-9B-FP8",
+        "calls_per_frame": 1.0,
+        "seconds_per_call": {
+          "n": 76,
+          "mean": 24.88601761571052,
+          "p50": 23.95259368500001,
+          "p95": 31.27921639500005,
+          "max": 34.80409699500001
+        },
+        "errors": 0,
+        "prompt_tokens_per_frame": 4327.0,
+        "completion_tokens_per_frame": 1069.6842105263158,
+        "calls_without_usage": 0
+      },
+      "subject": {
+        "model": "Qwen/Qwen3.5-9B-FP8",
+        "calls_per_frame": 1.0,
+        "seconds_per_call": {
+          "n": 76,
+          "mean": 11.634617756960528,
+          "p50": 10.819293400000106,
+          "p95": 16.64887231900002,
+          "max": 21.466642320999995
+        },
+        "errors": 0,
+        "prompt_tokens_per_frame": 3094.0,
+        "completion_tokens_per_frame": 449.85526315789474,
+        "calls_without_usage": 0
+      }
+    },
+    "cost": null
+  },
+  "wall_clock_s_per_frame": 18.4,
+  "flagged_non_compliant": {
+    "this_run": {
+      "R-BHV-002": 13,
+      "R-CIV-013": 8,
+      "R-OPN-001": 2,
+      "R-BHV-012": 1
+    },
+    "reference_2026-09-23_recal": {
+      "R-BHV-002": 25,
+      "R-CIV-013": 5,
+      "R-CIV-012": 2,
+      "R-EDG-007": 1
+    }
+  },
+  "reference": "docs/Records/2026-09-23/onrobot_round.md, recalibrated arm (host-served 9B bf16 facts + 27B-FP8 judge)"
+}
