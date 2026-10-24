@@ -33,14 +33,15 @@ Headline results (all pre-specified; the internal evaluation uses site-grouped c
   operating proxies (no field-accuracy claim).
 
 > **Status.** Research code accompanying the manuscript above. Release **v2.0.0** added RCASR on
-> top of the ARGus screening framework of the earlier study (releases v1.x), whose code, results and
+> top of the ARGus screening framework built at an earlier stage of this study (releases v1.x), whose code, results and
 > online supplement are kept unchanged below. Release **v2.1.0** adds `run_rcasr.py`, a guide that
 > screens ConstructionSite-10k test images with your own gated access, and 20 more anonymised sample
 > images (see [`examples/README.md`](examples/README.md)). Release **v2.1.1** adds the artifacts behind two
 > further results of the paper, the single-model chain and the two-stage retrieval prior, and re-blurs samples
 > P021–P040 on faces and identifying text only, so protective equipment stays visible. Release **v2.2.0**
 > publishes the 500 gold photographs with workers' faces blurred (`data/gold_images/`, CC BY 4.0), and adds
-> the configuration and record of the whole chain run on the robot's own GPU.
+> the configuration and record of the whole chain run on the robot's own GPU. Release **v2.3.0** adds the plan, code,
+> input snapshot and aggregate results of the post-hoc analyses H1–H8 that the revised manuscript reports.
 
 ## RCASR: what was added in v2.0.0
 
@@ -106,17 +107,17 @@ copy.
 **Tests.** `uv run --with pytest python -m unittest discover -s tests` runs 118 tests without models or restricted data;
 8 skip because they need the restricted site keys or the ConstructionSite-10k labels.
 
-## The ARGus framework (earlier study, releases v1.x)
+## The ARGus framework (earlier stage of this study, releases v1.x)
 
 The screening framework RCASR plugs into. Given a site photograph, a bounded retrieval **agent**
 proposes the few provisions that plausibly apply. The verdict is then computed from a named provision
 formula over persisted checkpoint evidence, never the agent's free text, so every decision traces
-back to a clause. The earlier study measured where such screening fails: handed the correct
+back to a clause. That stage measured where such screening fails: handed the correct
 provision, the judge reaches a grounded-violation F1 of **0.867**, while the best complete
 configuration reaches **0.514**. Retrieval, deciding which provisions apply, dominated end-to-end
 accuracy, and grounded precision fell at every widening step measured
 ([`results/e2e/k_scan_summary.md`](results/e2e/k_scan_summary.md)). That finding motivates RCASR.
-The earlier study's online supplement is [`paper/supplement.pdf`](paper/supplement.pdf).
+The online supplement of that stage is [`paper/supplement.pdf`](paper/supplement.pdf).
 
 ## What's here
 

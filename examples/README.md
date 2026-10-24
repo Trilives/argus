@@ -101,7 +101,7 @@ and can change a provision near the threshold. In our checks on these 8 images, 
 the 8 sets matched exactly, and the mean Jaccard was about 0.8. Treat the released selection as
 the reference, and a fresh run as a demonstration of the same method.
 
-## ARGus demo (earlier study)
+## ARGus demo (earlier stage, v1.x)
 
 The turnkey demo runner at the repo root serves a model and screens these images with the ARGus
 retrieval agent:

@@ -1,6 +1,6 @@
 # Results (aggregate)
 
-Machine-readable summaries behind the paper's tables, for the earlier study computed on the frozen 500-image gold set
+Machine-readable summaries behind the paper's tables, for the earlier stage of this study (v1.x), computed on the frozen 500-image gold set
 (see `../data/README.md`). These are **aggregate** metrics: no images, no gold labels, and no
 per-pair model outputs are included. The one exception is the near-duplicate audit, which lists bare
 image identifiers — no labels, no imagery — and only for the perceptual-hash clusters it reports.
@@ -28,11 +28,11 @@ pins its inputs by SHA-256. The analysis plans are in `../docs/paper_v3/design/`
 | `2026-10-24_revision_posthoc/posthoc_results.json` | Revision analyses over the frozen outputs, no model called (plan: `../docs/paper_v3/design/REVISION_POSTHOC_PRESPEC.md`): the non-visual provisions (H1), recorded-but-not-violated pairs (H2), CRC (H4), multiplicity, Monte Carlo, per-site sign test, leave-one-family-out CIs, family end-to-end and margins (H5), and the 154 images without a site (H6). |
 | `2026-10-24_revision_posthoc/cases_results.json` | Atom errors behind the missed pairs and the two decomposed cases (H3; Supplementary Table S5), project types and images per site (H7), and the atom vocabulary per provision (H8; Supplementary Table S2). Per-pair lists are reduced to counts, and the internal case is named by its figure panel. |
 | `2026-09-23_deployment/onrobot_round.json` | The on-robot round under the frozen and the site-recalibrated threshold: the proxies of the robot table. Unlabelled, so there are no accuracy figures. |
-| `2026-09-27_onrobot_fp8/onrobot_fp8.json` | The whole chain on the robot's own GPU: one Qwen3.5-9B-FP8 checkpoint as extractor and judge, on the same 76-frame round at the site-recalibrated threshold. Per-frame latency percentiles, GPU memory, serving settings, checkpoint hashes and proxies (v2.2.0; §4.9). Unlabelled, so there are no accuracy figures. Its configuration is `../configs/rcasr_runtime_v1_recal_site_q9f.json`. |
+| `2026-09-27_onrobot_fp8/onrobot_fp8.json` | The whole chain on the robot's own GPU: one Qwen3.5-9B-FP8 checkpoint as extractor and judge, on the same 76-frame round at the site-recalibrated threshold. Per-frame latency percentiles, GPU memory, serving settings, checkpoint hashes and proxies (v2.2.0; manuscript Section 5.2). Unlabelled, so there are no accuracy figures. Its configuration is `../configs/rcasr_runtime_v1_recal_site_q9f.json`. |
 
 The runtime configurations the robot runs are in `../configs/`.
 
-## ARGus (v1.x): the tables of the earlier study
+## ARGus (v1.x): the tables of the earlier stage
 
 ## Retrieval
 
