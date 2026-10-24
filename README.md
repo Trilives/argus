@@ -61,7 +61,8 @@ experiments/retrieval/
 ├── eval_rcasr_public.py     # public auxiliary evaluation (ConstructionSite-10k)
 ├── eval_s34_default.py      # the no-subject abstention default adopted by the deployed judge
 ├── eval_model_swap.py       # the whole chain on one model (v2.1.1)
-└── eval_rcasr_tsr.py        # RCASR on a two-stage retrieval prior (v2.1.1; src/two_stage_prior.py)
+├── eval_rcasr_tsr.py        # RCASR on a two-stage retrieval prior (v2.1.1; src/two_stage_prior.py)
+└── eval_revision_posthoc.py, eval_revision_cases.py   # revision post-hoc analyses H1–H8 over frozen outputs
 configs/
 ├── rcasr_runtime_v1.json              # the frozen configuration the robot runs (sha256 ea624e49…)
 ├── rcasr_runtime_v1_recal_site.json   # its label-free, site-recalibrated threshold (sha256 4cad9da1…)
@@ -71,21 +72,23 @@ data/rules/proposed/typed_evidence_v1.json   # the 131-atom vocabulary and per-p
 data/rule_assets/                      # rule units and the BM25 index built from the library
 data/public_eval/public_map_v1.json    # public rule mapping (the public labels are not redistributed)
 docs/paper_v3/design/*.md              # analysis plans, each written before its run
-results/2026-09-2*/                    # aggregate results + input snapshots for every v3 table
+results/2026-*/                        # aggregate results + input snapshots for every v3 table
 ```
 
-**Verify the freeze.** Each `results/2026-09-2*/input_snapshot.json` lists the SHA-256 of every input
+**Verify the freeze.** Each `results/2026-*/input_snapshot.json` lists the SHA-256 of every input
 of that run. Paths are kept as in the research repository, so they resolve here. The analysis plans,
 frozen configurations, rule assets, experiment scripts and RCASR modules match their recorded hashes
-byte for byte (247 snapshot entries over 69 distinct files). The rest do not verify here, each for a stated reason:
+byte for byte (279 snapshot entries over 78 distinct files). The rest do not verify here, each for a stated reason:
 
 - **Restricted inputs are not released:** the unblurred images (the released ones in
   `data/gold_images/` are blurred and scaled, so their hashes differ), the full gold records, site
-  keys, scene facts, atom evidence and per-pair verdicts.
+  keys, scene facts, atom evidence, per-pair verdicts, the per-frame reports of the robot round and the
+  ConstructionSite-10k labels.
 - **Files belong to this public package, not to the research checkout:** `pyproject.toml`,
   `uv.lock`, and `src/config.py` / `src/schemas.py` (comments only).
-- **Redacted:** `results/2026-09-22_rcasr_v2/rcasr_results.json` and
-  `results/2026-09-27_rcasr_tsr/tsr_results.json` (see `results/README.md`). The two-stage run's
+- **Redacted:** `results/2026-09-22_rcasr_v2/rcasr_results.json`,
+  `results/2026-09-27_rcasr_tsr/tsr_results.json` and
+  `results/2026-10-24_revision_posthoc/cases_results.json` (see `results/README.md`). The two-stage run's
   snapshot collapses its 500 image entries into one digest; its other hashes are unchanged.
 - **Re-serialised JSON:** `results/data_audit/near_duplicates.json` is the v1.x copy, with the same
   content in different formatting.
@@ -100,7 +103,7 @@ result `results/2026-09-22_rcasr_v2/rcasr_results.json` is released with constru
 replaced by `site_NN` and lost gold pairs reduced to counts, so its hash differs from the research
 copy.
 
-**Tests.** `python -m unittest discover -s tests` runs 118 tests without models or restricted data;
+**Tests.** `uv run --with pytest python -m unittest discover -s tests` runs 118 tests without models or restricted data;
 8 skip because they need the restricted site keys or the ConstructionSite-10k labels.
 
 ## The ARGus framework (earlier study, releases v1.x)

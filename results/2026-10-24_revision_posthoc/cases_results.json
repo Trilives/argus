@@ -1,0 +1,2142 @@
+{
+  "plan": "docs/paper_v3/design/REVISION_POSTHOC_PRESPEC.md",
+  "snapshot_sha256": "aa7bf5a7e3bcc0a146a1afece0bbcb6330eb2340b5f6804dd2ab5632e4c909e6",
+  "H3_atom_errors": {
+    "a_known_shares": {
+      "rcasr_bm25": [
+        {
+          "held_out": 0,
+          "theta": [
+            0.5,
+            1
+          ],
+          "tau": 0,
+          "tau_open": 0.7,
+          "opening_known_share": 0.7798651252408478,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.17850525015441632,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        },
+        {
+          "held_out": 1,
+          "theta": [
+            1,
+            2
+          ],
+          "tau": 0,
+          "tau_open": 0.7,
+          "opening_known_share": 0.7798651252408478,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.17850525015441632,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        },
+        {
+          "held_out": 2,
+          "theta": [
+            0.5,
+            2
+          ],
+          "tau": 0,
+          "tau_open": 0.7,
+          "opening_known_share": 0.7798651252408478,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.17850525015441632,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        },
+        {
+          "held_out": 3,
+          "theta": [
+            0.5,
+            2
+          ],
+          "tau": 0,
+          "tau_open": 0.7,
+          "opening_known_share": 0.7798651252408478,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.17850525015441632,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        },
+        {
+          "held_out": 4,
+          "theta": [
+            0.5,
+            2
+          ],
+          "tau": 0,
+          "tau_open": 0.7,
+          "opening_known_share": 0.7798651252408478,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.17850525015441632,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        }
+      ],
+      "rcasr_r4": [
+        {
+          "held_out": 0,
+          "theta": [
+            1,
+            0
+          ],
+          "tau": 0,
+          "tau_open": 0.5,
+          "opening_known_share": 0.9710982658959537,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.3402777777777778,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        },
+        {
+          "held_out": 1,
+          "theta": [
+            2,
+            0
+          ],
+          "tau": 0,
+          "tau_open": 0.5,
+          "opening_known_share": 0.9710982658959537,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.3402777777777778,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        },
+        {
+          "held_out": 2,
+          "theta": [
+            1,
+            0.5
+          ],
+          "tau": 0,
+          "tau_open": 0.7,
+          "opening_known_share": 0.7798651252408478,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.17850525015441632,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        },
+        {
+          "held_out": 3,
+          "theta": [
+            0.5,
+            0.5
+          ],
+          "tau": 0,
+          "tau_open": 0.7,
+          "opening_known_share": 0.7798651252408478,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.17850525015441632,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        },
+        {
+          "held_out": 4,
+          "theta": [
+            1,
+            0
+          ],
+          "tau": 0,
+          "tau_open": 0.5,
+          "opening_known_share": 0.9710982658959537,
+          "other_known_share": 1.0,
+          "opening_known_with_c_below_0.8": 0.3402777777777778,
+          "other_known_with_c_below_0.8": 0.15257803468208092
+        }
+      ]
+    },
+    "b_lost_pairs": {
+      "n_lost": 29,
+      "by_category": {
+        "confident_contradiction": 16,
+        "uncertain_atom_read_as_evidence": 13
+      },
+      "by_category_and_family": {
+        "confident_contradiction|EDG": 2,
+        "confident_contradiction|OPN": 13,
+        "uncertain_atom_read_as_evidence|OPN": 8,
+        "uncertain_atom_read_as_evidence|EDG": 3,
+        "confident_contradiction|CIV": 1,
+        "uncertain_atom_read_as_evidence|BHV": 2
+      },
+      "by_category_opening_gate": {
+        "confident_contradiction|False": 8,
+        "uncertain_atom_read_as_evidence|True": 8,
+        "uncertain_atom_read_as_evidence|False": 5,
+        "confident_contradiction|True": 8
+      },
+      "pivot_opening_class": {
+        "false": 13,
+        "true": 16
+      },
+      "pivot_selects_alone": 27,
+      "by_category_pivot_supports_violation": {
+        "confident_contradiction|False": 16,
+        "uncertain_atom_read_as_evidence|False": 11,
+        "uncertain_atom_read_as_evidence|True": 2
+      },
+      "pairs": 29
+    },
+    "c_public_rule_4": {
+      "n_positives": 24,
+      "n_pairs": 24,
+      "selected": 2,
+      "missed": {
+        "n": 22,
+        "by_category": {
+          "confident_contradiction": 3,
+          "uncertain_atom_read_as_evidence": 19
+        },
+        "by_category_and_family": {
+          "confident_contradiction|BHV": 3,
+          "uncertain_atom_read_as_evidence|BHV": 19
+        },
+        "by_category_opening_gate": {
+          "confident_contradiction|False": 3,
+          "uncertain_atom_read_as_evidence|False": 19
+        },
+        "pivot_opening_class": {
+          "false": 22
+        },
+        "pivot_selects_alone": 10,
+        "by_category_pivot_supports_violation": {
+          "confident_contradiction|True": 3,
+          "uncertain_atom_read_as_evidence|False": 8,
+          "uncertain_atom_read_as_evidence|True": 11
+        }
+      },
+      "pivotal_atoms_of_missed": {
+        "person_in_danger_zone": 10,
+        "machine_operating": 12
+      },
+      "pairs": 24
+    },
+    "d_cases": {
+      "f6_panel_b": {
+        "image_id": "Figure 4(b)",
+        "rule_id": "R-OPN-001-horizontal-opening-protection",
+        "prior_logit": 4.166996921754161,
+        "gate_term": -2.237822252148874,
+        "state_term": -4.483308248490952,
+        "score": 0.07214930615850762,
+        "threshold": 0.9616359074959856,
+        "score_minus_threshold": -0.889486601337478,
+        "category": "confident_contradiction",
+        "pivotal_atom": "horizontal_opening_present",
+        "pivot_selects_alone": true,
+        "pivot": {
+          "atom": "horizontal_opening_present",
+          "role": "both",
+          "opening_class": true,
+          "known": true,
+          "literals": [
+            0.10669059678604237,
+            0.10669059678604237
+          ],
+          "q": 0.10669059678604237,
+          "u": 0.020629516518823967,
+          "c": 0.8748808621239346,
+          "score_if_unknown": 0.9846222074498077,
+          "lift": 0.9124729012913
+        },
+        "atoms": [
+          {
+            "atom": "cover_fixed",
+            "role": "screening",
+            "opening_class": false,
+            "known": true,
+            "literals": [
+              0.9669140182743434
+            ],
+            "q": 0.03308598172565655,
+            "u": 0.1291992935549713,
+            "c": 0.8419894101848997,
+            "score_if_unknown": 0.07216407367053805,
+            "lift": 1.4767512030430807e-05
+          },
+          {
+            "atom": "cover_present",
+            "role": "screening",
+            "opening_class": false,
+            "known": true,
+            "literals": [
+              0.6791181126944053
+            ],
+            "q": 0.32088188730559475,
+            "u": 0.010910678522801033,
+            "c": 0.6717084732877853,
+            "score_if_unknown": 0.07216407367053805,
+            "lift": 1.4767512030430807e-05
+          },
+          {
+            "atom": "guardrail_present",
+            "role": "screening",
+            "opening_class": true,
+            "known": true,
+            "literals": [
+              0.7310293237504841
+            ],
+            "q": 0.2689706762495159,
+            "u": 0.009165802883561116,
+            "c": 0.7243288530668842,
+            "score_if_unknown": 0.07264391039836889,
+            "lift": 0.0004946042398612654
+          },
+          {
+            "atom": "horizontal_opening_present",
+            "role": "both",
+            "opening_class": true,
+            "known": true,
+            "literals": [
+              0.10669059678604237,
+              0.10669059678604237
+            ],
+            "q": 0.10669059678604237,
+            "u": 0.020629516518823967,
+            "c": 0.8748808621239346,
+            "score_if_unknown": 0.9846222074498077,
+            "lift": 0.9124729012913
+          },
+          {
+            "atom": "protection_intact_and_stable",
+            "role": "screening",
+            "opening_class": false,
+            "known": true,
+            "literals": [
+              0.9859363731375446
+            ],
+            "q": 0.01406362686245548,
+            "u": 0.000260378124064102,
+            "c": 0.9856796568742604,
+            "score_if_unknown": 0.07266403142581913,
+            "lift": 0.0005147252673115138
+          },
+          {
+            "atom": "safety_net_present",
+            "role": "screening",
+            "opening_class": false,
+            "known": true,
+            "literals": [
+              0.017985839894690492
+            ],
+            "q": 0.9820141601053095,
+            "u": 6.836895092228811e-06,
+            "c": 0.9820074461775178,
+            "score_if_unknown": 0.07264391039836889,
+            "lift": 0.0004946042398612654
+          }
+        ],
+        "rank_in_image": 10,
+        "held_out_fold": 1
+      },
+      "public_rule_4_first": {
+        "image_id": "0000120",
+        "rule_id": "R-BHV-008-machinery-area-not-cleared",
+        "prior_logit": 3.298373393791492,
+        "gate_term": -0.014874750745280316,
+        "state_term": -0.4623079435220717,
+        "score": 0.9438102873879118,
+        "threshold": 0.9502567246313469,
+        "score_minus_threshold": -0.006446437243435077,
+        "category": "confident_contradiction",
+        "pivotal_atom": "person_in_danger_zone",
+        "pivot_selects_alone": true,
+        "pivot": {
+          "atom": "person_in_danger_zone",
+          "role": "screening",
+          "opening_class": false,
+          "known": true,
+          "literals": [
+            0.8175816771861072
+          ],
+          "q": 0.8175816771861072,
+          "u": 0.0003106748429158489,
+          "c": 0.8173276751269766,
+          "score_if_unknown": 0.9617275333227943,
+          "lift": 0.01791724593488242
+        },
+        "atoms": [
+          {
+            "atom": "machine_operating",
+            "role": "both",
+            "opening_class": false,
+            "known": true,
+            "literals": [
+              0.9706886591581843,
+              0.9706886591581843
+            ],
+            "q": 0.9706886591581843,
+            "u": 0.012071291113144934,
+            "c": 0.9589711937732575,
+            "score_if_unknown": 0.9476267751172728,
+            "lift": 0.00381648772936094
+          },
+          {
+            "atom": "person_in_danger_zone",
+            "role": "screening",
+            "opening_class": false,
+            "known": true,
+            "literals": [
+              0.8175816771861072
+            ],
+            "q": 0.8175816771861072,
+            "u": 0.0003106748429158489,
+            "c": 0.8173276751269766,
+            "score_if_unknown": 0.9617275333227943,
+            "lift": 0.01791724593488242
+          }
+        ],
+        "rank_in_image": 3,
+        "selected": false,
+        "in_bm25_matched": true
+      }
+    }
+  },
+  "H7_data": {
+    "project_type_rule": "first keyword match on the site key; names are not output",
+    "sites": 48,
+    "project_type_sites": {
+      "industrial_or_technology_park": 7,
+      "unspecified": 23,
+      "cultural_or_public_venue": 12,
+      "office_or_commercial": 2,
+      "residential": 4
+    },
+    "project_type_images": {
+      "industrial_or_technology_park": 62,
+      "unspecified": 161,
+      "cultural_or_public_venue": 83,
+      "office_or_commercial": 22,
+      "residential": 18
+    },
+    "images_per_site": {
+      "min": 1,
+      "median": 4.0,
+      "max": 36,
+      "mean": 7.208333333333333
+    },
+    "populations": {
+      "site_346": {
+        "n_images": 346,
+        "recorded_pairs": 601,
+        "violations_per_image": {
+          "min": 0,
+          "median": 1.0,
+          "max": 4,
+          "mean": 1.4710982658959537
+        },
+        "violations_per_image_histogram": {
+          "0": 2,
+          "1": 200,
+          "2": 124,
+          "3": 19,
+          "4": 1
+        },
+        "images_without_recorded_violation": 2,
+        "by_family": {
+          "BHV": {
+            "non_compliant": 70,
+            "undetermined": 2,
+            "compliant": 24
+          },
+          "CIV": {
+            "compliant": 33,
+            "undetermined": 2,
+            "non_compliant": 58
+          },
+          "EDG": {
+            "non_compliant": 204,
+            "compliant": 29
+          },
+          "OPN": {
+            "non_compliant": 177,
+            "undetermined": 1,
+            "compliant": 1
+          }
+        },
+        "by_provision": {
+          "R-BHV-001-no-harness-at-height": {
+            "non_compliant": 2
+          },
+          "R-BHV-002-helmet-and-attire": {
+            "non_compliant": 63,
+            "undetermined": 2,
+            "compliant": 23
+          },
+          "R-BHV-007-illegal-electrical-work": {
+            "compliant": 1
+          },
+          "R-BHV-008-machinery-area-not-cleared": {
+            "non_compliant": 1
+          },
+          "R-BHV-012-inattentive-unsafe-behavior": {
+            "non_compliant": 4
+          },
+          "R-CIV-001-hoarding-missing-low": {
+            "non_compliant": 6,
+            "compliant": 1
+          },
+          "R-CIV-002-road-unhardened-water-mud": {
+            "compliant": 1
+          },
+          "R-CIV-003-material-stacking-labeling": {
+            "compliant": 27,
+            "non_compliant": 13
+          },
+          "R-CIV-004-dusty-material-uncovered": {
+            "non_compliant": 2
+          },
+          "R-CIV-005-spoil-waste-overheight-uncleared": {
+            "non_compliant": 1
+          },
+          "R-CIV-007-vehicle-wash": {
+            "undetermined": 1
+          },
+          "R-CIV-008-road-dust-exceedance": {
+            "undetermined": 1
+          },
+          "R-CIV-011-smoking-burning": {
+            "non_compliant": 6
+          },
+          "R-CIV-014-fire-access-blocked": {
+            "non_compliant": 3
+          },
+          "R-CIV-015-fire-equipment-missing": {
+            "compliant": 1
+          },
+          "R-CIV-016-cable-on-ground": {
+            "compliant": 3,
+            "non_compliant": 1
+          },
+          "R-CIV-018-poor-overall-housekeeping": {
+            "non_compliant": 26
+          },
+          "R-EDG-002-stair-edge": {
+            "non_compliant": 73,
+            "compliant": 7
+          },
+          "R-EDG-003-roof-balcony-platform-edge": {
+            "non_compliant": 49,
+            "compliant": 7
+          },
+          "R-EDG-005-scaffold-structure-gap": {
+            "non_compliant": 6,
+            "compliant": 1
+          },
+          "R-EDG-006-pit-trench-edge": {
+            "non_compliant": 7
+          },
+          "R-EDG-007-guardrail-construction": {
+            "compliant": 7,
+            "non_compliant": 69
+          },
+          "R-EDG-011-scaffold-layer-catch-net": {
+            "compliant": 6
+          },
+          "R-EDG-012-passage-shed-protection": {
+            "compliant": 1
+          },
+          "R-OPN-001-horizontal-opening-protection": {
+            "non_compliant": 107
+          },
+          "R-OPN-004-vertical-and-low-sill-opening": {
+            "non_compliant": 26,
+            "undetermined": 1
+          },
+          "R-OPN-005-elevator-shaft-door-and-net": {
+            "non_compliant": 31,
+            "compliant": 1
+          },
+          "R-OPN-009-service-shaft-opening": {
+            "non_compliant": 12
+          },
+          "R-OPN-011-manhole-trench-cover": {
+            "non_compliant": 1
+          }
+        }
+      },
+      "all_500": {
+        "n_images": 500,
+        "recorded_pairs": 880,
+        "violations_per_image": {
+          "min": 0,
+          "median": 1.0,
+          "max": 4,
+          "mean": 1.382
+        },
+        "violations_per_image_histogram": {
+          "0": 28,
+          "1": 284,
+          "2": 159,
+          "3": 27,
+          "4": 2
+        },
+        "images_without_recorded_violation": 28,
+        "by_family": {
+          "BHV": {
+            "compliant": 38,
+            "undetermined": 5,
+            "non_compliant": 111
+          },
+          "CIV": {
+            "compliant": 62,
+            "undetermined": 3,
+            "non_compliant": 87
+          },
+          "EDG": {
+            "compliant": 57,
+            "undetermined": 5,
+            "non_compliant": 250
+          },
+          "OPN": {
+            "compliant": 17,
+            "non_compliant": 243,
+            "undetermined": 2
+          }
+        },
+        "by_provision": {
+          "R-BHV-001-no-harness-at-height": {
+            "non_compliant": 3,
+            "undetermined": 1
+          },
+          "R-BHV-002-helmet-and-attire": {
+            "compliant": 33,
+            "non_compliant": 101,
+            "undetermined": 2
+          },
+          "R-BHV-004-illegal-climbing": {
+            "compliant": 1
+          },
+          "R-BHV-005-improper-ladder-use": {
+            "non_compliant": 1
+          },
+          "R-BHV-007-illegal-electrical-work": {
+            "compliant": 1
+          },
+          "R-BHV-008-machinery-area-not-cleared": {
+            "compliant": 2,
+            "non_compliant": 1
+          },
+          "R-BHV-009-suspended-platform-lifting-violation": {
+            "compliant": 1
+          },
+          "R-BHV-012-inattentive-unsafe-behavior": {
+            "non_compliant": 5
+          },
+          "R-BHV-013-damaged-lifting-gear": {
+            "undetermined": 2
+          },
+          "R-CIV-001-hoarding-missing-low": {
+            "compliant": 6,
+            "non_compliant": 9
+          },
+          "R-CIV-002-road-unhardened-water-mud": {
+            "compliant": 2,
+            "non_compliant": 1
+          },
+          "R-CIV-003-material-stacking-labeling": {
+            "compliant": 42,
+            "non_compliant": 18,
+            "undetermined": 1
+          },
+          "R-CIV-004-dusty-material-uncovered": {
+            "non_compliant": 4
+          },
+          "R-CIV-005-spoil-waste-overheight-uncleared": {
+            "non_compliant": 5
+          },
+          "R-CIV-007-vehicle-wash": {
+            "undetermined": 1
+          },
+          "R-CIV-008-road-dust-exceedance": {
+            "undetermined": 1
+          },
+          "R-CIV-011-smoking-burning": {
+            "non_compliant": 7
+          },
+          "R-CIV-013-temporary-facilities": {
+            "compliant": 1
+          },
+          "R-CIV-014-fire-access-blocked": {
+            "non_compliant": 4
+          },
+          "R-CIV-015-fire-equipment-missing": {
+            "compliant": 5
+          },
+          "R-CIV-016-cable-on-ground": {
+            "compliant": 4,
+            "non_compliant": 1
+          },
+          "R-CIV-018-poor-overall-housekeeping": {
+            "non_compliant": 38,
+            "compliant": 2
+          },
+          "R-EDG-002-stair-edge": {
+            "compliant": 13,
+            "undetermined": 1,
+            "non_compliant": 93
+          },
+          "R-EDG-003-roof-balcony-platform-edge": {
+            "compliant": 15,
+            "non_compliant": 53
+          },
+          "R-EDG-005-scaffold-structure-gap": {
+            "undetermined": 2,
+            "compliant": 3,
+            "non_compliant": 8
+          },
+          "R-EDG-006-pit-trench-edge": {
+            "non_compliant": 10
+          },
+          "R-EDG-007-guardrail-construction": {
+            "compliant": 15,
+            "undetermined": 2,
+            "non_compliant": 83
+          },
+          "R-EDG-011-scaffold-layer-catch-net": {
+            "compliant": 9,
+            "non_compliant": 1
+          },
+          "R-EDG-012-passage-shed-protection": {
+            "non_compliant": 2,
+            "compliant": 2
+          },
+          "R-OPN-001-horizontal-opening-protection": {
+            "compliant": 9,
+            "non_compliant": 146
+          },
+          "R-OPN-004-vertical-and-low-sill-opening": {
+            "compliant": 2,
+            "non_compliant": 35,
+            "undetermined": 2
+          },
+          "R-OPN-005-elevator-shaft-door-and-net": {
+            "compliant": 6,
+            "non_compliant": 40
+          },
+          "R-OPN-009-service-shaft-opening": {
+            "non_compliant": 20
+          },
+          "R-OPN-011-manhole-trench-cover": {
+            "non_compliant": 2
+          }
+        }
+      }
+    }
+  },
+  "H8_atoms": {
+    "subject_pass_atoms": 39,
+    "state_pass_atoms": 92,
+    "asked_atoms": 131,
+    "both_passes": [],
+    "formula_atoms_never_asked": [
+      "scrap_condition_met"
+    ],
+    "asked_atoms_unused": [],
+    "opening_class": [
+      "elevator_shaft_present",
+      "guardrail_present",
+      "horizontal_opening_present",
+      "pit_or_trench_edge_present",
+      "roof_balcony_platform_edge_present",
+      "shaft_opening_present"
+    ],
+    "provisions": {
+      "R-BHV-001-no-harness-at-height": {
+        "gate_atoms": [
+          "person_present"
+        ],
+        "screening_atoms": [
+          "harness_anchored",
+          "harness_worn",
+          "near_edge_or_opening",
+          "person_present"
+        ]
+      },
+      "R-BHV-002-helmet-and-attire": {
+        "gate_atoms": [
+          "construction_site_context",
+          "person_present"
+        ],
+        "screening_atoms": [
+          "body_visible",
+          "chin_strap_fastened",
+          "clothing_compliant",
+          "construction_site_context",
+          "head_visible",
+          "helmet_present",
+          "helmet_worn_correctly",
+          "person_present"
+        ]
+      },
+      "R-BHV-004-illegal-climbing": {
+        "gate_atoms": [
+          "climbing_behavior_present",
+          "person_present"
+        ],
+        "screening_atoms": [
+          "climbing_behavior_present",
+          "person_present",
+          "unsafe_climbing_object"
+        ]
+      },
+      "R-BHV-005-improper-ladder-use": {
+        "gate_atoms": [
+          "ladder_present"
+        ],
+        "screening_atoms": [
+          "ladder_on_scaffold",
+          "ladder_present",
+          "ladder_use_stable",
+          "two_persons_on_same_ladder"
+        ]
+      },
+      "R-BHV-006-uncertified-special-operation": {
+        "gate_atoms": [
+          "special_operation_present"
+        ],
+        "screening_atoms": []
+      },
+      "R-BHV-007-illegal-electrical-work": {
+        "gate_atoms": [
+          "electrical_work_present"
+        ],
+        "screening_atoms": [
+          "electrical_ppe_present",
+          "electrical_work_present",
+          "lockout_tagout_present"
+        ]
+      },
+      "R-BHV-008-machinery-area-not-cleared": {
+        "gate_atoms": [
+          "machine_operating"
+        ],
+        "screening_atoms": [
+          "machine_operating",
+          "person_in_danger_zone"
+        ]
+      },
+      "R-BHV-009-suspended-platform-lifting-violation": {
+        "gate_atoms": [
+          "basket_or_lifting_operation_present"
+        ],
+        "screening_atoms": [
+          "basket_or_lifting_operation_present",
+          "independent_lifeline_present",
+          "non_personnel_equipment_carrying_person"
+        ]
+      },
+      "R-BHV-010-hot-work-violation": {
+        "gate_atoms": [
+          "hot_work_present"
+        ],
+        "screening_atoms": [
+          "catch_pan_present",
+          "combustibles_cleared",
+          "fire_extinguisher_present",
+          "fire_watch_present",
+          "hot_work_present"
+        ]
+      },
+      "R-BHV-011-severe-weather-operation": {
+        "gate_atoms": [
+          "high_risk_operation_present"
+        ],
+        "screening_atoms": []
+      },
+      "R-BHV-012-inattentive-unsafe-behavior": {
+        "gate_atoms": [
+          "construction_site_context",
+          "person_present"
+        ],
+        "screening_atoms": [
+          "construction_site_context",
+          "person_present",
+          "unsafe_awareness_lapse_present"
+        ]
+      },
+      "R-BHV-013-damaged-lifting-gear": {
+        "gate_atoms": [
+          "lifting_gear_present"
+        ],
+        "screening_atoms": [
+          "lifting_gear_damaged",
+          "lifting_gear_present",
+          "scrap_condition_met",
+          "still_in_use"
+        ]
+      },
+      "R-CIV-001-hoarding-missing-low": {
+        "gate_atoms": [
+          "site_boundary_present"
+        ],
+        "screening_atoms": [
+          "fence_continuous",
+          "fence_present",
+          "site_boundary_present"
+        ]
+      },
+      "R-CIV-002-road-unhardened-water-mud": {
+        "gate_atoms": [
+          "main_road_or_processing_area_present"
+        ],
+        "screening_atoms": [
+          "ground_hardened",
+          "main_road_or_processing_area_present",
+          "mud_pollution_present",
+          "standing_water_present"
+        ]
+      },
+      "R-CIV-003-material-stacking-labeling": {
+        "gate_atoms": [
+          "materials_present"
+        ],
+        "screening_atoms": [
+          "materials_present",
+          "stacking_orderly"
+        ]
+      },
+      "R-CIV-004-dusty-material-uncovered": {
+        "gate_atoms": [
+          "dusty_material_present"
+        ],
+        "screening_atoms": [
+          "covered_or_enclosed",
+          "dusty_material_present"
+        ]
+      },
+      "R-CIV-005-spoil-waste-overheight-uncleared": {
+        "gate_atoms": [
+          "waste_or_spoil_present"
+        ],
+        "screening_atoms": [
+          "spoil_grossly_overheight",
+          "waste_or_spoil_present"
+        ]
+      },
+      "R-CIV-006-tsp-exceedance": {
+        "gate_atoms": [
+          "construction_site_context"
+        ],
+        "screening_atoms": []
+      },
+      "R-CIV-007-vehicle-wash": {
+        "gate_atoms": [
+          "site_exit_present"
+        ],
+        "screening_atoms": [
+          "auto_wash_facility_present",
+          "sedimentation_facility_present",
+          "site_exit_present",
+          "vehicle_clean_before_exit"
+        ]
+      },
+      "R-CIV-008-road-dust-exceedance": {
+        "gate_atoms": [
+          "main_site_vehicle_road_present",
+          "site_exit_present"
+        ],
+        "screening_atoms": []
+      },
+      "R-CIV-009-noise-exceedance": {
+        "gate_atoms": [
+          "construction_site_context",
+          "noise_sensitive_buildings_nearby"
+        ],
+        "screening_atoms": []
+      },
+      "R-CIV-010-dormitory-noncompliant": {
+        "gate_atoms": [
+          "dormitory_present"
+        ],
+        "screening_atoms": [
+          "bunk_over_2_tiers",
+          "dormitory_present"
+        ]
+      },
+      "R-CIV-011-smoking-burning": {
+        "gate_atoms": [
+          "construction_site_context",
+          "person_present"
+        ],
+        "screening_atoms": [
+          "burning_present",
+          "smoking_present"
+        ]
+      },
+      "R-CIV-012-public-signboards-missing": {
+        "gate_atoms": [
+          "site_gate_present"
+        ],
+        "screening_atoms": [
+          "civilized_construction_board_present",
+          "fire_security_board_present",
+          "manager_roster_board_present",
+          "project_overview_board_present",
+          "safety_board_present",
+          "site_gate_present",
+          "site_plan_board_present",
+          "supervision_phone_board_present"
+        ]
+      },
+      "R-CIV-013-temporary-facilities": {
+        "gate_atoms": [
+          "site_gate_present",
+          "temporary_facilities_present"
+        ],
+        "screening_atoms": [
+          "gate_guard_or_realname_system_present",
+          "site_gate_present"
+        ]
+      },
+      "R-CIV-014-fire-access-blocked": {
+        "gate_atoms": [
+          "fire_access_or_exit_present"
+        ],
+        "screening_atoms": [
+          "blocked_by_materials",
+          "fire_access_or_exit_present",
+          "passage_clear"
+        ]
+      },
+      "R-CIV-015-fire-equipment-missing": {
+        "gate_atoms": [
+          "fire_box_or_fire_point_present"
+        ],
+        "screening_atoms": [
+          "extinguisher_present",
+          "fire_box_or_fire_point_present",
+          "fire_equipment_sufficient"
+        ]
+      },
+      "R-CIV-016-cable-on-ground": {
+        "gate_atoms": [
+          "temporary_cable_present"
+        ],
+        "screening_atoms": [
+          "cable_crossing_passage",
+          "cable_on_ground",
+          "cable_protected_or_elevated",
+          "temporary_cable_present",
+          "trip_or_electric_risk_present"
+        ]
+      },
+      "R-CIV-018-poor-overall-housekeeping": {
+        "gate_atoms": [
+          "construction_site_context"
+        ],
+        "screening_atoms": [
+          "construction_site_context",
+          "site_appearance_poor"
+        ]
+      },
+      "R-EDG-002-stair-edge": {
+        "gate_atoms": [
+          "stair_edge_present"
+        ],
+        "screening_atoms": [
+          "external_stair_present",
+          "guardrail_present",
+          "guardrail_stable",
+          "outer_stair_net_present",
+          "stair_edge_present"
+        ]
+      },
+      "R-EDG-003-roof-balcony-platform-edge": {
+        "gate_atoms": [
+          "roof_balcony_platform_edge_present"
+        ],
+        "screening_atoms": [
+          "edge_closed",
+          "fall_risk_present",
+          "guardrail_compliant",
+          "roof_balcony_platform_edge_present"
+        ]
+      },
+      "R-EDG-004-hoist-landing-platform": {
+        "gate_atoms": [
+          "hoist_platform_present"
+        ],
+        "screening_atoms": [
+          "anti_outward_opening_device_present",
+          "door_locked_or_closed",
+          "hoist_platform_present",
+          "side_enclosure_present",
+          "side_guardrail_present",
+          "toe_board_present"
+        ]
+      },
+      "R-EDG-005-scaffold-structure-gap": {
+        "gate_atoms": [
+          "scaffold_structure_gap_present"
+        ],
+        "screening_atoms": [
+          "gap_continuous",
+          "horizontal_protection_present",
+          "scaffold_structure_gap_present"
+        ]
+      },
+      "R-EDG-006-pit-trench-edge": {
+        "gate_atoms": [
+          "pit_or_trench_edge_present"
+        ],
+        "screening_atoms": [
+          "guardrail_present",
+          "guardrail_stable",
+          "pit_or_trench_edge_present",
+          "side_enclosure_present"
+        ]
+      },
+      "R-EDG-007-guardrail-construction": {
+        "gate_atoms": [
+          "guardrail_present"
+        ],
+        "screening_atoms": [
+          "fall_risk_present",
+          "guardrail_grossly_low",
+          "guardrail_present",
+          "guardrail_stable",
+          "toe_board_present"
+        ]
+      },
+      "R-EDG-011-scaffold-layer-catch-net": {
+        "gate_atoms": [
+          "dense_scaffold_present"
+        ],
+        "screening_atoms": [
+          "dense_scaffold_present",
+          "fall_layer_present",
+          "layer_safety_net_present",
+          "net_fixed_and_intact"
+        ]
+      },
+      "R-EDG-012-passage-shed-protection": {
+        "gate_atoms": [
+          "passage_or_work_area_present"
+        ],
+        "screening_atoms": [
+          "falling_object_risk_present",
+          "passage_or_work_area_present",
+          "protective_shed_present",
+          "shed_covering_intact"
+        ]
+      },
+      "R-OPN-001-horizontal-opening-protection": {
+        "gate_atoms": [
+          "horizontal_opening_present"
+        ],
+        "screening_atoms": [
+          "cover_fixed",
+          "cover_present",
+          "guardrail_present",
+          "horizontal_opening_present",
+          "protection_intact_and_stable",
+          "safety_net_present"
+        ]
+      },
+      "R-OPN-004-vertical-and-low-sill-opening": {
+        "gate_atoms": [
+          "low_sill_opening_present",
+          "vertical_opening_present"
+        ],
+        "screening_atoms": [
+          "bottom_edge_flush_with_platform",
+          "fall_risk_present",
+          "guardrail_compliant",
+          "low_sill_opening_present",
+          "toe_board_present",
+          "vertical_net_or_panel_present",
+          "vertical_opening_present"
+        ]
+      },
+      "R-OPN-005-elevator-shaft-door-and-net": {
+        "gate_atoms": [
+          "elevator_shaft_present"
+        ],
+        "screening_atoms": [
+          "elevator_shaft_present",
+          "inner_safety_net_present",
+          "inner_shaft_visible",
+          "protection_intact_and_stable",
+          "protective_door_present",
+          "toe_board_present"
+        ]
+      },
+      "R-OPN-009-service-shaft-opening": {
+        "gate_atoms": [
+          "shaft_opening_present"
+        ],
+        "screening_atoms": [
+          "alternative_protection_present",
+          "closure_or_cover_secure",
+          "fall_risk_present",
+          "opening_closed",
+          "shaft_opening_present"
+        ]
+      },
+      "R-OPN-011-manhole-trench-cover": {
+        "gate_atoms": [
+          "manhole_or_trench_present"
+        ],
+        "screening_atoms": [
+          "cover_intact",
+          "cover_present",
+          "cover_restored",
+          "fall_or_trip_risk_present",
+          "manhole_or_trench_cover_required"
+        ]
+      }
+    },
+    "atoms": {
+      "alternative_protection_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-009-service-shaft-opening"
+        ]
+      },
+      "anti_outward_opening_device_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-004-hoist-landing-platform"
+        ]
+      },
+      "auto_wash_facility_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-007-vehicle-wash"
+        ]
+      },
+      "basket_or_lifting_operation_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-009-suspended-platform-lifting-violation"
+        ]
+      },
+      "blocked_by_materials": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-014-fire-access-blocked"
+        ]
+      },
+      "body_visible": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-002-helmet-and-attire"
+        ]
+      },
+      "bottom_edge_flush_with_platform": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-004-vertical-and-low-sill-opening"
+        ]
+      },
+      "bunk_over_2_tiers": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-010-dormitory-noncompliant"
+        ]
+      },
+      "burning_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-011-smoking-burning"
+        ]
+      },
+      "cable_crossing_passage": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-016-cable-on-ground"
+        ]
+      },
+      "cable_on_ground": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-016-cable-on-ground"
+        ]
+      },
+      "cable_protected_or_elevated": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-016-cable-on-ground"
+        ]
+      },
+      "catch_pan_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-010-hot-work-violation"
+        ]
+      },
+      "chin_strap_fastened": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-002-helmet-and-attire"
+        ]
+      },
+      "civilized_construction_board_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-012-public-signboards-missing"
+        ]
+      },
+      "climbing_behavior_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-004-illegal-climbing"
+        ]
+      },
+      "closure_or_cover_secure": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-009-service-shaft-opening"
+        ]
+      },
+      "clothing_compliant": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-002-helmet-and-attire"
+        ]
+      },
+      "combustibles_cleared": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-010-hot-work-violation"
+        ]
+      },
+      "construction_site_context": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-002-helmet-and-attire",
+          "R-BHV-012-inattentive-unsafe-behavior",
+          "R-CIV-006-tsp-exceedance",
+          "R-CIV-009-noise-exceedance",
+          "R-CIV-011-smoking-burning",
+          "R-CIV-018-poor-overall-housekeeping"
+        ]
+      },
+      "cover_fixed": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-001-horizontal-opening-protection"
+        ]
+      },
+      "cover_intact": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-011-manhole-trench-cover"
+        ]
+      },
+      "cover_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-001-horizontal-opening-protection",
+          "R-OPN-011-manhole-trench-cover"
+        ]
+      },
+      "cover_restored": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-011-manhole-trench-cover"
+        ]
+      },
+      "covered_or_enclosed": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-004-dusty-material-uncovered"
+        ]
+      },
+      "dense_scaffold_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-011-scaffold-layer-catch-net"
+        ]
+      },
+      "door_locked_or_closed": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-004-hoist-landing-platform"
+        ]
+      },
+      "dormitory_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-010-dormitory-noncompliant"
+        ]
+      },
+      "dusty_material_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-004-dusty-material-uncovered"
+        ]
+      },
+      "edge_closed": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-003-roof-balcony-platform-edge"
+        ]
+      },
+      "electrical_ppe_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-007-illegal-electrical-work"
+        ]
+      },
+      "electrical_work_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-007-illegal-electrical-work"
+        ]
+      },
+      "elevator_shaft_present": {
+        "pass": "subject",
+        "opening_class": true,
+        "provisions": [
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ]
+      },
+      "external_stair_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-002-stair-edge"
+        ]
+      },
+      "extinguisher_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-015-fire-equipment-missing"
+        ]
+      },
+      "fall_layer_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-011-scaffold-layer-catch-net"
+        ]
+      },
+      "fall_or_trip_risk_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-011-manhole-trench-cover"
+        ]
+      },
+      "fall_risk_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-003-roof-balcony-platform-edge",
+          "R-EDG-007-guardrail-construction",
+          "R-OPN-004-vertical-and-low-sill-opening",
+          "R-OPN-009-service-shaft-opening"
+        ]
+      },
+      "falling_object_risk_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-012-passage-shed-protection"
+        ]
+      },
+      "fence_continuous": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-001-hoarding-missing-low"
+        ]
+      },
+      "fence_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-001-hoarding-missing-low"
+        ]
+      },
+      "fire_access_or_exit_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-014-fire-access-blocked"
+        ]
+      },
+      "fire_box_or_fire_point_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-015-fire-equipment-missing"
+        ]
+      },
+      "fire_equipment_sufficient": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-015-fire-equipment-missing"
+        ]
+      },
+      "fire_extinguisher_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-010-hot-work-violation"
+        ]
+      },
+      "fire_security_board_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-012-public-signboards-missing"
+        ]
+      },
+      "fire_watch_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-010-hot-work-violation"
+        ]
+      },
+      "gap_continuous": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-005-scaffold-structure-gap"
+        ]
+      },
+      "gate_guard_or_realname_system_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-013-temporary-facilities"
+        ]
+      },
+      "ground_hardened": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-002-road-unhardened-water-mud"
+        ]
+      },
+      "guardrail_compliant": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-003-roof-balcony-platform-edge",
+          "R-OPN-004-vertical-and-low-sill-opening"
+        ]
+      },
+      "guardrail_grossly_low": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-007-guardrail-construction"
+        ]
+      },
+      "guardrail_present": {
+        "pass": "subject",
+        "opening_class": true,
+        "provisions": [
+          "R-EDG-002-stair-edge",
+          "R-EDG-006-pit-trench-edge",
+          "R-EDG-007-guardrail-construction",
+          "R-OPN-001-horizontal-opening-protection"
+        ]
+      },
+      "guardrail_stable": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-002-stair-edge",
+          "R-EDG-006-pit-trench-edge",
+          "R-EDG-007-guardrail-construction"
+        ]
+      },
+      "harness_anchored": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-001-no-harness-at-height"
+        ]
+      },
+      "harness_worn": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-001-no-harness-at-height"
+        ]
+      },
+      "head_visible": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-002-helmet-and-attire"
+        ]
+      },
+      "helmet_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-002-helmet-and-attire"
+        ]
+      },
+      "helmet_worn_correctly": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-002-helmet-and-attire"
+        ]
+      },
+      "high_risk_operation_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-011-severe-weather-operation"
+        ]
+      },
+      "hoist_platform_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-004-hoist-landing-platform"
+        ]
+      },
+      "horizontal_opening_present": {
+        "pass": "subject",
+        "opening_class": true,
+        "provisions": [
+          "R-OPN-001-horizontal-opening-protection"
+        ]
+      },
+      "horizontal_protection_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-005-scaffold-structure-gap"
+        ]
+      },
+      "hot_work_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-010-hot-work-violation"
+        ]
+      },
+      "independent_lifeline_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-009-suspended-platform-lifting-violation"
+        ]
+      },
+      "inner_safety_net_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ]
+      },
+      "inner_shaft_visible": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ]
+      },
+      "ladder_on_scaffold": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-005-improper-ladder-use"
+        ]
+      },
+      "ladder_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-005-improper-ladder-use"
+        ]
+      },
+      "ladder_use_stable": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-005-improper-ladder-use"
+        ]
+      },
+      "layer_safety_net_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-011-scaffold-layer-catch-net"
+        ]
+      },
+      "lifting_gear_damaged": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-013-damaged-lifting-gear"
+        ]
+      },
+      "lifting_gear_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-013-damaged-lifting-gear"
+        ]
+      },
+      "lockout_tagout_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-007-illegal-electrical-work"
+        ]
+      },
+      "low_sill_opening_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-004-vertical-and-low-sill-opening"
+        ]
+      },
+      "machine_operating": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-008-machinery-area-not-cleared"
+        ]
+      },
+      "main_road_or_processing_area_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-002-road-unhardened-water-mud"
+        ]
+      },
+      "main_site_vehicle_road_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-008-road-dust-exceedance"
+        ]
+      },
+      "manager_roster_board_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-012-public-signboards-missing"
+        ]
+      },
+      "manhole_or_trench_cover_required": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-011-manhole-trench-cover"
+        ]
+      },
+      "manhole_or_trench_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-011-manhole-trench-cover"
+        ]
+      },
+      "materials_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-003-material-stacking-labeling"
+        ]
+      },
+      "mud_pollution_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-002-road-unhardened-water-mud"
+        ]
+      },
+      "near_edge_or_opening": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-001-no-harness-at-height"
+        ]
+      },
+      "net_fixed_and_intact": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-011-scaffold-layer-catch-net"
+        ]
+      },
+      "noise_sensitive_buildings_nearby": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-009-noise-exceedance"
+        ]
+      },
+      "non_personnel_equipment_carrying_person": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-009-suspended-platform-lifting-violation"
+        ]
+      },
+      "opening_closed": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-009-service-shaft-opening"
+        ]
+      },
+      "outer_stair_net_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-002-stair-edge"
+        ]
+      },
+      "passage_clear": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-014-fire-access-blocked"
+        ]
+      },
+      "passage_or_work_area_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-012-passage-shed-protection"
+        ]
+      },
+      "person_in_danger_zone": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-008-machinery-area-not-cleared"
+        ]
+      },
+      "person_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-001-no-harness-at-height",
+          "R-BHV-002-helmet-and-attire",
+          "R-BHV-004-illegal-climbing",
+          "R-BHV-012-inattentive-unsafe-behavior",
+          "R-CIV-011-smoking-burning"
+        ]
+      },
+      "pit_or_trench_edge_present": {
+        "pass": "subject",
+        "opening_class": true,
+        "provisions": [
+          "R-EDG-006-pit-trench-edge"
+        ]
+      },
+      "project_overview_board_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-012-public-signboards-missing"
+        ]
+      },
+      "protection_intact_and_stable": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-001-horizontal-opening-protection",
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ]
+      },
+      "protective_door_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ]
+      },
+      "protective_shed_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-012-passage-shed-protection"
+        ]
+      },
+      "roof_balcony_platform_edge_present": {
+        "pass": "subject",
+        "opening_class": true,
+        "provisions": [
+          "R-EDG-003-roof-balcony-platform-edge"
+        ]
+      },
+      "safety_board_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-012-public-signboards-missing"
+        ]
+      },
+      "safety_net_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-001-horizontal-opening-protection"
+        ]
+      },
+      "scaffold_structure_gap_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-005-scaffold-structure-gap"
+        ]
+      },
+      "scrap_condition_met": {
+        "pass": "not_asked",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-013-damaged-lifting-gear"
+        ]
+      },
+      "sedimentation_facility_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-007-vehicle-wash"
+        ]
+      },
+      "shaft_opening_present": {
+        "pass": "subject",
+        "opening_class": true,
+        "provisions": [
+          "R-OPN-009-service-shaft-opening"
+        ]
+      },
+      "shed_covering_intact": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-012-passage-shed-protection"
+        ]
+      },
+      "side_enclosure_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-004-hoist-landing-platform",
+          "R-EDG-006-pit-trench-edge"
+        ]
+      },
+      "side_guardrail_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-004-hoist-landing-platform"
+        ]
+      },
+      "site_appearance_poor": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-018-poor-overall-housekeeping"
+        ]
+      },
+      "site_boundary_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-001-hoarding-missing-low"
+        ]
+      },
+      "site_exit_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-007-vehicle-wash",
+          "R-CIV-008-road-dust-exceedance"
+        ]
+      },
+      "site_gate_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-012-public-signboards-missing",
+          "R-CIV-013-temporary-facilities"
+        ]
+      },
+      "site_plan_board_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-012-public-signboards-missing"
+        ]
+      },
+      "smoking_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-011-smoking-burning"
+        ]
+      },
+      "special_operation_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-006-uncertified-special-operation"
+        ]
+      },
+      "spoil_grossly_overheight": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-005-spoil-waste-overheight-uncleared"
+        ]
+      },
+      "stacking_orderly": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-003-material-stacking-labeling"
+        ]
+      },
+      "stair_edge_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-002-stair-edge"
+        ]
+      },
+      "standing_water_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-002-road-unhardened-water-mud"
+        ]
+      },
+      "still_in_use": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-013-damaged-lifting-gear"
+        ]
+      },
+      "supervision_phone_board_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-012-public-signboards-missing"
+        ]
+      },
+      "temporary_cable_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-016-cable-on-ground"
+        ]
+      },
+      "temporary_facilities_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-013-temporary-facilities"
+        ]
+      },
+      "toe_board_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-EDG-004-hoist-landing-platform",
+          "R-EDG-007-guardrail-construction",
+          "R-OPN-004-vertical-and-low-sill-opening",
+          "R-OPN-005-elevator-shaft-door-and-net"
+        ]
+      },
+      "trip_or_electric_risk_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-016-cable-on-ground"
+        ]
+      },
+      "two_persons_on_same_ladder": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-005-improper-ladder-use"
+        ]
+      },
+      "unsafe_awareness_lapse_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-012-inattentive-unsafe-behavior"
+        ]
+      },
+      "unsafe_climbing_object": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-BHV-004-illegal-climbing"
+        ]
+      },
+      "vehicle_clean_before_exit": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-007-vehicle-wash"
+        ]
+      },
+      "vertical_net_or_panel_present": {
+        "pass": "state",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-004-vertical-and-low-sill-opening"
+        ]
+      },
+      "vertical_opening_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-OPN-004-vertical-and-low-sill-opening"
+        ]
+      },
+      "waste_or_spoil_present": {
+        "pass": "subject",
+        "opening_class": false,
+        "provisions": [
+          "R-CIV-005-spoil-waste-overheight-uncleared"
+        ]
+      }
+    }
+  },
+  "limits": [
+    "post hoc: all primary results were seen before this plan",
+    "pivotal atom is a one-at-a-time attribution, not a causal estimate",
+    "project type is a keyword rule over site names, not a survey"
+  ],
+  "redaction": "H3 b_lost_pairs.pairs and c_public_rule_4.pairs reduced to counts; d_cases.f6_panel_b.image_id replaced by its figure panel"
+}
