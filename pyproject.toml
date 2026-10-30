@@ -1,6 +1,6 @@
 [project]
 name = "argus"
-version = "2.1.0"
+version = "2.4.0"
 description = "RCASR on ARGus: risk-controlled applicability set retrieval for auditable visual regulatory compliance."
 readme = "README.md"
 requires-python = ">=3.11"

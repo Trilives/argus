@@ -38,9 +38,17 @@ def snapshot(root: Path, files: list[Path]) -> dict:
 
 
 def verify_snapshot(root: Path, frozen: dict) -> None:
+    migration_path = root / "reproduce/path_migrations.json"
+    migrations = read_json(migration_path) if migration_path.is_file() else {}
     for name, expected in frozen["file_sha256"].items():
-        path = root / name
-        if not path.is_file() or sha256(path) != expected:
+        relative = migrations.get("paths", {}).get(name, {}).get("destination", name)
+        path = root / relative
+        if not path.resolve().is_relative_to(root.resolve()) or not path.is_file():
+            raise ValueError(f"frozen input changed or missing: {name}")
+        actual = sha256(path)
+        edit = migrations.get("code_updates", {}).get(name, {})
+        allowed_path_edit = edit.get("original_sha256") == expected and edit.get("current_sha256") == actual
+        if actual != expected and not allowed_path_edit:
             raise ValueError(f"frozen input changed or missing: {name}")
 
 

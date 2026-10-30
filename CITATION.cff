@@ -1,9 +1,9 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite the paper below."
+message: "Please cite the manuscript below and the accompanying software/data archive."
 title: >-
   Risk-Controlled Applicability Set Retrieval (RCASR) for Regulation-Grounded
   Construction-Site Visual Screening
-  — code, frozen configurations, analysis plans and aggregate results (ARGus)
+  — code, data, frozen configurations, analysis plans and aggregate results (ARGus)
 abstract: >-
   Code and evaluation artifacts for Risk-Controlled Applicability Set Retrieval
   (RCASR). Screening a site photograph against a regulation library first requires
@@ -12,32 +12,38 @@ abstract: >-
   that each provision's compiled subject and state conditions hold, computed from
   token-level posteriors over 131 rule-agnostic visual atoms with abstention, and
   selects a set at a target mean width or under conformal risk control. Includes the
-  frozen runtime configurations, pre-specified analysis plans, SHA-256 input
-  snapshots and the aggregate results behind every table, on top of the ARGus
-  screening framework built at an earlier stage of this study (releases v1.x).
+  frozen runtime configurations, analysis plans, SHA-256 input
+  snapshots and the aggregate results behind every table, together with the
+  ARGus screening framework.
+  Includes 1,000 reviewed original-image IDs: 500 unchanged evaluation-gold
+  photographs and 500 additional unlabelled research photographs; no crops.
+  The images are validation/supporting material, not a claimed dataset contribution.
+  Gold photographs and labels retain CC BY 4.0; eligible additional files use
+  CC BY-NC 4.0, with existing grants preserved for explicitly listed exceptions.
+  Code and rule representation use Apache-2.0.
+  Primary analyses, later comparisons and post-hoc revision analyses are indexed separately.
 license: Apache-2.0
 repository-code: "https://github.com/Trilives/argus"
 doi: "10.5281/zenodo.21535053"
-version: "2.3.0"
-date-released: "2026-10-24"
+version: "2.4.0"
 authors:
   - given-names: "Fangjie"
     family-names: "Wu"
-    affiliation: "China Construction Third Engineering Bureau Group (Shenzhen) Co., Ltd., Shenzhen, China"
+    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd., Shenzhen, China"
   - given-names: "Xingpeng"
     family-names: "Jiang"
     affiliation: "School of Computer Science and Technology, Harbin Institute of Technology, Shenzhen, China"
     orcid: "https://orcid.org/0009-0008-1578-3403"
   - given-names: "Wenlong"
     family-names: "Zhang"
-    affiliation: "China Construction Third Engineering Bureau Group (Shenzhen) Co., Ltd., Shenzhen, China"
+    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd., Shenzhen, China"
   - given-names: "Boran"
     family-names: "Wang"
     affiliation: "International Institute of Artificial Intelligence, Harbin Institute of Technology, Shenzhen, China"
     orcid: "https://orcid.org/0009-0007-9224-2697"
   - given-names: "Jie"
     family-names: "Gong"
-    affiliation: "China Construction Third Engineering Bureau Group (Shenzhen) Co., Ltd., Shenzhen, China"
+    affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd., Shenzhen, China"
 preferred-citation:
   type: article
   title: >-

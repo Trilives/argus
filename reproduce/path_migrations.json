@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "reason": "User authorized renaming docs/paper_v3 to docs/research. Original snapshots remain unchanged.",
+  "paths": {
+    "docs/paper_v3/design/MODEL_SWAP_PRESPEC.md": {
+      "destination": "docs/research/design/MODEL_SWAP_PRESPEC.md",
+      "sha256": "db52cb9fc4ca36e16eaa82eafa090a0838cd936976913da23dc59db972d00dbc"
+    },
+    "docs/paper_v3/design/REVISION_POSTHOC_PRESPEC.md": {
+      "destination": "docs/research/design/REVISION_POSTHOC_PRESPEC.md",
+      "sha256": "6a4cf6f3aec8d16ff6e2933d7da3a6908151b2a754a3fa3facd01a684aa2e35d"
+    },
+    "docs/paper_v3/design/RCASR_PRESPEC.md": {
+      "destination": "docs/research/design/RCASR_PRESPEC.md",
+      "sha256": "b79dc1db76f44a339924be73f14b270f59a944d3bb40b4f63e2b83b6e430bd70"
+    },
+    "docs/paper_v3/design/ONROBOT_ROUND_PRESPEC.md": {
+      "destination": "docs/research/design/ONROBOT_ROUND_PRESPEC.md",
+      "sha256": "7bb8ce3b8a9facc86f8864ad5b06f81f9e5bfbbfc050944f1fb870b907adf15c"
+    },
+    "docs/paper_v3/design/ONROBOT_FP8_PRESPEC.md": {
+      "destination": "docs/research/design/ONROBOT_FP8_PRESPEC.md",
+      "sha256": "5bf3d22f5794a14b3f685225e0472a2b01295ee3d6ac3a874fb64e22a1179614"
+    },
+    "docs/paper_v3/design/LOWWIDTH_E2_PRESPEC.md": {
+      "destination": "docs/research/design/LOWWIDTH_E2_PRESPEC.md",
+      "sha256": "6700512766270f33e1fbfd3279d0a5198656a39b46f86365c8312525a849d7ca"
+    },
+    "docs/paper_v3/design/RCASR_PROPOSAL.md": {
+      "destination": "docs/research/design/RCASR_PROPOSAL.md",
+      "sha256": "285e4df052c3e9b5c62944a272691894f8597eac6054cdaf0b46cda2fe292732"
+    },
+    "docs/paper_v3/design/TWO_STAGE_PRIOR_PRESPEC.md": {
+      "destination": "docs/research/design/TWO_STAGE_PRIOR_PRESPEC.md",
+      "sha256": "aa71b9111b3b394a5bb3319283a494e529a2c9500d9fc50bfdc2cfb6de7f2a99"
+    },
+    "docs/paper_v3/design/S34_DEFAULT_PRESPEC.md": {
+      "destination": "docs/research/design/S34_DEFAULT_PRESPEC.md",
+      "sha256": "71a474fdee719334ed9cfda39058389289ecd54c72f8fd366bd884870a159558"
+    }
+  },
+  "code_updates": {
+    "src/rcasr_experiment.py": {
+      "original_sha256": "8088ad20f0a84dc9b9fa274843e9dfee614e50efc6f8b63b9cb109c85fa2a061",
+      "current_sha256": "5703f4ad7bd5e6e7c517227351a420c4f781e2a6cbca1aff19b3a1e7962e2cdf",
+      "reason": "Path reference update only; protocol bytes and research logic unchanged."
+    },
+    "src/two_stage_prior.py": {
+      "original_sha256": "187829dac6c4998da33437bf1126b55be56952d9dfa2d319eefc533f2b305bda",
+      "current_sha256": "0c4a56afdb1bb97eccafd98170e31ba5bdd1ae9a9d3f98fd2956850a72808b14",
+      "reason": "Path reference update only; protocol bytes and research logic unchanged."
+    },
+    "experiments/retrieval/eval_lowwidth_e2.py": {
+      "original_sha256": "d83ec56d1e02b16dc4f04bbba4533c436aaf1750f7e87d25dcb475f32d39e18f",
+      "current_sha256": "450e7269f6b92feb11039b3fb0f0c686b31a5998aae000645df09006708471e6",
+      "reason": "Path reference update only; protocol bytes and research logic unchanged."
+    },
+    "experiments/retrieval/eval_s34_default.py": {
+      "original_sha256": "99316ebb8eb65e2fc800579079c465a11ca077eb07e9817ad9acbc985b30b04c",
+      "current_sha256": "e6b44cfd832dcc266b5df542a85ab8fa4c63614d1aa7ef409ddf0ae662784183",
+      "reason": "Path reference update only; protocol bytes and research logic unchanged."
+    },
+    "experiments/retrieval/eval_revision_cases.py": {
+      "original_sha256": "d5be19a6f6a7ad90c8acf0efbc18c0f88afb0312f397fb2c7dc53db45b92a48c",
+      "current_sha256": "783516a61048a0a7474b849783cdbb349183483f1f855ea00d61df168777f79d",
+      "reason": "Path reference update only; protocol bytes and research logic unchanged."
+    },
+    "experiments/retrieval/eval_model_swap.py": {
+      "original_sha256": "749965364175cf0c4dab2d99f97cbd785967e086e46e8c06bb129769df558a6a",
+      "current_sha256": "3abab34f3e74b9d354e31f618daeb25f729bbad7f7c9f46a1b18feda761f6e27",
+      "reason": "Path reference update only; protocol bytes and research logic unchanged."
+    },
+    "experiments/retrieval/eval_revision_posthoc.py": {
+      "original_sha256": "27797c7a007233f70dd4b8ff0a88dc4aaf2b9e087edcac09615580665fa6eb92",
+      "current_sha256": "02b4f16b085e233ea33951b7f2fbe7a19b0b97b0f04d08277f1333547627d298",
+      "reason": "Path reference update only; protocol bytes and research logic unchanged."
+    },
+    "experiments/retrieval/eval_rcasr.py": {
+      "original_sha256": "eaa42a6ff4120fa8d5520b0c1ac74077f0860a0b48a39526c72ba11baf5aa8fc",
+      "current_sha256": "af079202b31934b9d0bb30f95e6153aedbcbecf7ccd53bd312b5395960390c98",
+      "reason": "Path reference update only; protocol bytes and research logic unchanged."
+    },
+    "experiments/retrieval/eval_rcasr_tsr.py": {
+      "original_sha256": "4baad272a53b2dd5efab3be7fda0ccca3a2ff1ffd9bbd885370c221c7c5349fb",
+      "current_sha256": "88cc28046cec60dc4830a65093ea1fad4669dbe8bffc308fdf597006aa1f9d7c",
+      "reason": "Path reference update only; protocol bytes and research logic unchanged."
+    },
+    "src/research_snapshot.py": {
+      "original_sha256": "802ffd0b82cfb55617cc752e013b1ad007d2917c5f03833fd0f10ab77d72e051",
+      "current_sha256": "f5d6548c389da7f4f0cc3ba8a7a66be92e3ef12aa5527679e8aaac7b994621c6",
+      "kind": "snapshot_path_resolution",
+      "reason": "Resolve documented file relocations and exact path-only code updates without rewriting stored snapshots."
+    }
+  }
+}

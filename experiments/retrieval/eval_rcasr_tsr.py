@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Two-stage retrieval prior (Todo 3-B): RCASR on a SigLIP-2 -> cross-encoder prior.
 
-Pre-specification: ``docs/paper_v3/design/TWO_STAGE_PRIOR_PRESPEC.md`` (written before this
+Pre-specification: ``docs/research/design/TWO_STAGE_PRIOR_PRESPEC.md`` (written before this
 script ran). The retriever is label-free (``src/two_stage_prior.py``). The analysis imports every
 method function from the frozen v2 analysis unchanged and swaps only the prior.
 
@@ -33,7 +33,7 @@ from set_selection_metrics import metrics  # noqa: E402
 from two_stage_prior import pin, rank_prior  # noqa: E402
 
 CONFIG = "data/rules/proposed/rcasr_v1_tsr.json"
-PLAN = "docs/paper_v3/design/TWO_STAGE_PRIOR_PRESPEC.md"
+PLAN = "docs/research/design/TWO_STAGE_PRIOR_PRESPEC.md"
 OUT = CS_ROOT / "results/2026-09-27_rcasr_tsr"
 V2 = "results/2026-09-22_rcasr_v2"
 FILES = (CONFIG, PLAN, "experiments/retrieval/eval_rcasr_tsr.py", "src/two_stage_prior.py",

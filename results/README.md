@@ -1,16 +1,17 @@
 # Results (aggregate)
 
-Machine-readable summaries behind the paper's tables, for the earlier stage of this study (v1.x), computed on the frozen 500-image gold set
+Machine-readable summaries supporting the paper, computed on the frozen 500-image gold set
 (see `../data/README.md`). These are **aggregate** metrics: no images, no gold labels, and no
 per-pair model outputs are included. The one exception is the near-duplicate audit, which lists bare
 image identifiers — no labels, no imagery — and only for the perceptual-hash clusters it reports.
 
 Regenerate with `scripts/mirror_public_results.py` in the full research repository.
 
-## RCASR (v2.0.0): the tables of the current paper
+## RCASR results
 
 Each run directory keeps its research-repository path and carries the `input_snapshot.json` that
-pins its inputs by SHA-256. The analysis plans are in `../docs/paper_v3/design/`.
+pins its inputs by SHA-256. Use the [research-plan index](../docs/research/README.md)
+for a reading order and the [snapshot guide](../docs/REPRODUCIBILITY.md) for verification.
 
 | File | What it backs |
 |---|---|
@@ -23,16 +24,16 @@ pins its inputs by SHA-256. The analysis plans are in `../docs/paper_v3/design/`
 | `2026-09-23_s34_default/s34_results.json` | The no-subject abstention default: identical `non_compliant` sets under both rules on every judged pair, and the review-load change. |
 | `2026-09-23_deployment/deployment_parity.json` | Runtime parity: the deployed selector reproduces the frozen selections; stated facts-model difference. |
 | `2026-09-23_deployment/deployment_simulation.json` | Stored-frame replay through the deployed runtime (pilot): decision rates, realised width and latency per slice. |
-| `2026-09-24_model_swap/model_swap_results.json` | The whole chain on one model (Qwen3.5-9B, its FP8 checkpoint, Qwen3.8-27B-FP8): per-arm metrics at width 2, the within-arm gates, the paired difference from the reported configuration, judge cost and per-frame latency (v2.1.1). Per-arm `input_snapshot.json`, `fit.json` and token usage are in `q9/`, `q9f/`, `q27/`. |
-| `2026-09-27_rcasr_tsr/tsr_results.json` | RCASR on a two-stage retrieval prior (SigLIP 2 top ten, cross-encoder rerank): gates T1/T2/TN, one-factor ablations at matched width, the width-3 context comparisons, CRC, leave-one-family-out, harm and cost (v2.1.1). Sites are renamed `site_NN` as in the v2 result, and lost pairs are reduced to a count. |
-| `2026-10-24_revision_posthoc/posthoc_results.json` | Revision analyses over the frozen outputs, no model called (plan: `../docs/paper_v3/design/REVISION_POSTHOC_PRESPEC.md`): the non-visual provisions (H1), recorded-but-not-violated pairs (H2), CRC (H4), multiplicity, Monte Carlo, per-site sign test, leave-one-family-out CIs, family end-to-end and margins (H5), and the 154 images without a site (H6). |
+| `2026-09-24_model_swap/model_swap_results.json` | The whole chain on one model (Qwen3.5-9B, its FP8 checkpoint, Qwen3.8-27B-FP8): per-arm metrics at width 2, the within-arm gates, the paired difference from the reported configuration, judge cost and per-frame latency. Per-arm `input_snapshot.json`, `fit.json` and token usage are in `q9/`, `q9f/`, `q27/`. |
+| `2026-09-27_rcasr_tsr/tsr_results.json` | RCASR on a two-stage retrieval prior (SigLIP 2 top ten, cross-encoder rerank): gates T1/T2/TN, one-factor ablations at matched width, the width-3 context comparisons, CRC, leave-one-family-out, harm and cost. Sites are renamed `site_NN` as in the internal result, and lost pairs are reduced to a count. |
+| `2026-10-24_revision_posthoc/posthoc_results.json` | Revision analyses over the frozen outputs, no model called (plan: `../docs/research/design/REVISION_POSTHOC_PRESPEC.md`): the non-visual provisions (H1), recorded-but-not-violated pairs (H2), CRC (H4), multiplicity, Monte Carlo, per-site sign test, leave-one-family-out CIs, family end-to-end and margins (H5), and the 154 images without a site (H6). |
 | `2026-10-24_revision_posthoc/cases_results.json` | Atom errors behind the missed pairs and the two decomposed cases (H3; Supplementary Table S5), project types and images per site (H7), and the atom vocabulary per provision (H8; Supplementary Table S2). Per-pair lists are reduced to counts, and the internal case is named by its figure panel. |
 | `2026-09-23_deployment/onrobot_round.json` | The on-robot round under the frozen and the site-recalibrated threshold: the proxies of the robot table. Unlabelled, so there are no accuracy figures. |
-| `2026-09-27_onrobot_fp8/onrobot_fp8.json` | The whole chain on the robot's own GPU: one Qwen3.5-9B-FP8 checkpoint as extractor and judge, on the same 76-frame round at the site-recalibrated threshold. Per-frame latency percentiles, GPU memory, serving settings, checkpoint hashes and proxies (v2.2.0; manuscript Section 5.2). Unlabelled, so there are no accuracy figures. Its configuration is `../configs/rcasr_runtime_v1_recal_site_q9f.json`. |
+| `2026-09-27_onrobot_fp8/onrobot_fp8.json` | The whole chain on the robot's own GPU: one Qwen3.5-9B-FP8 checkpoint as extractor and judge, on the same 76-frame round at the site-recalibrated threshold. Per-frame latency percentiles, GPU memory, serving settings, checkpoint hashes and proxies (manuscript Section 5.2). Unlabelled, so there are no accuracy figures. Its configuration is `../configs/rcasr_runtime_v1_recal_site_q9f.json`. |
 
 The runtime configurations the robot runs are in `../configs/`.
 
-## ARGus (v1.x): the tables of the earlier stage
+## ARGus baseline results
 
 ## Retrieval
 

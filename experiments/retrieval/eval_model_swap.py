@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Model swap (paper-v3): RCASR-BM25 at width 2 run end to end on one model.
 
-Pre-specification: ``docs/paper_v3/design/MODEL_SWAP_PRESPEC.md`` (written before this
+Pre-specification: ``docs/research/design/MODEL_SWAP_PRESPEC.md`` (written before this
 script ran). Arms Q9 / Q9F / Q27 replace the scene descriptions, the atom passes and the
 judge with one model; REF is the frozen reported configuration. Every method function is
 imported unchanged from the frozen analysis (cross-fit, per-fold width-2 re-threshold,
@@ -42,7 +42,7 @@ from backends import usage  # noqa: E402
 from research_snapshot import read_json, sha256, snapshot, verify_snapshot  # noqa: E402
 from set_selection import matched_rank_sets  # noqa: E402
 
-PLAN = "docs/paper_v3/design/MODEL_SWAP_PRESPEC.md"
+PLAN = "docs/research/design/MODEL_SWAP_PRESPEC.md"
 OUT = CS_ROOT / "results/2026-09-24_model_swap"
 V2 = "results/2026-09-22_rcasr_v2"
 LOWWIDTH = "results/2026-09-22_rcasr_lowwidth"

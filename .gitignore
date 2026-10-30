@@ -23,7 +23,9 @@ scratch_models/
 # Bulk / private data must NEVER be committed to this public repo.
 # It intentionally ships only curated public subsets:
 #   examples/sample_images/  (40 privacy-reviewed demo images)
-#   data/gold_images/        (the 500 gold images, faces blurred and reviewed one by one, v2.2.0)
+#   data/gold_images/        (500 unchanged privacy-reviewed evaluation-gold images)
+#   data/research_images/    (500 additional individually reviewed, unlabelled originals)
+#   data/image_pool/         (combined checksums and anonymous source-byte aliases)
 #   results/**/*summary*.json + the aggregate retrieval summary
 # Do not add unblurred images, the full gold records, or per-image result dumps.
 /data/images/
@@ -42,3 +44,11 @@ scratch_models/
 # Local run outputs of run_rcasr.py / run_demo.py
 /results/demo_rcasr/
 /results/demo/
+
+# Author-side review records and release archives stay outside the public package.
+/release-review/
+/review_private*.json
+/review_freeze/
+/final_contact_sheets/
+/final_blur_region_sheets/
+*.zip

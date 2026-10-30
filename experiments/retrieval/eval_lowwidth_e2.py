@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Low-width E2 (paper-v3 §E2, R10): RCASR-BM25 at target mean width 2 against BM25 width 3.
 
-Pre-specification: ``docs/paper_v3/design/LOWWIDTH_E2_PRESPEC.md`` (written before this
+Pre-specification: ``docs/research/design/LOWWIDTH_E2_PRESPEC.md`` (written before this
 script ran). The fitted RCASR parameters of the v2 analysis freeze are reused unchanged; only
 the per-fold global threshold is re-set on the fitting folds at the lower budget. Every
 selected pair is expected to sit inside the width-3 selection and therefore to carry a frozen
@@ -33,7 +33,7 @@ from research_snapshot import read_json, sha256, snapshot, verify_snapshot  # no
 from set_selection import matched_rank_sets  # noqa: E402
 
 OUT = CS_ROOT / "results/2026-09-22_rcasr_lowwidth"
-PLAN = "docs/paper_v3/design/LOWWIDTH_E2_PRESPEC.md"
+PLAN = "docs/research/design/LOWWIDTH_E2_PRESPEC.md"
 V2 = "results/2026-09-22_rcasr_v2"
 JUDGE = "results/2026-09-22_rcasr_judge"
 CONFIG_PATH = "data/rules/proposed/rcasr_v1.json"

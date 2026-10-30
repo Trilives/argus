@@ -4,7 +4,7 @@
 Two freezes. The **evidence** freeze is label-free: it pins prompts, model files and
 images, then runs the two rule-agnostic atom passes against a locally served extractor.
 The **analysis** freeze pins that evidence plus the scoring code, then cross-fits and
-scores. The pre-specification ``docs/paper_v3/design/RCASR_PRESPEC.md`` is fixed before
+scores. The pre-specification ``docs/research/design/RCASR_PRESPEC.md`` is fixed before
 either runs.
 
 Usage::
@@ -108,7 +108,7 @@ def analysis(args: argparse.Namespace) -> None:
     out = CS_ROOT / args.out
     if args.prepare:
         rx.prepare(CS_ROOT, out, args.evidence, CONFIG_PATH)
-        (out / "analysis_plan.md").write_bytes((CS_ROOT / "docs/paper_v3/design/RCASR_PRESPEC.md").read_bytes())
+        (out / "analysis_plan.md").write_bytes((CS_ROOT / "docs/research/design/RCASR_PRESPEC.md").read_bytes())
         print(f"froze analysis -> {out / 'input_snapshot.json'}")
     if args.evaluate:
         result, rows = rx.evaluate(CS_ROOT, out)

@@ -1,14 +1,14 @@
 {
-  "title": "Risk-Controlled Applicability Set Retrieval (RCASR) for Regulation-Grounded Construction-Site Visual Screening — code, frozen configurations, analysis plans and aggregate results (ARGus)",
-  "description": "Code and evaluation artifacts for Risk-Controlled Applicability Set Retrieval (RCASR), accompanying the manuscript \"Risk-Controlled Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening\". Screening a site photograph against a regulation library first requires deciding which provisions apply. RCASR frames this as set prediction under asymmetric miss/exposure cost: it re-weights a retrieval prior by the probability that each provision's compiled subject and state conditions hold, computed from token-level posteriors over 131 rule-agnostic visual atoms with abstention, and selects a set at a target mean width or under conformal risk control. On 346 photographs from 48 sites under a 42-provision regime, with site-grouped cross-fitting, recorded-violation recall at a matched mean width of three rose from 0.515 (BM25) to 0.709. A pre-specified width-two arm kept BM25's width-three recall while cutting false alarms per image from 1.28 to 1.00. Frozen before public scoring, RCASR raised ConstructionSite-10k violation detection for harness use from 0.08 to 0.80 and for PPE from 0.43 to 0.67. The configuration runs on a quadruped patrol robot. Release v2.3.0 adds the plan, code, input snapshot and aggregate results of the post-hoc analyses H1-H8 over frozen outputs that the revised manuscript reports (statistics, the non-visual provisions, atom errors behind the missed pairs, the data description and the atom vocabulary); per-pair lists are reduced to counts. Release v2.2.0 publishes the 500 gold photographs with workers' faces blurred (CC BY 4.0; reviewed image by image, pixel-checked, metadata removed) alongside their label-only annotations, and adds the configuration and record of the whole chain run on the robot's own GPU with one FP8 checkpoint. Release v2.1.1 adds the artifacts behind two further results: the whole chain run on a single model, and RCASR on a two-stage (SigLIP 2 then cross-encoder) retrieval prior, which raised recall at matched width 3 from 0.509 to 0.640; it also re-blurs samples P021-P040 on faces and identifying text only, so protective equipment stays visible. Release v2.1.0 added a runner that applies the robot's frozen configuration to any image, a guide that screens ConstructionSite-10k test images fetched with the user's own gated access and compares the result with the released selection, and 20 further sample images with faces and identifying text Gaussian-blurred (audited). Release v2.0.0 added the RCASR code, the frozen runtime configurations, the pre-specified analysis plans, SHA-256 input snapshots and the aggregate results behind every table, on top of the ARGus screening framework built at an earlier stage of this study (v1.x), whose code, provision library, prompts, sample images, aggregate results and online supplement are retained. Unblurred imagery, the full gold records, site keys and per-pair model outputs are not included; they are available from the corresponding author under a data-use agreement.",
-  "version": "v2.3.0",
+  "title": "Risk-Controlled Applicability Set Retrieval (RCASR) for Regulation-Grounded Construction-Site Visual Screening — code, data and research artifacts (ARGus)",
+  "description": "Code and evaluation artifacts accompanying \"Risk-Controlled Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening\". The contributions are an applicability-aware provision selector, site-grouped matched-width evaluation and failure analysis traced from evidence to selection. Company-owned photographs provide a validation platform, not a new dataset contribution. RCASR combines a retrieval prior with visual-atom posteriors and selects provisions at a stated width or miss risk. The primary evaluation uses 346 site-assigned photographs from a frozen 500-image gold, across 48 sites and 42 provisions; labels are not exhaustive. The repository includes those 500 gold photographs and their label-only annotations, 500 additional unlabelled originals and 40 demonstration files. No cropped dataset images are included. The additional originals do not change gold annotations, site splits, plans, predictions or reported results. Software/rule representation use Apache-2.0. Gold photographs and labels retain CC BY 4.0 as stated in the manuscript. Of the additional files, 463 use CC BY-NC 4.0: non-commercial use only, with separate written company permission required for commercial use. Nineteen retain existing gold-image CC BY grants and eighteen retain demonstration-image Apache-2.0 grants; per-image licences and exceptions are in the manifests. Company-authorized first author Fangjie Wu arranges image release, and the maintainer uploads copies on his behalf; ownership remains with the company. Raw records, site identities, robot frames and gated third-party data are not redistributed. The width-two arm was specified after primary results and a retrieval diagnostic but before width-two end-to-end scoring; revision H1-H8 analyses are post hoc. Robot records demonstrate feasibility, not independent field accuracy. Repository guides explain contribution boundaries, funding/involvement, licences, snapshots, model-free tests and score reproduction.",
+  "version": "v2.4.0",
   "upload_type": "software",
   "license": "Apache-2.0",
   "access_right": "open",
   "creators": [
     {
       "name": "Wu, Fangjie",
-      "affiliation": "China Construction Third Engineering Bureau Group (Shenzhen) Co., Ltd."
+      "affiliation": "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
     },
     {
       "name": "Jiang, Xingpeng",
@@ -17,7 +17,7 @@
     },
     {
       "name": "Zhang, Wenlong",
-      "affiliation": "China Construction Third Engineering Bureau Group (Shenzhen) Co., Ltd."
+      "affiliation": "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
     },
     {
       "name": "Wang, Boran",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Gong, Jie",
-      "affiliation": "China Construction Third Engineering Bureau Group (Shenzhen) Co., Ltd."
+      "affiliation": "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd."
     }
   ],
   "keywords": [

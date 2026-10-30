@@ -1,4 +1,4 @@
-# Gold images (v2.2.0)
+# Gold images
 
 The 500 photographs of the frozen gold set, with workers' faces blurred. Their labels are the
 label-only gold in [`../../reproduce/gold_labels.json`](../../reproduce/gold_labels.json), keyed by

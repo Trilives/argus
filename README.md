@@ -1,302 +1,108 @@
-# Risk-Controlled Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening
+# RCASR on ARGus
 
-**RCASR** (on the **ARGus** framework): code, frozen configurations, analysis plans and aggregate
-results for the paper of that name.
+Code, data and research artifacts for **Risk-Controlled Applicability Set Retrieval for
+Regulation-Grounded Construction-Site Visual Screening**.
 
-Screening a site photograph against a regulation library first requires deciding which provisions
-apply. Fixed top-*k* retrieval ranks provisions by textual relevance, not visible applicability, so
-widening the list buys recall only by exposing the judge to inapplicable provisions. RCASR frames
-applicability as **set prediction under asymmetric miss/exposure cost**. It re-weights a retrieval
-prior by the probability that each provision's compiled subject and state conditions hold, computed
-from token-level posteriors over 131 rule-agnostic visual atoms with abstention. It then selects a
-set either at a target mean width (budget mode) or under conformal risk control on the miss rate.
+RCASR selects which provisions apply to a site photograph. It combines a retrieval prior with
+posteriors over 131 visual atoms, selecting a set under asymmetric miss/exposure costs at a target
+width or under conformal risk control. ARGus supplies screening, retrieval agents and symbolic
+judgements that trace back to regulatory clauses.
 
-Headline results (all pre-specified; the internal evaluation uses site-grouped cross-fitting):
+The paper contributes the applicability selector, site-grouped evaluation design and failure
+analysis. Company-owned photographs provide the validation platform; a new dataset is not a
+claimed contribution. See [the manuscript-to-repository map](docs/PAPER_ALIGNMENT.md).
 
-- **346 photographs, 48 sites, 42 provisions, matched mean width 3.** Recorded-violation recall
-  rose from 0.515 (BM25) to 0.709. RCASR beat an unstructured adaptive threshold and a ternary
-  screen, and matched a multi-turn agent retriever.
-- **Width-2 arm.** With one frozen judge, a pre-specified width-2 arm kept BM25's width-3 recall.
-  False alarms per image fell from 1.28 to 1.00.
-- **ConstructionSite-10k (public).** Frozen before public scoring, RCASR raised violation detection
-  for harness use from 0.08 to 0.80 and for PPE from 0.43 to 0.67. It lost the excavator-radius
-  rule; the mechanism is reported in the paper.
-- **Two-stage retrieval prior.** On a SigLIP 2 → cross-encoder prior, RCASR raised recall at matched
-  width 3 from 0.509 to 0.640 (+0.132, 95% site CI [+0.085, +0.171]). As a fixed top-3, that retriever
-  was no better than BM25, and RCASR on it stayed below RCASR on BM25.
-- **One model end to end.** Run on a single 9B model, the whole chain showed no detectable difference
-  in recall or false alarms from the reported three-model configuration.
-- **Conformal risk control.** It held its miss-risk target, at a price of about ten candidates per
-  image at α = 0.10.
-- **Patrol robot.** The configuration runs on a quadruped patrol robot. The deployed runtime is
-  checked byte for byte against this analysis code, and one stored site round is reported with
-  operating proxies (no field-accuracy claim).
+**Image use:** 463 additional files are **non-commercial only (CC BY-NC 4.0)**. The gold images
+retain CC BY 4.0, and 37 previously published photographs in the additional subset retain their
+existing grants. Check each image's `license` field in the [manifest](data/image_pool/manifest.csv)
+and the [image licence](data/research_images/LICENSE) before reuse. Software remains Apache-2.0.
 
-> **Status.** Research code accompanying the manuscript above. Release **v2.0.0** added RCASR on
-> top of the ARGus screening framework built at an earlier stage of this study (releases v1.x), whose code, results and
-> online supplement are kept unchanged below. Release **v2.1.0** adds `run_rcasr.py`, a guide that
-> screens ConstructionSite-10k test images with your own gated access, and 20 more anonymised sample
-> images (see [`examples/README.md`](examples/README.md)). Release **v2.1.1** adds the artifacts behind two
-> further results of the paper, the single-model chain and the two-stage retrieval prior, and re-blurs samples
-> P021–P040 on faces and identifying text only, so protective equipment stays visible. Release **v2.2.0**
-> publishes the 500 gold photographs with workers' faces blurred (`data/gold_images/`, CC BY 4.0), and adds
-> the configuration and record of the whole chain run on the robot's own GPU. Release **v2.3.0** adds the plan, code,
-> input snapshot and aggregate results of the post-hoc analyses H1–H8 that the revised manuscript reports.
+## Start here
 
-## RCASR: what was added in v2.0.0
+| Goal | Entry point |
+|---|---|
+| Explore documentation | [Documentation index](docs/README.md) |
+| Read research plans in order | [Research plans and experiment map](docs/research/README.md) |
+| Find results and their files | [Results overview](docs/RESULTS_OVERVIEW.md) · [Result files](results/README.md) |
+| Inspect the image pool | [Data card](data/README.md) · [Combined manifest](data/image_pool/README.md) |
+| Run inference | [Examples](examples/README.md) · [Models](MODELS.md) |
+| Verify scores and frozen inputs | [Reproducibility](docs/REPRODUCIBILITY.md) |
+| Understand company involvement and ownership | [Research disclosures](docs/RESEARCH_DISCLOSURES.md) |
+| Verify the repository | [Verification guide](docs/VERIFICATION.md) |
 
-```
-src/
-├── rcasr.py                 # structured applicability score + width / CRC selection
-├── atom_posterior.py        # token-level atom posteriors with abstention (two rule-agnostic passes)
-├── typed_schema.py, typed_predicates.py, typed_evidence.py   # provision formulas compiled over atoms
-├── rcasr_experiment.py      # site-grouped cross-fitting, arms, ablations, gates, CRC calibration
-├── site_partition.py        # site units and folds (near-duplicate clusters fused)
-├── set_selection*.py        # set-selection metrics and matched-width reporting
-├── public_map.py            # frozen mapping of ConstructionSite-10k rules to the library
-└── research_snapshot.py     # SHA-256 input snapshots and their verification
-experiments/retrieval/
-├── eval_rcasr.py            # internal evaluation (evidence → cross-fitted selection)
-├── judge_rcasr.py, judge_rcasr_shard.py   # frozen end-to-end judge over the selected sets
-├── eval_lowwidth_e2.py      # the pre-specified width-2 arm
-├── eval_rcasr_public.py     # public auxiliary evaluation (ConstructionSite-10k)
-├── eval_s34_default.py      # the no-subject abstention default adopted by the deployed judge
-├── eval_model_swap.py       # the whole chain on one model (v2.1.1)
-├── eval_rcasr_tsr.py        # RCASR on a two-stage retrieval prior (v2.1.1; src/two_stage_prior.py)
-└── eval_revision_posthoc.py, eval_revision_cases.py   # revision post-hoc analyses H1–H8 over frozen outputs
-configs/
-├── rcasr_runtime_v1.json              # the frozen configuration the robot runs (sha256 ea624e49…)
-├── rcasr_runtime_v1_recal_site.json   # its label-free, site-recalibrated threshold (sha256 4cad9da1…)
-└── rcasr_runtime_v1_recal_site_q9f.json  # the same, one FP8 checkpoint as extractor and judge (16a14292…)
-data/rules/proposed/rcasr_v1.json      # frozen RCASR hyper-parameters and pre-specified grid
-data/rules/proposed/typed_evidence_v1.json   # the 131-atom vocabulary and per-provision bindings
-data/rule_assets/                      # rule units and the BM25 index built from the library
-data/public_eval/public_map_v1.json    # public rule mapping (the public labels are not redistributed)
-docs/paper_v3/design/*.md              # analysis plans, each written before its run
-results/2026-*/                        # aggregate results + input snapshots for every v3 table
-```
+## Install and verify
 
-**Verify the freeze.** Each `results/2026-*/input_snapshot.json` lists the SHA-256 of every input
-of that run. Paths are kept as in the research repository, so they resolve here. The analysis plans,
-frozen configurations, rule assets, experiment scripts and RCASR modules match their recorded hashes
-byte for byte (279 snapshot entries over 78 distinct files). The rest do not verify here, each for a stated reason:
-
-- **Restricted inputs are not released:** the unblurred images (the released ones in
-  `data/gold_images/` are blurred and scaled, so their hashes differ), the full gold records, site
-  keys, scene facts, atom evidence, per-pair verdicts, the per-frame reports of the robot round and the
-  ConstructionSite-10k labels.
-- **Files belong to this public package, not to the research checkout:** `pyproject.toml`,
-  `uv.lock`, and `src/config.py` / `src/schemas.py` (comments only).
-- **Redacted:** `results/2026-09-22_rcasr_v2/rcasr_results.json`,
-  `results/2026-09-27_rcasr_tsr/tsr_results.json` and
-  `results/2026-10-24_revision_posthoc/cases_results.json` (see `results/README.md`). The two-stage run's
-  snapshot collapses its 500 image entries into one digest; its other hashes are unchanged.
-- **Re-serialised JSON:** `results/data_audit/near_duplicates.json` is the v1.x copy, with the same
-  content in different formatting.
-- **Skip guard added:** `tests/test_site_partition.py` skips when the restricted site keys are
-  absent.
-
-`configs/rcasr_runtime_v1.json` names the snapshots it was derived from, and those hashes verify
-against the files here.
-
-**Tables.** `results/README.md` maps every table of the paper to the file behind it. The internal
-result `results/2026-09-22_rcasr_v2/rcasr_results.json` is released with construction-project names
-replaced by `site_NN` and lost gold pairs reduced to counts, so its hash differs from the research
-copy.
-
-**Tests.** `uv run --with pytest python -m unittest discover -s tests` runs 118 tests without models or restricted data;
-8 skip because they need the restricted site keys or the ConstructionSite-10k labels.
-
-## The ARGus framework (earlier stage of this study, releases v1.x)
-
-The screening framework RCASR plugs into. Given a site photograph, a bounded retrieval **agent**
-proposes the few provisions that plausibly apply. The verdict is then computed from a named provision
-formula over persisted checkpoint evidence, never the agent's free text, so every decision traces
-back to a clause. That stage measured where such screening fails: handed the correct
-provision, the judge reaches a grounded-violation F1 of **0.867**, while the best complete
-configuration reaches **0.514**. Retrieval, deciding which provisions apply, dominated end-to-end
-accuracy, and grounded precision fell at every widening step measured
-([`results/e2e/k_scan_summary.md`](results/e2e/k_scan_summary.md)). That finding motivates RCASR.
-The online supplement of that stage is [`paper/supplement.pdf`](paper/supplement.pdf).
-
-## What's here
-
-```
-argus/
-├── src/                         # the framework (rule-set-agnostic)
-│   ├── retrieval/               # fixed retrievers + the grep/read/submit agent (R1–R4)
-│   │   ├── agent_grep.py        #   text agent (R3) + the bounded loop / anytime termination
-│   │   ├── agent_grep_visual.py #   image-conditioned agent (R4)
-│   │   ├── bm25.py, text_overlap.py, siglip.py
-│   ├── pipeline.py              # the five-stage screening pipeline
-│   ├── symbolic_judgement.py    # neuro-symbolic (Kleene) verdict (J3-sym)
-│   ├── rules.py, schemas.py, validation.py, rule_families.py
-│   ├── backends/                # OpenAI-compatible (vLLM/SGLang) + local backends
-│   └── config.py, paths.py, ...
-├── scripts/
-│   └── bootstrap_rule_library.py  # interactive, schema-validating rule authoring tool
-├── data/
-│   ├── rules/rules_en.json      # the instantiated rule library (42 rules)
-│   ├── rules/rules_schema_en.json
-│   └── README.md                # gold data card; gold_images/ = the 500 blurred gold images
-├── examples/                    # 40 anonymised sample images + the RCASR guide (public images too)
-├── paper/supplement.pdf         # the paper's online supplement (ASCE no longer hosts these)
-├── results/                     # aggregate metrics behind the paper's tables
-├── reproduce/                   # freeze proof + label-only gold + GV scorer (verify the numbers)
-├── tests/                       # hermetic unit tests for the core invariants
-├── run_rcasr.py                 # RCASR on your images, frozen robot configuration
-├── run_demo.py                  # end-to-end ARGus demo (API or local vLLM service)
-├── MODELS.md                    # evaluated models + serve commands
-├── Prompts_en/                  # stage prompts (English runtime)
-├── pyproject.toml               # uv project (core deps + optional `serving` group)
-├── LICENSE / NOTICE / CITATION.cff
-```
-
-Run the tests (no models needed): `python -m unittest discover -s tests`.
-
-## Install
-
-This project uses [uv](https://docs.astral.sh/uv/).
+Run from the repository root with [uv](https://docs.astral.sh/uv/):
 
 ```bash
-uv sync                  # core deps (read the code, validate/author rules)
-uv sync --group serving  # + model-serving deps, only to run the VLM/judge pipeline
+uv sync --locked
+uv run --locked python scripts/verify_release.py
+uv run --locked --with pytest python -m pytest -q tests
+uv run --locked python scripts/bootstrap_rule_library.py --check data/rules/rules_en.json
 ```
 
-The core sync is enough to read the code, validate the rule library, and use the authoring tool.
-Running the VLM/judge pipeline additionally needs an OpenAI-compatible endpoint and the `serving`
-dependency group. Prefix commands with `uv run` (e.g. `uv run python scripts/...`).
+The offline verifier checks image hashes/subsets/metadata, release versions, local documentation
+links, known snapshot exceptions and the complete public-file manifest. Tests require no models
+or private credentials; tests requiring restricted inputs are explicitly skipped.
 
-## Quick start
-
-**Screen images with RCASR.** `run_rcasr.py` runs the frozen configuration the robot runs, on the
-bundled samples or on ConstructionSite-10k test images fetched with your own gated access, and
-compares the result with the released public selection. See the guide in
-[`examples/README.md`](examples/README.md#rcasr-guide-screen-images-with-the-frozen-configuration-the-robot-runs).
+Recompute the included ARGus baseline metric from bundled labels and predictions:
 
 ```bash
-RCASR_EXTRACTOR_URL=http://localhost:8000/v1 OPENAI_API_KEY=EMPTY uv run python run_rcasr.py examples/sample_images
+uv run --locked python reproduce/score_grounded_violations.py \
+  reproduce/gold_labels.json reproduce/predictions/R4_image_rules.jsonl
 ```
 
-**Run the end-to-end demo.** One multimodal model (default **Qwen3.5-9B**) runs every stage — image
-facts, the retrieval agent, and the judgement — over the bundled sample images. Two modes:
+This yields **GV-F1 0.514** (430 true positives, 982 predictions, 691 gold violations).
+See [label-only reproduction](reproduce/REPRODUCE.md) for the freeze and reliability report.
+
+## Run RCASR
+
+Serve a model with token log-probabilities using the [model instructions](MODELS.md), then:
 
 ```bash
-# Local service (needs a GPU): serves local Model/ weights if present, else downloads Qwen/Qwen3.5-9B
-uv sync --group serving
-uv run python run_demo.py
-
-# API mode: use an existing OpenAI-compatible endpoint (no local serving)
-OPENAI_BASE_URL=http://host:8000/v1 OPENAI_API_KEY=EMPTY uv run python run_demo.py
+export RCASR_EXTRACTOR_URL=http://localhost:8000/v1
+export OPENAI_API_KEY=EMPTY
+uv run --locked python run_rcasr.py examples/sample_images/P001.jpg --no-judge
+uv run --locked python run_rcasr.py data/research_images/img_0004.jpg
 ```
 
-Serve flags come from the model card (`--tool-call-parser qwen3_coder`). Configure via env vars
-(`ARGUS_MODEL`, `ARGUS_MODEL_PATH`, `ARGUS_RETRIEVAL`, `ARGUS_NUM_IMAGES`, …; see `run_demo.py`). Results
-land in `results/demo/`.
+These commands make model calls to your configured server. The [example guide](examples/README.md)
+covers thresholds, judgement, the ARGus demo and gated third-party inputs. Optional dependency
+groups are `serving` and `analysis`; install them for the workflows that need them.
 
-**Author or validate rules (no models needed).**
+## Included data
 
-```bash
-# Validate the shipped library
-uv run python scripts/bootstrap_rule_library.py --check data/rules/rules_en.json
+| Subset | Files | Labels and purpose |
+|---|---:|---|
+| [Gold originals](data/gold_images/README.md) | 500 | Unchanged evaluation gold; label-only annotations in `reproduce/` |
+| [Additional originals](data/research_images/README.md) | 500 | Privacy-reviewed research inputs; no new gold labels |
+| [Demonstration files](examples/README.md) | 40 | Existing anonymised examples; disjoint from gold |
 
-# Print a blank rule template
-uv run python scripts/bootstrap_rule_library.py --template
+The combined original-image pool has **1,000 anonymous IDs**, representing 968 distinct source
+byte streams and 32 alias pairs. It follows a fixed selection, rather than uniform random
+sampling or a new annotated test design. **No cropped dataset images are included.**
 
-# Interactively add a rule to a new library for another regime
-uv run python scripts/bootstrap_rule_library.py --path data/rules/my_regime.json --new
-```
+The [manifest](data/image_pool/manifest.csv) separates input `source_sha256` from anonymised-file
+`sha256`. All additions were reviewed individually: 183 have blur regions and 317 were saved with
+no blur needed. All 1,000 original JPEGs are at most 2048 px on the longest side and contain no EXIF/GPS metadata.
+Unblurred inputs, full evidence, site keys, robot frames and gated third-party imagery/labels
+remain restricted. [Reproducibility](docs/REPRODUCIBILITY.md) explains the reproduction limits.
 
-The tool enforces the schema plus the cross-field invariants (e.g. `required_checkpoints`
-mirrors the `visual_checkpoints` keys; `rule_id` uniqueness), and writes atomically.
+## Research scope
 
-**Run screening (needs an endpoint).** Point the pipeline at an OpenAI-compatible server via
-environment variables — never commit these:
+The primary comparison uses 346 photographs from 48 sites under 42 provisions, with site-grouped
+cross-fitting. At matched width 3, recorded-violation recall rose from 0.515 (BM25) to 0.709.
+The later width-2 arm kept BM25's width-3 recall while false alarms fell from 1.28 to 1.00 per image.
+Its timing differs from the primary plan; revision analyses H1–H8 are post hoc. See
+[analysis timing](docs/RESEARCH_DISCLOSURES.md#analysis-timing) and [results](results/README.md).
 
-```bash
-export OPENAI_BASE_URL="http://<your-host>/v1"
-export OPENAI_API_KEY="<key-or-EMPTY-for-vLLM>"
-```
+## Licence and citation
 
-Model and stage configuration lives in `src/config.py`.
+Code and rule representation use [Apache-2.0](LICENSE). Gold photographs and labels retain
+CC BY 4.0. The [additional-image licence](data/research_images/LICENSE) restricts 463 eligible
+files to non-commercial use and preserves the existing grants for listed exceptions. Company ownership, the first
+author's authorization and delegated upload, funding and involvement are described in
+[research disclosures](docs/RESEARCH_DISCLOSURES.md) and [licensing](docs/LICENSING.md).
 
-## The rule unit
-
-A regime is onboarded by decomposing it into rule units of one schema — not by retraining.
-Each unit carries provision provenance (`source_level`, `source_quote`), atomic
-`visual_checkpoints`, a boolean `visual_screening_rule` over those checkpoints, a
-`decision_scope` (so quantities beyond a single image route to review rather than being
-guessed), retrieval text, and `rectification_advice`. See `data/rules/rules_schema_en.json`.
-
-## Data availability
-
-- **Included:** all source code (ARGus and RCASR), the rule library and schema, the RCASR atom
-  vocabulary and frozen configurations, the analysis plans, the stage prompts, the **500 gold
-  images** with workers' faces blurred (`data/gold_images/`, CC BY 4.0) and their **label-only gold**
-  (`reproduce/gold_labels.json`), 40 anonymised **sample images** (`examples/sample_images/`), and the
-  **aggregate result summaries** and input snapshots behind the papers' tables (`results/`).
-- **Not redistributed:** the ConstructionSite-10k labels and images (CC BY-NC 4.0, gated access from
-  their authors). Only the frozen rule mapping and RCASR's per-image selections on the public test
-  images are included.
-- **On reasonable request:** the unblurred photographs, the full gold records with their evidence
-  text, and the site keys, under a data-use agreement: unblurred imagery shows identifiable people.
-  See `data/README.md`.
-
-## Reproducibility
-
-`reproduce/` lets a reviewer verify the central claims from released, non-sensitive files:
-
-- **Pre-registration:** `freeze_manifest.json` is a timestamped SHA-256 freeze of the gold + rules —
-  proof the labels were fixed before the runs.
-- **Headline metric, exactly:** `python reproduce/score_grounded_violations.py reproduce/gold_labels.json
-  reproduce/predictions/R4_image_rules.jsonl` reproduces the best cell **GV-F1 0.514**
-  (tp 430 / pred 982 / gold 691) from label-only gold + predictions — no images needed.
-- **Reliability:** `reproduce/reliability_agreement.json` is the label-only inter-annotator report
-  (exact-match 0.77, Jaccard 0.906, κ 0.948) with the full disagreement list.
-
-See `reproduce/REPRODUCE.md`. Images, scene facts, and evidence text stay on request (privacy).
-
-## Licensing, provenance, and redistribution
-
-Source code and the rule representation are released under the **Apache License 2.0** (`LICENSE`,
-`NOTICE`). The gold images in `data/gold_images/` are released under **CC BY 4.0**
-(`data/gold_images/LICENSE`).
-
-We audited the bundle for redistribution before release:
-
-- **No standard documents are included.** The repository ships no PDF or verbatim copy of any GB /
-  JGJ / Shenzhen standard.
-- **`source_quote` fields are paraphrased English summaries** of each requirement (median ~200
-  chars), not verbatim clause transcriptions — they describe the rule *logic*, which is fact-like
-  and distributable, rather than reproducing a copyrighted clause. The field name is historical;
-  treat its contents as summaries, not official text. Apache-2.0 covers this representation; it
-  asserts no rights over the underlying standards, which remain the property of their issuing
-  bodies.
-- **Prompts** (`Prompts_en/`) contain no embedded standard text.
-- **Author-confirmation items** (see checklist): a few rules are derived from an internal source
-  (`source_level` = "CSCEC Third Bureau Shenzhen public source"): `R-BHV-007`, `R-CIV-016`. Confirm
-  these are cleared for public release. Engineering-derived and accident-report-derived rules are
-  the authors' original work.
-
-If any specific summary is judged too close to a protected clause, replace it with a looser
-paraphrase of the rule logic before publishing.
-
-## Citation
-
-A BibTeX entry will be added on acceptance. For now, cite the manuscript "Risk-Controlled
-Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening" and the
-archive [10.5281/zenodo.21535053](https://doi.org/10.5281/zenodo.21535053).
-
-That is the **all-versions** DOI: it always resolves to the latest release, which is what the
-paper's Data Availability Statement cites. To cite one exact snapshot, use the version DOI shown on
-that release's Zenodo page instead.
-
----
-### Release checklist (run before tagging a new version)
-- [ ] Re-run `mirror_public_results.py` in the working repo so `results/` matches the paper (it also
-      copies the v3 configs, analysis plans and rule assets byte for byte).
-- [ ] Skim `source_quote` fields; loosen any summary judged too close to a protected clause.
-- [ ] Confirm no images / annotations / per-pair dumps / `.env` are staged — `.gitignore` covers
-      them, but verify with `git status` rather than trusting it.
-- [ ] Refresh `paper/supplement.pdf` if the manuscript's supplement changed.
-- [ ] Bump `version` in `CITATION.cff` and `.zenodo.json`, then tag; Zenodo mints the version DOI.
+Cite the manuscript and existing archive [10.5281/zenodo.21535053](https://doi.org/10.5281/zenodo.21535053).
+[CITATION.cff](CITATION.cff) contains the author list and manuscript citation.

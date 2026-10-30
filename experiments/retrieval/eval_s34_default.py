@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """§3.4 no-subject default: frozen ``compliant`` (A) vs abstain ``need_review`` (B).
 
-Pre-specification: ``docs/paper_v3/design/S34_DEFAULT_PRESPEC.md`` (written before this
+Pre-specification: ``docs/research/design/S34_DEFAULT_PRESPEC.md`` (written before this
 script ran). No model call: both arms recompute J3-sym over the Stage-4 evidence stored in
 the frozen judge cache, differing only in the defaults table that the gate-unknown branch
 reads. Check 1 (A reproduces the cache) and check 2 (identical ``non_compliant`` pairs) are
@@ -29,7 +29,7 @@ from research_snapshot import read_json, sha256, snapshot, verify_snapshot  # no
 import symbolic_judgement  # noqa: E402
 
 OUT = CS_ROOT / "results/2026-09-23_s34_default"
-PLAN = "docs/paper_v3/design/S34_DEFAULT_PRESPEC.md"
+PLAN = "docs/research/design/S34_DEFAULT_PRESPEC.md"
 JUDGE = "results/2026-09-22_rcasr_judge"
 V2 = "results/2026-09-22_rcasr_v2"
 LOWWIDTH = "results/2026-09-22_rcasr_lowwidth"

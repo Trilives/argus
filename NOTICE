@@ -1,7 +1,13 @@
 ARGus — Regulation-Grounded Visual Compliance Screening of Construction Sites
 Copyright 2026 Fangjie Wu, Xingpeng Jiang, Wenlong Zhang, Boran Wang and Jie Gong
 
-This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+The source code and rule representation are licensed under the Apache License,
+Version 2.0 (see LICENSE). The gold images retain CC BY 4.0 (data/gold_images/LICENSE).
+The additional-image terms are in data/research_images/LICENSE: 463 files use
+CC BY-NC 4.0, with existing CC BY/Apache grants retained for listed exceptions.
+Demonstration files retain Apache-2.0. Per-image terms are recorded in
+data/image_pool/manifest.csv. The company owns the source inspection photographs;
+uploading copies does not transfer their ownership.
 
 The rule library (data/rules/rules_en.json) encodes construction-safety
 requirements as paraphrased English summaries derived from national, industry,
@@ -9,5 +15,4 @@ and Shenzhen local standards, plus engineering- and accident-report-derived
 rules. The Apache-2.0 license covers this repository's code and data
 representation; it does not assert rights over the underlying regulatory
 standards themselves, which remain the property of their issuing bodies. No
-verbatim standard document is redistributed here. See "Licensing, provenance,
-and redistribution" in README.md.
+verbatim standard document is redistributed here. See docs/LICENSING.md.

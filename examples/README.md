@@ -9,6 +9,19 @@ so you can run the pipelines end to end on real inputs. They carry no gold label
 demonstration set, not an evaluation set. SHA-256 checksums and dimensions are in
 `sample_images/manifest.csv`.
 
+The demonstration files retain their existing [Apache-2.0 terms](sample_images/LICENSE).
+The additional research subset has [separate per-image terms](../data/research_images/LICENSE),
+including a non-commercial default for eligible files; it does not relicense these examples.
+
+The [expanded original-image pool](../data/image_pool/README.md) is available separately:
+
+```bash
+uv run --locked python run_rcasr.py data/research_images/img_0004.jpg --no-judge
+```
+
+The expansion has no new gold labels. The 40 files here are demonstration inputs, disjoint
+from evaluation gold; they are not an additional independently sampled test set.
+
 - **P001–P020** were chosen to contain no identifiable individuals or label-bearing markings,
   and were reviewed by hand.
 - **P021–P040** include workers, so their faces are blurred. Only what could identify someone is
@@ -101,7 +114,7 @@ and can change a provision near the threshold. In our checks on these 8 images, 
 the 8 sets matched exactly, and the mean Jaccard was about 0.8. Treat the released selection as
 the reference, and a fresh run as a demonstration of the same method.
 
-## ARGus demo (earlier stage, v1.x)
+## ARGus demo
 
 The turnkey demo runner at the repo root serves a model and screens these images with the ARGus
 retrieval agent:

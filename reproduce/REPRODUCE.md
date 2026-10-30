@@ -1,7 +1,7 @@
 # Reproducing the evaluation
 
-This folder lets a reviewer verify the central claims **without the private images
-or annotations** — using a cryptographic freeze proof, the label-only gold, and a
+This folder lets a reviewer verify the included ARGus baseline score **without private evidence
+records or full annotations** — using a recorded freeze manifest, the label-only gold, and a
 self-contained scorer.
 
 ## 1. The gold set was frozen before the results (pre-registration)
@@ -14,15 +14,17 @@ timestamp:
  "file_sha256": {"…/image_rule_gold.json": "c5674b…", "…/rules_en.json": "1cfd2d…", …}}
 ```
 
-Any gold file we later provide on request must hash to these values, which proves
-the labels and rule set were fixed *before* the reported runs and were not altered
-afterward. Verify with `sha256sum <file>` against the manifest.
+Any original gold file provided on request must hash to these values. Matching hashes
+verify file identity against the recorded freeze; the manifest's timestamp alone is
+not an independently certified proof of chronology. Verify with `sha256sum <file>`
+against the manifest.
 
 ## 2. The frozen annotations (label-only)
 
 `gold_labels.json` is a faithful **label-only projection** of the frozen gold —
-`{image_id: {rule_id: status}}`, no images and no scene text. It is the exact gold
-used to score every reported number. Reproduce the dataset counts:
+`{image_id: {rule_id: status}}`, no images and no scene text. It contains the complete
+500-image gold; the primary RCASR evaluation uses the 346 site-assigned images and
+its site-grouped protocol. Reproduce the full gold counts:
 
 ```bash
 python -c "import json; g=json.load(open('gold_labels.json')); \
@@ -35,23 +37,27 @@ print('images', len(g), 'pairs', pairs, dict(d))"
 (The manifest in §1 hashes the *original* gold file that is available on request;
 `gold_labels.json` is the label-only view of it.)
 
-## 3. Recompute the headline metric (worked example)
+## 3. Recompute the ARGus baseline metric (worked example)
 
 `score_grounded_violations.py` is a self-contained port of the paper's scorer.
-`predictions/R4_image_rules.jsonl` is the **label-only** prediction file for the best
-end-to-end system (R4 image-conditioned retrieval × J2 image-rules judgement). Run:
+`predictions/R4_image_rules.jsonl` is the **label-only** prediction file for the
+ARGus baseline (R4 image-conditioned retrieval × J2 image-rules judgement). Run:
 
 ```bash
 python score_grounded_violations.py gold_labels.json predictions/R4_image_rules.jsonl
 ```
 
-reproduces the paper's headline cell exactly, from released files alone:
+reproduces the included ARGus baseline cell exactly, from released files alone:
 
 ```
 gv_tp 430 · gv_pred 982 · gv_gold 691
 GV precision (micro) 0.4379 · recall 0.6223 · F1 0.514
 GV precision (macro) 0.4698 · recall 0.6529
 ```
+
+This is baseline GV-F1, not the primary RCASR recorded-violation recall endpoint.
+The [paper-alignment guide](../docs/PAPER_ALIGNMENT.md) maps contributions and evaluation
+populations to the repository. Gold labels retain [CC BY 4.0](DATA_LICENSE), matching the manuscript.
 
 Each prediction row is `{image_id, violation_instances: [{rule_id, compliance_label}]}`
 (the scorer also accepts `{image_id, model_label, matched_rule_id}`) — regenerate it by
@@ -84,5 +90,7 @@ on request under the data-use agreement.
 
 Raw site images, cached scene-fact records, and per-checkpoint evidence text describe
 identifiable people and scenes; they are available from the authors on reasonable
-request under a data-use agreement. Everything needed to audit the *claims* — the
-freeze proof, the label-only gold, the scorer — is here.
+request under a data-use agreement. The included baseline score can be audited using
+the freeze record, label-only gold and scorer. Re-running model inference
+or reconstructing site-grouped folds requires the restricted inputs described in
+the [reproducibility guide](../docs/REPRODUCIBILITY.md).

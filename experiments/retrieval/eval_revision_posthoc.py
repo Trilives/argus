@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Revision post-hoc analyses H1, H2, H4, H5 and H6 (Buildings 4625629, major revision).
 
-Pre-specification: ``docs/paper_v3/design/REVISION_POSTHOC_PRESPEC.md`` (written before this
+Pre-specification: ``docs/research/design/REVISION_POSTHOC_PRESPEC.md`` (written before this
 script ran). Everything is computed from frozen outputs: no model is called and no reported
 number is replaced. H3, H7 and H8 are in ``eval_revision_cases.py``, which shares this freeze.
 
@@ -34,7 +34,7 @@ from set_selection import matched_rank_sets  # noqa: E402
 from set_selection_metrics import cluster_index, paired_intervals  # noqa: E402
 
 OUT = CS_ROOT / "results/2026-10-24_revision_posthoc"
-PLAN = "docs/paper_v3/design/REVISION_POSTHOC_PRESPEC.md"
+PLAN = "docs/research/design/REVISION_POSTHOC_PRESPEC.md"
 V2 = "results/2026-09-22_rcasr_v2"
 LW = "results/2026-09-22_rcasr_lowwidth"
 JUDGE = "results/2026-09-22_rcasr_judge"

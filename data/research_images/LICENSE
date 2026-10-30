@@ -1,0 +1,29 @@
+NON-COMMERCIAL IMAGE USE
+
+The 463 images identified as CC-BY-NC-4.0 in ../image_pool/manifest.csv are
+licensed under the Creative Commons Attribution-NonCommercial 4.0 International
+License (CC BY-NC 4.0). Non-commercial sharing and adaptation require attribution. Commercial
+use is not licensed under these terms; obtain separate written permission from
+China Construction Third Engineering Bureau (Shenzhen) Co., Ltd., the owner of
+the source inspection photographs. The licence's exceptions and limitations apply.
+
+Full licence text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+EXCEPTIONS — EXISTING GRANTS ARE PRESERVED
+
+LICENSE_EXCEPTIONS.csv lists 37 files excluded from the non-commercial default:
+19 retain CC BY 4.0 permissions associated with the published gold photographs,
+and 18 retain the Apache-2.0 permissions associated with published demonstration
+photographs. These prior permissions are not withdrawn, and the non-commercial
+restriction must not be represented as applying to those files.
+
+CC BY 4.0: https://creativecommons.org/licenses/by/4.0/legalcode
+Apache-2.0: ../../LICENSE
+
+The combined manifest is the authoritative per-image licence assignment.
+Private source-to-demonstration mappings are not included in this repository.
+
+Attribution: Wu, F., Jiang, X., Zhang, W., Wang, B., Gong, J. (2026). ARGus / RCASR research photographs,
+Zenodo, https://doi.org/10.5281/zenodo.21535053.
+
+The source code and rule representation remain under Apache-2.0 (../../LICENSE).

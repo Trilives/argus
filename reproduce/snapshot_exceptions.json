@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "scope": "Intentional differences from immutable research snapshots; not a rehash of those snapshots.",
+  "missing": {
+    "Model/Qwen3.5-9B/.gitattributes": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/LICENSE": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/README.md": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/chat_template.jinja": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/config.json": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/merges.txt": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/model.safetensors-00001-of-00004.safetensors": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/model.safetensors-00002-of-00004.safetensors": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/model.safetensors-00003-of-00004.safetensors": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/model.safetensors-00004-of-00004.safetensors": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/model.safetensors.index.json": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/preprocessor_config.json": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/tokenizer.json": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/tokenizer_config.json": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/video_preprocessor_config.json": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "Model/Qwen3.5-9B/vocab.json": {
+      "reason": "Local model/tokenizer/checkpoint artifact; not redistributed."
+    },
+    "data/annotations/image_rule_gold.json": {
+      "reason": "Restricted full gold records; a label-only projection is bundled."
+    },
+    "data/public_eval/public_labels_test.jsonl": {
+      "reason": "Gated third-party labels; obtain from their provider."
+    },
+    "data/splits/site_keys_candidate.json": {
+      "reason": "Restricted site identities or internal evaluation splits."
+    },
+    "data/splits/site_keys_confirmed.json": {
+      "reason": "Restricted site identities or internal evaluation splits."
+    },
+    "deploy/Output/dog-20260923/reports/dog0910-28.json": {
+      "reason": "Private robot-frame reports; public aggregates are bundled."
+    },
+    "deploy/Output/dog-20260923/reports/dog0910-29.json": {
+      "reason": "Private robot-frame reports; public aggregates are bundled."
+    },
+    "deploy/Output/dog-20260923/reports/dog0910r-28.json": {
+      "reason": "Private robot-frame reports; public aggregates are bundled."
+    },
+    "deploy/Output/dog-20260923/reports/dog0910r-29.json": {
+      "reason": "Private robot-frame reports; public aggregates are bundled."
+    },
+    "deploy/Output/dog-20260927/reports/dog0910f-28.json": {
+      "reason": "Private robot-frame reports; public aggregates are bundled."
+    },
+    "deploy/Output/dog-20260927/reports/dog0910f-29.json": {
+      "reason": "Private robot-frame reports; public aggregates are bundled."
+    },
+    "docs/paper_v3/manuscript/figures/f5_data.json": {
+      "reason": "Author-side manuscript input; retained only in the private research checkout."
+    },
+    "results/2026-09-22_rcasr_evidence/atom_evidence.jsonl": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/2026-09-22_rcasr_evidence/input_snapshot.json": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/2026-09-22_rcasr_judge/internal_pairs.jsonl": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/2026-09-22_rcasr_judge/public_pairs.jsonl": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/2026-09-22_rcasr_lowwidth/lowwidth_rows.jsonl": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/2026-09-22_rcasr_public/atom_evidence.jsonl": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/2026-09-22_rcasr_public/facts.jsonl": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/2026-09-22_rcasr_v2/rcasr_rows.jsonl": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/2026-09-24_model_swap/q27/evidence/input_snapshot.json": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/2026-09-24_model_swap/q9f/evidence/input_snapshot.json": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/retrieval/agent_grep_visual_eval.json": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    },
+    "results/retrieval/gold_facts_generic_en.json": {
+      "reason": "Restricted evidence, cached facts, per-pair verdicts or intermediate run inputs; public aggregates are bundled."
+    }
+  },
+  "changed": {
+    "pyproject.toml": {
+      "reason": "Public-package metadata and dependencies differ from the research checkout.",
+      "public_sha256": "365c2f348e98f1cbf3729dc548377f3f197d3d182aa3aaa3b1444fa89ff07e85"
+    },
+    "results/2026-09-22_rcasr_v2/rcasr_results.json": {
+      "reason": "Public redaction: project names anonymised and lost gold pairs reduced to counts.",
+      "public_sha256": "7da1bb5bd239126d2f8f0a4e4d03d5c5633712a343bb22aacee2ceae944de6b6"
+    },
+    "results/data_audit/near_duplicates.json": {
+      "reason": "Public JSON serialization differs; the underlying data content is unchanged.",
+      "public_sha256": "52103db96e4ce7c3287473543918647ed9383abcfd6b6dbd82e9fd9ce4943427"
+    },
+    "src/config.py": {
+      "reason": "Existing public-package configuration/comment differences.",
+      "public_sha256": "f3b3fadc97d34f14b66630f375903d3fefd0c25d5306c1e8d785e9f878292f8f"
+    },
+    "src/schemas.py": {
+      "reason": "Existing public-package schema/comment differences.",
+      "public_sha256": "740c6fd7ec3d6d0ad8c9180957ff2ecd3c4ca1a0e3d4bca7f428431ffc15fd0d"
+    },
+    "tests/test_site_partition.py": {
+      "reason": "Existing public skip guard for unavailable restricted site keys.",
+      "public_sha256": "346541dcf878c2e993ff254526a369c78ac005bb9bf93b436c431b67f7f6f152"
+    },
+    "uv.lock": {
+      "reason": "Lockfile for the public package; differs from the research environment.",
+      "public_sha256": "947a51a81d1473b216fd61d1ea2792d8f1bf6da151b02e49574fa15549fb228e"
+    }
+  }
+}

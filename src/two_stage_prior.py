@@ -4,7 +4,7 @@ Stage 1 ranks the library by SigLIP-2 image/provision-text cosine and keeps the 
 Stage 2 reorders those M by a cross-encoder over (scene description, provision text).
 The reranked list becomes a prior with the R4 rank map written for a list of length M.
 Both stages reuse the unchanged retrievers in ``retrieval``; nothing here reads a label.
-Pre-specification: ``docs/paper_v3/design/TWO_STAGE_PRIOR_PRESPEC.md``.
+Pre-specification: ``docs/research/design/TWO_STAGE_PRIOR_PRESPEC.md``.
 """
 from __future__ import annotations
 

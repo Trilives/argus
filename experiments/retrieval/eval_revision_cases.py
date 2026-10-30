@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Revision post-hoc analyses H3, H7 and H8 (Buildings 4625629, major revision).
 
-Pre-specification: ``docs/paper_v3/design/REVISION_POSTHOC_PRESPEC.md``. Shares the freeze written
+Pre-specification: ``docs/research/design/REVISION_POSTHOC_PRESPEC.md``. Shares the freeze written
 by ``eval_revision_posthoc.py --prepare``; no model is called.
 
 Usage::

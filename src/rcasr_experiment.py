@@ -2,7 +2,7 @@
 
 The analysis freeze pins the evidence freeze's output plus every file that scores it.
 ``evaluate`` makes no model call; ``judge`` makes model calls but reads no gold.
-Pre-specification: ``docs/paper_v3/design/RCASR_PRESPEC.md``.
+Pre-specification: ``docs/research/design/RCASR_PRESPEC.md``.
 """
 from __future__ import annotations
 
