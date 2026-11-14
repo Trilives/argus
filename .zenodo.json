@@ -1,7 +1,7 @@
 {
   "title": "Risk-Controlled Applicability Set Retrieval (RCASR) for Regulation-Grounded Construction-Site Visual Screening — code, data and research artifacts (ARGus)",
-  "description": "Code and evaluation artifacts accompanying \"Risk-Controlled Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening\". The contributions are an applicability-aware provision selector, site-grouped matched-width evaluation and failure analysis traced from evidence to selection. Company-owned photographs provide a validation platform, not a new dataset contribution. RCASR combines a retrieval prior with visual-atom posteriors and selects provisions at a stated width or miss risk. The primary evaluation uses 346 site-assigned photographs from a frozen 500-image gold, across 48 sites and 42 provisions; labels are not exhaustive. The repository includes those 500 gold photographs and their label-only annotations, 500 additional unlabelled originals and 40 demonstration files. No cropped dataset images are included. The additional originals do not change gold annotations, site splits, plans, predictions or reported results. Software/rule representation use Apache-2.0. Gold photographs and labels retain CC BY 4.0 as stated in the manuscript. Of the additional files, 463 use CC BY-NC 4.0: non-commercial use only, with separate written company permission required for commercial use. Nineteen retain existing gold-image CC BY grants and eighteen retain demonstration-image Apache-2.0 grants; per-image licences and exceptions are in the manifests. Company-authorized first author Fangjie Wu arranges image release, and the maintainer uploads copies on his behalf; ownership remains with the company. Raw records, site identities, robot frames and gated third-party data are not redistributed. The width-two arm was specified after primary results and a retrieval diagnostic but before width-two end-to-end scoring; revision H1-H8 analyses are post hoc. Robot records demonstrate feasibility, not independent field accuracy. Repository guides explain contribution boundaries, funding/involvement, licences, snapshots, model-free tests and score reproduction.",
-  "version": "v2.4.0",
+  "description": "Code and evaluation artifacts accompanying the published Buildings article (2026, 16(22), 4502; DOI: 10.3390/buildings16224502), \"Risk-Controlled Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening\". The contributions are an applicability-aware provision selector, site-grouped matched-width evaluation and failure analysis traced from evidence to selection. Company-owned photographs provide a validation platform, not a new dataset contribution. RCASR combines a retrieval prior with visual-atom posteriors and selects provisions at a stated width or miss risk. The primary evaluation uses 346 site-assigned photographs from a frozen 500-image gold, across 48 sites and 42 provisions; labels are not exhaustive. The repository includes those 500 gold photographs and their label-only annotations, 500 additional unlabelled originals and 40 demonstration files. No cropped dataset images are included. The additional originals do not change gold annotations, site splits, plans, predictions or reported results. Software/rule representation use Apache-2.0. Gold photographs and labels retain CC BY 4.0 as stated in the manuscript. Of the additional files, 463 use CC BY-NC 4.0: non-commercial use only, with separate written company permission required for commercial use. Nineteen retain existing gold-image CC BY grants and eighteen retain demonstration-image Apache-2.0 grants; per-image licences and exceptions are in the manifests. Company-authorized first author Fangjie Wu arranges image release, and the maintainer uploads copies on his behalf; ownership remains with the company. Raw records, site identities, robot frames and gated third-party data are not redistributed. The width-two arm was specified after primary results and a retrieval diagnostic but before width-two end-to-end scoring; revision H1-H8 analyses are post hoc. Robot records demonstrate feasibility, not independent field accuracy. Repository guides explain contribution boundaries, funding/involvement, licences, snapshots, model-free tests and score reproduction.",
+  "version": "v2.4.1",
   "upload_type": "software",
   "license": "Apache-2.0",
   "access_right": "open",
@@ -21,7 +21,7 @@
     },
     {
       "name": "Wang, Boran",
-      "affiliation": "International Institute of Artificial Intelligence, Harbin Institute of Technology (Shenzhen)",
+      "affiliation": "International Research Institute for Artificial Intelligence, Harbin Institute of Technology (Shenzhen)",
       "orcid": "0009-0007-9224-2697"
     },
     {
@@ -44,6 +44,12 @@
       "identifier": "https://github.com/Trilives/argus",
       "relation": "isSupplementTo",
       "scheme": "url"
+    },
+    {
+      "identifier": "10.3390/buildings16224502",
+      "relation": "isSupplementTo",
+      "scheme": "doi"
     }
-  ]
+  ],
+  "publication_date": "2026-11-14"
 }

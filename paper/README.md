@@ -1,6 +1,12 @@
 # Paper artifacts
 
-## `supplement.pdf` — the online supplement
+The version of record is the [Buildings article](https://doi.org/10.3390/buildings16224502),
+published on 11 November 2026. Its final supplement is hosted by
+[the journal](https://www.mdpi.com/article/10.3390/buildings16224502/s1).
+The local PDF described below is a retained supplement from the earlier ASCE submission stage of this
+study. It is historical supporting material; use the journal supplement for the published article.
+
+## `supplement.pdf` — earlier-stage supplement
 
 The manuscript's online supplement (8 pp). It carries:
 
@@ -23,6 +29,5 @@ The manuscript's online supplement (8 pp). It carries:
    confidence, the verdict, the gold status and the rectification advice. All values are read from
    the cached headline run, so they are what the pipeline produced rather than a paraphrase.
 
-ASCE stopped hosting Supplemental Materials files on 5 January 2025, so the supplement is hosted
-here and the manuscript links to it by the all-versions Zenodo DOI. Nothing in it is needed to
-follow the argument of the paper — it records the detail needed to audit or reproduce it.
+This file was hosted here for the earlier ASCE submission and linked by the all-versions Zenodo DOI.
+It is retained to preserve that stage's audit and reproduction detail.

@@ -104,5 +104,9 @@ files to non-commercial use and preserves the existing grants for listed excepti
 author's authorization and delegated upload, funding and involvement are described in
 [research disclosures](docs/RESEARCH_DISCLOSURES.md) and [licensing](docs/LICENSING.md).
 
-Cite the manuscript and existing archive [10.5281/zenodo.21535053](https://doi.org/10.5281/zenodo.21535053).
-[CITATION.cff](CITATION.cff) contains the author list and manuscript citation.
+Cite Wu, F.; Jiang, X.; Zhang, W.; Wang, B.; Gong, J.
+*Risk-Controlled Applicability Set Retrieval for Regulation-Grounded Construction-Site Visual Screening*.
+Buildings **2026**, 16(22), 4502. [Article DOI](https://doi.org/10.3390/buildings16224502).
+Also cite the software/data archive [10.5281/zenodo.21535053](https://doi.org/10.5281/zenodo.21535053).
+[CITATION.cff](CITATION.cff) contains both citations. The journal hosts the
+[published supplementary material](https://www.mdpi.com/article/10.3390/buildings16224502/s1).

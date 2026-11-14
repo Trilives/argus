@@ -122,8 +122,8 @@
   },
   "changed": {
     "pyproject.toml": {
-      "reason": "Public-package metadata and dependencies differ from the research checkout.",
-      "public_sha256": "365c2f348e98f1cbf3729dc548377f3f197d3d182aa3aaa3b1444fa89ff07e85"
+      "reason": "Public-package metadata and dependencies differ from the research checkout. Publication closeout updates only the public project version from 2.4.0 to 2.4.1; dependencies and frozen research inputs are unchanged.",
+      "public_sha256": "e0683939f223fcab84a18421af18ec26905a24397928bf140ba81817bd2af1eb"
     },
     "results/2026-09-22_rcasr_v2/rcasr_results.json": {
       "reason": "Public redaction: project names anonymised and lost gold pairs reduced to counts.",
@@ -146,8 +146,8 @@
       "public_sha256": "346541dcf878c2e993ff254526a369c78ac005bb9bf93b436c431b67f7f6f152"
     },
     "uv.lock": {
-      "reason": "Lockfile for the public package; differs from the research environment.",
-      "public_sha256": "947a51a81d1473b216fd61d1ea2792d8f1bf6da151b02e49574fa15549fb228e"
+      "reason": "Lockfile for the public package; differs from the research environment. Publication closeout updates only the public project version from 2.4.0 to 2.4.1; dependencies and frozen research inputs are unchanged.",
+      "public_sha256": "6f7219cbb39b89df3617a0dc40f27e4b4f2ecdc8db2a1d3fef756743042f9f3b"
     }
   }
 }

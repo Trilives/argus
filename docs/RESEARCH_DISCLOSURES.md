@@ -1,6 +1,6 @@
 # Research disclosures
 
-These descriptions accompany the manuscript, which remains under submission.
+These descriptions accompany the [published Buildings article](https://doi.org/10.3390/buildings16224502).
 
 ## Company collaboration, funding and competing interests
 

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite the manuscript below and the accompanying software/data archive."
+message: "Please cite the published article below and the accompanying software/data archive."
 title: >-
   Risk-Controlled Applicability Set Retrieval (RCASR) for Regulation-Grounded
   Construction-Site Visual Screening
@@ -25,21 +25,22 @@ abstract: >-
 license: Apache-2.0
 repository-code: "https://github.com/Trilives/argus"
 doi: "10.5281/zenodo.21535053"
-version: "2.4.0"
+version: "2.4.1"
+date-released: 2026-11-14
 authors:
   - given-names: "Fangjie"
     family-names: "Wu"
     affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd., Shenzhen, China"
   - given-names: "Xingpeng"
     family-names: "Jiang"
-    affiliation: "School of Computer Science and Technology, Harbin Institute of Technology, Shenzhen, China"
+    affiliation: "School of Computer Science and Technology, Harbin Institute of Technology (Shenzhen), Shenzhen, China"
     orcid: "https://orcid.org/0009-0008-1578-3403"
   - given-names: "Wenlong"
     family-names: "Zhang"
     affiliation: "China Construction Third Engineering Bureau (Shenzhen) Co., Ltd., Shenzhen, China"
   - given-names: "Boran"
     family-names: "Wang"
-    affiliation: "International Institute of Artificial Intelligence, Harbin Institute of Technology, Shenzhen, China"
+    affiliation: "International Research Institute for Artificial Intelligence, Harbin Institute of Technology (Shenzhen), Shenzhen, China"
     orcid: "https://orcid.org/0009-0007-9224-2697"
   - given-names: "Jie"
     family-names: "Gong"
@@ -61,7 +62,13 @@ preferred-citation:
     - given-names: "Jie"
       family-names: "Gong"
   year: 2026
+  journal: "Buildings"
+  volume: "16"
+  issue: "22"
+  start: "4502"
+  doi: "10.3390/buildings16224502"
+  url: "https://www.mdpi.com/2075-5309/16/22/4502"
+  date-published: 2026-11-11
   notes: >-
-    Manuscript under submission.
     F. Wu and X. Jiang contributed equally and are joint first authors;
     B. Wang is the corresponding author.
